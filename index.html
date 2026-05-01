@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-R1DJVRQEQB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-R1DJVRQEQB');
+</script>
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="mc0ZMqP7yD9HPQukeBi785o766mib7Fe9QUTEmtprUU" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Havn Stays — L'Expérience Hôtelière pour Votre Villa</title>
+<meta name="description" content="Conciergerie premium fondée par un ancien directeur d'hôtel. Nous appliquons les standards hôteliers à la gestion de votre villa : accueil, housekeeping, revenue management. Marrakech, Agadir, Taghazout Bay.">
+<meta property="og:site_name" content="Havn Stays by Medini Homes">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Havn Stays | L'Expérience Hôtelière pour Votre Villa">
+<meta property="og:description" content="Conciergerie premium fondée par un ancien directeur d'hôtel. Nous appliquons les standards hôteliers à la gestion de votre villa : accueil, housekeeping, revenue management. Marrakech, Agadir, Taghazout Bay.">
+<meta property="og:url" content="https://havn-stays.com/">
+<meta property="og:image" content="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&h=630&fit=crop&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&h=630&fit=crop&q=80">
+<link rel="icon" type="image/svg+xml" href="/brand/favicons/favicon.svg">
+<link rel="canonical" href="https://havn-stays.com/">
+<link rel="alternate" hreflang="fr" href="https://havn-stays.com/">
+<link rel="alternate" hreflang="en" href="https://havn-stays.com/en/">
+<link rel="alternate" hreflang="x-default" href="https://havn-stays.com/">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+
+:root{
+  --dark:#0F1923;
+  --navy:#162230;
+  --sand:#F5F0EB;
+  --sand-light:#FAF8F5;
+  --gold:#C5A55A;
+  --gold-light:#D4BA7A;
+  --white:#FFFFFF;
+  --text:#1A1A1A;
+  --text-mid:#555;
+  --text-light:#888;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Inter',-apple-system,sans-serif;
+  --space-section:100px;
+  --space-block:48px;
+  --max-w:1120px;
+}
+
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--text);background:var(--sand-light);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+
+/* ======== GLOBAL TYPOGRAPHY ======== */
+.t-label{
+  font-family:var(--sans);font-size:11px;font-weight:500;
+  letter-spacing:.28em;text-transform:uppercase;color:var(--gold);
+  margin-bottom:20px;display:block;
+}
+.t-heading{
+  font-family:var(--serif);font-weight:400;line-height:1.08;
+  letter-spacing:-.01em;
+}
+.t-heading em{font-style:italic;font-weight:300;color:var(--gold)}
+.t-body{font-size:15px;line-height:1.8;font-weight:300;color:var(--text-mid)}
+.t-body strong{font-weight:500;color:var(--text)}
+
+/* ======== LAYOUT ======== */
+.wrap{max-width:var(--max-w);margin:0 auto;padding:0 40px}
+.section{padding:var(--space-section) 0}
+.bg-sand{background:var(--sand)}
+.bg-white{background:var(--white)}
+.bg-dark{background:var(--dark)}
+.bg-navy{background:var(--navy)}
+
+.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+
+/* ======== BUTTONS ======== */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  padding:15px 38px;font-family:var(--sans);font-size:11px;font-weight:500;
+  letter-spacing:.18em;text-transform:uppercase;text-decoration:none;
+  border-radius:6px;transition:all .3s;cursor:pointer;border:none;
+}
+.btn-gold{background:var(--gold);color:var(--dark)}
+.btn-gold:hover{background:var(--gold-light)}
+.btn-outline-w{background:transparent;border:1px solid rgba(255,255,255,.3);color:var(--white)}
+.btn-outline-w:hover{border-color:var(--white);background:rgba(255,255,255,.06)}
+.btn-outline-d{background:transparent;border:1px solid rgba(0,0,0,.15);color:var(--text)}
+.btn-outline-d:hover{border-color:var(--text);background:rgba(0,0,0,.03)}
+
+/* ======== HEADER ======== */
+header{position:fixed;top:0;left:0;right:0;z-index:100;transition:all .4s}
+header.scrolled{background:rgba(15,25,35,.96);backdrop-filter:blur(12px)}
+.header-inner{
+  display:grid;grid-template-columns:1fr auto 1fr;align-items:center;
+  max-width:var(--max-w);margin:0 auto;padding:22px 40px;
+}
+.nav-left,.nav-right{display:flex;align-items:center;gap:28px}
+.nav-right{justify-content:flex-end}
+.nav-link{font-size:13px;font-weight:400;color:rgba(255,255,255,.55);text-decoration:none;transition:color .3s;letter-spacing:.01em}
+.nav-link:hover{color:var(--white)}
+.nav-btn{
+  padding:8px 20px;border:1px solid rgba(255,255,255,.28);border-radius:5px;
+  font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--white);text-decoration:none;transition:all .3s;
+}
+.nav-btn:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+.nav-btn.accent{border-color:var(--gold);color:var(--gold)}
+.nav-btn.accent:hover{background:var(--gold);color:var(--dark)}
+.logo-c{text-align:center;text-decoration:none;display:block}
+.logo-c .lh{font-family:var(--serif);font-size:22px;font-weight:400;letter-spacing:.2em;color:var(--white);line-height:1}
+.logo-c .lh span{color:var(--gold);font-style:italic}
+.logo-c .ls{font-size:8px;letter-spacing:.35em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-top:3px}
+.mob-btn{display:none;background:none;border:none;cursor:pointer;padding:8px}
+.mob-btn span{display:block;width:20px;height:1.5px;background:var(--white);margin:5px 0}
+
+/* ======== HERO ======== */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=80') center/cover}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(15,25,35,.5),rgba(15,25,35,.78))}
+.hero-frame{
+  position:relative;z-index:2;
+  width:calc(100% - 48px);max-width:1280px;min-height:calc(100vh - 48px);
+  border:1px solid rgba(255,255,255,.12);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:120px 80px 80px;margin:24px;text-align:center;
+}
+.hero-frame .t-label{margin-bottom:32px}
+.hero h1{font-size:clamp(38px,6vw,72px);color:var(--white);margin-bottom:28px;max-width:780px}
+.hero-sub{font-size:16px;line-height:1.75;color:rgba(255,255,255,.72);font-weight:300;max-width:480px;margin:0 auto 44px}
+.hero-ctas{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.hero-bottom{
+  position:absolute;bottom:36px;left:80px;right:80px;z-index:2;
+  display:flex;justify-content:space-between;align-items:flex-end;
+}
+.hero-loc{display:flex;align-items:center;gap:8px;font-size:12px;color:rgba(255,255,255,.55);font-weight:300}
+.hero-loc svg{width:13px;height:13px;stroke:rgba(255,255,255,.55);fill:none;stroke-width:1.5}
+.hero-stats{display:flex;gap:36px}
+.hs-n{font-family:var(--serif);font-size:28px;font-weight:300;color:var(--gold);line-height:1}
+.hs-l{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-top:4px}
+
+/* ======== SECTION HEADERS — consistent pattern ======== */
+.sh{margin-bottom:var(--space-block)}
+.sh h2{font-size:clamp(32px,4vw,48px)}
+.sh p.t-body{margin-top:16px;max-width:520px}
+
+/* ======== VALUE PROP ======== */
+.vp-right{padding-top:4px}
+.vp-right p{margin-bottom:14px}
+
+/* ======== SERVICE CARDS ======== */
+.svc{border-left:1.5px solid var(--gold);padding-left:24px}
+.svc h3{font-size:15px;font-weight:600;color:var(--text);margin-bottom:14px;letter-spacing:.01em}
+.svc ul{list-style:none}
+.svc li{font-size:14px;color:var(--text-mid);line-height:1.7;padding:2px 0;font-weight:300}
+
+/* ======== STEPS ======== */
+.step-n{font-family:var(--serif);font-size:56px;font-weight:300;color:var(--gold);opacity:.3;line-height:1;margin-bottom:16px}
+.step h3{font-size:15px;font-weight:600;color:var(--white);margin-bottom:8px}
+.step p{font-size:14px;color:rgba(255,255,255,.5);line-height:1.75;font-weight:300}
+
+/* ======== STATS ======== */
+.stat{padding:24px 0;border-top:1px solid rgba(197,165,90,.2)}
+.stat-n{font-family:var(--serif);font-size:clamp(36px,4vw,52px);font-weight:300;color:var(--gold);line-height:1;margin-bottom:8px}
+.stat-t{font-size:14px;font-weight:500;color:var(--text);margin-bottom:4px}
+.stat-d{font-size:13px;color:var(--text-light);font-weight:300}
+
+/* ======== COMPARISON TABLE ======== */
+.ctbl{width:100%;border-collapse:collapse}
+.ctbl th{
+  padding:16px 20px;font-size:10px;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;text-align:left;
+}
+.ctbl th:first-child{color:var(--text-light);width:22%}
+.ctbl th:nth-child(2){color:var(--text-light)}
+.ctbl th:nth-child(3){color:var(--gold);background:rgba(197,165,90,.04)}
+.ctbl td{padding:14px 20px;font-size:14px;font-weight:300;color:var(--text-mid);border-top:1px solid rgba(0,0,0,.05)}
+.ctbl td:first-child{font-weight:500;color:var(--text);font-size:13px}
+.ctbl td:nth-child(3){color:var(--text);font-weight:400;background:rgba(197,165,90,.04)}
+
+/* ======== PRICING ======== */
+.pricing-c{text-align:center}
+.pricing-c h2{color:var(--white);margin-bottom:8px}
+.pr-num{font-family:var(--serif);font-size:clamp(80px,14vw,130px);font-weight:300;color:var(--gold);line-height:.9;margin:28px 0 10px}
+.pr-sub{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:rgba(255,255,255,.35);margin-bottom:48px}
+.pillars{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:24px;
+  max-width:720px;margin:0 auto 48px;padding-top:40px;
+  border-top:1px solid rgba(255,255,255,.07);
+}
+.pill h4{font-size:14px;font-weight:500;color:var(--white);margin-bottom:3px}
+.pill p{font-size:12px;color:rgba(255,255,255,.35);font-weight:300}
+
+/* ======== BENEFIT CARDS ======== */
+.ben{padding-top:20px;border-top:1px solid rgba(197,165,90,.2)}
+.ben h3{font-size:15px;font-weight:600;color:var(--text);margin-bottom:8px}
+.ben p{font-size:14px;color:var(--text-mid);line-height:1.7;font-weight:300}
+
+/* ======== AREA CARDS ======== */
+.ac{
+  background:var(--white);padding:24px 22px;text-decoration:none;display:block;
+  border-bottom:2px solid transparent;transition:all .3s;
+}
+.ac:hover{border-bottom-color:var(--gold);transform:translateY(-2px);box-shadow:0 10px 28px rgba(0,0,0,.05)}
+.ac h3{font-size:14px;font-weight:600;color:var(--text);margin-bottom:5px}
+.ac p{font-size:12px;color:var(--text-mid);font-weight:300;line-height:1.5}
+
+/* ======== ESTIMATION FORM ======== */
+.est-form{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);padding:36px;border-radius:4px}
+.fr{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
+.fg{display:flex;flex-direction:column;gap:5px}
+.fg.full{grid-column:1/-1}
+.fg label{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.35);font-weight:500}
+.fg input,.fg select{
+  padding:12px 14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);
+  color:var(--white);font-family:var(--sans);font-size:14px;outline:none;
+  transition:border-color .3s;-webkit-appearance:none;border-radius:5px;
+}
+.fg input::placeholder{color:rgba(255,255,255,.2)}
+.fg input:focus,.fg select:focus{border-color:var(--gold)}
+.fg select option{background:var(--dark);color:var(--white)}
+.form-sub{margin-top:18px}
+.form-sub .btn{width:100%;padding:16px}
+
+/* Inline stepper */
+.est-stepper{display:flex;align-items:center;justify-content:center;margin-bottom:24px;gap:0}
+.est-stepper .es-step{display:flex;flex-direction:column;align-items:center;flex:1}
+.est-stepper .es-dot{width:28px;height:28px;border-radius:50%;border:2px solid rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:600;color:rgba(255,255,255,.3);transition:all .3s}
+.est-stepper .es-step.active .es-dot{border-color:var(--gold);background:var(--gold);color:var(--white)}
+.est-stepper .es-step.done .es-dot{border-color:var(--gold);background:var(--gold);color:var(--white)}
+.est-stepper .es-step.done .es-dot::after{content:'\2713';font-size:12px}
+.est-stepper .es-lbl{font-size:10px;letter-spacing:.06em;color:rgba(255,255,255,.25);margin-top:6px;text-align:center}
+.est-stepper .es-step.active .es-lbl{color:var(--gold)}
+.est-stepper .es-step.done .es-lbl{color:rgba(255,255,255,.5)}
+.est-stepper .es-line{flex:0 0 auto;width:40px;height:2px;background:rgba(255,255,255,.08);margin:0 -2px;margin-bottom:16px}
+.est-stepper .es-line.done{background:var(--gold)}
+
+.est-panel{display:none}
+.est-panel.active{display:block;animation:fadeEst .3s ease}
+@keyframes fadeEst{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.est-nav{display:flex;gap:10px;margin-top:18px}
+.est-nav .btn{flex:1;text-align:center;padding:14px}
+.est-back{background:transparent;color:rgba(255,255,255,.5);border:1px solid rgba(255,255,255,.12);cursor:pointer;font-family:var(--sans);font-size:13px;font-weight:600;border-radius:5px;transition:all .3s;padding:14px}
+.est-back:hover{border-color:rgba(255,255,255,.3);color:var(--white)}
+
+/* ======== FAQ ======== */
+.faq-list{max-width:720px}
+.fq{border-top:1px solid rgba(0,0,0,.06);padding:22px 0}
+.fq-q{
+  font-size:15px;font-weight:500;color:var(--text);cursor:pointer;
+  display:flex;justify-content:space-between;align-items:center;gap:16px;
+}
+.fq-q::after{content:'+';font-family:var(--serif);font-size:24px;color:var(--gold);font-weight:300;flex-shrink:0;transition:.3s}
+.fq.open .fq-q::after{content:'\2212'}
+.fq-a{font-size:14px;color:var(--text-mid);line-height:1.75;font-weight:300;max-height:0;overflow:hidden;transition:max-height .35s,padding .35s;padding-top:0}
+.fq.open .fq-a{max-height:200px;padding-top:12px}
+
+/* ======== FINAL CTA ======== */
+.fcta{position:relative;overflow:hidden;padding:160px 0;text-align:center}
+.fcta-bg{position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1920&q=80') center/cover;opacity:.12}
+.fcta .wrap{position:relative;z-index:2}
+.fcta h2{font-size:clamp(32px,5vw,54px);color:var(--white);margin-bottom:16px}
+.fcta p{font-size:15px;color:rgba(255,255,255,.5);font-weight:300;max-width:460px;margin:0 auto 40px;line-height:1.75}
+
+/* ======== FOOTER ======== */
+footer{background:#0A1018;padding:72px 0 36px}
+.ft-grid{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:40px;margin-bottom:52px}
+.ft-brand .lh{font-family:var(--serif);font-size:18px;font-weight:400;letter-spacing:.16em;color:var(--white)}
+.ft-brand .lh span{color:var(--gold);font-style:italic}
+.ft-brand .ls{font-size:8px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.25);margin:3px 0 14px;display:block}
+.ft-brand p{font-size:13px;color:rgba(255,255,255,.3);line-height:1.65;font-weight:300;max-width:240px}
+.ft-col h4{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;font-weight:600}
+.ft-col a{display:block;font-size:13px;color:rgba(255,255,255,.35);text-decoration:none;padding:3px 0;font-weight:300;transition:color .3s}
+.ft-col a:hover{color:var(--white)}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.05);padding-top:24px;display:flex;justify-content:space-between;align-items:center}
+.ft-bottom p{font-size:11px;color:rgba(255,255,255,.25);font-weight:300}
+.ft-bottom a{color:var(--gold);text-decoration:none;font-size:11px}
+
+/* ======== WHATSAPP ======== */
+.wa{
+  position:fixed;bottom:24px;right:24px;z-index:99;
+  width:52px;height:52px;background:var(--dark);border-radius:50%;
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 4px 14px rgba(0,0,0,.25);border:1px solid rgba(197,165,90,.3);transition:transform .3s;text-decoration:none;
+}
+.wa:hover{transform:scale(1.08)}
+.wa svg{width:24px;height:24px;fill:white}
+
+/* ======== SCROLL REVEAL ANIMATION ======== */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+.reveal:nth-child(2){transition-delay:0.1s}
+.reveal:nth-child(3){transition-delay:0.2s}
+.reveal:nth-child(4){transition-delay:0.3s}
+
+/* ======== TESTIMONIALS ======== */
+.testimonial{background:var(--sand-light);padding:32px;border-radius:8px;display:flex;flex-direction:column;gap:16px}
+.tst-stars{color:var(--gold);font-size:18px;letter-spacing:2px}
+.tst-text{font-size:15px;line-height:1.7;color:var(--text-mid);font-style:italic}
+.tst-author strong{display:block;font-size:14px;color:var(--text)}
+.tst-author span{font-size:13px;color:var(--text-light)}
+
+/* ======== MOBILE MENU ======== */
+.mob-menu{
+  position:fixed;inset:0;z-index:99;
+  background:rgba(15,25,35,.98);backdrop-filter:blur(20px);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;visibility:hidden;transition:all .4s ease;
+}
+.mob-menu.active{opacity:1;visibility:visible}
+.mob-menu-inner{display:flex;flex-direction:column;align-items:center;gap:20px;padding:40px}
+.mob-link{
+  font-family:var(--serif);font-size:24px;font-weight:300;color:var(--white);
+  text-decoration:none;transition:color .3s;letter-spacing:.02em;
+}
+.mob-link:hover{color:var(--gold)}
+.mob-divider{width:40px;height:1px;background:rgba(255,255,255,.1);margin:8px 0}
+.mob-btn.active span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.mob-btn.active span:nth-child(2){opacity:0}
+.mob-btn.active span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+.mob-btn span{transition:all .3s}
+
+/* ======== HOVER & INTERACTION STATES ======== */
+.nav-link{position:relative}
+.nav-link::after{content:'';position:absolute;bottom:-3px;left:0;width:0;height:1px;background:var(--gold);transition:width .3s}
+.nav-link:hover::after{width:100%}
+.nav-link.active{color:var(--gold) !important;opacity:1}
+.nav-link.active::after{width:100%;background:var(--gold)}
+.btn{transition:all .3s ease}
+.btn:hover{transform:translateY(-1px)}
+.ctbl tr:hover td{background:rgba(197,165,90,.03)}
+.fq{transition:background .3s}
+.fq:hover{background:rgba(0,0,0,.01)}
+.stat{transition:transform .3s}
+.stat:hover{transform:translateY(-2px)}
+.ben{transition:all .3s}
+.ben:hover{transform:translateY(-2px)}
+
+/* ======== RESPONSIVE ======== */
+
+/* ---- Tablet landscape ---- */
+@media(max-width:1100px){
+  :root{--space-section:110px;--space-block:52px;--max-w:960px}
+  .grid-2{gap:56px}
+  .hero-frame{padding:110px 60px 70px}
+  .hero-bottom{left:60px;right:60px}
+}
+
+/* ---- Tablet portrait ---- */
+@media(max-width:1024px){
+  :root{--space-section:90px;--space-block:44px}
+  .hero-bottom{display:none}
+  .ft-grid{grid-template-columns:1fr 1fr}
+  .grid-4{grid-template-columns:1fr 1fr}
+  .nav-link{font-size:12px}
+  .nav-btn{font-size:9px;padding:7px 16px}
+}
+
+/* ---- Small tablet / large phone ---- */
+@media(max-width:860px){
+  .nav-left,.nav-right{display:none}
+  .mob-btn{display:block}
+  .header-inner{grid-template-columns:auto 1fr auto;padding:18px 28px}
+  .hero-frame{padding:100px 40px 60px}
+  .grid-2{grid-template-columns:1fr;gap:40px}
+  .grid-3{grid-template-columns:1fr 1fr;gap:32px}
+  .pillars{grid-template-columns:1fr 1fr}
+  /* Comparison table: scroll horizontal on small screens */
+  .ctbl-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -24px;padding:0 24px}
+  .ctbl{min-width:560px}
+}
+
+/* ---- Mobile ---- */
+@media(max-width:640px){
+  :root{--space-section:64px;--space-block:32px;--max-w:100%}
+  body{font-size:16px}
+  .wrap{padding:0 20px}
+  .header-inner{padding:16px 20px}
+  .logo-c .lh{font-size:19px;letter-spacing:.16em}
+  .logo-c .ls{font-size:7px}
+  .hero-frame{padding:90px 24px 48px;margin:10px;width:calc(100% - 20px);min-height:calc(100vh - 20px)}
+  .hero h1{font-size:clamp(30px,8vw,48px)}
+  .hero-sub{font-size:14px;margin-bottom:32px}
+  .hero-ctas{flex-direction:column;align-items:stretch}
+  .hero-ctas .btn{text-align:center}
+  .t-label{font-size:10px;margin-bottom:14px}
+  .t-body{font-size:16px}
+  .sh h2{font-size:clamp(26px,6vw,36px) !important}
+  .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
+  .grid-3{gap:24px}.grid-4{gap:12px}
+  .step-n{font-size:42px}
+  .stat-n{font-size:clamp(30px,8vw,42px)}
+  .pr-num{font-size:clamp(64px,18vw,100px)}
+  .pillars{grid-template-columns:1fr 1fr;gap:16px}
+  .fr{grid-template-columns:1fr}
+  .est-form{padding:24px 20px}
+  .fcta{padding:100px 0}
+  .ft-grid{grid-template-columns:1fr;gap:28px}
+  .ft-bottom{flex-direction:column;gap:8px;text-align:center}
+  .fq-q{font-size:14px;min-height:44px}
+  .fq-a{font-size:13px}
+  .btn{padding:14px 32px;font-size:10px;min-height:44px}
+  .svc li{font-size:15px}
+  .fg input,.fg select{min-height:44px;font-size:16px}
+}
+
+/* ---- Small phone ---- */
+@media(max-width:380px){
+  .wrap{padding:0 16px}
+  .hero-frame{padding:80px 18px 40px;margin:8px;width:calc(100% - 16px);min-height:calc(100vh - 16px)}
+  .pillars{grid-template-columns:1fr}
+  .pr-num{font-size:clamp(56px,16vw,80px)}
+}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Havn Stays by Medini Homes",
+  "description": "Conciergerie haut de gamme spécialisée dans la gestion locative courte durée de villas et riads à Marrakech, Taghazout Bay et Agadir.",
+  "url": "https://havn-stays.com",
+  "telephone": "+971586247584",
+  "email": "hillal@medini-homes.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Marrakech",
+    "addressCountry": "MA"
+  },
+  "areaServed": [
+    {
+      "@type": "City",
+      "name": "Marrakech"
+    },
+    {
+      "@type": "City",
+      "name": "Taghazout Bay"
+    },
+    {
+      "@type": "City",
+      "name": "Agadir"
+    }
+  ],
+  "priceRange": "20% du revenu locatif",
+  "sameAs": [
+    "https://www.instagram.com/havn.stays",
+    "https://www.facebook.com/havn.stays",
+    "https://www.linkedin.com/company/havn-stays"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "47"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Que comprennent les 20% de frais de gestion ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Tout le service opérationnel : création d'annonces, optimisation tarifaire, diffusion multi-plateformes, communication voyageurs, check-in/out, coordination ménage, gestion maintenance, reporting mensuel. Aucun frais caché."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Combien puis-je espérer gagner par rapport à une location annuelle ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La plupart des propriétaires de villas constatent 30 à 40% de revenus supplémentaires en courte durée, selon l'emplacement et la saison. Nous vous fournissons une estimation gratuite avant tout engagement."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Puis-je utiliser ma villa pour mon usage personnel ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Bien sûr. Votre villa, vos dates. Il vous suffit de nous indiquer les périodes souhaitées et nous bloquons le calendrier."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Combien de temps faut-il pour démarrer ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "De la signature à la première réservation, comptez 5 à 10 jours. Cela inclut la visite de la villa, la photographie professionnelle, la création des annonces et la mise en place du pricing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Quel type de biens gérez-vous ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nous gérons exclusivement des villas et des riads. Pas d'appartements. Cette spécialisation nous permet d'offrir un niveau d'expertise et de soin que les agences généralistes ne peuvent pas égaler."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dans quelles zones opérez-vous ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Nous opérons à Marrakech, Agadir et Taghazout Bay. À Marrakech, nous gérons des villas dans les principaux quartiers : Palmeraie, Route de l'Ourika, Route d'Amizmiz, Amelkis, Route de Fès, Targa, Agdal et plus encore. Contactez-nous pour en savoir plus sur nos services dans les autres régions."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Qui paie le ménage ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Le ménage est un coût direct d'exploitation. Selon votre configuration, il peut être facturé au voyageur (frais de ménage sur la plateforme) ou déduit des revenus locatifs. Nous vous conseillons l'approche la plus compétitive."
+      }
+    }
+  ]
+}
+</script>
+<link rel="preconnect" href="https://images.unsplash.com">
+<link rel="preload" as="image" href="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=80">
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="hdr">
+  <div class="header-inner">
+    <div class="nav-left">
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#zones" class="nav-link">Zones</a>
+      <a href="blog.html" class="nav-link">Blog</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+    </div>
+    <a href="/" class="logo-c">
+      <div class="lh">HAVN <span>STAYS</span></div>
+      <div class="ls">By Medini Homes</div>
+    </a>
+    <div class="nav-right">
+      <a href="contact.html" class="nav-btn">Contact</a>
+      <a href="estimation.html" class="nav-btn accent">Estimer mes revenus</a>
+      <a href="en/index.html" class="nav-link" style="margin-left:8px;font-size:11px;letter-spacing:.12em;text-transform:uppercase">EN</a>
+    </div>
+    <button class="mob-btn" aria-label="Menu" style="justify-self:end"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div id="mobMenu" class="mob-menu">
+  <div class="mob-menu-inner">
+    <a href="#services" class="mob-link" onclick="closeMob()">Services</a>
+    <a href="#zones" class="mob-link" onclick="closeMob()">Zones</a>
+    <a href="blog.html" class="mob-link">Blog</a>
+    <a href="#faq" class="mob-link" onclick="closeMob()">FAQ</a>
+    <div class="mob-divider"></div>
+    <a href="contact.html" class="mob-link">Contact</a>
+    <a href="estimation.html" class="btn btn-gold" style="margin-top:16px;width:100%;text-align:center">Estimer mes revenus</a>
+    <a href="en/index.html" class="mob-link" style="margin-top:24px;font-size:12px;opacity:.5">English version →</a>
+  </div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <video class="hero-video" autoplay muted loop playsinline poster="hero-poster.jpg">
+    <source src="hero-desktop.mp4" type="video/mp4" media="(min-width:769px)">
+    <source src="hero-mobile.mp4" type="video/mp4">
+  </video>
+  <div class="hero-ov"></div>
+  <div class="hero-frame">
+    <span class="t-label">Conciergerie Villas &bull; Marrakech &bull; Agadir &bull; Taghazout Bay</span>
+    <h1 class="t-heading">L'expérience hôtelière,<br>dans <em>votre villa.</em></h1>
+    <p class="hero-sub">Fondée par un ancien directeur d'hôtel, Havn Stays applique les standards de l'hôtellerie premium à la gestion de votre villa. Résultat : des voyageurs enchantés, des revenus maximisés.</p>
+    <div class="hero-ctas">
+      <a href="#estimation" class="btn btn-gold">Estimer mes revenus</a>
+      <a href="#services" class="btn btn-outline-w">Nos services</a>
+    </div>
+    <div class="hero-bottom">
+      <div class="hero-loc">
+        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Marrakech, Maroc
+      </div>
+      <div class="hero-stats">
+        <div style="text-align:center"><div class="hs-n">83%</div><div class="hs-l">Occupation</div></div>
+        <div style="text-align:center"><div class="hs-n">24/7</div><div class="hs-l">Disponibilité</div></div>
+        <div style="text-align:center"><div class="hs-n">130+</div><div class="hs-l">Biens gérés à Dubai</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUE PROP -->
+<section class="section bg-sand">
+  <div class="wrap">
+    <div class="grid-2">
+      <div class="sh">
+        <span class="t-label">Notre philosophie</span>
+        <h2 class="t-heading" style="font-size:clamp(30px,3.8vw,46px)">Les standards de l'hôtellerie,<br>au service de <em>votre villa.</em></h2>
+      </div>
+      <div class="vp-right">
+        <p class="t-body">Fondée par un directeur d'hôtel fort de plus de 10 ans d'expérience dans des chaînes internationales et des établissements 4 étoiles, Havn Stays ne gère pas votre villa comme une simple location — nous la gérons comme un hôtel boutique. Fort de la gestion de plus de 130 biens immobiliers à Dubai avec Medini Homes, Hillal applique aujourd'hui cette double expertise — hôtellerie et property management à grande échelle — à la gestion de villas premium au Maroc.</p>
+        <p class="t-body">Du check-in personnalisé au housekeeping aux standards hôteliers, du linge premium aux amenities soigneusement sélectionnés — chaque détail est pensé pour offrir à vos voyageurs une expérience 5 étoiles.</p>
+        <p class="t-body"><strong>Nous ne gérons pas d'appartements.</strong> Nous gérons des villas et des riads avec l'exigence d'un hôtel de luxe.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section bg-white" id="services">
+  <div class="wrap">
+    <div class="sh">
+      <span class="t-label">Les 3 piliers</span>
+      <h2 class="t-heading" style="font-size:clamp(30px,3.8vw,46px)">L'hôtellerie au service<br>de <em>votre investissement.</em></h2>
+    </div>
+    <div class="grid-3">
+      <div class="svc">
+        <h3>Accueil & Conciergerie Hôtelière</h3>
+        <ul>
+          <li>Check-in personnalisé</li>
+          <li>Welcome pack premium</li>
+          <li>Conciergerie 24/7 (transferts, restaurants, excursions)</li>
+          <li>Communication voyageurs proactive</li>
+          <li>Check-out fluide</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <h3>Standards Opérationnels Hôteliers</h3>
+        <ul>
+          <li>Housekeeping professionnel avec protocoles hôteliers</li>
+          <li>Linge de qualité hôtelière</li>
+          <li>Amenities premium sélectionnés</li>
+          <li>Maintenance préventive (piscine, jardin, climatisation)</li>
+          <li>Inspections qualité avant chaque arrivée</li>
+        </ul>
+      </div>
+      <div class="svc">
+        <h3>Revenue Management Hôtelier</h3>
+        <ul>
+          <li>Tarification dynamique quotidienne inspirée de l'hôtellerie</li>
+          <li>Diffusion multi-plateformes optimisée</li>
+          <li>Analyse de la concurrence et du marché</li>
+          <li>Reporting mensuel détaillé</li>
+          <li>Positionnement et pricing stratégique</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section bg-dark">
+  <div class="wrap">
+    <div class="sh">
+      <span class="t-label">Comment ça marche</span>
+      <h2 class="t-heading" style="font-size:clamp(30px,3.8vw,46px);color:var(--white)">De l'onboarding à la<br><em>première réservation</em> en 7 jours.</h2>
+    </div>
+    <div class="grid-3">
+      <div class="step">
+        <div class="step-n">01</div>
+        <h3>Évaluation gratuite</h3>
+        <p>Nous visitons votre villa, évaluons son potentiel locatif et vous fournissons une estimation de revenus détaillée basée sur les comparables et la saisonnalité.</p>
+      </div>
+      <div class="step">
+        <div class="step-n">02</div>
+        <h3>Mise en ligne</h3>
+        <p>Photographie professionnelle, annonces optimisées, tarification stratégique. Votre villa est en ligne sur toutes les plateformes en 7 jours.</p>
+      </div>
+      <div class="step">
+        <div class="step-n">03</div>
+        <h3>On gère, vous encaissez</h3>
+        <p>Chaque réservation, chaque voyageur, chaque ménage, chaque maintenance — gérés. Vous recevez vos revenus chaque mois avec un rapport complet.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="section bg-sand">
+  <div class="wrap">
+    <div class="sh"><span class="t-label">En chiffres</span></div>
+    <div class="grid-3">
+      <div class="stat"><div class="stat-n">83%</div><div class="stat-t">Taux d'occupation moyen</div><div class="stat-d">Sur l'ensemble de nos biens gérés</div></div>
+      <div class="stat"><div class="stat-n">+35%</div><div class="stat-t">Revenus vs. location annuelle</div><div class="stat-d">Gain net moyen pour nos propriétaires</div></div>
+      <div class="stat"><div class="stat-n">4.8</div><div class="stat-t">Note moyenne voyageurs</div><div class="stat-d">Sur Airbnb & Booking.com</div></div>
+      <div class="stat"><div class="stat-n">&lt;15min</div><div class="stat-t">Temps de réponse</div><div class="stat-d">À chaque demande voyageur, 24/7</div></div>
+      <div class="stat"><div class="stat-n">&lt;7 jours</div><div class="stat-t">Première réservation</div><div class="stat-d">Après activation de l'annonce</div></div>
+      <div class="stat"><div class="stat-n">130+</div><div class="stat-t">Biens gérés à Dubai</div><div class="stat-d">Par Medini Homes, notre maison mère</div></div>
+    </div>
+  </div>
+</section>
+
+
+<!-- WHY US -->
+<section class="section bg-white" id="pourquoi">
+  <div class="wrap">
+    <div class="sh">
+      <span class="t-label">Pourquoi Havn Stays</span>
+      <h2 class="t-heading" style="font-size:clamp(30px,3.8vw,46px)">Toutes les conciergeries<br>ne se valent <em>pas.</em></h2>
+    </div>
+    <div class="ctbl-wrap">
+    <table class="ctbl">
+      <thead><tr><th></th><th>Conciergerie classique</th><th>Havn Stays (approche hôtelière)</th></tr></thead>
+      <tbody>
+        <tr><td>Approche</td><td>Gestion locative basique</td><td>Standards hôteliers appliqués à la villa</td></tr>
+        <tr><td>Accueil</td><td>Remise de clés standard</td><td>Check-in personnalisé avec welcome pack</td></tr>
+        <tr><td>Ménage</td><td>Nettoyage standard</td><td>Housekeeping hôtelier avec inspection qualité</td></tr>
+        <tr><td>Linge & amenities</td><td>Basique ou à la charge du propriétaire</td><td>Linge premium & amenities sélectionnés</td></tr>
+        <tr><td>Tarification</td><td>Prix fixes ou ajustements basiques</td><td>Revenue management hôtelier dynamique</td></tr>
+        <tr><td>Fondateur</td><td>Pas de background hôtelier</td><td>Ancien directeur d'hôtel, +10 ans d'expérience · 130+ biens gérés à Dubai</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section bg-navy" id="pricing">
+  <div class="wrap pricing-c">
+    <span class="t-label">Notre formule</span>
+    <h2 class="t-heading" style="font-size:clamp(28px,3.5vw,42px);color:var(--white)">Une gestion clé en main,<br><em>sans compromis.</em></h2>
+    <div class="pr-num">20%</div>
+    <div class="pr-sub">Du revenu par séjour &bull; Tout inclus</div>
+    <div class="pillars">
+      <div class="pill"><h4>Expertise</h4><p>Marché local</p></div>
+      <div class="pill"><h4>Sérénité</h4><p>Gestion de A à Z</p></div>
+      <div class="pill"><h4>Performance</h4><p>Revenus optimisés</p></div>
+      <div class="pill"><h4>Transparence</h4><p>Reporting mensuel</p></div>
+    </div>
+    <a href="#estimation" class="btn btn-gold">Estimer mes revenus</a>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section bg-sand">
+  <div class="wrap">
+    <div class="sh">
+      <span class="t-label">Vos avantages</span>
+      <h2 class="t-heading" style="font-size:clamp(30px,3.8vw,46px)">Ce que vous gagnez<br>avec <em>Havn Stays.</em></h2>
+    </div>
+    <div class="grid-3">
+      <div class="ben"><h3>Expérience hôtelière</h3><p>Chaque voyageur bénéficie des standards d'un hôtel boutique : accueil personnalisé, linge premium, conciergerie dédiée. Résultat : des avis 5 étoiles.</p></div>
+      <div class="ben"><h3>Zéro charge mentale</h3><p>De la première réservation au dernier check-out, tout est géré. Vous ne gérez rien.</p></div>
+      <div class="ben"><h3>Revenue management hôtelier</h3><p>La même stratégie de tarification dynamique que les meilleurs hôtels, appliquée à votre villa. Des revenus 30 à 50% supérieurs à la location classique.</p></div>
+      <div class="ben"><h3>Transparence totale</h3><p>Rapports mensuels détaillés : revenus, taux d'occupation, dépenses. Aucune surprise.</p></div>
+      <div class="ben"><h3>Spécialistes villas</h3><p>Piscine, jardin, espaces extérieurs, équipements haut de gamme — nous comprenons les spécificités des villas avec l'exigence hôtelière.</p></div>
+      <div class="ben"><h3>Flexibilité</h3><p>Bloquez vos dates d'usage personnel à tout moment. Pas d'engagement longue durée. Votre villa, vos règles.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- AREAS -->
+<section class="section bg-white" id="zones">
+  <div class="wrap">
+    <div class="sh">
+      <span class="t-label">Zones couvertes</span>
+      <h2 class="t-heading" style="font-size:clamp(30px,3.8vw,46px)">Les quartiers les plus<br><em>recherchés</em> de Marrakech, Taghazout & Agadir.</h2>
+    </div>
+    <div class="grid-4">
+      <a href="#" class="ac"><h3>La Palmeraie</h3><p>Villas de luxe avec jardins privatifs et piscines</p></a>
+      <a href="#" class="ac"><h3>Route de l'Ourika</h3><p>Villas contemporaines avec vue sur l'Atlas</p></a>
+      <a href="#" class="ac"><h3>Route d'Amizmiz</h3><p>Domaines d'exception au calme absolu</p></a>
+      <a href="#" class="ac"><h3>Route de Fès</h3><p>Villas modernes dans un environnement verdoyant</p></a>
+      <a href="#" class="ac"><h3>Amelkis & Golf</h3><p>Villas golf avec prestations premium</p></a>
+      <a href="#" class="ac"><h3>Route du Barrage</h3><p>Propriétés d'exception avec grands terrains</p></a>
+      <a href="#" class="ac"><h3>Targa & Agdal</h3><p>Villas résidentielles proches du centre</p></a>
+      <a href="#" class="ac"><h3>Taghazout Bay</h3><p>Station balnéaire premium en plein essor. Surf, résidences de luxe et forte demande locative internationale toute l'année.</p></a>
+      <a href="#" class="ac"><h3>Agadir</h3><p>Capitale du tourisme balnéaire marocain. Climat exceptionnel, hôtels et résidences en front de mer avec un marché locatif dynamique.</p></a>
+    </div>
+  </div>
+</section>
+
+<!-- ESTIMATION -->
+<section class="section bg-dark" id="estimation">
+  <div class="wrap">
+    <div class="grid-2" style="gap:64px">
+      <div>
+        <div class="sh">
+          <span class="t-label">Estimation de revenus</span>
+          <h2 class="t-heading" style="font-size:clamp(30px,3.8vw,46px);color:var(--white)">Combien pourrait<br>rapporter <em>votre villa ?</em></h2>
+        </div>
+        <p class="t-body" style="color:rgba(255,255,255,.5)">Recevez une estimation gratuite et sans engagement. Notre équipe analyse l'emplacement, la taille, les équipements et les comparables du marché pour vous fournir une projection réaliste.</p>
+        <p style="font-size:13px;color:rgba(255,255,255,.3);margin-top:16px;font-weight:300">Réponse sous 24h avec une analyse personnalisée.</p>
+      </div>
+      <form class="est-form" id="homeEstForm" novalidate>
+        <!-- Stepper -->
+        <div class="est-stepper">
+          <div class="es-step active" data-s="1"><div class="es-dot">1</div><div class="es-lbl">Votre bien</div></div>
+          <div class="es-line" id="hLine1"></div>
+          <div class="es-step" data-s="2"><div class="es-dot">2</div><div class="es-lbl">Coordonnées</div></div>
+        </div>
+
+        <!-- Panel 1: Property -->
+        <div class="est-panel active" data-s="1">
+          <div class="fr">
+            <div class="fg"><label>Zone / Quartier</label>
+              <select id="hef_zone" required><option value="">Sélectionnez...</option><option value="palmeraie">La Palmeraie</option><option value="ourika">Route de l'Ourika</option><option value="amizmiz">Route d'Amizmiz</option><option value="fes">Route de Fès</option><option value="amelkis">Amelkis & Golf</option><option value="barrage">Route du Barrage</option><option value="targa">Targa & Agdal</option><option value="taghazout">Taghazout Bay</option><option value="agadir">Agadir</option><option value="autre">Autre</option></select>
+            </div>
+            <div class="fg"><label>Chambres</label>
+              <select id="hef_beds" required><option value="">Sélectionnez...</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6+">6+</option></select>
+            </div>
+          </div>
+          <div class="fr">
+            <div class="fg"><label>Piscine privée</label><select id="hef_pool"><option value="yes">Oui</option><option value="no">Non</option></select></div>
+            <div class="fg"><label>Usage actuel</label><select id="hef_usage" required><option value="">Sélectionnez...</option><option value="vacant">Vide / Vacant</option><option value="annual">Location annuelle</option><option value="personal">Usage personnel</option><option value="other">Autre</option></select></div>
+          </div>
+          <div class="est-nav">
+            <button type="button" class="btn btn-gold" style="flex:1" onclick="goHomeStep(2)">Suivant</button>
+          </div>
+        </div>
+
+        <!-- Panel 2: Contact -->
+        <div class="est-panel" data-s="2">
+          <div class="fr">
+            <div class="fg"><label>Nom complet</label><input type="text" id="hef_name" placeholder="Votre nom" required></div>
+            <div class="fg"><label>Email</label><input type="email" id="hef_email" placeholder="vous@email.com" required></div>
+          </div>
+          <div class="fr">
+            <div class="fg full"><label>Téléphone / WhatsApp</label><input type="tel" id="hef_phone" placeholder="+212 6 00 00 00 00" required></div>
+          </div>
+          <div class="est-nav">
+            <button type="button" class="est-back" onclick="goHomeStep(1)">Retour</button>
+            <button type="submit" class="btn btn-gold" style="flex:2">Recevoir mon estimation</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="section bg-white" id="fondateur">
+  <div class="wrap">
+    <div class="grid-2" style="gap:64px;align-items:center">
+      <div>
+        <span class="t-label">Notre fondateur</span>
+        <h2 class="t-heading" style="font-size:clamp(30px,3.8vw,46px)">L'hôtellerie dans<br>l'<em>ADN.</em></h2>
+        <p class="t-body">Hillal Medini a passé plus de 10 ans dans l'hôtellerie — des chaînes internationales aux établissements 4 étoiles, en passant par des hôtels boutique indépendants. Une carrière entière dédiée à un seul objectif : offrir aux voyageurs une expérience irréprochable.</p>
+        <p class="t-body">Avec Havn Stays, il applique cette expertise — enrichie par la gestion de plus de 130 propriétés à Dubai via Medini Homes — à la gestion de villas premium au Maroc. Chaque processus, chaque standard, chaque détail est importé de l'hôtellerie et adapté aux spécificités de la villa privée.</p>
+        <p class="t-body"><strong>Le résultat :</strong> des voyageurs qui vivent une expérience hôtelière dans un cadre privatif, des avis exceptionnels, et des revenus optimisés pour les propriétaires.</p>
+      </div>
+      <div style="background:var(--sand);border-radius:12px;padding:48px;text-align:center">
+        <div style="font-size:48px;font-weight:300;color:var(--gold);font-family:var(--ff-heading)">10+</div>
+        <div style="font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin-top:8px">Années en hôtellerie</div>
+        <div style="margin-top:32px;font-size:48px;font-weight:300;color:var(--gold);font-family:var(--ff-heading)">3</div>
+        <div style="font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin-top:8px">Types d'établissements</div>
+        <div style="margin-top:16px;font-size:13px;color:#999">Chaînes internationales · 4 étoiles · Boutique</div>
+        <div style="margin-top:32px;font-size:48px;font-weight:300;color:var(--gold);font-family:var(--ff-heading)">130+</div>
+        <div style="font-size:14px;letter-spacing:.1em;text-transform:uppercase;margin-top:8px">Biens gérés à Dubai</div>
+        <div style="margin-top:16px;font-size:13px;color:#999">Medini Homes · Villas · Appartements</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section bg-sand" id="faq">
+  <div class="wrap">
+    <div class="sh">
+      <span class="t-label">Questions fréquentes</span>
+      <h2 class="t-heading" style="font-size:clamp(30px,3.8vw,46px)">Tout ce que vous devez <em>savoir.</em></h2>
+    </div>
+    <div class="faq-list">
+      <div class="fq open"><div class="fq-q" onclick="this.parentElement.classList.toggle('open')">Que comprennent les 20% de frais de gestion ?</div><div class="fq-a">Tout le service opérationnel : création d'annonces, optimisation tarifaire, diffusion multi-plateformes, communication voyageurs, check-in/out, coordination ménage, gestion maintenance, reporting mensuel. Aucun frais caché.</div></div>
+      <div class="fq"><div class="fq-q" onclick="this.parentElement.classList.toggle('open')">Combien puis-je espérer gagner par rapport à une location annuelle ?</div><div class="fq-a">La plupart des propriétaires de villas constatent 30 à 50% de revenus supplémentaires en courte durée, selon l'emplacement et la saison. Nos zones à Taghazout et Agadir connaissent une forte demande touristique. Nous vous fournissons une estimation gratuite avant tout engagement.</div></div>
+      <div class="fq"><div class="fq-q" onclick="this.parentElement.classList.toggle('open')">Puis-je utiliser ma villa pour mon usage personnel ?</div><div class="fq-a">Bien sûr. Votre villa, vos dates. Il vous suffit de nous indiquer les périodes souhaitées et nous bloquons le calendrier.</div></div>
+      <div class="fq"><div class="fq-q" onclick="this.parentElement.classList.toggle('open')">Combien de temps faut-il pour démarrer ?</div><div class="fq-a">De la signature à la première réservation, comptez 5 à 10 jours. Cela inclut la visite de la villa, la photographie professionnelle, la création des annonces et la mise en place du pricing.</div></div>
+      <div class="fq"><div class="fq-q" onclick="this.parentElement.classList.toggle('open')">Quel type de biens gérez-vous ?</div><div class="fq-a">Nous gérons exclusivement des villas et des riads. Pas d'appartements. Cette spécialisation nous permet d'offrir un niveau d'expertise et de soin que les agences généralistes ne peuvent pas égaler.</div></div>
+      <div class="fq"><div class="fq-q" onclick="this.parentElement.classList.toggle('open')">Quelles zones couvrez-vous ?</div><div class="fq-a">Nous gérons des villas dans les principaux quartiers de Marrakech : Palmeraie, Route de l'Ourika, Route d'Amizmiz, Amelkis, Route de Fès, Targa, Agdal et plus encore. Nous couvrons également Taghazout Bay et Agadir. Contactez-nous pour toute villa dans ces zones.</div></div>
+      <div class="fq"><div class="fq-q" onclick="this.parentElement.classList.toggle('open')">Qui paie le ménage ?</div><div class="fq-a">Le ménage est un coût direct d'exploitation. Selon votre configuration, il peut être facturé au voyageur (frais de ménage sur la plateforme) ou déduit des revenus locatifs. Nous vous conseillons l'approche la plus compétitive.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="fcta bg-dark" id="contact">
+  <div class="fcta-bg"></div>
+  <div class="wrap">
+    <h2 class="t-heading">Prêt à maximiser<br>vos <em>revenus ?</em></h2>
+    <p>Que vous envisagiez la courte durée pour la première fois ou que vous cherchiez un meilleur partenaire de gestion, nous sommes là.</p>
+    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+      <a href="#estimation" class="btn btn-gold">Estimer mes revenus</a>
+      <a href="https://wa.me/971586247584" class="btn btn-outline-w">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <div class="lh">HAVN <span>STAYS</span></div>
+        <span class="ls">By Medini Homes</span>
+        <p>Conciergerie haut de gamme spécialisée dans la gestion locative courte durée de villas à Marrakech, Taghazout Bay et Agadir.</p>
+      </div>
+      <div class="ft-col">
+        <h4>Agence</h4>
+        <a href="#">À propos</a><a href="#services">Services</a><a href="#pricing">Tarifs</a><a href="blog.html">Blog</a><a href="contact.html">Contact</a>
+      </div>
+      <div class="ft-col">
+        <h4>Zones</h4>
+        <a href="#">Palmeraie</a><a href="#">Route de l'Ourika</a><a href="#">Amelkis & Golf</a><a href="#">Route d'Amizmiz</a><a href="#">Taghazout Bay</a><a href="#">Agadir</a><a href="#">Toutes les zones</a>
+      </div>
+      <div class="ft-col">
+        <h4>Ressources</h4>
+        <a href="estimation.html">Estimation revenus</a><a href="#">Audit villa gratuit</a><a href="#">Investisseurs</a><a href="#faq">FAQ</a>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <p>&copy; 2026 Havn Stays by Medini Homes. Tous droits réservés.</p>
+      <a href="mailto:hillal@medini-homes.com">hillal@medini-homes.com</a>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP -->
+<a href="https://wa.me/971586247584" class="wa" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// Mobile menu
+const mobBtn=document.querySelector('.mob-btn');
+const mobMenu=document.getElementById('mobMenu');
+function toggleMob(){mobBtn.classList.toggle('active');mobMenu.classList.toggle('active');document.body.style.overflow=mobMenu.classList.contains('active')?'hidden':'';}
+function closeMob(){mobBtn.classList.remove('active');mobMenu.classList.remove('active');document.body.style.overflow='';}
+mobBtn.addEventListener('click',toggleMob);
+
+const h=document.getElementById('hdr');
+window.addEventListener('scroll',()=>h.classList.toggle('scrolled',window.scrollY>60));
+document.querySelectorAll('a[href^="#"]').forEach(a=>{
+  a.addEventListener('click',function(e){e.preventDefault();
+    const t=document.querySelector(this.getAttribute('href'));
+    if(t)t.scrollIntoView({behavior:'smooth',block:'start'});
+  });
+});
+// Scroll reveal
+const observer=new IntersectionObserver((entries)=>{
+  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target);}});
+},{threshold:0.15});
+document.querySelectorAll('.svc, .step, .stat, .ben, .ac, .fq, .testimonial').forEach(el=>{
+  el.classList.add('reveal');
+  observer.observe(el);
+});
+
+// Home estimation multi-step
+let homeStep=1;
+const homeStepFields={1:['hef_zone','hef_beds','hef_usage'],2:['hef_name','hef_email','hef_phone']};
+function goHomeStep(n){
+  if(n>homeStep){
+    for(const fid of homeStepFields[homeStep]){
+      const el=document.getElementById(fid);
+      if(el&&el.required&&!el.value){el.style.borderColor='#e74c3c';el.focus();setTimeout(()=>el.style.borderColor='',2000);return;}
+    }
+  }
+  homeStep=n;
+  document.querySelectorAll('#homeEstForm .est-panel').forEach(p=>p.classList.remove('active'));
+  document.querySelector('#homeEstForm .est-panel[data-s="'+n+'"]').classList.add('active');
+  document.querySelectorAll('#homeEstForm .es-step').forEach(s=>{
+    const sn=parseInt(s.dataset.s);s.classList.remove('active','done');
+    if(sn===n)s.classList.add('active');else if(sn<n)s.classList.add('done');
+  });
+  document.getElementById('hLine1').classList.toggle('done',n>=2);
+  document.querySelectorAll('#homeEstForm .es-step.done .es-dot').forEach(d=>d.textContent='');
+  document.querySelectorAll('#homeEstForm .es-step:not(.done) .es-dot').forEach(d=>{d.textContent=d.closest('.es-step').dataset.s;});
+}
+
+const SUPA_URL='https://mtfhbxeaiqhveuernkfn.supabase.co';
+const SUPA_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im10ZmhieGVhaXFodmV1ZXJua2ZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM0ODc0ODEsImV4cCI6MjA4OTA2MzQ4MX0.3DGSNVwbsrvJ_ARLu9nowuCgov1RyWn9LCFOb5T6s6g';
+function showNotif(msg,ok){const n=document.createElement('div');n.style.cssText='position:fixed;top:100px;left:50%;transform:translateX(-50%);padding:16px 32px;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,.2);z-index:2000;font-weight:600;color:#fff;background:'+(ok?'#4CAF50':'#e74c3c');n.textContent=msg;document.body.appendChild(n);setTimeout(()=>n.remove(),5000);}
+
+document.getElementById('homeEstForm').addEventListener('submit',async function(e){
+  e.preventDefault();
+  const btn=this.querySelector('button[type="submit"]');
+  const orig=btn.textContent;
+  btn.textContent='Envoi en cours...';btn.disabled=true;
+
+  const data={
+    full_name:document.getElementById('hef_name').value,
+    email:document.getElementById('hef_email').value,
+    phone:document.getElementById('hef_phone').value,
+    property_location:document.getElementById('hef_zone').value,
+    bedrooms:parseInt(document.getElementById('hef_beds').value)||null,
+    property_type:null,
+    message:'[Landing page] Piscine: '+document.getElementById('hef_pool').value+' | Usage: '+document.getElementById('hef_usage').value,
+    status:'pending'
+  };
+
+  const supaP=fetch(SUPA_URL+'/rest/v1/hs_estimations',{
+    method:'POST',headers:{'Content-Type':'application/json','apikey':SUPA_KEY,'Authorization':'Bearer '+SUPA_KEY,'Prefer':'return=minimal'},
+    body:JSON.stringify(data)
+  }).catch(()=>null);
+
+  const fd=new FormData();
+  fd.append('Zone',document.getElementById('hef_zone').value);
+  fd.append('Chambres',document.getElementById('hef_beds').value);
+  fd.append('Piscine',document.getElementById('hef_pool').value);
+  fd.append('Usage',document.getElementById('hef_usage').value);
+  fd.append('name',data.full_name);fd.append('email',data.email);fd.append('phone',data.phone);
+  fd.append('_subject','Nouvelle estimation (landing page) — Havn Stays');fd.append('_template','table');
+
+  const emailP=fetch('https://formsubmit.co/ajax/hillal@medini-homes.com',{method:'POST',body:fd}).catch(()=>null);
+
+  try{
+    const[sR,eR]=await Promise.all([supaP,emailP]);
+    const eOk=eR&&(await eR.json().catch(()=>({}))).success;
+    const cOk=sR&&sR.ok;
+    if(eOk||cOk){this.reset();goHomeStep(1);showNotif('Merci ! Nous vous contacterons sous 24h avec votre estimation.',true);}
+    else{showNotif('Une erreur est survenue. Veuillez réessayer ou nous contacter par WhatsApp.',false);}
+  }catch(err){showNotif('Une erreur est survenue. Veuillez réessayer ou nous contacter par WhatsApp.',false);}
+  btn.textContent=orig;btn.disabled=false;
+});
+</script>
+</body>
+</html>

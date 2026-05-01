@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Private pages
+Disallow: /crm.html
+Disallow: /crm
+Disallow: /medini-homes-dubai-homepage.html
+Disallow: /medini-homes-dubai-homepage
+Disallow: /brand/
+
+Sitemap: https://havn-stays.com/sitemap.xml

@@ -1,0 +1,42 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/en/blog/reglementation-location-courte-duree-maroc",
+      "destination": "/en/blog/short-term-rental-regulations-morocco",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/gestion-locative-villa-marrakech",
+      "destination": "/en/blog/villa-property-management-marrakech",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/investir-villa-marrakech-quartiers",
+      "destination": "/en/blog/investing-in-marrakech-villas-best-areas",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/photos-professionnelles-annonce-villa-marrakech",
+      "destination": "/en/blog/professional-villa-photography-marrakech",
+      "permanent": true
+    },
+    {
+      "source": "/en/blog/tendances-tourisme-marrakech-2026",
+      "destination": "/en/blog/marrakech-tourism-trends-2026",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ]
+}

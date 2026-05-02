@@ -1,1 +1,11 @@
-{"data":"VXNlci1hZ2VudDogKgpBbGxvdzogLwoKIyBQcml2YXRlIHBhZ2VzCkRpc2FsbG93OiAvY3JtLmh0bWwKRGlzYWxsb3c6IC9jcm0KRGlzYWxsb3c6IC9tZWRpbmktaG9tZXMtZHViYWktaG9tZXBhZ2UuaHRtbApEaXNhbGxvdzogL21lZGluaS1ob21lcy1kdWJhaS1ob21lcGFnZQpEaXNhbGxvdzogL2JyYW5kLwoKU2l0ZW1hcDogaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9zaXRlbWFwLnhtbAo="}
+User-agent: *
+Allow: /
+
+# Private pages
+Disallow: /crm.html
+Disallow: /crm
+Disallow: /medini-homes-dubai-homepage.html
+Disallow: /medini-homes-dubai-homepage
+Disallow: /brand/
+
+Sitemap: https://havn-stays.com/sitemap.xml

@@ -1,1 +1,11 @@
-{"data":"LyoqIEB0eXBlIHtpbXBvcnQoJ25leHQnKS5OZXh0Q29uZmlnfSAqLwpjb25zdCBuZXh0Q29uZmlnID0gewogIGltYWdlczogewogICAgcmVtb3RlUGF0dGVybnM6IFsKICAgICAgeyBwcm90b2NvbDogJ2h0dHBzJywgaG9zdG5hbWU6ICcqKi51bnNwbGFzaC5jb20nIH0sCiAgICAgIHsgcHJvdG9jb2w6ICdodHRwcycsIGhvc3RuYW1lOiAnKioubXVzY2FjaGUuY29tJyB9LAogICAgICB7IHByb3RvY29sOiAnaHR0cHMnLCBob3N0bmFtZTogJyoqLmFpcmJuYi5jb20nIH0sCiAgICBdLAogIH0sCn0KbW9kdWxlLmV4cG9ydHMgPSBuZXh0Q29uZmlnCg=="}
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  images: {
+    remotePatterns: [
+      { protocol: 'https', hostname: '**.unsplash.com' },
+      { protocol: 'https', hostname: '**.muscache.com' },
+      { protocol: 'https', hostname: '**.airbnb.com' },
+    ],
+  },
+}
+module.exports = nextConfig

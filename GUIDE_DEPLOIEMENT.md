@@ -1,1 +1,196 @@
-{"data":"IyBIYXZlbiBTdGF5cyDigJQgR3VpZGUgZGUgRMOpcGxvaWVtZW50CgojIyAxLiBOb20gZGUgRG9tYWluZQoKIyMjIFJlY29tbWFuZGF0aW9uIDogaGF2ZW5zdGF5cy5jb20gKyBoYXZlbnN0YXlzLm1hCgoqKlBvdXJxdW9pIGxlcyBkZXV4ID8qKgotIGAuY29tYCDihpIgY3LDqWRpYmlsaXTDqSBpbnRlcm5hdGlvbmFsZSwgU0VPIGdsb2JhbCwgaW5kaXNwZW5zYWJsZQotIGAubWFgIOKGkiBsw6lnaXRpbWl0w6kgbG9jYWxlIGF1IE1hcm9jLCBjb25maWFuY2UgZGVzIHByb3ByacOpdGFpcmVzIG1hcm9jYWlucwoKKipPw7kgYWNoZXRlciA6KioKCnwgRG9tYWluZSB8IFJlZ2lzdHJhciB8IENvw7t0IDHDqHJlIGFubsOpZSB8IFJlbm91dmVsbGVtZW50IHwKfC0tLS0tLS0tLXwtLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tLXwtLS0tLS0tLS0tLS0tLS0tfAp8IGhhdmVuc3RheXMuY29tIHwgW05hbWVjaGVhcF0oaHR0cHM6Ly9uYW1lY2hlYXAuY29tKSB8IH4kNi40OSB8IH4kMTMvYW4gfAp8IGhhdmVuc3RheXMubWEgfCBbSG9zdGlub10oaHR0cHM6Ly9ob3N0aW5vLm1hKSB8IH4xMDAgTUFEIHwgfjUwIE1BRC9hbiB8CgoqKsOJdGFwZXMgOioqCjEuIEFsbGVyIHN1ciBuYW1lY2hlYXAuY29tIOKGkiBjaGVyY2hlciAiaGF2ZW5zdGF5cy5jb20iCjIuIFNpIGRpc3BvbmlibGUsIGFjaGV0ZXIgKGFjdGl2ZXIgV2hvaXNHdWFyZCBncmF0dWl0IHBvdXIgbGEgcHJpdmFjeSkKMy4gQWxsZXIgc3VyIGhvc3Rpbm8ubWEg4oaSIGNoZXJjaGVyICJoYXZlbnN0YXlzLm1hIgo0LiBBY2hldGVyIGF2ZWMgdW5lIGFkcmVzc2UgYWRtaW5pc3RyYXRpdmUgYXUgTWFyb2MKCi0tLQoKIyMgMi4gSMOpYmVyZ2VtZW50IFZlcmNlbCAoR3JhdHVpdCkKCiMjIyBQb3VycXVvaSBWZXJjZWwgPwotIEdyYXR1aXQgcG91ciBsZXMgc2l0ZXMgc3RhdGlxdWVzCi0gQ0ROIG1vbmRpYWwgKHBlcmZvcm1hbmNlcyBleGNlbGxlbnRlcykKLSBTU0wgYXV0b21hdGlxdWUgKEhUVFBTKQotIETDqXBsb2llbWVudCBlbiAyIG1pbnV0ZXMKLSBQcmV2aWV3IHBvdXIgY2hhcXVlIG1vZGlmaWNhdGlvbgoKIyMjIMOJdGFwZSBwYXIgw6l0YXBlIDoKCiMjIyMgQS4gQ3LDqWVyIHVuIGNvbXB0ZSBWZXJjZWwKMS4gQWxsZXIgc3VyIFt2ZXJjZWwuY29tXShodHRwczovL3ZlcmNlbC5jb20pCjIuIENsaXF1ZXIgIlNpZ24gVXAiIOKGkiBhdmVjIEdpdEh1YiwgR2l0TGFiLCBvdSBlbWFpbAozLiBWYWxpZGVyIGwnZW1haWwKCiMjIyMgQi4gUHLDqXBhcmVyIGxlcyBmaWNoaWVycwpMZSBkb3NzaWVyIGR1IHNpdGUgZXN0IGTDqWrDoCBwcsOqdCBhdmVjIGNldHRlIHN0cnVjdHVyZSA6CmBgYApDb25jaWVyZ2VyaWUgTWFycmFrZWNoLwrilJzilIDilIAgaW5kZXguaHRtbCAgICAgICAgICDihpAgUGFnZSBkJ2FjY3VlaWwgRlIK4pSc4pSA4pSAIHNlcnZpY2VzLmh0bWwK4pSc4pSA4pSAIGEtcHJvcG9zLmh0bWwK4pSc4pSA4pSAIHpvbmVzLmh0bWwK4pSc4pSA4pSAIHRhcmlmcy5odG1sCuKUnOKUgOKUgCBjb250YWN0Lmh0bWwK4pSc4pSA4pSAIGVzdGltYXRpb24uaHRtbArilJzilIDilIAgYmxvZy5odG1sCuKUnOKUgOKUgCA0MDQuaHRtbCAgICAgICAgICAgIOKGkCBQYWdlIGQnZXJyZXVyCuKUnOKUgOKUgCByb2JvdHMudHh0ICAgICAgICAgIOKGkCBJbnN0cnVjdGlvbnMgbW90ZXVycyBkZSByZWNoZXJjaGUK4pSc4pSA4pSAIHNpdGVtYXAueG1sICAgICAgICAg4oaQIFBsYW4gZHUgc2l0ZQrilJzilIDilIAgdmVyY2VsLmpzb24gICAgICAgICDihpAgQ29uZmlnIFZlcmNlbArilJzilIDilIAgZW4vICAgICAgICAgICAgICAgICDihpAgVmVyc2lvbiBhbmdsYWlzZQrilIIgICDilJzilIDilIAgaW5kZXguaHRtbArilIIgICDilJzilIDilIAgc2VydmljZXMuaHRtbArilIIgICDilJzilIDilIAgYWJvdXQuaHRtbArilIIgICDilJzilIDilIAgYXJlYXMuaHRtbArilIIgICDilJzilIDilIAgcHJpY2luZy5odG1sCuKUgiAgIOKUnOKUgOKUgCBjb250YWN0Lmh0bWwK4pSCICAg4pSc4pSA4pSAIGVzdGltYXRlLmh0bWwK4pSCICAg4pSU4pSA4pSAIGJsb2cuaHRtbArilJTilIDilIAgYnJhbmQvICAgICAgICAgICAgICDihpAgS2l0IGlkZW50aXTDqSB2aXN1ZWxsZQogICAg4pSc4pSA4pSAIGxvZ28tZGFyay5zdmcKICAgIOKUnOKUgOKUgCBsb2dvLWxpZ2h0LnN2ZwogICAg4pSc4pSA4pSAIGxvZ28tZ29sZC5zdmcKICAgIOKUnOKUgOKUgCBpY29uLnN2ZwogICAg4pSc4pSA4pSAIGZhdmljb25zLwogICAg4pSc4pSA4pSAIHNvY2lhbC8KICAgIOKUlOKUgOKUgCAuLi4KYGBgCgojIyMjIEMuIE9wdGlvbiAxIDogRMOpcGxvaWVtZW50IHZpYSBHaXRIdWIgKFJlY29tbWFuZMOpKQoKMS4gKipDcsOpZXIgdW4gcmVwbyBHaXRIdWIgOioqCiAgIC0gQWxsZXIgc3VyIGdpdGh1Yi5jb20g4oaSIE5ldyBSZXBvc2l0b3J5CiAgIC0gTm9tIDogYGhhdmVuLXN0YXlzLXdlYnNpdGVgCiAgIC0gUHVibGljIG91IFByaXZhdGUKICAgLSBDbGlxdWVyICJDcmVhdGUiCgoyLiAqKlVwbG9hZGVyIGxlcyBmaWNoaWVycyA6KioKICAgLSBDbGlxdWVyICJ1cGxvYWRpbmcgYW4gZXhpc3RpbmcgZmlsZSIKICAgLSBHbGlzc2VyLWTDqXBvc2VyIFRPVVQgbGUgY29udGVudSBkdSBkb3NzaWVyIGBDb25jaWVyZ2VyaWUgTWFycmFrZWNoL2AKICAgLSDimqDvuI8gTkUgUEFTIGluY2x1cmUgbGVzIGZpY2hpZXJzIGAuZG9jeGAsIGAucHB0eGAsIGAucGRmYCAoZ2FyZGVyIHVuaXF1ZW1lbnQgbGVzIGZpY2hpZXJzIHdlYikKICAgLSBDb21taXQgOiAiSW5pdGlhbCB3ZWJzaXRlIGRlcGxveW1lbnQiCgozLiAqKkNvbm5lY3RlciDDoCBWZXJjZWwgOioqCiAgIC0gQWxsZXIgc3VyIHZlcmNlbC5jb20g4oaSICJBZGQgTmV3IFByb2plY3QiCiAgIC0gSW1wb3J0ZXIgbGUgcmVwbyBgaGF2ZW4tc3RheXMtd2Vic2l0ZWAKICAgLSBGcmFtZXdvcmsgUHJlc2V0IDogIk90aGVyIgogICAtIFJvb3QgRGlyZWN0b3J5IDogYC5gIChyYWNpbmUpCiAgIC0gQ2xpcXVlciAiRGVwbG95IgogICAtIOKchSBMZSBzaXRlIGVzdCBlbiBsaWduZSBlbiB+MzAgc2Vjb25kZXMgIQoKIyMjIyBELiBPcHRpb24gMiA6IETDqXBsb2llbWVudCBkaXJlY3QgKERyYWcgJiBEcm9wKQoKMS4gQWxsZXIgc3VyIHZlcmNlbC5jb20g4oaSIERhc2hib2FyZAoyLiBDbGlxdWVyICJBZGQgTmV3IFByb2plY3QiCjMuIFRvdXQgZW4gYmFzIDogIk9yIGRlcGxveSBhIHRlbXBsYXRlIG9yIEltcG9ydCBmcm9tIGEgdGhpcmQtcGFydHkgR2l0IHJlcG9zaXRvcnkiCjQuIEFsdGVybmF0aXZlIDogdXRpbGlzZXIgVmVyY2VsIENMSSAodm9pciBzZWN0aW9uIHN1aXZhbnRlKQoKIyMjIyBFLiBPcHRpb24gMyA6IFZpYSBWZXJjZWwgQ0xJCgpgYGBiYXNoCiMgSW5zdGFsbGVyIFZlcmNlbCBDTEkKbnBtIGkgLWcgdmVyY2VsCgojIERhbnMgbGUgZG9zc2llciBkdSBzaXRlCmNkICJDb25jaWVyZ2VyaWUgTWFycmFrZWNoIgoKIyBTZSBjb25uZWN0ZXIKdmVyY2VsIGxvZ2luCgojIETDqXBsb3llcgp2ZXJjZWwKCiMgRMOpcGxveWVyIGVuIHByb2R1Y3Rpb24KdmVyY2VsIC0tcHJvZApgYGAKCi0tLQoKIyMgMy4gQ29ubmVjdGVyIGxlIERvbWFpbmUKCiMjIyBTdXIgVmVyY2VsIDoKMS4gRGFzaGJvYXJkIOKGkiB0b24gcHJvamV0IOKGkiAiU2V0dGluZ3MiIOKGkiAiRG9tYWlucyIKMi4gQWpvdXRlciBgaGF2ZW5zdGF5cy5jb21gCjMuIFZlcmNlbCB0ZSBkb25uZSBkZXMgRE5TIHJlY29yZHMgw6AgY29uZmlndXJlcgoKIyMjIFN1ciBOYW1lY2hlYXAgOgoxLiBEYXNoYm9hcmQg4oaSIERvbWFpbiBMaXN0IOKGkiAiTWFuYWdlIiBzdXIgaGF2ZW5zdGF5cy5jb20KMi4gTmFtZXNlcnZlcnMg4oaSICJDdXN0b20gRE5TIgozLiBBam91dGVyIGxlcyBuYW1lc2VydmVycyBWZXJjZWwgOgogICBgYGAKICAgbnMxLnZlcmNlbC1kbnMuY29tCiAgIG5zMi52ZXJjZWwtZG5zLmNvbQogICBgYGAKNC4gU2F1dmVnYXJkZXIg4oaSIGF0dGVuZHJlIDI0LTQ4aCBwb3VyIGxhIHByb3BhZ2F0aW9uIEROUwoKIyMjIFBvdXIgaGF2ZW5zdGF5cy5tYSA6CjEuIE3Dqm1lIHByb2Nlc3N1cyBzdXIgSG9zdGlubwoyLiBBam91dGVyIGNvbW1lIGFsaWFzIHN1ciBWZXJjZWwgKHJlZGlyZWN0aW9uIHZlcnMgLmNvbSkKCi0tLQoKIyMgNC4gUG9zdC1Ew6lwbG9pZW1lbnQKCiMjIyBWw6lyaWZpY2F0aW9ucyA6Ci0gWyBdIFNpdGUgYWNjZXNzaWJsZSBzdXIgaGF2ZW5zdGF5cy5jb20KLSBbIF0gSFRUUFMgYWN0aWYgKGNhZGVuYXMgdmVydCkKLSBbIF0gUGFnZXMgRlIgZXQgRU4gZm9uY3Rpb25uZWxsZXMKLSBbIF0gRm9ybXVsYWlyZXMgdGVzdMOpcwotIFsgXSBXaGF0c0FwcCBmb25jdGlvbm5lCi0gWyBdIDQwNCBwYWdlIGZvbmN0aW9ubmUKLSBbIF0gT0cgdGFncyB0ZXN0w6lzIChwYXJ0YWdlIHN1ciBGYWNlYm9vay9MaW5rZWRJbikKLSBbIF0gTW9iaWxlIHJlc3BvbnNpdmUgT0sKLSBbIF0gR29vZ2xlIE1hcHMgc3VyIGxhIHBhZ2UgY29udGFjdAoKIyMjIFNvdW1ldHRyZSDDoCBHb29nbGUgOgoxLiBBbGxlciBzdXIgW0dvb2dsZSBTZWFyY2ggQ29uc29sZV0oaHR0cHM6Ly9zZWFyY2guZ29vZ2xlLmNvbS9zZWFyY2gtY29uc29sZSkKMi4gQWpvdXRlciBsYSBwcm9wcmnDqXTDqSBgaGF2ZW5zdGF5cy5jb21gCjMuIFbDqXJpZmllciB2aWEgRE5TIChWZXJjZWwgb3UgTmFtZWNoZWFwKQo0LiBTb3VtZXR0cmUgbGUgc2l0ZW1hcCA6IGBodHRwczovL2hhdmVuc3RheXMuY29tL3NpdGVtYXAueG1sYAoKIyMjIEdvb2dsZSBBbmFseXRpY3MgKG9wdGlvbm5lbCkgOgoxLiBDcsOpZXIgdW4gY29tcHRlIFtHb29nbGUgQW5hbHl0aWNzXShodHRwczovL2FuYWx5dGljcy5nb29nbGUuY29tKQoyLiBDcsOpZXIgdW5lIHByb3ByacOpdMOpIEdBNAozLiBDb3BpZXIgbGUgY29kZSBkZSBzdWl2aQo0LiBBam91dGVyIGF2YW50IGA8L2hlYWQ+YCBzdXIgY2hhcXVlIHBhZ2UKCiMjIyBXaGF0c0FwcCBCdXNpbmVzcyA6Ci0gUmVtcGxhY2VyIGAyMTI2MDAwMDAwMDBgIHBhciB0b24gdnJhaSBudW3DqXJvIGRhbnMgdG91cyBsZXMgZmljaGllcnMKLSBGb3JtYXQgOiBgMjEyYCArIG51bcOpcm8gc2FucyBsZSAwIChleDogYDIxMjYxMjM0NTY3OGApCgotLS0KCiMjIDUuIENvw7t0cyBBbm51ZWxzIEVzdGltw6lzCgp8IMOJbMOpbWVudCB8IENvw7t0IHwKfC0tLS0tLS0tLXwtLS0tLS18CnwgSMOpYmVyZ2VtZW50IFZlcmNlbCB8ICoqR3JhdHVpdCoqIHwKfCBEb21haW5lIC5jb20gfCB+JDEzL2FuICh+MTMwIE1BRCkgfAp8IERvbWFpbmUgLm1hIHwgfjUwIE1BRC9hbiB8CnwgU1NMIHwgKipHcmF0dWl0KiogKGluY2x1cyBWZXJjZWwpIHwKfCBDRE4gfCAqKkdyYXR1aXQqKiAoaW5jbHVzIFZlcmNlbCkgfAp8ICoqVE9UQUwqKiB8ICoqfjE4MCBNQUQvYW4qKiAofiQxOCkgfAoKLS0tCgojIyBTdXBwb3J0CgpQb3VyIHRvdXRlIHF1ZXN0aW9uIHRlY2huaXF1ZSA6IG1lZGluaS5oaWxsYWxAZ21haWwuY29tCg=="}
+# Haven Stays — Guide de Déploiement
+
+## 1. Nom de Domaine
+
+### Recommandation : havenstays.com + havenstays.ma
+
+**Pourquoi les deux ?**
+- `.com` → crédibilité internationale, SEO global, indispensable
+- `.ma` → légitimité locale au Maroc, confiance des propriétaires marocains
+
+**Où acheter :**
+
+| Domaine | Registrar | Coût 1ère année | Renouvellement |
+|---------|-----------|-----------------|----------------|
+| havenstays.com | [Namecheap](https://namecheap.com) | ~$6.49 | ~$13/an |
+| havenstays.ma | [Hostino](https://hostino.ma) | ~100 MAD | ~50 MAD/an |
+
+**Étapes :**
+1. Aller sur namecheap.com → chercher "havenstays.com"
+2. Si disponible, acheter (activer WhoisGuard gratuit pour la privacy)
+3. Aller sur hostino.ma → chercher "havenstays.ma"
+4. Acheter avec une adresse administrative au Maroc
+
+---
+
+## 2. Hébergement Vercel (Gratuit)
+
+### Pourquoi Vercel ?
+- Gratuit pour les sites statiques
+- CDN mondial (performances excellentes)
+- SSL automatique (HTTPS)
+- Déploiement en 2 minutes
+- Preview pour chaque modification
+
+### Étape par étape :
+
+#### A. Créer un compte Vercel
+1. Aller sur [vercel.com](https://vercel.com)
+2. Cliquer "Sign Up" → avec GitHub, GitLab, ou email
+3. Valider l'email
+
+#### B. Préparer les fichiers
+Le dossier du site est déjà prêt avec cette structure :
+```
+Conciergerie Marrakech/
+├── index.html          ← Page d'accueil FR
+├── services.html
+├── a-propos.html
+├── zones.html
+├── tarifs.html
+├── contact.html
+├── estimation.html
+├── blog.html
+├── 404.html            ← Page d'erreur
+├── robots.txt          ← Instructions moteurs de recherche
+├── sitemap.xml         ← Plan du site
+├── vercel.json         ← Config Vercel
+├── en/                 ← Version anglaise
+│   ├── index.html
+│   ├── services.html
+│   ├── about.html
+│   ├── areas.html
+│   ├── pricing.html
+│   ├── contact.html
+│   ├── estimate.html
+│   └── blog.html
+└── brand/              ← Kit identité visuelle
+    ├── logo-dark.svg
+    ├── logo-light.svg
+    ├── logo-gold.svg
+    ├── icon.svg
+    ├── favicons/
+    ├── social/
+    └── ...
+```
+
+#### C. Option 1 : Déploiement via GitHub (Recommandé)
+
+1. **Créer un repo GitHub :**
+   - Aller sur github.com → New Repository
+   - Nom : `haven-stays-website`
+   - Public ou Private
+   - Cliquer "Create"
+
+2. **Uploader les fichiers :**
+   - Cliquer "uploading an existing file"
+   - Glisser-déposer TOUT le contenu du dossier `Conciergerie Marrakech/`
+   - ⚠️ NE PAS inclure les fichiers `.docx`, `.pptx`, `.pdf` (garder uniquement les fichiers web)
+   - Commit : "Initial website deployment"
+
+3. **Connecter à Vercel :**
+   - Aller sur vercel.com → "Add New Project"
+   - Importer le repo `haven-stays-website`
+   - Framework Preset : "Other"
+   - Root Directory : `.` (racine)
+   - Cliquer "Deploy"
+   - ✅ Le site est en ligne en ~30 secondes !
+
+#### D. Option 2 : Déploiement direct (Drag & Drop)
+
+1. Aller sur vercel.com → Dashboard
+2. Cliquer "Add New Project"
+3. Tout en bas : "Or deploy a template or Import from a third-party Git repository"
+4. Alternative : utiliser Vercel CLI (voir section suivante)
+
+#### E. Option 3 : Via Vercel CLI
+
+```bash
+# Installer Vercel CLI
+npm i -g vercel
+
+# Dans le dossier du site
+cd "Conciergerie Marrakech"
+
+# Se connecter
+vercel login
+
+# Déployer
+vercel
+
+# Déployer en production
+vercel --prod
+```
+
+---
+
+## 3. Connecter le Domaine
+
+### Sur Vercel :
+1. Dashboard → ton projet → "Settings" → "Domains"
+2. Ajouter `havenstays.com`
+3. Vercel te donne des DNS records à configurer
+
+### Sur Namecheap :
+1. Dashboard → Domain List → "Manage" sur havenstays.com
+2. Nameservers → "Custom DNS"
+3. Ajouter les nameservers Vercel :
+   ```
+   ns1.vercel-dns.com
+   ns2.vercel-dns.com
+   ```
+4. Sauvegarder → attendre 24-48h pour la propagation DNS
+
+### Pour havenstays.ma :
+1. Même processus sur Hostino
+2. Ajouter comme alias sur Vercel (redirection vers .com)
+
+---
+
+## 4. Post-Déploiement
+
+### Vérifications :
+- [ ] Site accessible sur havenstays.com
+- [ ] HTTPS actif (cadenas vert)
+- [ ] Pages FR et EN fonctionnelles
+- [ ] Formulaires testés
+- [ ] WhatsApp fonctionne
+- [ ] 404 page fonctionne
+- [ ] OG tags testés (partage sur Facebook/LinkedIn)
+- [ ] Mobile responsive OK
+- [ ] Google Maps sur la page contact
+
+### Soumettre à Google :
+1. Aller sur [Google Search Console](https://search.google.com/search-console)
+2. Ajouter la propriété `havenstays.com`
+3. Vérifier via DNS (Vercel ou Namecheap)
+4. Soumettre le sitemap : `https://havenstays.com/sitemap.xml`
+
+### Google Analytics (optionnel) :
+1. Créer un compte [Google Analytics](https://analytics.google.com)
+2. Créer une propriété GA4
+3. Copier le code de suivi
+4. Ajouter avant `</head>` sur chaque page
+
+### WhatsApp Business :
+- Remplacer `212600000000` par ton vrai numéro dans tous les fichiers
+- Format : `212` + numéro sans le 0 (ex: `212612345678`)
+
+---
+
+## 5. Coûts Annuels Estimés
+
+| Élément | Coût |
+|---------|------|
+| Hébergement Vercel | **Gratuit** |
+| Domaine .com | ~$13/an (~130 MAD) |
+| Domaine .ma | ~50 MAD/an |
+| SSL | **Gratuit** (inclus Vercel) |
+| CDN | **Gratuit** (inclus Vercel) |
+| **TOTAL** | **~180 MAD/an** (~$18) |
+
+---
+
+## Support
+
+Pour toute question technique : medini.hillal@gmail.com

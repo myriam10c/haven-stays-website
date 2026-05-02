@@ -1,1 +1,144 @@
-{"data":"SEFWTiBTVEFZUyAtIFFVSUNLIFJFRkVSRU5DRSBTQUxFUyBDQVJECj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCkVMRVZBVE9SIFBJVENIOgoiSGF2biBTdGF5cyBpcyB0aGUgb25seSBNYXJyYWtlY2ggcHJvcGVydHkgbWFuYWdlbWVudCBjb21wYW55IGV4Y2x1c2l2ZWx5IApzcGVjaWFsaXplZCBpbiBwcmVtaXVtIHZpbGxhcyBhbmQgcmlhZHMsIG9mZmVyaW5nIHRyYW5zcGFyZW50IGFsbC1pbmNsdXNpdmUgcHJpY2luZwooMjAlKSwgZHluYW1pYyByZXZlbnVlIG9wdGltaXphdGlvbiAoMTUtMjUlIHVwbGlmdCksIHByb2FjdGl2ZSBtYWludGVuYW5jZSwgYW5kIAoyNC83IG11bHRpbGluZ3VhbCBzdXBwb3J0LiIKCktFWSBQT1NJVElPTklORzoKLSBTcGVjaWFsaXphdGlvbjogMTAwJSB2aWxsYXMgJiByaWFkcyAobm90IGFwYXJ0bWVudHMpCi0gUHJpY2luZzogMjAlIGFsbC1pbmNsdXNpdmUgKG5vIGhpZGRlbiBmZWVzKQotIE9wdGltaXphdGlvbjogRHluYW1pYyBwcmljaW5nIGluY2x1ZGVkCi0gTWFpbnRlbmFuY2U6IFByb2FjdGl2ZSAocG9vbHMsIGdhcmRlbnMsIEFDKQotIFN1cHBvcnQ6IDI0LzcgbXVsdGlsaW5ndWFsCi0gVHJhbnNwYXJlbmN5OiBPd25lciBkYXNoYm9hcmQgKyBtb250aGx5IHJlcG9ydGluZwoKQ09NUEVUSVRJVkUgQURWQU5UQUdFUyB2cy4gTUFJTiBSSVZBTFM6CuKUjOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUkArilIIgdnMuIEF0bGFzIFZpbGxhcyAgICAgICAg4oaSIE91ciBwcmljaW5nIHRyYW5zcGFyZW50ICh0aGVpcnMgdmFyaWFibGUvb3BhcXVlKQrilIIgdnMuIFlvdXJIb3N0SGVscGVyICAgICAg4oaSIEFjY291bnQgaW4gWU9VUiBuYW1lICh0aGVpcnMgdW5kZXIgY29tcGFueSkK4pSCIHZzLiBXZWxrZXlzICAgICAgICAgICAg4oaSIE1hcnJha2VjaCBzcGVjaWFsaXN0ICh0aGVpcnMgRnJhbmNlLWNlbnRyaWMpCuKUgiB2cy4gREFSU1RBWSAgICAgICAgICAgIOKGkiBUZWNoLWVuYWJsZWQgKHRoZWlycyBob3NwaXRhbGl0eS1vbmx5KQrilIIgdnMuIE1vcm9rZXlzICAgICAgICAgICDihpIgRnVsbCB0cmFuc3BhcmVuY3kgKHRoZWlycyB1bmRpc2Nsb3NlZCkK4pSCIHZzLiBMbyBJbW1vICAgICAgICAgICAg4oaSIEx1eHVyeSBmb2N1cyAodGhlaXJzIGludmVzdG1lbnQgZm9jdXMpCuKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUmAoKWk9ORSBDT1ZFUkFHRToK4pyTIFBhbG1lcmFpZSAgICAgIOKckyBIaXZlcm5hZ2UgICAgICDinJMgTWVkaW5hCuKckyBBbWVsa2lzICAgICAgICDinJMgQWdkYWwgICAgICAgICAg4pyTIFJvdXRlIE91cmlrYQoKQ09NTUlTU0lPTiBCUkVBS0RPV046CjIwJSA9IEV2ZXJ5dGhpbmcgaW5jbHVkZWQKICAgLSBEeW5hbWljIHByaWNpbmcgb3B0aW1pemF0aW9uICgxNS0yNSUgcmV2ZW51ZSB1cGxpZnQpCiAgIC0gUHJvZmVzc2lvbmFsIGxpc3RpbmcgJiBwaG90b2dyYXBoeQogICAtIDI0LzcgZ3Vlc3Qgc3VwcG9ydCAoNSBsYW5ndWFnZXMpCiAgIC0gQ2xlYW5pbmcgJiBsaW5lbiBzZXJ2aWNlCiAgIC0gUHJvYWN0aXZlIG1haW50ZW5hbmNlIChwb29scywgQUMsIGdhcmRlbnMpCiAgIC0gTW9udGhseSByZXBvcnRpbmcgKyBkYXNoYm9hcmQKICAgLSBBZG1pbmlzdHJhdGl2ZSBtYW5hZ2VtZW50CgpOTyBISURERU4gRkVFUyAodW5saWtlIDUwJSBvZiBjb21wZXRpdG9ycyB3aG8gYWRkIDItNSUgaW4gZXh0cmFzKQoKVE9QIDMgU0FMRVMgTEVWRVJTOgoxLiBUUkFOU1BBUkVOQ1k6IFNob3cgY29tbWlzc2lvbiBicmVha2Rvd24gaW4gd3JpdGluZzsgY29tcGFyZSB0byBjb21wZXRpdG9ycycgCiAgIG9wYXF1ZSBwcmljaW5nLiBPd25lcnMgYXBwcmVjaWF0ZSBob25lc3R5LgogICAKMi4gU1BFQ0lBTElaQVRJT046IE5vIGFwYXJ0bWVudHMgbWl4ZWQgaW4uIEV2ZXJ5IHRlYW0gbWVtYmVyIHVuZGVyc3RhbmRzIAogICB2aWxsYS1zcGVjaWZpYyBuZWVkcyAocG9vbCBtYWludGVuYW5jZSwgbHV4dXJ5IGd1ZXN0IGV4cGVjdGF0aW9ucykuCiAgIAozLiBQUk9BQ1RJVkUgTUFJTlRFTkFOQ0U6IE1vc3QgY29tcGV0aXRvcnMgYXJlIHJlYWN0aXZlLiBXZSBwcmV2ZW50IOKCrDVLKyByZXBhaXJzIAogICB0aHJvdWdoIHJlZ3VsYXIgbWFpbnRlbmFuY2UuIE93bmVycycgcHJvcGVydGllcyBzdGF5IGluIGJldHRlciBjb25kaXRpb24uCgpDT01NT04gT0JKRUNUSU9OUyAmIFJFU1BPTlNFUzoKClE6ICIyMCUgc2VlbXMgaGlnaCIKQTogIkl0J3MgYWxsLWluY2x1c2l2ZeKAlGNvbXBldGl0b3JzIGNoYXJnZSAxNS0xOCUgYnV0IGFkZCAyLTUlIGluIGhpZGRlbiBmZWVzLiAKICAgUGx1cywgb3VyIGR5bmFtaWMgcHJpY2luZyBvcHRpbWl6YXRpb24gdHlwaWNhbGx5IGdlbmVyYXRlcyAxNS0yNSUgbW9yZSByZXZlbnVlLAogICBzbyBvdXIgZmVlIG9mdGVuIHBheXMgZm9yIGl0c2VsZiB0aHJvdWdoIGJldHRlciBwcmljaW5nIGFsb25lLiIKClE6ICJDYW4gSSBtYW5hZ2UgbXlzZWxmPyIKQTogIllvdSBjYW4sIGJ1dCBjb25zaWRlcjogcG9vciBwcmljaW5nIHR5cGljYWxseSBjb3N0cyDigqw2Sy05Sy9tb250aCB2cy4gdXMuIE91ciAKICAgb3B0aW1pemF0aW9uIHBsdXMgMjQvNyBzdXBwb3J0IGFuZCBwcm9hY3RpdmUgbWFpbnRlbmFuY2UgbWFrZSB0aGUgMjAlIHBheSBmb3IgCiAgIGl0c2VsZiBxdWlja2x5LiIKClE6ICJXaHkgbm90IHVzZSBbQ29tcGV0aXRvciBYXT8iCkE6IENvbXBhcmUgb24gMyBmYWN0b3JzOgogICDigKIgVHJhbnNwYXJlbmN5OiBIYXZuIFN0YXlzJyBwcmljaW5nIGlzIHB1YmxpYyAmIHN0YW5kYXJkaXplZAogICDigKIgU3BlY2lhbGl6YXRpb246IFdlIGZvY3VzIDEwMCUgb24gdmlsbGFzL3JpYWRzICh0aGVpcnMgbWl4ZWQpCiAgIOKAoiBUZWNobm9sb2d5OiBXZSBoYXZlIGRhc2hib2FyZCArIHJlYWwtdGltZSByZXBvcnRpbmcgKG1hbnkgY29tcGV0aXRvcnMgZG9uJ3QpCgpFU1RJTUFURUQgUkVWRU5VRSBJTVBBQ1Q6CkZvciBhIHR5cGljYWwg4oKsMzUwL25pZ2h0IHByb3BlcnR5OgogICBXaXRob3V0IG9wdGltaXphdGlvbjog4oKsMTI3LDc1MC95ZWFyIGdyb3NzCiAgIFdpdGggSGF2biBTdGF5cyAoMjAlICsgMjAlIHJldmVudWUgdXBsaWZ0KTog4oKsMTUyLDk0NS95ZWFyIGdyb3NzCiAgIEhhdm4gU3RheXMgY29tbWlzc2lvbjog4oKsMzAsNTg5L3llYXIKICAgT3duZXIgbmV0OiDigqwxMjIsMzU2L3llYXIKICAg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgIE5ldCBnYWluIHZzLiBubyBtYW5hZ2VtZW50OiDigqwtNUsgKGR1ZSB0byBvdXIgY29tbWlzc2lvbikKICAgCiAgIEJVVDogU2VsZi1tYW5hZ2VkIHR5cGljYWwgcmV2ZW51ZTog4oKsMTAyLDIwMC95ZWFyIChwb29yIHByaWNpbmcpCiAgIEhhdm4gU3RheXMgdmFsdWU6IOKCrDIwSysveWVhciB1cGxpZnQganVzdGlmaWVzIDIwJSBjb21taXNzaW9uCgpLRVkgU1RBVFMgVE8gUkVGRVJFTkNFOgotIE1hcmtldCBncm93aW5nIDEyLTE1JSBhbm51YWxseQotIDUwJSBvZiBjb21wZXRpdG9ycyBkb24ndCBwdWJsaXNoIHByaWNpbmcKLSBIYXZuIFN0YXlzIG9jY3VwYW5jeSBpbXByb3ZlbWVudHMgYXZlcmFnZSAyMC0zMCUgaW4gZmlyc3Qgc2Vhc29uCi0gUHJlbWl1bSBndWVzdHMgd2lsbGluZyB0byBwYXkg4oKsNDAwLTYwMC9uaWdodCAodnMuIOKCrDEyMC9uaWdodCBiYXJnYWluLWh1bnRlcnMpCi0gUHJvYWN0aXZlIG1haW50ZW5hbmNlIHByZXZlbnRzIOKCrDVLKyBlbWVyZ2VuY3kgcmVwYWlycyBhbm51YWxseQoKRElTQ09WRVJZIFFVRVNUSU9OUyBUTyBBU0sgT1dORVJTOgoxLiAiSG93IGFyZSB5b3UgY3VycmVudGx5IG1hbmFnaW5nIHRoZSBwcm9wZXJ0eT8iIChpZGVudGlmaWVzIHBhaW4gcG9pbnQpCjIuICJXaGF0J3MgeW91ciBjdXJyZW50IG9jY3VwYW5jeSByYXRlPyIgKGVzdGFibGlzaCBiYXNlbGluZSkKMy4gIkRvIHlvdSBrbm93IHlvdXIgYXZlcmFnZSBuaWdodGx5IHJhdGUgdnMuIGNvbXBhcmFibGUgcHJvcGVydGllcz8iIChyZXZlYWwgcmV2ZW51ZSBnYXApCjQuICJIb3cgbXVjaCB0aW1lIGRvIHlvdSBzcGVuZCBvbiBwcm9wZXJ0eSBtYW5hZ2VtZW50IG1vbnRobHk/IiAodGltZSB2YWx1ZSkKNS4gIkhhdmUgeW91IGhhZCBtYWludGVuYW5jZSBpc3N1ZXM/IEhvdyBxdWlja2x5IHdlcmUgdGhleSByZXNvbHZlZD8iIChwcm9hY3RpdmUgdnMuIHJlYWN0aXZlKQoKQ0xPU0UgU1RSQVRFR1k6CjEuIFNob3cgY29tcGFyaXNvbiBtYXRyaXggKEhhdm4gU3RheXMgdnMuIHRoZWlyIGN1cnJlbnQgbWFuYWdlbWVudCkKMi4gUXVhbnRpZnkgcmV2ZW51ZSBvcHBvcnR1bml0eSAo4oKsWC9tb250aCB1cGxpZnQgcG90ZW50aWFsKQozLiBBZGRyZXNzIHRyYW5zcGFyZW5jeTogIllvdSdsbCBzZWUgZXhhY3RseSB3aGF0IHlvdSdyZSBwYXlpbmcsIGV2ZXJ5IG1vbnRoIgo0LiBPZmZlciA5MC1kYXkgcGVyZm9ybWFuY2UgZ3VhcmFudGVlCjUuIFN0YXJ0IHdpdGggYSBzaW5nbGUgcHJvcGVydHkgKGxlc3MgcmlzaykgYmVmb3JlIHBvcnRmb2xpbyBleHBhbnNpb24KClRBTEtJTkcgUE9JTlRTIEZPUiBESUZGRVJFTlQgUEVSU09OQVM6CuKUjOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUkArilIIgRm9yIEZpcnN0LVRpbWUgSW52ZXN0b3JzOiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICDilIIK4pSCICJEb24ndCBsZWFybiBwcm9wZXJ0eSBtYW5hZ2VtZW50IHRoZSBoYXJkIHdheS4gSGF2biBTdGF5cyAgICAgICAg4pSCCuKUgiAgaGFuZGxlcyBhbGwgdGhlIGNvbXBsZXhpdHkgd2hpbGUgeW91IGZvY3VzIG9uIHlvdXIgbWFpbiBqb2IuIiAgIOKUggrilIIgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICDilIIK4pSCIEZvciBFeHBlcmllbmNlZCBQb3J0Zm9saW8gT3duZXJzOiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICDilIIK4pSCICJHcm93IHlvdXIgcG9ydGZvbGlvIGZhc3RlciB3aXRoIGEgbWFuYWdlbWVudCBwYXJ0bmVyIHdobyAgICAgICAg4pSCCuKUgiAgc3BlY2lhbGl6ZXMgaW4gdmlsbGFzLiBXZSBtYXhpbWl6ZSByZXZlbnVlIG9uIGVhY2ggcHJvcGVydHkgICAgIOKUggrilIIgIHNvIHlvdSBjYW4gYWNxdWlyZSBtb3JlIHdpdGhvdXQgb3BlcmF0aW9uYWwgc3RyYWluLiIgICAgICAgICAgICDilIIK4pSCICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg4pSCCuKUgiBGb3IgSW52ZXN0b3IgR3JvdXBzL1N5bmRpY2F0ZXM6ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg4pSCCuKUgiAiUHJvZmVzc2lvbmFsIG1hbmFnZW1lbnQgPSBiZXR0ZXIgaW52ZXN0b3IgcmVsYXRpb25zLiBNb250aGx5ICAgIOKUggrilIIgIGRhc2hib2FyZHMgc2hvdyBhbGwgY28taW52ZXN0b3JzIGV4YWN0bHkgaG93IHRoZWlyIG1vbmV5ICAgICAgICDilIIK4pSCICBpcyBiZWluZyBkZXBsb3llZC4iICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAg4pSCCuKUlOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUmAoKQ0xPU0lORyBRVUVTVElPTlM6CuKAoiAiV2hhdCB0aW1lbGluZSBkbyB5b3UgbmVlZCBmb3IgbWFuYWdlbWVudCB0byBzdGFydD8iCuKAoiAiQXJlIHlvdSBwbGFubmluZyB0byBhZGQgbW9yZSBwcm9wZXJ0aWVzIGluIHRoZSBmdXR1cmU/IgrigKIgIldvdWxkIHlvdSB3YW50IHRvIHNlZSB0aGUgb3duZXIgZGFzaGJvYXJkIGJlZm9yZSBjb21taXR0aW5nPyIKCkJPT0tJTkcgTkVYVCBTVEVQUzoKMS4gU2NoZWR1bGUgcHJvcGVydHkgd2Fsa3Rocm91Z2ggKGFzc2VzcyBjb25kaXRpb24sIGlkZW50aWZ5IG1haW50ZW5hbmNlIG5lZWRzKQoyLiBQcm92aWRlIHdyaXR0ZW4gcHJvcG9zYWwgd2l0aCByZXZlbnVlIHByb2plY3Rpb25zCjMuIDkwLWRheSB0cmlhbCBwZXJpb2Qgd2l0aCBwZXJmb3JtYW5jZSBndWFyYW50ZWVzCjQuIEJlZ2luIGR5bmFtaWMgcHJpY2luZyBvcHRpbWl6YXRpb24gaW1tZWRpYXRlbHkKNS4gTGF1bmNoIHByb2FjdGl2ZSBtYWludGVuYW5jZSBzY2hlZHVsZQoKQ09NUEVUSVRJVkUgSU5URUxMSUdFTkNFIFNPVVJDRVM6Ci0gQXRsYXMgVmlsbGFzIE1hcnJha2VjaCAoYXRsYXN2aWxsYXNtYXJyYWtlY2guY29tKQotIFlvdXJIb3N0SGVscGVyICh5b3VyaG9zdGhlbHBlci5jb20pCi0gV2Vsa2V5cyAod2Vsa2V5cy5jb20pCi0gREFSU1RBWSAoZGFyc3RheS5jb20pCi0gTW9yb2tleXMgKG1vcm9rZXlzLmNvbSkKLSBMbyBJbW1vIChsby1pbW1vLmNvbSkKCkZvciBkZXRhaWxlZCBjb21wZXRpdG9yIHByb2ZpbGVzLCBwcmljaW5nLCBhbmQgd2Vha25lc3NlcywKcmVmZXIgdG86IGNvbXBldGl0aXZlLWludGVsbGlnZW5jZS1tYXJyYWtlY2guaHRtbAoK"}
+HAVN STAYS - QUICK REFERENCE SALES CARD
+========================================
+
+ELEVATOR PITCH:
+"Havn Stays is the only Marrakech property management company exclusively 
+specialized in premium villas and riads, offering transparent all-inclusive pricing
+(20%), dynamic revenue optimization (15-25% uplift), proactive maintenance, and 
+24/7 multilingual support."
+
+KEY POSITIONING:
+- Specialization: 100% villas & riads (not apartments)
+- Pricing: 20% all-inclusive (no hidden fees)
+- Optimization: Dynamic pricing included
+- Maintenance: Proactive (pools, gardens, AC)
+- Support: 24/7 multilingual
+- Transparency: Owner dashboard + monthly reporting
+
+COMPETITIVE ADVANTAGES vs. MAIN RIVALS:
+┌─────────────────────────────────────────────────────────────────┐
+│ vs. Atlas Villas        → Our pricing transparent (theirs variable/opaque)
+│ vs. YourHostHelper      → Account in YOUR name (theirs under company)
+│ vs. Welkeys            → Marrakech specialist (theirs France-centric)
+│ vs. DARSTAY            → Tech-enabled (theirs hospitality-only)
+│ vs. Morokeys           → Full transparency (theirs undisclosed)
+│ vs. Lo Immo            → Luxury focus (theirs investment focus)
+└─────────────────────────────────────────────────────────────────┘
+
+ZONE COVERAGE:
+✓ Palmeraie      ✓ Hivernage      ✓ Medina
+✓ Amelkis        ✓ Agdal          ✓ Route Ourika
+
+COMMISSION BREAKDOWN:
+20% = Everything included
+   - Dynamic pricing optimization (15-25% revenue uplift)
+   - Professional listing & photography
+   - 24/7 guest support (5 languages)
+   - Cleaning & linen service
+   - Proactive maintenance (pools, AC, gardens)
+   - Monthly reporting + dashboard
+   - Administrative management
+
+NO HIDDEN FEES (unlike 50% of competitors who add 2-5% in extras)
+
+TOP 3 SALES LEVERS:
+1. TRANSPARENCY: Show commission breakdown in writing; compare to competitors' 
+   opaque pricing. Owners appreciate honesty.
+   
+2. SPECIALIZATION: No apartments mixed in. Every team member understands 
+   villa-specific needs (pool maintenance, luxury guest expectations).
+   
+3. PROACTIVE MAINTENANCE: Most competitors are reactive. We prevent €5K+ repairs 
+   through regular maintenance. Owners' properties stay in better condition.
+
+COMMON OBJECTIONS & RESPONSES:
+
+Q: "20% seems high"
+A: "It's all-inclusive—competitors charge 15-18% but add 2-5% in hidden fees. 
+   Plus, our dynamic pricing optimization typically generates 15-25% more revenue,
+   so our fee often pays for itself through better pricing alone."
+
+Q: "Can I manage myself?"
+A: "You can, but consider: poor pricing typically costs €6K-9K/month vs. us. Our 
+   optimization plus 24/7 support and proactive maintenance make the 20% pay for 
+   itself quickly."
+
+Q: "Why not use [Competitor X]?"
+A: Compare on 3 factors:
+   • Transparency: Havn Stays' pricing is public & standardized
+   • Specialization: We focus 100% on villas/riads (theirs mixed)
+   • Technology: We have dashboard + real-time reporting (many competitors don't)
+
+ESTIMATED REVENUE IMPACT:
+For a typical €350/night property:
+   Without optimization: €127,750/year gross
+   With Havn Stays (20% + 20% revenue uplift): €152,945/year gross
+   Havn Stays commission: €30,589/year
+   Owner net: €122,356/year
+   ───────────────────────────
+   Net gain vs. no management: €-5K (due to our commission)
+   
+   BUT: Self-managed typical revenue: €102,200/year (poor pricing)
+   Havn Stays value: €20K+/year uplift justifies 20% commission
+
+KEY STATS TO REFERENCE:
+- Market growing 12-15% annually
+- 50% of competitors don't publish pricing
+- Havn Stays occupancy improvements average 20-30% in first season
+- Premium guests willing to pay €400-600/night (vs. €120/night bargain-hunters)
+- Proactive maintenance prevents €5K+ emergency repairs annually
+
+DISCOVERY QUESTIONS TO ASK OWNERS:
+1. "How are you currently managing the property?" (identifies pain point)
+2. "What's your current occupancy rate?" (establish baseline)
+3. "Do you know your average nightly rate vs. comparable properties?" (reveal revenue gap)
+4. "How much time do you spend on property management monthly?" (time value)
+5. "Have you had maintenance issues? How quickly were they resolved?" (proactive vs. reactive)
+
+CLOSE STRATEGY:
+1. Show comparison matrix (Havn Stays vs. their current management)
+2. Quantify revenue opportunity (€X/month uplift potential)
+3. Address transparency: "You'll see exactly what you're paying, every month"
+4. Offer 90-day performance guarantee
+5. Start with a single property (less risk) before portfolio expansion
+
+TALKING POINTS FOR DIFFERENT PERSONAS:
+┌─────────────────────────────────────────────────────────────────┐
+│ For First-Time Investors:                                        │
+│ "Don't learn property management the hard way. Havn Stays        │
+│  handles all the complexity while you focus on your main job."   │
+│                                                                  │
+│ For Experienced Portfolio Owners:                               │
+│ "Grow your portfolio faster with a management partner who        │
+│  specializes in villas. We maximize revenue on each property     │
+│  so you can acquire more without operational strain."            │
+│                                                                  │
+│ For Investor Groups/Syndicates:                                 │
+│ "Professional management = better investor relations. Monthly    │
+│  dashboards show all co-investors exactly how their money        │
+│  is being deployed."                                             │
+└─────────────────────────────────────────────────────────────────┘
+
+CLOSING QUESTIONS:
+• "What timeline do you need for management to start?"
+• "Are you planning to add more properties in the future?"
+• "Would you want to see the owner dashboard before committing?"
+
+BOOKING NEXT STEPS:
+1. Schedule property walkthrough (assess condition, identify maintenance needs)
+2. Provide written proposal with revenue projections
+3. 90-day trial period with performance guarantees
+4. Begin dynamic pricing optimization immediately
+5. Launch proactive maintenance schedule
+
+COMPETITIVE INTELLIGENCE SOURCES:
+- Atlas Villas Marrakech (atlasvillasmarrakech.com)
+- YourHostHelper (yourhosthelper.com)
+- Welkeys (welkeys.com)
+- DARSTAY (darstay.com)
+- Morokeys (morokeys.com)
+- Lo Immo (lo-immo.com)
+
+For detailed competitor profiles, pricing, and weaknesses,
+refer to: competitive-intelligence-marrakech.html
+

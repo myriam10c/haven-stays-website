@@ -1,1 +1,27 @@
-{"data":"PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMTIwIiBmaWxsPSJub25lIj4KICA8IS0tIEhhdmVuIFN0YXlzIExvZ28g4oCUIEZ1bGwgR29sZCB2YXJpYW50IChsdXh1cnkvcHJlbWl1bSB1c2FnZSkgLS0+CgogIDwhLS0gTW9ub2dyYW0gaWNvbiAtLT4KICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLDEwKSI+CiAgICA8cmVjdCB4PSIxMiIgeT0iMjgiIHdpZHRoPSI0IiBoZWlnaHQ9IjYyIiByeD0iMiIgZmlsbD0iI0M1QTU1QSIvPgogICAgPHJlY3QgeD0iNTIiIHk9IjI4IiB3aWR0aD0iNCIgaGVpZ2h0PSI2MiIgcng9IjIiIGZpbGw9IiNDNUE1NUEiLz4KICAgIDxwYXRoIGQ9Ik0xNCA0OCBDMTQgMjgsIDU0IDI4LCA1NCA0OCIgc3Ryb2tlPSIjQzVBNTVBIiBzdHJva2Utd2lkdGg9IjMiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogICAgPHJlY3QgeD0iMTYiIHk9IjU2IiB3aWR0aD0iMzYiIGhlaWdodD0iMi41IiByeD0iMS4yNSIgZmlsbD0iI0M1QTU1QSIvPgogICAgPHBhdGggZD0iTTM0IDIyIEwzNy41IDI2IEwzNCAzMCBMMzAuNSAyNiBaIiBmaWxsPSIjQzVBNTVBIi8+CiAgPC9nPgoKICA8IS0tIFdvcmRtYXJrOiBIQVZFTiAtLT4KICA8dGV4dCB4PSI4MCIgeT0iNTIiIGZvbnQtZmFtaWx5PSInQ29ybW9yYW50IEdhcmFtb25kJywgR2VvcmdpYSwgc2VyaWYiIGZvbnQtc2l6ZT0iMzgiIGZvbnQtd2VpZ2h0PSI0MDAiIGxldHRlci1zcGFjaW5nPSIwLjIyZW0iIGZpbGw9IiNDNUE1NUEiPkhBVkVOPC90ZXh0PgoKICA8IS0tIFdvcmRtYXJrOiBTVEFZUyAtLT4KICA8dGV4dCB4PSIyMzYiIHk9IjUyIiBmb250LWZhbWlseT0iJ0Nvcm1vcmFudCBHYXJhbW9uZCcsIEdlb3JnaWEsIHNlcmlmIiBmb250LXNpemU9IjM4IiBmb250LXdlaWdodD0iNDAwIiBmb250LXN0eWxlPSJpdGFsaWMiIGxldHRlci1zcGFjaW5nPSIwLjIyZW0iIGZpbGw9IiNDNUE1NUEiPlNUQVlTPC90ZXh0PgoKICA8IS0tIFRhZ2xpbmUgLS0+CiAgPHRleHQgeD0iODAiIHk9IjcyIiBmb250LWZhbWlseT0iJ0ludGVyJywgLWFwcGxlLXN5c3RlbSwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSI4IiBmb250LXdlaWdodD0iNTAwIiBsZXR0ZXItc3BhY2luZz0iMC4zNWVtIiBmaWxsPSIjQzVBNTVBIiBvcGFjaXR5PSIwLjUiPkJZIE1FRElOSSBIT01FUzwvdGV4dD4KCiAgPCEtLSBTZXBhcmF0b3IgbGluZSAtLT4KICA8bGluZSB4MT0iODAiIHkxPSI4MCIgeDI9IjM4MCIgeTI9IjgwIiBzdHJva2U9IiNDNUE1NUEiIHN0cm9rZS13aWR0aD0iMC41IiBvcGFjaXR5PSIwLjI1Ii8+CgogIDwhLS0gRGVzY3JpcHRvciAtLT4KICA8dGV4dCB4PSI4MCIgeT0iOTYiIGZvbnQtZmFtaWx5PSInSW50ZXInLCAtYXBwbGUtc3lzdGVtLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjcuNSIgZm9udC13ZWlnaHQ9IjMwMCIgbGV0dGVyLXNwYWNpbmc9IjAuMThlbSIgZmlsbD0iI0M1QTU1QSIgb3BhY2l0eT0iMC41Ij5QUkVNSVVNIFZJTExBIE1BTkFHRU1FTlQgwrcgTUFSUkFLRUNIPC90ZXh0Pgo8L3N2Zz4="}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120" fill="none">
+  <!-- Haven Stays Logo — Full Gold variant (luxury/premium usage) -->
+
+  <!-- Monogram icon -->
+  <g transform="translate(0,10)">
+    <rect x="12" y="28" width="4" height="62" rx="2" fill="#C5A55A"/>
+    <rect x="52" y="28" width="4" height="62" rx="2" fill="#C5A55A"/>
+    <path d="M14 48 C14 28, 54 28, 54 48" stroke="#C5A55A" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <rect x="16" y="56" width="36" height="2.5" rx="1.25" fill="#C5A55A"/>
+    <path d="M34 22 L37.5 26 L34 30 L30.5 26 Z" fill="#C5A55A"/>
+  </g>
+
+  <!-- Wordmark: HAVEN -->
+  <text x="80" y="52" font-family="'Cormorant Garamond', Georgia, serif" font-size="38" font-weight="400" letter-spacing="0.22em" fill="#C5A55A">HAVEN</text>
+
+  <!-- Wordmark: STAYS -->
+  <text x="236" y="52" font-family="'Cormorant Garamond', Georgia, serif" font-size="38" font-weight="400" font-style="italic" letter-spacing="0.22em" fill="#C5A55A">STAYS</text>
+
+  <!-- Tagline -->
+  <text x="80" y="72" font-family="'Inter', -apple-system, sans-serif" font-size="8" font-weight="500" letter-spacing="0.35em" fill="#C5A55A" opacity="0.5">BY MEDINI HOMES</text>
+
+  <!-- Separator line -->
+  <line x1="80" y1="80" x2="380" y2="80" stroke="#C5A55A" stroke-width="0.5" opacity="0.25"/>
+
+  <!-- Descriptor -->
+  <text x="80" y="96" font-family="'Inter', -apple-system, sans-serif" font-size="7.5" font-weight="300" letter-spacing="0.18em" fill="#C5A55A" opacity="0.5">PREMIUM VILLA MANAGEMENT · MARRAKECH</text>
+</svg>

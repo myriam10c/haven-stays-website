@@ -1,1 +1,14 @@
-{"data":"PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA4MCA4MCIgZmlsbD0ibm9uZSI+CiAgPCEtLSBIYXZlbiBTdGF5cyDigJQgSWNvbi9Nb25vZ3JhbSBMaWdodCAoZm9yIGRhcmsgYmFja2dyb3VuZHMsIG5vIGJnIGNpcmNsZSkgLS0+CgogIDwhLS0gTGVmdCBwaWxsYXIgLS0+CiAgPHJlY3QgeD0iMjQiIHk9IjIyIiB3aWR0aD0iMy41IiBoZWlnaHQ9IjM2IiByeD0iMS43NSIgZmlsbD0iI0ZGRkZGRiIvPgogIDwhLS0gUmlnaHQgcGlsbGFyIC0tPgogIDxyZWN0IHg9IjUyLjUiIHk9IjIyIiB3aWR0aD0iMy41IiBoZWlnaHQ9IjM2IiByeD0iMS43NSIgZmlsbD0iI0ZGRkZGRiIvPgogIDwhLS0gQXJjaCAtLT4KICA8cGF0aCBkPSJNMjUuNzUgMzggQzI1Ljc1IDIwLCA1NC4yNSAyMCwgNTQuMjUgMzgiIHN0cm9rZT0iI0M1QTU1QSIgc3Ryb2tlLXdpZHRoPSIyLjUiIGZpbGw9Im5vbmUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgogIDwhLS0gQ3Jvc3NiYXIgLS0+CiAgPHJlY3QgeD0iMjcuNSIgeT0iNDMiIHdpZHRoPSIyNSIgaGVpZ2h0PSIyIiByeD0iMSIgZmlsbD0iI0M1QTU1QSIvPgogIDwhLS0gRGlhbW9uZCBhY2NlbnQgLS0+CiAgPHBhdGggZD0iTTQwIDE0IEw0My41IDE4IEw0MCAyMiBMMzYuNSAxOCBaIiBmaWxsPSIjQzVBNTVBIi8+Cjwvc3ZnPg=="}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" fill="none">
+  <!-- Haven Stays — Icon/Monogram Light (for dark backgrounds, no bg circle) -->
+
+  <!-- Left pillar -->
+  <rect x="24" y="22" width="3.5" height="36" rx="1.75" fill="#FFFFFF"/>
+  <!-- Right pillar -->
+  <rect x="52.5" y="22" width="3.5" height="36" rx="1.75" fill="#FFFFFF"/>
+  <!-- Arch -->
+  <path d="M25.75 38 C25.75 20, 54.25 20, 54.25 38" stroke="#C5A55A" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Crossbar -->
+  <rect x="27.5" y="43" width="25" height="2" rx="1" fill="#C5A55A"/>
+  <!-- Diamond accent -->
+  <path d="M40 14 L43.5 18 L40 22 L36.5 18 Z" fill="#C5A55A"/>
+</svg>

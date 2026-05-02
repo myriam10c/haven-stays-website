@@ -1,1 +1,30 @@
-{"data":"ZXhwb3J0IGNvbnN0IG1ldGFkYXRhID0gewogIHRpdGxlOiAnSGF2biBTdGF5cyDigJQgV2VsY29tZSBHdWlkZScsCiAgZGVzY3JpcHRpb246ICdZb3VyIHBlcnNvbmFsaXplZCBndWVzdCBndWlkZSBieSBIYXZuIFN0YXlzLCBNYXJyYWtlY2gnLAp9CgpleHBvcnQgY29uc3Qgdmlld3BvcnQgPSB7CiAgd2lkdGg6ICdkZXZpY2Utd2lkdGgnLAogIGluaXRpYWxTY2FsZTogMSwKICBtYXhpbXVtU2NhbGU6IDEsCiAgdXNlclNjYWxhYmxlOiBmYWxzZSwKICB0aGVtZUNvbG9yOiAnIzBGMTkyMycsCn0KCmV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uIFJvb3RMYXlvdXQoeyBjaGlsZHJlbiB9KSB7CiAgcmV0dXJuICgKICAgIDxodG1sIGxhbmc9ImZyIiBzdXBwcmVzc0h5ZHJhdGlvbldhcm5pbmc+CiAgICAgIDxoZWFkPgogICAgICAgIDxsaW5rIGhyZWY9Imh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9Q29ybW9yYW50K0dhcmFtb25kOml0YWwsd2dodEAwLDMwMDswLDQwMDswLDUwMDswLDYwMDsxLDMwMDsxLDQwMCZmYW1pbHk9SW50ZXI6d2dodEAzMDA7NDAwOzUwMDs2MDA7NzAwJmRpc3BsYXk9c3dhcCIgcmVsPSJzdHlsZXNoZWV0IiAvPgogICAgICAgIDxzdHlsZSBkYW5nZXJvdXNseVNldElubmVySFRNTD17eyBfX2h0bWw6IGAKICAgICAgICAgICogeyBtYXJnaW46IDA7IHBhZGRpbmc6IDA7IGJveC1zaXppbmc6IGJvcmRlci1ib3g7IH0KICAgICAgICAgIGJvZHkgeyBmb250LWZhbWlseTogJ0ludGVyJywgLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCBzYW5zLXNlcmlmOyBiYWNrZ3JvdW5kOiAjMEYxOTIzOyB9CiAgICAgICAgICA6Oi13ZWJraXQtc2Nyb2xsYmFyIHsgZGlzcGxheTogbm9uZTsgfQogICAgICAgICAgYm9keSB7IC1tcy1vdmVyZmxvdy1zdHlsZTogbm9uZTsgc2Nyb2xsYmFyLXdpZHRoOiBub25lOyB9CiAgICAgICAgICBpbnB1dDo6cGxhY2Vob2xkZXIgeyBjb2xvcjogcmdiYSgyNTUsMjU1LDI1NSwwLjMpOyB9CiAgICAgICAgYH19IC8+CiAgICAgIDwvaGVhZD4KICAgICAgPGJvZHkgc3VwcHJlc3NIeWRyYXRpb25XYXJuaW5nPntjaGlsZHJlbn08L2JvZHk+CiAgICA8L2h0bWw+CiAgKQp9Cg=="}
+export const metadata = {
+  title: 'Havn Stays — Welcome Guide',
+  description: 'Your personalized guest guide by Havn Stays, Marrakech',
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+  themeColor: '#0F1923',
+}
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="fr" suppressHydrationWarning>
+      <head>
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+        <style dangerouslySetInnerHTML={{ __html: `
+          * { margin: 0; padding: 0; box-sizing: border-box; }
+          body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; background: #0F1923; }
+          ::-webkit-scrollbar { display: none; }
+          body { -ms-overflow-style: none; scrollbar-width: none; }
+          input::placeholder { color: rgba(255,255,255,0.3); }
+        `}} />
+      </head>
+      <body suppressHydrationWarning>{children}</body>
+    </html>
+  )
+}

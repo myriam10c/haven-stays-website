@@ -1,1 +1,280 @@
-{"data":"PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHVybHNldCB4bWxucz0iaHR0cDovL3d3dy5zaXRlbWFwcy5vcmcvc2NoZW1hcy9zaXRlbWFwLzAuOSIKICAgICAgICB4bWxuczp4aHRtbD0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94aHRtbCI+CgogIDwhLS0gSG9tZXBhZ2UgLS0+CiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS88L2xvYz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZnIiIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vIiAvPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJlbiIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lbi8iIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS8iIC8+CiAgICA8bGFzdG1vZD4yMDI2LTA0LTA2PC9sYXN0bW9kPgogICAgPGNoYW5nZWZyZXE+d2Vla2x5PC9jaGFuZ2VmcmVxPgogICAgPHByaW9yaXR5PjEuMDwvcHJpb3JpdHk+CiAgPC91cmw+CiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lbi88L2xvYz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZnIiIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vIiAvPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJlbiIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lbi8iIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS8iIC8+CiAgICA8bGFzdG1vZD4yMDI2LTA0LTA2PC9sYXN0bW9kPgogICAgPGNoYW5nZWZyZXE+d2Vla2x5PC9jaGFuZ2VmcmVxPgogICAgPHByaW9yaXR5PjEuMDwvcHJpb3JpdHk+CiAgPC91cmw+CgogIDwhLS0gU2VydmljZXMgLS0+CiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9zZXJ2aWNlczwvbG9jPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJmciIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9zZXJ2aWNlcyIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vc2VydmljZXMiIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9zZXJ2aWNlcyIgLz4KICAgIDxsYXN0bW9kPjIwMjYtMDQtMDY8L2xhc3Rtb2Q+CiAgICA8Y2hhbmdlZnJlcT5tb250aGx5PC9jaGFuZ2VmcmVxPgogICAgPHByaW9yaXR5PjAuOTwvcHJpb3JpdHk+CiAgPC91cmw+CiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lbi9zZXJ2aWNlczwvbG9jPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJmciIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9zZXJ2aWNlcyIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vc2VydmljZXMiIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9zZXJ2aWNlcyIgLz4KICAgIDxsYXN0bW9kPjIwMjYtMDQtMDY8L2xhc3Rtb2Q+CiAgICA8Y2hhbmdlZnJlcT5tb250aGx5PC9jaGFuZ2VmcmVxPgogICAgPHByaW9yaXR5PjAuOTwvcHJpb3JpdHk+CiAgPC91cmw+CgogIDwhLS0gVGFyaWZzIC8gUHJpY2luZyAtLT4KICA8dXJsPgogICAgPGxvYz5odHRwczovL2hhdm4tc3RheXMuY29tL3RhcmlmczwvbG9jPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJmciIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS90YXJpZnMiIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImVuIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2VuL3ByaWNpbmciIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS90YXJpZnMiIC8+CiAgICA8bGFzdG1vZD4yMDI2LTA0LTA2PC9sYXN0bW9kPgogICAgPGNoYW5nZWZyZXE+bW9udGhseTwvY2hhbmdlZnJlcT4KICAgIDxwcmlvcml0eT4wLjk8L3ByaW9yaXR5PgogIDwvdXJsPgogIDx1cmw+CiAgICA8bG9jPmh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vcHJpY2luZzwvbG9jPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJmciIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS90YXJpZnMiIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImVuIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2VuL3ByaWNpbmciIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS90YXJpZnMiIC8+CiAgICA8bGFzdG1vZD4yMDI2LTA0LTA2PC9sYXN0bW9kPgogICAgPGNoYW5nZWZyZXE+bW9udGhseTwvY2hhbmdlZnJlcT4KICAgIDxwcmlvcml0eT4wLjk8L3ByaW9yaXR5PgogIDwvdXJsPgoKICA8IS0tIFpvbmVzIC8gQXJlYXMgLS0+CiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS96b25lczwvbG9jPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJmciIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS96b25lcyIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vYXJlYXMiIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS96b25lcyIgLz4KICAgIDxsYXN0bW9kPjIwMjYtMDQtMDY8L2xhc3Rtb2Q+CiAgICA8Y2hhbmdlZnJlcT5tb250aGx5PC9jaGFuZ2VmcmVxPgogICAgPHByaW9yaXR5PjAuODwvcHJpb3JpdHk+CiAgPC91cmw+CiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lbi9hcmVhczwvbG9jPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJmciIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS96b25lcyIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vYXJlYXMiIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS96b25lcyIgLz4KICAgIDxsYXN0bW9kPjIwMjYtMDQtMDY8L2xhc3Rtb2Q+CiAgICA8Y2hhbmdlZnJlcT5tb250aGx5PC9jaGFuZ2VmcmVxPgogICAgPHByaW9yaXR5PjAuODwvcHJpb3JpdHk+CiAgPC91cmw+CgogIDwhLS0gRXN0aW1hdGlvbiAtLT4KICA8dXJsPgogICAgPGxvYz5odHRwczovL2hhdm4tc3RheXMuY29tL2VzdGltYXRpb248L2xvYz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZnIiIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZXN0aW1hdGlvbiIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vZXN0aW1hdGUiIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lc3RpbWF0aW9uIiAvPgogICAgPGxhc3Rtb2Q+MjAyNi0wNC0wNjwvbGFzdG1vZD4KICAgIDxjaGFuZ2VmcmVxPm1vbnRobHk8L2NoYW5nZWZyZXE+CiAgICA8cHJpb3JpdHk+MC44PC9wcmlvcml0eT4KICA8L3VybD4KICA8dXJsPgogICAgPGxvYz5odHRwczovL2hhdm4tc3RheXMuY29tL2VuL2VzdGltYXRlPC9sb2M+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImZyIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2VzdGltYXRpb24iIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImVuIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2VuL2VzdGltYXRlIiAvPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJ4LWRlZmF1bHQiIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZXN0aW1hdGlvbiIgLz4KICAgIDxsYXN0bW9kPjIwMjYtMDQtMDY8L2xhc3Rtb2Q+CiAgICA8Y2hhbmdlZnJlcT5tb250aGx5PC9jaGFuZ2VmcmVxPgogICAgPHByaW9yaXR5PjAuODwvcHJpb3JpdHk+CiAgPC91cmw+CgogIDwhLS0gw4AgcHJvcG9zIC8gQWJvdXQgLS0+CiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9hLXByb3BvczwvbG9jPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJmciIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9hLXByb3BvcyIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vYWJvdXQiIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9hLXByb3BvcyIgLz4KICAgIDxsYXN0bW9kPjIwMjYtMDQtMDY8L2xhc3Rtb2Q+CiAgICA8Y2hhbmdlZnJlcT5tb250aGx5PC9jaGFuZ2VmcmVxPgogICAgPHByaW9yaXR5PjAuNzwvcHJpb3JpdHk+CiAgPC91cmw+CiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lbi9hYm91dDwvbG9jPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJmciIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9hLXByb3BvcyIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vYWJvdXQiIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9hLXByb3BvcyIgLz4KICAgIDxsYXN0bW9kPjIwMjYtMDQtMDY8L2xhc3Rtb2Q+CiAgICA8Y2hhbmdlZnJlcT5tb250aGx5PC9jaGFuZ2VmcmVxPgogICAgPHByaW9yaXR5PjAuNzwvcHJpb3JpdHk+CiAgPC91cmw+CgogIDwhLS0gQmxvZyAtLT4KICA8dXJsPgogICAgPGxvYz5odHRwczovL2hhdm4tc3RheXMuY29tL2Jsb2c8L2xvYz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZnIiIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vYmxvZyIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vYmxvZyIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0ieC1kZWZhdWx0IiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2Jsb2ciIC8+CiAgICA8bGFzdG1vZD4yMDI2LTA0LTA2PC9sYXN0bW9kPgogICAgPGNoYW5nZWZyZXE+d2Vla2x5PC9jaGFuZ2VmcmVxPgogICAgPHByaW9yaXR5PjAuNzwvcHJpb3JpdHk+CiAgPC91cmw+CiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lbi9ibG9nPC9sb2M+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImZyIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2Jsb2ciIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImVuIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2VuL2Jsb2ciIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9ibG9nIiAvPgogICAgPGxhc3Rtb2Q+MjAyNi0wNC0wNjwvbGFzdG1vZD4KICAgIDxjaGFuZ2VmcmVxPndlZWtseTwvY2hhbmdlZnJlcT4KICAgIDxwcmlvcml0eT4wLjc8L3ByaW9yaXR5PgogIDwvdXJsPgoKICA8IS0tIENvbnRhY3QgLS0+CiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9jb250YWN0PC9sb2M+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImZyIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2NvbnRhY3QiIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImVuIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2VuL2NvbnRhY3QiIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9jb250YWN0IiAvPgogICAgPGxhc3Rtb2Q+MjAyNi0wNC0wNjwvbGFzdG1vZD4KICAgIDxjaGFuZ2VmcmVxPm1vbnRobHk8L2NoYW5nZWZyZXE+CiAgICA8cHJpb3JpdHk+MC43PC9wcmlvcml0eT4KICA8L3VybD4KICA8dXJsPgogICAgPGxvYz5odHRwczovL2hhdm4tc3RheXMuY29tL2VuL2NvbnRhY3Q8L2xvYz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZnIiIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vY29udGFjdCIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vY29udGFjdCIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0ieC1kZWZhdWx0IiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2NvbnRhY3QiIC8+CiAgICA8bGFzdG1vZD4yMDI2LTA0LTA2PC9sYXN0bW9kPgogICAgPGNoYW5nZWZyZXE+bW9udGhseTwvY2hhbmdlZnJlcT4KICAgIDxwcmlvcml0eT4wLjc8L3ByaW9yaXR5PgogIDwvdXJsPgoKICA8IS0tIEJsb2cgQXJ0aWNsZXMgLS0+CiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9ibG9nL3JlZ2xlbWVudGF0aW9uLWxvY2F0aW9uLWNvdXJ0ZS1kdXJlZS1tYXJvYzwvbG9jPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJmciIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9ibG9nL3JlZ2xlbWVudGF0aW9uLWxvY2F0aW9uLWNvdXJ0ZS1kdXJlZS1tYXJvYyIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vYmxvZy9yZWdsZW1lbnRhdGlvbi1sb2NhdGlvbi1jb3VydGUtZHVyZWUtbWFyb2MiIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9ibG9nL3JlZ2xlbWVudGF0aW9uLWxvY2F0aW9uLWNvdXJ0ZS1kdXJlZS1tYXJvYyIgLz4KICAgIDxsYXN0bW9kPjIwMjYtMDQtMTU8L2xhc3Rtb2Q+CiAgICA8Y2hhbmdlZnJlcT5tb250aGx5PC9jaGFuZ2VmcmVxPgogICAgPHByaW9yaXR5PjAuODwvcHJpb3JpdHk+CiAgPC91cmw+CiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lbi9ibG9nL3JlZ2xlbWVudGF0aW9uLWxvY2F0aW9uLWNvdXJ0ZS1kdXJlZS1tYXJvYzwvbG9jPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJmciIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9ibG9nL3JlZ2xlbWVudGF0aW9uLWxvY2F0aW9uLWNvdXJ0ZS1kdXJlZS1tYXJvYyIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vYmxvZy9yZWdsZW1lbnRhdGlvbi1sb2NhdGlvbi1jb3VydGUtZHVyZWUtbWFyb2MiIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9ibG9nL3JlZ2xlbWVudGF0aW9uLWxvY2F0aW9uLWNvdXJ0ZS1kdXJlZS1tYXJvYyIgLz4KICAgIDxsYXN0bW9kPjIwMjYtMDQtMTU8L2xhc3Rtb2Q+CiAgICA8Y2hhbmdlZnJlcT5tb250aGx5PC9jaGFuZ2VmcmVxPgogICAgPHByaW9yaXR5PjAuODwvcHJpb3JpdHk+CiAgPC91cmw+CgogIDx1cmw+CiAgICA8bG9jPmh0dHBzOi8vaGF2bi1zdGF5cy5jb20vYmxvZy9nZXN0aW9uLWxvY2F0aXZlLXZpbGxhLW1hcnJha2VjaDwvbG9jPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJmciIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9ibG9nL2dlc3Rpb24tbG9jYXRpdmUtdmlsbGEtbWFycmFrZWNoIiAvPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJlbiIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lbi9ibG9nL2dlc3Rpb24tbG9jYXRpdmUtdmlsbGEtbWFycmFrZWNoIiAvPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJ4LWRlZmF1bHQiIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vYmxvZy9nZXN0aW9uLWxvY2F0aXZlLXZpbGxhLW1hcnJha2VjaCIgLz4KICAgIDxsYXN0bW9kPjIwMjYtMDQtMDY8L2xhc3Rtb2Q+CiAgICA8Y2hhbmdlZnJlcT5tb250aGx5PC9jaGFuZ2VmcmVxPgogICAgPHByaW9yaXR5PjAuODwvcHJpb3JpdHk+CiAgPC91cmw+CiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lbi9ibG9nL2dlc3Rpb24tbG9jYXRpdmUtdmlsbGEtbWFycmFrZWNoPC9sb2M+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImZyIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2Jsb2cvZ2VzdGlvbi1sb2NhdGl2ZS12aWxsYS1tYXJyYWtlY2giIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImVuIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2VuL2Jsb2cvZ2VzdGlvbi1sb2NhdGl2ZS12aWxsYS1tYXJyYWtlY2giIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9ibG9nL2dlc3Rpb24tbG9jYXRpdmUtdmlsbGEtbWFycmFrZWNoIiAvPgogICAgPGxhc3Rtb2Q+MjAyNi0wNC0wNjwvbGFzdG1vZD4KICAgIDxjaGFuZ2VmcmVxPm1vbnRobHk8L2NoYW5nZWZyZXE+CiAgICA8cHJpb3JpdHk+MC44PC9wcmlvcml0eT4KICA8L3VybD4KCiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9ibG9nL3JldmVudWUtbWFuYWdlbWVudC12aWxsYS1tYXJyYWtlY2g8L2xvYz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZnIiIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vYmxvZy9yZXZlbnVlLW1hbmFnZW1lbnQtdmlsbGEtbWFycmFrZWNoIiAvPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJlbiIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lbi9ibG9nL3JldmVudWUtbWFuYWdlbWVudC12aWxsYS1tYXJyYWtlY2giIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9ibG9nL3JldmVudWUtbWFuYWdlbWVudC12aWxsYS1tYXJyYWtlY2giIC8+CiAgICA8bGFzdG1vZD4yMDI2LTA0LTA2PC9sYXN0bW9kPgogICAgPGNoYW5nZWZyZXE+bW9udGhseTwvY2hhbmdlZnJlcT4KICAgIDxwcmlvcml0eT4wLjg8L3ByaW9yaXR5PgogIDwvdXJsPgogIDx1cmw+CiAgICA8bG9jPmh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vYmxvZy9yZXZlbnVlLW1hbmFnZW1lbnQtdmlsbGEtbWFycmFrZWNoPC9sb2M+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImZyIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2Jsb2cvcmV2ZW51ZS1tYW5hZ2VtZW50LXZpbGxhLW1hcnJha2VjaCIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vYmxvZy9yZXZlbnVlLW1hbmFnZW1lbnQtdmlsbGEtbWFycmFrZWNoIiAvPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJ4LWRlZmF1bHQiIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vYmxvZy9yZXZlbnVlLW1hbmFnZW1lbnQtdmlsbGEtbWFycmFrZWNoIiAvPgogICAgPGxhc3Rtb2Q+MjAyNi0wNC0wNjwvbGFzdG1vZD4KICAgIDxjaGFuZ2VmcmVxPm1vbnRobHk8L2NoYW5nZWZyZXE+CiAgICA8cHJpb3JpdHk+MC44PC9wcmlvcml0eT4KICA8L3VybD4KCiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9ibG9nL2ludmVzdGlyLXZpbGxhLW1hcnJha2VjaC1xdWFydGllcnM8L2xvYz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZnIiIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vYmxvZy9pbnZlc3Rpci12aWxsYS1tYXJyYWtlY2gtcXVhcnRpZXJzIiAvPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJlbiIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lbi9ibG9nL2ludmVzdGlyLXZpbGxhLW1hcnJha2VjaC1xdWFydGllcnMiIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9ibG9nL2ludmVzdGlyLXZpbGxhLW1hcnJha2VjaC1xdWFydGllcnMiIC8+CiAgICA8bGFzdG1vZD4yMDI2LTA0LTA2PC9sYXN0bW9kPgogICAgPGNoYW5nZWZyZXE+bW9udGhseTwvY2hhbmdlZnJlcT4KICAgIDxwcmlvcml0eT4wLjg8L3ByaW9yaXR5PgogIDwvdXJsPgogIDx1cmw+CiAgICA8bG9jPmh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vYmxvZy9pbnZlc3Rpci12aWxsYS1tYXJyYWtlY2gtcXVhcnRpZXJzPC9sb2M+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImZyIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2Jsb2cvaW52ZXN0aXItdmlsbGEtbWFycmFrZWNoLXF1YXJ0aWVycyIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vYmxvZy9pbnZlc3Rpci12aWxsYS1tYXJyYWtlY2gtcXVhcnRpZXJzIiAvPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJ4LWRlZmF1bHQiIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vYmxvZy9pbnZlc3Rpci12aWxsYS1tYXJyYWtlY2gtcXVhcnRpZXJzIiAvPgogICAgPGxhc3Rtb2Q+MjAyNi0wNC0wNjwvbGFzdG1vZD4KICAgIDxjaGFuZ2VmcmVxPm1vbnRobHk8L2NoYW5nZWZyZXE+CiAgICA8cHJpb3JpdHk+MC44PC9wcmlvcml0eT4KICA8L3VybD4KCiAgPHVybD4KICAgIDxsb2M+aHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9ibG9nL3Bob3Rvcy1wcm9mZXNzaW9ubmVsbGVzLWFubm9uY2UtdmlsbGEtbWFycmFrZWNoPC9sb2M+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImZyIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2Jsb2cvcGhvdG9zLXByb2Zlc3Npb25uZWxsZXMtYW5ub25jZS12aWxsYS1tYXJyYWtlY2giIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImVuIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2VuL2Jsb2cvcGhvdG9zLXByb2Zlc3Npb25uZWxsZXMtYW5ub25jZS12aWxsYS1tYXJyYWtlY2giIC8+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9IngtZGVmYXVsdCIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9ibG9nL3Bob3Rvcy1wcm9mZXNzaW9ubmVsbGVzLWFubm9uY2UtdmlsbGEtbWFycmFrZWNoIiAvPgogICAgPGxhc3Rtb2Q+MjAyNi0wNC0xNjwvbGFzdG1vZD4KICAgIDxjaGFuZ2VmcmVxPm1vbnRobHk8L2NoYW5nZWZyZXE+CiAgICA8cHJpb3JpdHk+MC44PC9wcmlvcml0eT4KICA8L3VybD4KICA8dXJsPgogICAgPGxvYz5odHRwczovL2hhdm4tc3RheXMuY29tL2VuL2Jsb2cvcGhvdG9zLXByb2Zlc3Npb25uZWxsZXMtYW5ub25jZS12aWxsYS1tYXJyYWtlY2g8L2xvYz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZnIiIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vYmxvZy9waG90b3MtcHJvZmVzc2lvbm5lbGxlcy1hbm5vbmNlLXZpbGxhLW1hcnJha2VjaCIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0iZW4iIGhyZWY9Imh0dHBzOi8vaGF2bi1zdGF5cy5jb20vZW4vYmxvZy9waG90b3MtcHJvZmVzc2lvbm5lbGxlcy1hbm5vbmNlLXZpbGxhLW1hcnJha2VjaCIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0ieC1kZWZhdWx0IiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2Jsb2cvcGhvdG9zLXByb2Zlc3Npb25uZWxsZXMtYW5ub25jZS12aWxsYS1tYXJyYWtlY2giIC8+CiAgICA8bGFzdG1vZD4yMDI2LTA0LTE2PC9sYXN0bW9kPgogICAgPGNoYW5nZWZyZXE+bW9udGhseTwvY2hhbmdlZnJlcT4KICAgIDxwcmlvcml0eT4wLjg8L3ByaW9yaXR5PgogIDwvdXJsPgoKICA8dXJsPgogICAgPGxvYz5odHRwczovL2hhdm4tc3RheXMuY29tL2Jsb2cvdGVuZGFuY2VzLXRvdXJpc21lLW1hcnJha2VjaC0yMDI2PC9sb2M+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImZyIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2Jsb2cvdGVuZGFuY2VzLXRvdXJpc21lLW1hcnJha2VjaC0yMDI2IiAvPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJlbiIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lbi9ibG9nL3RlbmRhbmNlcy10b3VyaXNtZS1tYXJyYWtlY2gtMjAyNiIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0ieC1kZWZhdWx0IiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2Jsb2cvdGVuZGFuY2VzLXRvdXJpc21lLW1hcnJha2VjaC0yMDI2IiAvPgogICAgPGxhc3Rtb2Q+MjAyNi0wNC0yMDwvbGFzdG1vZD4KICAgIDxjaGFuZ2VmcmVxPm1vbnRobHk8L2NoYW5nZWZyZXE+CiAgICA8cHJpb3JpdHk+MC44PC9wcmlvcml0eT4KICA8L3VybD4KICA8dXJsPgogICAgPGxvYz5odHRwczovL2hhdm4tc3RheXMuY29tL2VuL2Jsb2cvdGVuZGFuY2VzLXRvdXJpc21lLW1hcnJha2VjaC0yMDI2PC9sb2M+CiAgICA8eGh0bWw6bGluayByZWw9ImFsdGVybmF0ZSIgaHJlZmxhbmc9ImZyIiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2Jsb2cvdGVuZGFuY2VzLXRvdXJpc21lLW1hcnJha2VjaC0yMDI2IiAvPgogICAgPHhodG1sOmxpbmsgcmVsPSJhbHRlcm5hdGUiIGhyZWZsYW5nPSJlbiIgaHJlZj0iaHR0cHM6Ly9oYXZuLXN0YXlzLmNvbS9lbi9ibG9nL3RlbmRhbmNlcy10b3VyaXNtZS1tYXJyYWtlY2gtMjAyNiIgLz4KICAgIDx4aHRtbDpsaW5rIHJlbD0iYWx0ZXJuYXRlIiBocmVmbGFuZz0ieC1kZWZhdWx0IiBocmVmPSJodHRwczovL2hhdm4tc3RheXMuY29tL2Jsb2cvdGVuZGFuY2VzLXRvdXJpc21lLW1hcnJha2VjaC0yMDI2IiAvPgogICAgPGxhc3Rtb2Q+MjAyNi0wNC0yMDwvbGFzdG1vZD4KICAgIDxjaGFuZ2VmcmVxPm1vbnRobHk8L2NoYW5nZWZyZXE+CiAgICA8cHJpb3JpdHk+MC44PC9wcmlvcml0eT4KICA8L3VybD4KCjwvdXJsc2V0Pgo="}
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://havn-stays.com/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Services -->
+  <url>
+    <loc>https://havn-stays.com/services</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/services" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/services</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/services" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/services" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Tarifs / Pricing -->
+  <url>
+    <loc>https://havn-stays.com/tarifs</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/tarifs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/pricing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/tarifs" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/tarifs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/pricing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/tarifs" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Zones / Areas -->
+  <url>
+    <loc>https://havn-stays.com/zones</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/zones" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/areas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/zones" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/areas</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/zones" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/areas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/zones" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Estimation -->
+  <url>
+    <loc>https://havn-stays.com/estimation</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/estimation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/estimate" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/estimation" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/estimate</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/estimation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/estimate" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/estimation" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- À propos / About -->
+  <url>
+    <loc>https://havn-stays.com/a-propos</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/a-propos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/a-propos" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/a-propos" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/a-propos" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://havn-stays.com/blog</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://havn-stays.com/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/contact" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/contact" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Articles -->
+  <url>
+    <loc>https://havn-stays.com/blog/reglementation-location-courte-duree-maroc</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/reglementation-location-courte-duree-maroc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/reglementation-location-courte-duree-maroc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/reglementation-location-courte-duree-maroc" />
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/reglementation-location-courte-duree-maroc</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/reglementation-location-courte-duree-maroc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/reglementation-location-courte-duree-maroc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/reglementation-location-courte-duree-maroc" />
+    <lastmod>2026-04-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://havn-stays.com/blog/gestion-locative-villa-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/gestion-locative-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/gestion-locative-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/gestion-locative-villa-marrakech" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/gestion-locative-villa-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/gestion-locative-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/gestion-locative-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/gestion-locative-villa-marrakech" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://havn-stays.com/blog/revenue-management-villa-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/revenue-management-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/revenue-management-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/revenue-management-villa-marrakech" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/revenue-management-villa-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/revenue-management-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/revenue-management-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/revenue-management-villa-marrakech" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://havn-stays.com/blog/investir-villa-marrakech-quartiers</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/investir-villa-marrakech-quartiers" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/investir-villa-marrakech-quartiers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/investir-villa-marrakech-quartiers" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/investir-villa-marrakech-quartiers</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/investir-villa-marrakech-quartiers" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/investir-villa-marrakech-quartiers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/investir-villa-marrakech-quartiers" />
+    <lastmod>2026-04-06</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://havn-stays.com/blog/photos-professionnelles-annonce-villa-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/photos-professionnelles-annonce-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/photos-professionnelles-annonce-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/photos-professionnelles-annonce-villa-marrakech" />
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/photos-professionnelles-annonce-villa-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/photos-professionnelles-annonce-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/photos-professionnelles-annonce-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/photos-professionnelles-annonce-villa-marrakech" />
+    <lastmod>2026-04-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://havn-stays.com/blog/tendances-tourisme-marrakech-2026</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/tendances-tourisme-marrakech-2026" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/tendances-tourisme-marrakech-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/tendances-tourisme-marrakech-2026" />
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/tendances-tourisme-marrakech-2026</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/tendances-tourisme-marrakech-2026" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/tendances-tourisme-marrakech-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/tendances-tourisme-marrakech-2026" />
+    <lastmod>2026-04-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>

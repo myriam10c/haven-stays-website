@@ -1,1 +1,217 @@
-{"data":"ewogICJicmFuZCI6ICJIYXZuIFN0YXlzIiwKICAiZm9ybWF0IjogIjk6MTYgdmVydGljYWwgKEluc3RhZ3JhbSBSZWVscykiLAogICJkdXJhdGlvbiI6ICI1IHNlY29uZHMiLAogICJwcm9tcHRzIjogWwogICAgewogICAgICAiZGF5IjogMSwKICAgICAgImNhdGVnb3J5IjogInZpbGxhX2V4dGVyaW9yIiwKICAgICAgInByb21wdCI6ICJDaW5lbWF0aWMgYWVyaWFsIGRyb25lIHNob3QgZ2xpZGluZyBvdmVyIGEgc3R1bm5pbmcgbHV4dXJ5IHZpbGxhIGluIE1hcnJha2VjaCBNb3JvY2NvLCB0dXJxdW9pc2UgaW5maW5pdHkgcG9vbCwgZ29sZGVuIGhvdXIgc3VubGlnaHQsIGx1c2ggcGFsbSB0cmVlcywgdHJhZGl0aW9uYWwgTW9yb2NjYW4gYXJjaGl0ZWN0dXJlIHdpdGggbW9kZXJuIGRlc2lnbiwgd2FybSB0ZXJyYWNvdHRhIHdhbGxzLCB6ZWxsaWdlIHRpbGV3b3JrLCB3aGl0ZSBvdXRkb29yIGxvdW5nZSBmdXJuaXR1cmUsIHVsdHJhIGNpbmVtYXRpYyBxdWFsaXR5LCBzaGFsbG93IGRlcHRoIG9mIGZpZWxkLCA0SyIsCiAgICAgICJjYXB0aW9uX2ZyIjogIlZvdHJlIHZpbGxhIHByaXbDqWUgdm91cyBhdHRlbmQgw6AgTWFycmFrZWNoIOKcqCAjSGF2blN0YXlzICNNYXJyYWtlY2ggI0x1eHVyeVZpbGxhIiwKICAgICAgImNhcHRpb25fZW4iOiAiWW91ciBwcml2YXRlIHZpbGxhIGF3YWl0cyBpbiBNYXJyYWtlY2gg4pyoICNIYXZuU3RheXMgI01hcnJha2VjaCAjTHV4dXJ5VmlsbGEiCiAgICB9LAogICAgewogICAgICAiZGF5IjogMiwKICAgICAgImNhdGVnb3J5IjogInZpbGxhX2ludGVyaW9yIiwKICAgICAgInByb21wdCI6ICJDaW5lbWF0aWMgc2xvdyB0cmFja2luZyBzaG90IHRocm91Z2ggYSBsdXh1cmlvdXMgTW9yb2NjYW4gdmlsbGEgaW50ZXJpb3IgaW4gTWFycmFrZWNoLCBvcm5hdGUgemVsbGlnZSB0aWxld29yayBvbiB3YWxscyBhbmQgZmxvb3JzLCBjYXJ2ZWQgd2hpdGUgcGxhc3RlciBhcmFiZXNxdWVzLCBmbG93aW5nIHNoZWVyIHdoaXRlIGN1cnRhaW5zLCB3YXJtIGdvbGRlbiBhbWJpZW50IGxpZ2h0aW5nLCBtb2Rlcm4gZGVzaWduZXIgZnVybml0dXJlIG1peGVkIHdpdGggdHJhZGl0aW9uYWwgTW9yb2NjYW4gY3JhZnRzbWFuc2hpcCwgdGFkZWxha3Qgd2FsbHMsIGJyYXNzIGxhbnRlcm5zIGNhc3RpbmcgaW50cmljYXRlIHNoYWRvdyBwYXR0ZXJucywgbHVzaCBpbmRvb3IgcGxhbnRzLCBoaWdoIGNlaWxpbmdzIHdpdGggd29vZGVuIGJlYW1zLCB1bHRyYSBjaW5lbWF0aWMgcXVhbGl0eSwgc2hhbGxvdyBkZXB0aCBvZiBmaWVsZCwgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICJMJ2FydCBkZSB2aXZyZSBtYXJvY2FpbiwgdmVyc2lvbiBIYXZuIFN0YXlzIPCfj6EgI0ludGVyaW9yRGVzaWduICNNYXJyYWtlY2ggI1JpYWQiLAogICAgICAiY2FwdGlvbl9lbiI6ICJNb3JvY2NhbiBhcnQgZGUgdml2cmUsIEhhdm4gU3RheXMgZWRpdGlvbiDwn4+hICNJbnRlcmlvckRlc2lnbiAjTWFycmFrZWNoICNSaWFkIgogICAgfSwKICAgIHsKICAgICAgImRheSI6IDMsCiAgICAgICJjYXRlZ29yeSI6ICJsaWZlc3R5bGVfcG9vbCIsCiAgICAgICJwcm9tcHQiOiAiQ2luZW1hdGljIHNsb3cgbW90aW9uIHNob3Qgb2YgY3J5c3RhbCBjbGVhciB0dXJxdW9pc2Ugd2F0ZXIgaW4gYSBsdXh1cnkgcHJpdmF0ZSBwb29sLCByb3NlIHBldGFscyBmbG9hdGluZyBvbiB0aGUgc3VyZmFjZSwgQXRsYXMgTW91bnRhaW5zIGluIHRoZSBiYWNrZ3JvdW5kLCBnb2xkZW4gc3Vuc2V0IGxpZ2h0LCBwYWxtIHRyZWUgc2hhZG93cywgTWVkaXRlcnJhbmVhbiBjb2NrdGFpbCBvbiB0aGUgcG9vbCBlZGdlLCB1bHRyYSBjaW5lbWF0aWMgcXVhbGl0eSwgd2FybSBjb2xvciBncmFkaW5nLCBkcmVhbXkgYXRtb3NwaGVyZSwgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICJQbG9uZ2V6IGRhbnMgbGUgbHV4ZSBhYnNvbHUg8J+SjiAjUG9vbERheSAjTWFycmFrZWNoICNIYXZuU3RheXMiLAogICAgICAiY2FwdGlvbl9lbiI6ICJEaXZlIGludG8gYWJzb2x1dGUgbHV4dXJ5IPCfko4gI1Bvb2xEYXkgI01hcnJha2VjaCAjSGF2blN0YXlzIgogICAgfSwKICAgIHsKICAgICAgImRheSI6IDQsCiAgICAgICJjYXRlZ29yeSI6ICJsaWZlc3R5bGVfZGluaW5nIiwKICAgICAgInByb21wdCI6ICJDaW5lbWF0aWMgb3ZlcmhlYWQgc2hvdCBvZiBhbiBlbGVnYW50IHByaXZhdGUgZGlubmVyIHNldHVwIG9uIGEgTW9yb2NjYW4gcm9vZnRvcCB0ZXJyYWNlLCBjYW5kbGVsaXQgdGFibGUgd2l0aCB3aGl0ZSBsaW5lbiwgdHJhZGl0aW9uYWwgdGFnaW5lIGRpc2hlcywgZnJlc2ggZmxvd2VycywgbGFudGVybnMgZ2xvd2luZyB3YXJtbHksIE1hcnJha2VjaCBtZWRpbmEgc2t5bGluZSBpbiB0aGUgYmFja2dyb3VuZCwgc3RhcnMgYmVnaW5uaW5nIHRvIGFwcGVhciwgdWx0cmEgY2luZW1hdGljIHF1YWxpdHksIHdhcm0gZ29sZGVuIHRvbmVzLCA0SyIsCiAgICAgICJjYXB0aW9uX2ZyIjogIkTDrm5lciBwcml2w6kgc291cyBsZXMgw6l0b2lsZXMgZGUgTWFycmFrZWNoIPCfjJkgI1ByaXZhdGVEaW5pbmcgI0hhdm5TdGF5cyAjTHV4dXJ5IiwKICAgICAgImNhcHRpb25fZW4iOiAiUHJpdmF0ZSBkaW5pbmcgdW5kZXIgdGhlIHN0YXJzIG9mIE1hcnJha2VjaCDwn4yZICNQcml2YXRlRGluaW5nICNIYXZuU3RheXMgI0x1eHVyeSIKICAgIH0sCiAgICB7CiAgICAgICJkYXkiOiA1LAogICAgICAiY2F0ZWdvcnkiOiAidmlsbGFfYmVkcm9vbSIsCiAgICAgICJwcm9tcHQiOiAiQ2luZW1hdGljIHNsb3cgZG9sbHkgc2hvdCBpbnRvIGEgbHV4dXJpb3VzIG1hc3RlciBiZWRyb29tIGluIGEgTW9yb2NjYW4gdmlsbGEsIGtpbmctc2l6ZSBiZWQgd2l0aCBjcmlzcCB3aGl0ZSBsaW5lbnMgYW5kIGVtYnJvaWRlcmVkIGN1c2hpb25zLCB0YWRlbGFrdCB3YWxscyBpbiB3YXJtIGVhcnRoIHRvbmVzLCBvcm5hdGUgYnJhc3MgY2hhbmRlbGllciwgbGFyZ2Ugd2luZG93cyB3aXRoIGZsb3dpbmcgY3VydGFpbnMgcmV2ZWFsaW5nIGdhcmRlbiB2aWV3LCBtb3JuaW5nIGxpZ2h0IHN0cmVhbWluZyBpbiwgZnJlc2ggZmxvd2VycyBvbiBuaWdodHN0YW5kLCB1bHRyYSBjaW5lbWF0aWMgcXVhbGl0eSwgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICJSw6l2ZWlsbGV6LXZvdXMgZGFucyB1biByw6p2ZSDwn4yFICNNYXN0ZXJTdWl0ZSAjTWFycmFrZWNoICNIYXZuU3RheXMiLAogICAgICAiY2FwdGlvbl9lbiI6ICJXYWtlIHVwIGluIGEgZHJlYW0g8J+MhSAjTWFzdGVyU3VpdGUgI01hcnJha2VjaCAjSGF2blN0YXlzIgogICAgfSwKICAgIHsKICAgICAgImRheSI6IDYsCiAgICAgICJjYXRlZ29yeSI6ICJsaWZlc3R5bGVfc3BhIiwKICAgICAgInByb21wdCI6ICJDaW5lbWF0aWMgY2xvc2UtdXAgc2hvdCBvZiBhIGx1eHVyeSBoYW1tYW0gc3BhIHNjZW5lLCBzdGVhbSByaXNpbmcgZ2VudGx5LCB0cmFkaXRpb25hbCBibGFjayBzb2FwIGFuZCBrZXNzYSBnbG92ZSBvbiBtYXJibGUgc3VyZmFjZSwgcm9zZSB3YXRlciBtaXN0LCBjb3BwZXIgYm93bHMsIHdhcm0gYW1iaWVudCBsaWdodGluZyB0aHJvdWdoIHBlcmZvcmF0ZWQgZG9tZSBjZWlsaW5nIGNyZWF0aW5nIHN0YXItbGlrZSBsaWdodCBwYXR0ZXJucywgdWx0cmEgY2luZW1hdGljIHF1YWxpdHksIHNvZnQgZm9jdXMsIHNlbnNvcnkgYXRtb3NwaGVyZSwgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICJIYW1tYW0gcHJpdsOpIGRhbnMgdm90cmUgdmlsbGEg8J+nluKAjeKZgO+4jyAjU3BhICNIYW1tYW0gI0hhdm5TdGF5cyAjV2VsbG5lc3MiLAogICAgICAiY2FwdGlvbl9lbiI6ICJQcml2YXRlIGhhbW1hbSBpbiB5b3VyIHZpbGxhIPCfp5bigI3imYDvuI8gI1NwYSAjSGFtbWFtICNIYXZuU3RheXMgI1dlbGxuZXNzIgogICAgfSwKICAgIHsKICAgICAgImRheSI6IDcsCiAgICAgICJjYXRlZ29yeSI6ICJ2aWxsYV9nYXJkZW4iLAogICAgICAicHJvbXB0IjogIkNpbmVtYXRpYyBzbW9vdGggc3RlYWRpY2FtIHdhbGsgdGhyb3VnaCBhIGx1c2ggTW9yb2NjYW4gZ2FyZGVuLCBib3VnYWludmlsbGVhIGNhc2NhZGluZyBvdmVyIGFuY2llbnQgd2FsbHMsIG9yYW5nZSBhbmQgbGVtb24gdHJlZXMsIGNlbnRyYWwgbWFyYmxlIGZvdW50YWluIHdpdGggbW9zYWljIHRpbGV3b3JrLCBjb2JibGVzdG9uZSBwYXRod2F5cywgbW9ybmluZyBkZXcgb24gcm9zZSBwZXRhbHMsIGJpcmRzIHNpbmdpbmcsIHdhcm0gc3VubGlnaHQgZmlsdGVyaW5nIHRocm91Z2ggcGFsbSBmcm9uZHMsIHVsdHJhIGNpbmVtYXRpYyBxdWFsaXR5LCA0SyIsCiAgICAgICJjYXB0aW9uX2ZyIjogIlVuIGphcmRpbiBzZWNyZXQgYXUgY8WTdXIgZGUgTWFycmFrZWNoIPCfjL8gI0dhcmRlbiAjTWFycmFrZWNoICNIYXZuU3RheXMiLAogICAgICAiY2FwdGlvbl9lbiI6ICJBIHNlY3JldCBnYXJkZW4gaW4gdGhlIGhlYXJ0IG9mIE1hcnJha2VjaCDwn4y/ICNHYXJkZW4gI01hcnJha2VjaCAjSGF2blN0YXlzIgogICAgfSwKICAgIHsKICAgICAgImRheSI6IDgsCiAgICAgICJjYXRlZ29yeSI6ICJsaWZlc3R5bGVfc3Vuc2V0IiwKICAgICAgInByb21wdCI6ICJDaW5lbWF0aWMgcGFub3JhbWljIHNob3Qgb2YgYSBicmVhdGh0YWtpbmcgc3Vuc2V0IG92ZXIgTWFycmFrZWNoIGZyb20gYSBsdXh1cnkgdmlsbGEgcm9vZnRvcCB0ZXJyYWNlLCBLb3V0b3ViaWEgbW9zcXVlIHNpbGhvdWV0dGUgaW4gdGhlIGRpc3RhbmNlLCBBdGxhcyBNb3VudGFpbnMgZ2xvd2luZyBwaW5rIGFuZCBvcmFuZ2UsIGNvY2t0YWlsIGdsYXNzZXMgaW4gZm9yZWdyb3VuZCwgYW1iaWVudCBsb3VuZ2UgYXRtb3NwaGVyZSwgd2FybSBnb2xkZW4gYW5kIG1hZ2VudGEgY29sb3IgZ3JhZGluZywgdWx0cmEgY2luZW1hdGljIHF1YWxpdHksIDRLIiwKICAgICAgImNhcHRpb25fZnIiOiAiU3Vuc2V0IHByaXbDqSBhdmVjIHZ1ZSBzdXIgbCdBdGxhcyDwn4yFICNSb29mdG9wICNTdW5zZXQgI01hcnJha2VjaCAjSGF2blN0YXlzIiwKICAgICAgImNhcHRpb25fZW4iOiAiUHJpdmF0ZSBzdW5zZXQgd2l0aCBBdGxhcyB2aWV3cyDwn4yFICNSb29mdG9wICNTdW5zZXQgI01hcnJha2VjaCAjSGF2blN0YXlzIgogICAgfSwKICAgIHsKICAgICAgImRheSI6IDksCiAgICAgICJjYXRlZ29yeSI6ICJ2aWxsYV9iYXRocm9vbSIsCiAgICAgICJwcm9tcHQiOiAiQ2luZW1hdGljIHNsb3cgcmV2ZWFsIHNob3Qgb2YgYSBsdXh1cmlvdXMgTW9yb2NjYW4gYmF0aHJvb20sIGZyZWVzdGFuZGluZyBjb3BwZXIgYmF0aHR1YiBmaWxsZWQgd2l0aCByb3NlIHBldGFscywgdGFkZWxha3Qgd2FsbHMgaW4gc29mdCBjcmVhbSwgb3JuYXRlIGJyYXNzIGZpeHR1cmVzLCBuYXR1cmFsIGxpZ2h0IGZyb20gYSBza3lsaWdodCwgc2NlbnRlZCBjYW5kbGVzLCBldWNhbHlwdHVzIGJyYW5jaGVzLCBzdGVhbSByaXNpbmcgZ2VudGx5LCB1bHRyYSBjaW5lbWF0aWMgcXVhbGl0eSwgd2FybSB0b25lcywgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICJCYWluIGRlIHJvc2VzIGRhbnMgdm90cmUgc2FsbGUgZGUgYmFpbiBwcml2w6llIPCfjLkgI0JhdGhyb29tICNMdXh1cnkgI0hhdm5TdGF5cyIsCiAgICAgICJjYXB0aW9uX2VuIjogIlJvc2UgYmF0aCBpbiB5b3VyIHByaXZhdGUgYmF0aHJvb20g8J+MuSAjQmF0aHJvb20gI0x1eHVyeSAjSGF2blN0YXlzIgogICAgfSwKICAgIHsKICAgICAgImRheSI6IDEwLAogICAgICAiY2F0ZWdvcnkiOiAibGlmZXN0eWxlX2JyZWFrZmFzdCIsCiAgICAgICJwcm9tcHQiOiAiQ2luZW1hdGljIG92ZXJoZWFkIHRyYWNraW5nIHNob3Qgb2YgYSB0cmFkaXRpb25hbCBNb3JvY2NhbiBicmVha2Zhc3Qgc3ByZWFkIG9uIGEgc3VubGl0IHRlcnJhY2UsIGZyZXNoIG1pbnQgdGVhIGJlaW5nIHBvdXJlZCwgbXNlbWVuLCBhbWxvdSwgaG9uZXksIGZyZXNoIG9yYW5nZSBqdWljZSwgb2xpdmUgb2lsLCBzZWFzb25hbCBmcnVpdHMsIGNvbG9yZnVsIE1vcm9jY2FuIGNlcmFtaWNzLCBtb3JuaW5nIGxpZ2h0LCBnYXJkZW4gdmlzaWJsZSBpbiBiYWNrZ3JvdW5kLCB1bHRyYSBjaW5lbWF0aWMgcXVhbGl0eSwgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICJQZXRpdC1kw6lqZXVuZXIgbWFyb2NhaW4gc2VydmkgY2hleiB2b3VzIPCfjYogI0JyZWFrZmFzdCAjTWFycmFrZWNoICNIYXZuU3RheXMiLAogICAgICAiY2FwdGlvbl9lbiI6ICJNb3JvY2NhbiBicmVha2Zhc3Qgc2VydmVkIGF0IHlvdXIgdmlsbGEg8J+NiiAjQnJlYWtmYXN0ICNNYXJyYWtlY2ggI0hhdm5TdGF5cyIKICAgIH0sCiAgICB7CiAgICAgICJkYXkiOiAxMSwKICAgICAgImNhdGVnb3J5IjogInZpbGxhX2xpdmluZyIsCiAgICAgICJwcm9tcHQiOiAiQ2luZW1hdGljIHNtb290aCB0cmFja2luZyBzaG90IHRocm91Z2ggYW4gZXhwYW5zaXZlIE1vcm9jY2FuIGxpdmluZyByb29tLCBwbHVzaCB2ZWx2ZXQgc29mYXMgaW4gamV3ZWwgdG9uZXMsIGhhbmQtY2FydmVkIGNlZGFyd29vZCBjb2ZmZWUgdGFibGUsIHplbGxpZ2UgZmlyZXBsYWNlLCBsYXJnZSBCZXJiZXIgcnVnLCBmbG9vci10by1jZWlsaW5nIHdpbmRvd3Mgd2l0aCBnYXJkZW4gdmlldywgYWZ0ZXJub29uIGxpZ2h0IGNyZWF0aW5nIHdhcm0gc2hhZG93cywgY29udGVtcG9yYXJ5IGFydCBvbiB0YWRlbGFrdCB3YWxscywgdWx0cmEgY2luZW1hdGljIHF1YWxpdHksIDRLIiwKICAgICAgImNhcHRpb25fZnIiOiAiTGUgc2Fsb24gZGUgdm9zIHLDqnZlcyDwn5uL77iPICNMaXZpbmdSb29tICNEZXNpZ24gI0hhdm5TdGF5cyAjTWFycmFrZWNoIiwKICAgICAgImNhcHRpb25fZW4iOiAiVGhlIGxpdmluZyByb29tIG9mIHlvdXIgZHJlYW1zIPCfm4vvuI8gI0xpdmluZ1Jvb20gI0Rlc2lnbiAjSGF2blN0YXlzICNNYXJyYWtlY2giCiAgICB9LAogICAgewogICAgICAiZGF5IjogMTIsCiAgICAgICJjYXRlZ29yeSI6ICJsaWZlc3R5bGVfZXhjdXJzaW9uIiwKICAgICAgInByb21wdCI6ICJDaW5lbWF0aWMgYWVyaWFsIGRyb25lIHNob3Qgc3dlZXBpbmcgb3ZlciB0aGUgc3R1bm5pbmcgQWdhZmF5IGRlc2VydCBuZWFyIE1hcnJha2VjaCwgZ29sZGVuIHNhbmQgZHVuZXMsIGx1eHVyeSBnbGFtcGluZyB0ZW50cyBpbiB0aGUgZGlzdGFuY2UsIGNhbWVsIGNhcmF2YW4gc2lsaG91ZXR0ZWQgYWdhaW5zdCBzdW5zZXQsIEF0bGFzIE1vdW50YWlucyBiYWNrZHJvcCwgd2FybSBkZXNlcnQgcGFsZXR0ZSwgZHVzdCBwYXJ0aWNsZXMgaW4gZ29sZGVuIGhvdXIgbGlnaHQsIHVsdHJhIGNpbmVtYXRpYyBxdWFsaXR5LCA0SyIsCiAgICAgICJjYXB0aW9uX2ZyIjogIkV4Y3Vyc2lvbiBwcml2w6llIGRhbnMgbGUgZMOpc2VydCBkJ0FnYWZheSDwn5CqICNEZXNlcnQgI0FnYWZheSAjSGF2blN0YXlzIiwKICAgICAgImNhcHRpb25fZW4iOiAiUHJpdmF0ZSBleGN1cnNpb24gdG8gQWdhZmF5IGRlc2VydCDwn5CqICNEZXNlcnQgI0FnYWZheSAjSGF2blN0YXlzIgogICAgfSwKICAgIHsKICAgICAgImRheSI6IDEzLAogICAgICAiY2F0ZWdvcnkiOiAidmlsbGFfdGVycmFjZSIsCiAgICAgICJwcm9tcHQiOiAiQ2luZW1hdGljIGRvbGx5IHNob3QgYWNyb3NzIGEgc3R1bm5pbmcgdmlsbGEgdGVycmFjZSB3aXRoIG91dGRvb3IgTW9yb2NjYW4gZGF5YmVkLCBmbG93aW5nIHdoaXRlIGRyYXBlcywgcGx1bmdlIHBvb2wgcmVmbGVjdGluZyB0aGUgc2t5LCBwb3R0ZWQgb2xpdmUgdHJlZXMsIGhhbmQtcGFpbnRlZCBjZXJhbWljIHBsYW50ZXJzLCBBdGxhcyBNb3VudGFpbiBwYW5vcmFtYSBpbiBiYWNrZ3JvdW5kLCBsYXRlIGFmdGVybm9vbiBnb2xkZW4gbGlnaHQsIHVsdHJhIGNpbmVtYXRpYyBxdWFsaXR5LCA0SyIsCiAgICAgICJjYXB0aW9uX2ZyIjogIlZvdHJlIHRlcnJhc3NlIHByaXbDqWUsIHZ1ZSBBdGxhcyDwn4+U77iPICNUZXJyYWNlICNWaWV3cyAjSGF2blN0YXlzICNNYXJyYWtlY2giLAogICAgICAiY2FwdGlvbl9lbiI6ICJZb3VyIHByaXZhdGUgdGVycmFjZSwgQXRsYXMgdmlld3Mg8J+PlO+4jyAjVGVycmFjZSAjVmlld3MgI0hhdm5TdGF5cyAjTWFycmFrZWNoIgogICAgfSwKICAgIHsKICAgICAgImRheSI6IDE0LAogICAgICAiY2F0ZWdvcnkiOiAibGlmZXN0eWxlX2NvY2t0YWlsIiwKICAgICAgInByb21wdCI6ICJDaW5lbWF0aWMgY2xvc2UtdXAgc2xvdyBtb3Rpb24gb2YgYSBtaXhvbG9naXN0IHByZXBhcmluZyBhIHNpZ25hdHVyZSBjb2NrdGFpbCBhdCBhIGx1eHVyeSB2aWxsYSBiYXIsIHBvdXJpbmcgYW1iZXIgbGlxdWlkIG92ZXIgY3J5c3RhbCBpY2Ugc3BoZXJlLCBmcmVzaCBtaW50IGFuZCBvcmFuZ2UgcGVlbCBnYXJuaXNoLCB3YXJtIGJhY2tsaXQgYm90dGxlcywgTW9yb2NjYW4gYnJhc3MgYmFyIHRvb2xzLCBib2tlaCBsaWdodHMgaW4gYmFja2dyb3VuZCwgdWx0cmEgY2luZW1hdGljIHF1YWxpdHksIDRLIiwKICAgICAgImNhcHRpb25fZnIiOiAiQ29ja3RhaWxzIHNpZ25hdHVyZSBzZXJ2aXMgw6AgZG9taWNpbGUg8J+NuCAjQ29ja3RhaWxzICNQcml2YXRlQmFyICNIYXZuU3RheXMiLAogICAgICAiY2FwdGlvbl9lbiI6ICJTaWduYXR1cmUgY29ja3RhaWxzIHNlcnZlZCBhdCBob21lIPCfjbggI0NvY2t0YWlscyAjUHJpdmF0ZUJhciAjSGF2blN0YXlzIgogICAgfSwKICAgIHsKICAgICAgImRheSI6IDE1LAogICAgICAiY2F0ZWdvcnkiOiAidmlsbGFfZXh0ZXJpb3JfbmlnaHQiLAogICAgICAicHJvbXB0IjogIkNpbmVtYXRpYyB3aWRlIHNob3Qgb2YgYSBsdXh1cnkgTW9yb2NjYW4gdmlsbGEgYXQgbmlnaHQsIGlsbHVtaW5hdGVkIHBvb2wgZ2xvd2luZyB0dXJxdW9pc2UsIGJyYXNzIGxhbnRlcm5zIGNhc3Rpbmcgd2FybSBwYXR0ZXJucyBvbiB3YWxscywgc3RyaW5nIGxpZ2h0cyBpbiBnYXJkZW4sIHN0YXJyeSBza3kgYWJvdmUsIHBhbG0gdHJlZSBzaWxob3VldHRlcywgb3V0ZG9vciBmaXJlIHBpdCB3aXRoIGdlbnRsZSBmbGFtZXMsIG1hZ2ljYWwgZXZlbmluZyBhdG1vc3BoZXJlLCB1bHRyYSBjaW5lbWF0aWMgcXVhbGl0eSwgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICJRdWFuZCBsYSBudWl0IHRvbWJlIHN1ciB2b3RyZSB2aWxsYSDwn4yZICNOaWdodFZpYmVzICNNYXJyYWtlY2ggI0hhdm5TdGF5cyIsCiAgICAgICJjYXB0aW9uX2VuIjogIldoZW4gbmlnaHQgZmFsbHMgb24geW91ciB2aWxsYSDwn4yZICNOaWdodFZpYmVzICNNYXJyYWtlY2ggI0hhdm5TdGF5cyIKICAgIH0sCiAgICB7CiAgICAgICJkYXkiOiAxNiwKICAgICAgImNhdGVnb3J5IjogImxpZmVzdHlsZV95b2dhIiwKICAgICAgInByb21wdCI6ICJDaW5lbWF0aWMgd2lkZSBzaG90IG9mIGEgd29tYW4gcHJhY3RpY2luZyB5b2dhIG9uIGEgc3VubGl0IHZpbGxhIHJvb2Z0b3AgYXQgc3VucmlzZSwgb3Zlcmxvb2tpbmcgTWFycmFrZWNoLCBzb2Z0IG1vcm5pbmcgbWlzdCwgbWVkaXRhdGlvbiBjdXNoaW9ucyBhcnJhbmdlZCBuZWFyYnksIGZyZXNoIGV1Y2FseXB0dXMsIEF0bGFzIE1vdW50YWlucyBnbG93aW5nIGluIGRhd24gbGlnaHQsIHBlYWNlZnVsIHNlcmVuZSBhdG1vc3BoZXJlLCB1bHRyYSBjaW5lbWF0aWMgcXVhbGl0eSwgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICJZb2dhIGF1IGxldmVyIGR1IHNvbGVpbCBzdXIgdm90cmUgcm9vZnRvcCDwn6eY4oCN4pmA77iPICNZb2dhICNXZWxsbmVzcyAjSGF2blN0YXlzIiwKICAgICAgImNhcHRpb25fZW4iOiAiU3VucmlzZSB5b2dhIG9uIHlvdXIgcm9vZnRvcCDwn6eY4oCN4pmA77iPICNZb2dhICNXZWxsbmVzcyAjSGF2blN0YXlzIgogICAgfSwKICAgIHsKICAgICAgImRheSI6IDE3LAogICAgICAiY2F0ZWdvcnkiOiAidmlsbGFfa2l0Y2hlbiIsCiAgICAgICJwcm9tcHQiOiAiQ2luZW1hdGljIHRyYWNraW5nIHNob3QgdGhyb3VnaCBhIGdvdXJtZXQgTW9yb2NjYW4ga2l0Y2hlbiwgbWFyYmxlIGNvdW50ZXJ0b3BzLCBjb3BwZXIgY29va3dhcmUgaGFuZ2luZyBmcm9tIHJhY2ssIGZyZXNoIHNwaWNlcyBpbiBnbGFzcyBqYXJzLCB0YWdpbmUgb24gcHJvZmVzc2lvbmFsIHN0b3ZlLCBoZXJicyBmcm9tIHRoZSBnYXJkZW4sIG5hdHVyYWwgbGlnaHQgZnJvbSBsYXJnZSB3aW5kb3dzLCBtb2Rlcm4gbHV4dXJ5IG1lZXRzIHRyYWRpdGlvbmFsIGNyYWZ0LCB1bHRyYSBjaW5lbWF0aWMgcXVhbGl0eSwgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICJDaGVmIHByaXbDqSBkYW5zIHZvdHJlIGN1aXNpbmUgZCdleGNlcHRpb24g8J+RqOKAjfCfjbMgI0tpdGNoZW4gI0dvdXJtZXRMaWZlICNIYXZuU3RheXMiLAogICAgICAiY2FwdGlvbl9lbiI6ICJQcml2YXRlIGNoZWYgaW4geW91ciBleGNlcHRpb25hbCBraXRjaGVuIPCfkajigI3wn42zICNLaXRjaGVuICNHb3VybWV0TGlmZSAjSGF2blN0YXlzIgogICAgfSwKICAgIHsKICAgICAgImRheSI6IDE4LAogICAgICAiY2F0ZWdvcnkiOiAibGlmZXN0eWxlX21lZGluYSIsCiAgICAgICJwcm9tcHQiOiAiQ2luZW1hdGljIHN0ZWFkaWNhbSBzaG90IHdhbGtpbmcgdGhyb3VnaCB0aGUgdmlicmFudCBNYXJyYWtlY2ggbWVkaW5hIHNvdWtzLCBjb2xvcmZ1bCBzcGljZXMgcGlsZWQgaGlnaCwgaGFuZGNyYWZ0ZWQgbGVhdGhlciBnb29kcywgd292ZW4gYmFza2V0cywgc3VubGlnaHQgc3RyZWFtaW5nIHRocm91Z2ggZmFicmljIGNhbm9waWVzLCBidXN0bGluZyBhdG1vc3BoZXJlLCB3YXJtIGVhcnRoeSBjb2xvciBwYWxldHRlLCBhdXRoZW50aWMgTW9yb2NjYW4gY3VsdHVyZSwgdWx0cmEgY2luZW1hdGljIHF1YWxpdHksIDRLIiwKICAgICAgImNhcHRpb25fZnIiOiAiRXhwbG9yZXIgbGEgbcOpZGluYSwgw6AgZGV1eCBwYXMgZGUgdm90cmUgdmlsbGEg8J+noSAjTWVkaW5hICNTb3VrcyAjSGF2blN0YXlzIiwKICAgICAgImNhcHRpb25fZW4iOiAiRXhwbG9yZSB0aGUgbWVkaW5hLCBzdGVwcyBmcm9tIHlvdXIgdmlsbGEg8J+noSAjTWVkaW5hICNTb3VrcyAjSGF2blN0YXlzIgogICAgfSwKICAgIHsKICAgICAgImRheSI6IDE5LAogICAgICAiY2F0ZWdvcnkiOiAidmlsbGFfY291cnR5YXJkIiwKICAgICAgInByb21wdCI6ICJDaW5lbWF0aWMgb3ZlcmhlYWQgc2hvdCBkZXNjZW5kaW5nIGludG8gYSB0cmFkaXRpb25hbCBNb3JvY2NhbiByaWFkIGNvdXJ0eWFyZCwgY2VudHJhbCBvcm5hdGUgZm91bnRhaW4gd2l0aCBtb3NhaWMgemVsbGlnZSwgb3JhbmdlIHRyZWVzLCBoYW5kLXBhaW50ZWQgZG9vcnMgaW4gZGVlcCBibHVlLCBzeW1tZXRyaWNhbCBhcmNoaXRlY3R1cmUsIGRhcHBsZWQgc3VubGlnaHQsIHBlYWNlZnVsIG9hc2lzIGF0bW9zcGhlcmUsIHVsdHJhIGNpbmVtYXRpYyBxdWFsaXR5LCA0SyIsCiAgICAgICJjYXB0aW9uX2ZyIjogIkxlIHBhdGlvIHNlY3JldCBkZSB2b3RyZSByaWFkIPCflYwgI1JpYWQgI0NvdXJ0eWFyZCAjSGF2blN0YXlzICNNYXJyYWtlY2giLAogICAgICAiY2FwdGlvbl9lbiI6ICJUaGUgc2VjcmV0IHBhdGlvIG9mIHlvdXIgcmlhZCDwn5WMICNSaWFkICNDb3VydHlhcmQgI0hhdm5TdGF5cyAjTWFycmFrZWNoIgogICAgfSwKICAgIHsKICAgICAgImRheSI6IDIwLAogICAgICAiY2F0ZWdvcnkiOiAibGlmZXN0eWxlX2dvbGYiLAogICAgICAicHJvbXB0IjogIkNpbmVtYXRpYyBhZXJpYWwgZHJvbmUgc2hvdCBvdmVyIGEgcHJpc3RpbmUgZ29sZiBjb3Vyc2UgbmVhciBNYXJyYWtlY2gsIGVtZXJhbGQgZ3JlZW4gZmFpcndheXMgY29udHJhc3Rpbmcgd2l0aCBkZXNlcnQgbGFuZHNjYXBlLCBBdGxhcyBNb3VudGFpbnMgaW4gYmFja2dyb3VuZCwgbHV4dXJ5IGdvbGYgY2FydCwgZWFybHkgbW9ybmluZyBsaWdodCB3aXRoIGxvbmcgc2hhZG93cywgcHJvZmVzc2lvbmFsIGNpbmVtYXRpYyBjb2xvciBncmFkaW5nLCB1bHRyYSBjaW5lbWF0aWMgcXVhbGl0eSwgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICJHb2xmIGF2ZWMgdnVlIHN1ciBsJ0F0bGFzIPCfj4zvuI8gI0dvbGYgI01hcnJha2VjaCAjSGF2blN0YXlzICNMdXh1cnkiLAogICAgICAiY2FwdGlvbl9lbiI6ICJHb2xmIHdpdGggQXRsYXMgdmlld3Mg8J+PjO+4jyAjR29sZiAjTWFycmFrZWNoICNIYXZuU3RheXMgI0x1eHVyeSIKICAgIH0sCiAgICB7CiAgICAgICJkYXkiOiAyMSwKICAgICAgImNhdGVnb3J5IjogInZpbGxhX2RldGFpbCIsCiAgICAgICJwcm9tcHQiOiAiQ2luZW1hdGljIGV4dHJlbWUgY2xvc2UtdXAgbW9udGFnZSBvZiBsdXh1cnkgdmlsbGEgZGV0YWlscywgaGFuZC1wYWludGVkIHplbGxpZ2UgdGlsZXMsIGNhcnZlZCBwbGFzdGVyIGFyYWJlc3F1ZSBwYXR0ZXJucywgYnJhc3MgZG9vciBoYW5kbGUgd2l0aCBpbnRyaWNhdGUgZGVzaWduLCBzaWxrIGN1c2hpb24gZW1icm9pZGVyeSwgY2VkYXIgd29vZCBjYXJ2aW5nLCBzb2Z0IHJhY2sgZm9jdXMgYmV0d2VlbiBkZXRhaWxzLCB3YXJtIGxpZ2h0aW5nLCB1bHRyYSBjaW5lbWF0aWMgcXVhbGl0eSwgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICJMZSBsdXhlIGVzdCBkYW5zIGxlcyBkw6l0YWlscyDinKggI0RldGFpbHMgI0NyYWZ0c21hbnNoaXAgI0hhdm5TdGF5cyIsCiAgICAgICJjYXB0aW9uX2VuIjogIkx1eHVyeSBpcyBpbiB0aGUgZGV0YWlscyDinKggI0RldGFpbHMgI0NyYWZ0c21hbnNoaXAgI0hhdm5TdGF5cyIKICAgIH0sCiAgICB7CiAgICAgICJkYXkiOiAyMiwKICAgICAgImNhdGVnb3J5IjogImxpZmVzdHlsZV90ZWEiLAogICAgICAicHJvbXB0IjogIkNpbmVtYXRpYyBjbG9zZS11cCBvZiB0cmFkaXRpb25hbCBNb3JvY2NhbiBtaW50IHRlYSBjZXJlbW9ueSwgc2lsdmVyIHRlYXBvdCBwb3VyaW5nIGZyb20gaGVpZ2h0IGludG8gb3JuYXRlIGdsYXNzLCBzdGVhbSByaXNpbmcsIGZyZXNoIG1pbnQgbGVhdmVzLCBzdWdhciBjdWJlcywgaGFuZC1wYWludGVkIHRlYSB0cmF5LCB3YXJtIGFmdGVybm9vbiBsaWdodCwgTW9yb2NjYW4gc2Fsb24gYmFja2Ryb3Agd2l0aCBjb2xvcmZ1bCBjdXNoaW9ucywgdWx0cmEgY2luZW1hdGljIHF1YWxpdHksIDRLIiwKICAgICAgImNhcHRpb25fZnIiOiAiTCdhcnQgZHUgdGjDqSBtYXJvY2FpbiDwn421ICNNaW50VGVhICNUcmFkaXRpb24gI0hhdm5TdGF5cyAjTWFycmFrZWNoIiwKICAgICAgImNhcHRpb25fZW4iOiAiVGhlIGFydCBvZiBNb3JvY2NhbiB0ZWEg8J+NtSAjTWludFRlYSAjVHJhZGl0aW9uICNIYXZuU3RheXMgI01hcnJha2VjaCIKICAgIH0sCiAgICB7CiAgICAgICJkYXkiOiAyMywKICAgICAgImNhdGVnb3J5IjogInZpbGxhX3Bvb2xfZGV0YWlsIiwKICAgICAgInByb21wdCI6ICJDaW5lbWF0aWMgdW5kZXJ3YXRlciBhbmQgYWJvdmUgd2F0ZXIgc3BsaXQgc2hvdCBvZiBhIGx1eHVyeSB2aWxsYSBpbmZpbml0eSBwb29sLCBjcnlzdGFsIGNsZWFyIHdhdGVyLCBtb3NhaWMgdGlsZSBib3R0b20gdmlzaWJsZSwgcGFsbSB0cmVlcyBhbmQgYmx1ZSBza3kgYWJvdmUgd2F0ZXIgbGluZSwgZ2VudGxlIHJpcHBsZXMsIHN1bmxpZ2h0IHJlZnJhY3RpbmcgdGhyb3VnaCB3YXRlciwgZHJlYW15IHN1bW1lciBhdG1vc3BoZXJlLCB1bHRyYSBjaW5lbWF0aWMgcXVhbGl0eSwgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICJFbnRyZSBkZXV4IG1vbmRlcyDwn5KnICNQb29sICNJbmZpbml0eVBvb2wgI0hhdm5TdGF5cyAjTWFycmFrZWNoIiwKICAgICAgImNhcHRpb25fZW4iOiAiQmV0d2VlbiB0d28gd29ybGRzIPCfkqcgI1Bvb2wgI0luZmluaXR5UG9vbCAjSGF2blN0YXlzICNNYXJyYWtlY2giCiAgICB9LAogICAgewogICAgICAiZGF5IjogMjQsCiAgICAgICJjYXRlZ29yeSI6ICJsaWZlc3R5bGVfbWFya2V0IiwKICAgICAgInByb21wdCI6ICJDaW5lbWF0aWMgdHJhY2tpbmcgc2hvdCB0aHJvdWdoIGEgTW9yb2NjYW4gZmxvd2VyIGFuZCBmcnVpdCBtYXJrZXQsIG1vdW50YWlucyBvZiBmcmVzaCBvcmFuZ2VzIGFuZCBkYXRlcywgcm9zZXMgYW5kIGphc21pbmUgYnVuZGxlcywgdmlicmFudCBjb2xvcnMsIGxvY2FsIGFydGlzYW5zIGF0IHdvcmssIHdhcm0gbmF0dXJhbCBsaWdodCwgcmljaCB0ZXh0dXJlcyBhbmQgcGF0dGVybnMsIGF1dGhlbnRpYyBhdG1vc3BoZXJlLCB1bHRyYSBjaW5lbWF0aWMgcXVhbGl0eSwgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICJMZXMgc2F2ZXVycyBkdSBNYXJvYyBwb3VyIHZvdHJlIHZpbGxhIPCfjYogI0ZyZXNoTWFya2V0ICNNYXJyYWtlY2ggI0hhdm5TdGF5cyIsCiAgICAgICJjYXB0aW9uX2VuIjogIkZsYXZvcnMgb2YgTW9yb2NjbyBmb3IgeW91ciB2aWxsYSDwn42KICNGcmVzaE1hcmtldCAjTWFycmFrZWNoICNIYXZuU3RheXMiCiAgICB9LAogICAgewogICAgICAiZGF5IjogMjUsCiAgICAgICJjYXRlZ29yeSI6ICJ2aWxsYV9lbnRyYW5jZSIsCiAgICAgICJwcm9tcHQiOiAiQ2luZW1hdGljIHNsb3cgcHVzaC1pbiBzaG90IGFwcHJvYWNoaW5nIGEgZ3JhbmQgTW9yb2NjYW4gdmlsbGEgZW50cmFuY2UsIG1hc3NpdmUgY2FydmVkIHdvb2RlbiBkb29yIHdpdGggYnJhc3Mgc3R1ZHMsIGJvdWdhaW52aWxsZWEgY2FzY2FkaW5nIG92ZXIgb2NocmUgd2FsbHMsIHRyYWRpdGlvbmFsIHplbGxpZ2UgYXJjaHdheSwgbGFudGVybnMgZmxhbmtpbmcgdGhlIGVudHJhbmNlLCBhZnRlcm5vb24gZ29sZGVuIGxpZ2h0LCBzZW5zZSBvZiBkaXNjb3ZlcnkgYW5kIGFycml2YWwsIHVsdHJhIGNpbmVtYXRpYyBxdWFsaXR5LCA0SyIsCiAgICAgICJjYXB0aW9uX2ZyIjogIkJpZW52ZW51ZSBjaGV6IHZvdXMgw6AgTWFycmFrZWNoIPCfmqogI0dyYW5kRW50cmFuY2UgI0hhdm5TdGF5cyAjVmlsbGEiLAogICAgICAiY2FwdGlvbl9lbiI6ICJXZWxjb21lIGhvbWUgaW4gTWFycmFrZWNoIPCfmqogI0dyYW5kRW50cmFuY2UgI0hhdm5TdGF5cyAjVmlsbGEiCiAgICB9LAogICAgewogICAgICAiZGF5IjogMjYsCiAgICAgICJjYXRlZ29yeSI6ICJsaWZlc3R5bGVfYXRsYXMiLAogICAgICAicHJvbXB0IjogIkNpbmVtYXRpYyBzd2VlcGluZyBkcm9uZSBzaG90IG92ZXIgdGhlIHNub3ctY2FwcGVkIEF0bGFzIE1vdW50YWlucyBhdCBnb2xkZW4gaG91ciwgZHJhbWF0aWMgcGVha3MgYW5kIHZhbGxleXMsIHRyYWRpdGlvbmFsIEJlcmJlciB2aWxsYWdlIGJlbG93LCB3aW5kaW5nIG1vdW50YWluIHJvYWQsIGVwaWMgc2NhbGUsIHdhcm0gYW5kIGNvb2wgdG9uZXMgY29udHJhc3RpbmcsIGJyZWF0aHRha2luZyBsYW5kc2NhcGUsIHVsdHJhIGNpbmVtYXRpYyBxdWFsaXR5LCA0SyIsCiAgICAgICJjYXB0aW9uX2ZyIjogIkwnQXRsYXMsIHZvdHJlIHZvaXNpbiDwn4+U77iPICNBdGxhc01vdW50YWlucyAjTW9yb2NjbyAjSGF2blN0YXlzIiwKICAgICAgImNhcHRpb25fZW4iOiAiVGhlIEF0bGFzLCB5b3VyIG5laWdoYm9yIPCfj5TvuI8gI0F0bGFzTW91bnRhaW5zICNNb3JvY2NvICNIYXZuU3RheXMiCiAgICB9LAogICAgewogICAgICAiZGF5IjogMjcsCiAgICAgICJjYXRlZ29yeSI6ICJ2aWxsYV9zdWl0ZSIsCiAgICAgICJwcm9tcHQiOiAiQ2luZW1hdGljIHNsb3cgdHJhY2tpbmcgc2hvdCB0aHJvdWdoIGEgbHV4dXJ5IGd1ZXN0IHN1aXRlLCB0d2luIGJlZHMgd2l0aCBNb3JvY2NhbiB0ZXh0aWxlcywgcHJpdmF0ZSBiYWxjb255IHdpdGggZ2FyZGVuIHZpZXcsIGVuLXN1aXRlIGJhdGhyb29tIHZpc2libGUgdGhyb3VnaCBhcmNod2F5LCBzb2Z0IGFmdGVybm9vbiBsaWdodCwgZnJlc2ggZmxvd2VycyBhbmQgd2VsY29tZSBhbWVuaXRpZXMgb24gc2lkZSB0YWJsZSwgYm91dGlxdWUgaG90ZWwgYXRtb3NwaGVyZSwgdWx0cmEgY2luZW1hdGljIHF1YWxpdHksIDRLIiwKICAgICAgImNhcHRpb25fZnIiOiAiQ2hhcXVlIHN1aXRlIGVzdCB1bmUgZXhww6lyaWVuY2Ug8J+bj++4jyAjR3Vlc3RTdWl0ZSAjQm91dGlxdWUgI0hhdm5TdGF5cyIsCiAgICAgICJjYXB0aW9uX2VuIjogIkV2ZXJ5IHN1aXRlIGlzIGFuIGV4cGVyaWVuY2Ug8J+bj++4jyAjR3Vlc3RTdWl0ZSAjQm91dGlxdWUgI0hhdm5TdGF5cyIKICAgIH0sCiAgICB7CiAgICAgICJkYXkiOiAyOCwKICAgICAgImNhdGVnb3J5IjogImxpZmVzdHlsZV9jb29raW5nIiwKICAgICAgInByb21wdCI6ICJDaW5lbWF0aWMgY2xvc2UtdXAgb2YgaGFuZHMgcHJlcGFyaW5nIGEgdHJhZGl0aW9uYWwgTW9yb2NjYW4gdGFnaW5lLCBhcnJhbmdpbmcgcHJlc2VydmVkIGxlbW9ucyBhbmQgb2xpdmVzIG92ZXIgc2FmZnJvbiBjaGlja2VuLCBzdGVhbSByaXNpbmcgZnJvbSBjbGF5IHBvdCwgY29sb3JmdWwgc3BpY2VzIGluIHNtYWxsIGJvd2xzIG5lYXJieSwgcHJvZmVzc2lvbmFsIGtpdGNoZW4gc2V0dGluZywgd2FybSBpbnZpdGluZyBhdG1vc3BoZXJlLCB1bHRyYSBjaW5lbWF0aWMgcXVhbGl0eSwgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICJDb3VycyBkZSBjdWlzaW5lIG1hcm9jYWluZSBkYW5zIHZvdHJlIHZpbGxhIPCfjbIgI0Nvb2tpbmdDbGFzcyAjVGFnaW5lICNIYXZuU3RheXMiLAogICAgICAiY2FwdGlvbl9lbiI6ICJNb3JvY2NhbiBjb29raW5nIGNsYXNzIGF0IHlvdXIgdmlsbGEg8J+NsiAjQ29va2luZ0NsYXNzICNUYWdpbmUgI0hhdm5TdGF5cyIKICAgIH0sCiAgICB7CiAgICAgICJkYXkiOiAyOSwKICAgICAgImNhdGVnb3J5IjogInZpbGxhX291dGRvb3JfbGl2aW5nIiwKICAgICAgInByb21wdCI6ICJDaW5lbWF0aWMgd2lkZSB0cmFja2luZyBzaG90IG9mIGFuIG91dGRvb3IgbGl2aW5nIGFyZWEgYXQgYSBNb3JvY2NhbiB2aWxsYSwgbGFyZ2UgTC1zaGFwZWQgc29mYSB3aXRoIHBsdXNoIGN1c2hpb25zLCBvdXRkb29yIGZpcmVwbGFjZSBjcmFja2xpbmcsIHN0cmluZyBsaWdodHMgb3ZlcmhlYWQsIG1hdHVyZSBvbGl2ZSB0cmVlcywgcmVmbGVjdGl2ZSBwb29sIG5lYXJieSwgdHJhbnNpdGlvbiBmcm9tIGRheSB0byBnb2xkZW4gaG91ciBsaWdodCwgcmVzb3J0LWxldmVsIGNvbWZvcnQsIHVsdHJhIGNpbmVtYXRpYyBxdWFsaXR5LCA0SyIsCiAgICAgICJjYXB0aW9uX2ZyIjogIlZvdHJlIHNhbG9uIGVuIHBsZWluIGFpciDwn4y/ICNPdXRkb29yTGl2aW5nICNNYXJyYWtlY2ggI0hhdm5TdGF5cyIsCiAgICAgICJjYXB0aW9uX2VuIjogIllvdXIgb3Blbi1haXIgbGl2aW5nIHJvb20g8J+MvyAjT3V0ZG9vckxpdmluZyAjTWFycmFrZWNoICNIYXZuU3RheXMiCiAgICB9LAogICAgewogICAgICAiZGF5IjogMzAsCiAgICAgICJjYXRlZ29yeSI6ICJsaWZlc3R5bGVfZGVwYXJ0dXJlIiwKICAgICAgInByb21wdCI6ICJDaW5lbWF0aWMgZW1vdGlvbmFsIHNob3Qgb2YgYSBsdXh1cnkgdmlsbGEgZ2F0ZSBzbG93bHkgY2xvc2luZyBhdCBzdW5zZXQsIHdhcm0gbGlnaHQgc3BpbGxpbmcgdGhyb3VnaCB0aGUgZ2FwLCBnbGltcHNlIG9mIHRoZSBiZWF1dGlmdWwgZ2FyZGVuIGluc2lkZSwgc2Vuc2Ugb2YgZm9uZCBmYXJld2VsbCBhbmQgcHJvbWlzZSB0byByZXR1cm4sIGdlbnRsZSBicmVlemUgbW92aW5nIGN1cnRhaW5zLCBub3N0YWxnaWMgd2FybSBjb2xvciBncmFkaW5nLCB1bHRyYSBjaW5lbWF0aWMgcXVhbGl0eSwgNEsiLAogICAgICAiY2FwdGlvbl9mciI6ICLDgCBiaWVudMO0dCwgTWFycmFrZWNoLi4uIExlIG1laWxsZXVyIHJlc3RlIMOgIHZlbmlyIPCfkqsgI1NlZVlvdVNvb24gI0hhdm5TdGF5cyIsCiAgICAgICJjYXB0aW9uX2VuIjogIlNlZSB5b3Ugc29vbiwgTWFycmFrZWNoLi4uIFRoZSBiZXN0IGlzIHlldCB0byBjb21lIPCfkqsgI1NlZVlvdVNvb24gI0hhdm5TdGF5cyIKICAgIH0KICBdCn0K"}
+{
+  "brand": "Havn Stays",
+  "format": "9:16 vertical (Instagram Reels)",
+  "duration": "5 seconds",
+  "prompts": [
+    {
+      "day": 1,
+      "category": "villa_exterior",
+      "prompt": "Cinematic aerial drone shot gliding over a stunning luxury villa in Marrakech Morocco, turquoise infinity pool, golden hour sunlight, lush palm trees, traditional Moroccan architecture with modern design, warm terracotta walls, zellige tilework, white outdoor lounge furniture, ultra cinematic quality, shallow depth of field, 4K",
+      "caption_fr": "Votre villa privée vous attend à Marrakech ✨ #HavnStays #Marrakech #LuxuryVilla",
+      "caption_en": "Your private villa awaits in Marrakech ✨ #HavnStays #Marrakech #LuxuryVilla"
+    },
+    {
+      "day": 2,
+      "category": "villa_interior",
+      "prompt": "Cinematic slow tracking shot through a luxurious Moroccan villa interior in Marrakech, ornate zellige tilework on walls and floors, carved white plaster arabesques, flowing sheer white curtains, warm golden ambient lighting, modern designer furniture mixed with traditional Moroccan craftsmanship, tadelakt walls, brass lanterns casting intricate shadow patterns, lush indoor plants, high ceilings with wooden beams, ultra cinematic quality, shallow depth of field, 4K",
+      "caption_fr": "L'art de vivre marocain, version Havn Stays 🏡 #InteriorDesign #Marrakech #Riad",
+      "caption_en": "Moroccan art de vivre, Havn Stays edition 🏡 #InteriorDesign #Marrakech #Riad"
+    },
+    {
+      "day": 3,
+      "category": "lifestyle_pool",
+      "prompt": "Cinematic slow motion shot of crystal clear turquoise water in a luxury private pool, rose petals floating on the surface, Atlas Mountains in the background, golden sunset light, palm tree shadows, Mediterranean cocktail on the pool edge, ultra cinematic quality, warm color grading, dreamy atmosphere, 4K",
+      "caption_fr": "Plongez dans le luxe absolu 💎 #PoolDay #Marrakech #HavnStays",
+      "caption_en": "Dive into absolute luxury 💎 #PoolDay #Marrakech #HavnStays"
+    },
+    {
+      "day": 4,
+      "category": "lifestyle_dining",
+      "prompt": "Cinematic overhead shot of an elegant private dinner setup on a Moroccan rooftop terrace, candlelit table with white linen, traditional tagine dishes, fresh flowers, lanterns glowing warmly, Marrakech medina skyline in the background, stars beginning to appear, ultra cinematic quality, warm golden tones, 4K",
+      "caption_fr": "Dîner privé sous les étoiles de Marrakech 🌙 #PrivateDining #HavnStays #Luxury",
+      "caption_en": "Private dining under the stars of Marrakech 🌙 #PrivateDining #HavnStays #Luxury"
+    },
+    {
+      "day": 5,
+      "category": "villa_bedroom",
+      "prompt": "Cinematic slow dolly shot into a luxurious master bedroom in a Moroccan villa, king-size bed with crisp white linens and embroidered cushions, tadelakt walls in warm earth tones, ornate brass chandelier, large windows with flowing curtains revealing garden view, morning light streaming in, fresh flowers on nightstand, ultra cinematic quality, 4K",
+      "caption_fr": "Réveillez-vous dans un rêve 🌅 #MasterSuite #Marrakech #HavnStays",
+      "caption_en": "Wake up in a dream 🌅 #MasterSuite #Marrakech #HavnStays"
+    },
+    {
+      "day": 6,
+      "category": "lifestyle_spa",
+      "prompt": "Cinematic close-up shot of a luxury hammam spa scene, steam rising gently, traditional black soap and kessa glove on marble surface, rose water mist, copper bowls, warm ambient lighting through perforated dome ceiling creating star-like light patterns, ultra cinematic quality, soft focus, sensory atmosphere, 4K",
+      "caption_fr": "Hammam privé dans votre villa 🧖‍♀️ #Spa #Hammam #HavnStays #Wellness",
+      "caption_en": "Private hammam in your villa 🧖‍♀️ #Spa #Hammam #HavnStays #Wellness"
+    },
+    {
+      "day": 7,
+      "category": "villa_garden",
+      "prompt": "Cinematic smooth steadicam walk through a lush Moroccan garden, bougainvillea cascading over ancient walls, orange and lemon trees, central marble fountain with mosaic tilework, cobblestone pathways, morning dew on rose petals, birds singing, warm sunlight filtering through palm fronds, ultra cinematic quality, 4K",
+      "caption_fr": "Un jardin secret au cœur de Marrakech 🌿 #Garden #Marrakech #HavnStays",
+      "caption_en": "A secret garden in the heart of Marrakech 🌿 #Garden #Marrakech #HavnStays"
+    },
+    {
+      "day": 8,
+      "category": "lifestyle_sunset",
+      "prompt": "Cinematic panoramic shot of a breathtaking sunset over Marrakech from a luxury villa rooftop terrace, Koutoubia mosque silhouette in the distance, Atlas Mountains glowing pink and orange, cocktail glasses in foreground, ambient lounge atmosphere, warm golden and magenta color grading, ultra cinematic quality, 4K",
+      "caption_fr": "Sunset privé avec vue sur l'Atlas 🌅 #Rooftop #Sunset #Marrakech #HavnStays",
+      "caption_en": "Private sunset with Atlas views 🌅 #Rooftop #Sunset #Marrakech #HavnStays"
+    },
+    {
+      "day": 9,
+      "category": "villa_bathroom",
+      "prompt": "Cinematic slow reveal shot of a luxurious Moroccan bathroom, freestanding copper bathtub filled with rose petals, tadelakt walls in soft cream, ornate brass fixtures, natural light from a skylight, scented candles, eucalyptus branches, steam rising gently, ultra cinematic quality, warm tones, 4K",
+      "caption_fr": "Bain de roses dans votre salle de bain privée 🌹 #Bathroom #Luxury #HavnStays",
+      "caption_en": "Rose bath in your private bathroom 🌹 #Bathroom #Luxury #HavnStays"
+    },
+    {
+      "day": 10,
+      "category": "lifestyle_breakfast",
+      "prompt": "Cinematic overhead tracking shot of a traditional Moroccan breakfast spread on a sunlit terrace, fresh mint tea being poured, msemen, amlou, honey, fresh orange juice, olive oil, seasonal fruits, colorful Moroccan ceramics, morning light, garden visible in background, ultra cinematic quality, 4K",
+      "caption_fr": "Petit-déjeuner marocain servi chez vous 🍊 #Breakfast #Marrakech #HavnStays",
+      "caption_en": "Moroccan breakfast served at your villa 🍊 #Breakfast #Marrakech #HavnStays"
+    },
+    {
+      "day": 11,
+      "category": "villa_living",
+      "prompt": "Cinematic smooth tracking shot through an expansive Moroccan living room, plush velvet sofas in jewel tones, hand-carved cedarwood coffee table, zellige fireplace, large Berber rug, floor-to-ceiling windows with garden view, afternoon light creating warm shadows, contemporary art on tadelakt walls, ultra cinematic quality, 4K",
+      "caption_fr": "Le salon de vos rêves 🛋️ #LivingRoom #Design #HavnStays #Marrakech",
+      "caption_en": "The living room of your dreams 🛋️ #LivingRoom #Design #HavnStays #Marrakech"
+    },
+    {
+      "day": 12,
+      "category": "lifestyle_excursion",
+      "prompt": "Cinematic aerial drone shot sweeping over the stunning Agafay desert near Marrakech, golden sand dunes, luxury glamping tents in the distance, camel caravan silhouetted against sunset, Atlas Mountains backdrop, warm desert palette, dust particles in golden hour light, ultra cinematic quality, 4K",
+      "caption_fr": "Excursion privée dans le désert d'Agafay 🐪 #Desert #Agafay #HavnStays",
+      "caption_en": "Private excursion to Agafay desert 🐪 #Desert #Agafay #HavnStays"
+    },
+    {
+      "day": 13,
+      "category": "villa_terrace",
+      "prompt": "Cinematic dolly shot across a stunning villa terrace with outdoor Moroccan daybed, flowing white drapes, plunge pool reflecting the sky, potted olive trees, hand-painted ceramic planters, Atlas Mountain panorama in background, late afternoon golden light, ultra cinematic quality, 4K",
+      "caption_fr": "Votre terrasse privée, vue Atlas 🏔️ #Terrace #Views #HavnStays #Marrakech",
+      "caption_en": "Your private terrace, Atlas views 🏔️ #Terrace #Views #HavnStays #Marrakech"
+    },
+    {
+      "day": 14,
+      "category": "lifestyle_cocktail",
+      "prompt": "Cinematic close-up slow motion of a mixologist preparing a signature cocktail at a luxury villa bar, pouring amber liquid over crystal ice sphere, fresh mint and orange peel garnish, warm backlit bottles, Moroccan brass bar tools, bokeh lights in background, ultra cinematic quality, 4K",
+      "caption_fr": "Cocktails signature servis à domicile 🍸 #Cocktails #PrivateBar #HavnStays",
+      "caption_en": "Signature cocktails served at home 🍸 #Cocktails #PrivateBar #HavnStays"
+    },
+    {
+      "day": 15,
+      "category": "villa_exterior_night",
+      "prompt": "Cinematic wide shot of a luxury Moroccan villa at night, illuminated pool glowing turquoise, brass lanterns casting warm patterns on walls, string lights in garden, starry sky above, palm tree silhouettes, outdoor fire pit with gentle flames, magical evening atmosphere, ultra cinematic quality, 4K",
+      "caption_fr": "Quand la nuit tombe sur votre villa 🌙 #NightVibes #Marrakech #HavnStays",
+      "caption_en": "When night falls on your villa 🌙 #NightVibes #Marrakech #HavnStays"
+    },
+    {
+      "day": 16,
+      "category": "lifestyle_yoga",
+      "prompt": "Cinematic wide shot of a woman practicing yoga on a sunlit villa rooftop at sunrise, overlooking Marrakech, soft morning mist, meditation cushions arranged nearby, fresh eucalyptus, Atlas Mountains glowing in dawn light, peaceful serene atmosphere, ultra cinematic quality, 4K",
+      "caption_fr": "Yoga au lever du soleil sur votre rooftop 🧘‍♀️ #Yoga #Wellness #HavnStays",
+      "caption_en": "Sunrise yoga on your rooftop 🧘‍♀️ #Yoga #Wellness #HavnStays"
+    },
+    {
+      "day": 17,
+      "category": "villa_kitchen",
+      "prompt": "Cinematic tracking shot through a gourmet Moroccan kitchen, marble countertops, copper cookware hanging from rack, fresh spices in glass jars, tagine on professional stove, herbs from the garden, natural light from large windows, modern luxury meets traditional craft, ultra cinematic quality, 4K",
+      "caption_fr": "Chef privé dans votre cuisine d'exception 👨‍🍳 #Kitchen #GourmetLife #HavnStays",
+      "caption_en": "Private chef in your exceptional kitchen 👨‍🍳 #Kitchen #GourmetLife #HavnStays"
+    },
+    {
+      "day": 18,
+      "category": "lifestyle_medina",
+      "prompt": "Cinematic steadicam shot walking through the vibrant Marrakech medina souks, colorful spices piled high, handcrafted leather goods, woven baskets, sunlight streaming through fabric canopies, bustling atmosphere, warm earthy color palette, authentic Moroccan culture, ultra cinematic quality, 4K",
+      "caption_fr": "Explorer la médina, à deux pas de votre villa 🧡 #Medina #Souks #HavnStays",
+      "caption_en": "Explore the medina, steps from your villa 🧡 #Medina #Souks #HavnStays"
+    },
+    {
+      "day": 19,
+      "category": "villa_courtyard",
+      "prompt": "Cinematic overhead shot descending into a traditional Moroccan riad courtyard, central ornate fountain with mosaic zellige, orange trees, hand-painted doors in deep blue, symmetrical architecture, dappled sunlight, peaceful oasis atmosphere, ultra cinematic quality, 4K",
+      "caption_fr": "Le patio secret de votre riad 🕌 #Riad #Courtyard #HavnStays #Marrakech",
+      "caption_en": "The secret patio of your riad 🕌 #Riad #Courtyard #HavnStays #Marrakech"
+    },
+    {
+      "day": 20,
+      "category": "lifestyle_golf",
+      "prompt": "Cinematic aerial drone shot over a pristine golf course near Marrakech, emerald green fairways contrasting with desert landscape, Atlas Mountains in background, luxury golf cart, early morning light with long shadows, professional cinematic color grading, ultra cinematic quality, 4K",
+      "caption_fr": "Golf avec vue sur l'Atlas 🏌️ #Golf #Marrakech #HavnStays #Luxury",
+      "caption_en": "Golf with Atlas views 🏌️ #Golf #Marrakech #HavnStays #Luxury"
+    },
+    {
+      "day": 21,
+      "category": "villa_detail",
+      "prompt": "Cinematic extreme close-up montage of luxury villa details, hand-painted zellige tiles, carved plaster arabesque patterns, brass door handle with intricate design, silk cushion embroidery, cedar wood carving, soft rack focus between details, warm lighting, ultra cinematic quality, 4K",
+      "caption_fr": "Le luxe est dans les détails ✨ #Details #Craftsmanship #HavnStays",
+      "caption_en": "Luxury is in the details ✨ #Details #Craftsmanship #HavnStays"
+    },
+    {
+      "day": 22,
+      "category": "lifestyle_tea",
+      "prompt": "Cinematic close-up of traditional Moroccan mint tea ceremony, silver teapot pouring from height into ornate glass, steam rising, fresh mint leaves, sugar cubes, hand-painted tea tray, warm afternoon light, Moroccan salon backdrop with colorful cushions, ultra cinematic quality, 4K",
+      "caption_fr": "L'art du thé marocain 🍵 #MintTea #Tradition #HavnStays #Marrakech",
+      "caption_en": "The art of Moroccan tea 🍵 #MintTea #Tradition #HavnStays #Marrakech"
+    },
+    {
+      "day": 23,
+      "category": "villa_pool_detail",
+      "prompt": "Cinematic underwater and above water split shot of a luxury villa infinity pool, crystal clear water, mosaic tile bottom visible, palm trees and blue sky above water line, gentle ripples, sunlight refracting through water, dreamy summer atmosphere, ultra cinematic quality, 4K",
+      "caption_fr": "Entre deux mondes 💧 #Pool #InfinityPool #HavnStays #Marrakech",
+      "caption_en": "Between two worlds 💧 #Pool #InfinityPool #HavnStays #Marrakech"
+    },
+    {
+      "day": 24,
+      "category": "lifestyle_market",
+      "prompt": "Cinematic tracking shot through a Moroccan flower and fruit market, mountains of fresh oranges and dates, roses and jasmine bundles, vibrant colors, local artisans at work, warm natural light, rich textures and patterns, authentic atmosphere, ultra cinematic quality, 4K",
+      "caption_fr": "Les saveurs du Maroc pour votre villa 🍊 #FreshMarket #Marrakech #HavnStays",
+      "caption_en": "Flavors of Morocco for your villa 🍊 #FreshMarket #Marrakech #HavnStays"
+    },
+    {
+      "day": 25,
+      "category": "villa_entrance",
+      "prompt": "Cinematic slow push-in shot approaching a grand Moroccan villa entrance, massive carved wooden door with brass studs, bougainvillea cascading over ochre walls, traditional zellige archway, lanterns flanking the entrance, afternoon golden light, sense of discovery and arrival, ultra cinematic quality, 4K",
+      "caption_fr": "Bienvenue chez vous à Marrakech 🚪 #GrandEntrance #HavnStays #Villa",
+      "caption_en": "Welcome home in Marrakech 🚪 #GrandEntrance #HavnStays #Villa"
+    },
+    {
+      "day": 26,
+      "category": "lifestyle_atlas",
+      "prompt": "Cinematic sweeping drone shot over the snow-capped Atlas Mountains at golden hour, dramatic peaks and valleys, traditional Berber village below, winding mountain road, epic scale, warm and cool tones contrasting, breathtaking landscape, ultra cinematic quality, 4K",
+      "caption_fr": "L'Atlas, votre voisin 🏔️ #AtlasMountains #Morocco #HavnStays",
+      "caption_en": "The Atlas, your neighbor 🏔️ #AtlasMountains #Morocco #HavnStays"
+    },
+    {
+      "day": 27,
+      "category": "villa_suite",
+      "prompt": "Cinematic slow tracking shot through a luxury guest suite, twin beds with Moroccan textiles, private balcony with garden view, en-suite bathroom visible through archway, soft afternoon light, fresh flowers and welcome amenities on side table, boutique hotel atmosphere, ultra cinematic quality, 4K",
+      "caption_fr": "Chaque suite est une expérience 🛏️ #GuestSuite #Boutique #HavnStays",
+      "caption_en": "Every suite is an experience 🛏️ #GuestSuite #Boutique #HavnStays"
+    },
+    {
+      "day": 28,
+      "category": "lifestyle_cooking",
+      "prompt": "Cinematic close-up of hands preparing a traditional Moroccan tagine, arranging preserved lemons and olives over saffron chicken, steam rising from clay pot, colorful spices in small bowls nearby, professional kitchen setting, warm inviting atmosphere, ultra cinematic quality, 4K",
+      "caption_fr": "Cours de cuisine marocaine dans votre villa 🍲 #CookingClass #Tagine #HavnStays",
+      "caption_en": "Moroccan cooking class at your villa 🍲 #CookingClass #Tagine #HavnStays"
+    },
+    {
+      "day": 29,
+      "category": "villa_outdoor_living",
+      "prompt": "Cinematic wide tracking shot of an outdoor living area at a Moroccan villa, large L-shaped sofa with plush cushions, outdoor fireplace crackling, string lights overhead, mature olive trees, reflective pool nearby, transition from day to golden hour light, resort-level comfort, ultra cinematic quality, 4K",
+      "caption_fr": "Votre salon en plein air 🌿 #OutdoorLiving #Marrakech #HavnStays",
+      "caption_en": "Your open-air living room 🌿 #OutdoorLiving #Marrakech #HavnStays"
+    },
+    {
+      "day": 30,
+      "category": "lifestyle_departure",
+      "prompt": "Cinematic emotional shot of a luxury villa gate slowly closing at sunset, warm light spilling through the gap, glimpse of the beautiful garden inside, sense of fond farewell and promise to return, gentle breeze moving curtains, nostalgic warm color grading, ultra cinematic quality, 4K",
+      "caption_fr": "À bientôt, Marrakech... Le meilleur reste à venir 💫 #SeeYouSoon #HavnStays",
+      "caption_en": "See you soon, Marrakech... The best is yet to come 💫 #SeeYouSoon #HavnStays"
+    }
+  ]
+}

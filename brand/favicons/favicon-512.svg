@@ -1,1 +1,20 @@
-{"data":"PHN2ZyB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICA8IS0tIERhcmsgcm91bmRlZCBzcXVhcmUgYmFja2dyb3VuZCAtLT4KICA8cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgcng9IjEwMi40IiBmaWxsPSIjMEYxOTIzIi8+CgogIDwhLS0gSCBtb25vZ3JhbTogQXJjaCB3aXRoIHBpbGxhcnMgLS0+CiAgPCEtLSBMZWZ0IHBpbGxhciAtLT4KICA8cmVjdCB4PSIxNjAiIHk9IjE3MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI0M1QTU1QSIvPgoKICA8IS0tIFJpZ2h0IHBpbGxhciAtLT4KICA8cmVjdCB4PSIzMTIiIHk9IjE3MCIgd2lkdGg9IjQwIiBoZWlnaHQ9IjI4MCIgZmlsbD0iI0M1QTU1QSIvPgoKICA8IS0tIEFyY2ggKGN1cnZlZCB0b3AgY29ubmVjdGluZyBwaWxsYXJzKSAtLT4KICA8cGF0aCBkPSJNIDE4MCAxNzAgUSAyNTYgMTAwIDM5MiAxNzAiIHN0cm9rZT0iI0M1QTU1QSIgc3Ryb2tlLXdpZHRoPSI0MCIgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+CgogIDwhLS0gSG9yaXpvbnRhbCBjcm9zc2JhciAtLT4KICA8cmVjdCB4PSIxNjAiIHk9IjMxMCIgd2lkdGg9IjE5MiIgaGVpZ2h0PSI0MCIgZmlsbD0iI0M1QTU1QSIvPgoKICA8IS0tIERpYW1vbmQgYWNjZW50IGFib3ZlIGFyY2ggLS0+CiAgPHBhdGggZD0iTSAyNTYgODAgTCAyODAgMTA0IEwgMjU2IDEyOCBMIDIzMiAxMDQgWiIgZmlsbD0iI0M1QTU1QSIvPgo8L3N2Zz4="}
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark rounded square background -->
+  <rect width="512" height="512" rx="102.4" fill="#0F1923"/>
+
+  <!-- H monogram: Arch with pillars -->
+  <!-- Left pillar -->
+  <rect x="160" y="170" width="40" height="280" fill="#C5A55A"/>
+
+  <!-- Right pillar -->
+  <rect x="312" y="170" width="40" height="280" fill="#C5A55A"/>
+
+  <!-- Arch (curved top connecting pillars) -->
+  <path d="M 180 170 Q 256 100 392 170" stroke="#C5A55A" stroke-width="40" fill="none" stroke-linecap="round"/>
+
+  <!-- Horizontal crossbar -->
+  <rect x="160" y="310" width="192" height="40" fill="#C5A55A"/>
+
+  <!-- Diamond accent above arch -->
+  <path d="M 256 80 L 280 104 L 256 128 L 232 104 Z" fill="#C5A55A"/>
+</svg>

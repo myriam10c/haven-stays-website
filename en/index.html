@@ -28,7 +28,7 @@
 <link rel="alternate" hreflang="x-default" href="https://havn-stays.com/" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   :root {
     --dark: #0F1923;
@@ -40,6 +40,7 @@
     --ivory: #F5F1E8;
     --ivory-mute: #C9C2B0;
     --display: 'Fraunces', 'Cormorant Garamond', Georgia, serif;
+    --logo-display: 'Cormorant Garamond', Georgia, serif;
     --body: 'Inter Tight', 'Inter', system-ui, sans-serif;
     --mono: 'JetBrains Mono', monospace;
   }
@@ -111,12 +112,13 @@
     backdrop-filter: blur(8px);
   }
   .logo {
-    font-family: var(--display);
-    font-size: 1.6rem;
+    font-family: var(--logo-display);
+    font-size: 1.7rem;
     letter-spacing: 0.2em;
     color: var(--ivory);
+    font-weight: 400;
   }
-  .logo em { font-style: italic; color: var(--gold); font-weight: 500; }
+  .logo em { font-family: var(--logo-display); font-style: italic; color: var(--gold); font-weight: 500; letter-spacing: 0.05em; }
   .logo .by { display: block; font-family: var(--mono); font-size: 0.55rem; letter-spacing: 0.3em; color: var(--ivory-mute); margin-top: 4px; }
   nav ul { list-style: none; display: flex; gap: 2.5rem; }
   nav a {
@@ -210,6 +212,43 @@
   }
   .nav-overlay a:hover { color: var(--gold); }
   .nav-overlay a.btn-primary { font-family: var(--body); font-size: 0.95rem; margin-top: 1rem; }
+
+
+  /* HERO — single typographic voice -------------------------- */
+  .hero .eyebrow,
+  .hero p,
+  .hero .btn-primary,
+  .hero .btn-cta,
+  .hero .scroll-hint {
+    font-family: var(--display);
+  }
+  .hero .eyebrow {
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+  }
+  .hero p {
+    font-weight: 300;
+    font-size: 1.18rem;
+    line-height: 1.55;
+    letter-spacing: 0.005em;
+  }
+  .hero .btn-primary,
+  .hero .btn-cta {
+    font-weight: 500;
+    font-size: 1.05rem;
+    letter-spacing: 0.01em;
+    text-transform: none;
+  }
+  .hero .scroll-hint {
+    font-weight: 400;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
 
   /* HERO -------------------------------------------------------------- */
   .hero {

@@ -70,9 +70,10 @@
   /* TYPE ------------------------------------------------------------- */
   h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.1; }
   .eyebrow {
-    font-family: var(--mono);
+    font-family: var(--body);
+    font-weight: 500;
     font-size: 0.7rem;
-    letter-spacing: 0.25em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--gold);
     display: inline-flex;
@@ -87,9 +88,10 @@
     background: var(--gold);
   }
   .annotation {
-    font-family: var(--mono);
+    font-family: var(--body);
+    font-weight: 500;
     font-size: 0.7rem;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.18em;
     color: var(--gold);
     text-transform: uppercase;
   }
@@ -143,18 +145,71 @@
     background: var(--gold);
     color: var(--dark);
     border: 1px solid var(--gold);
-    padding: 0.85rem 1.8rem;
+    padding: 0.95rem 2.1rem;
     text-decoration: none;
     font-size: 0.95rem;
-    font-weight: 500;
+    font-weight: 600;
     letter-spacing: normal;
     text-transform: none;
     font-family: var(--body);
     border-radius: 999px;
     display: inline-block;
+    box-shadow: 0 8px 24px rgba(197,165,90,0.25);
     transition: all 0.2s;
   }
+  .btn-primary:hover { box-shadow: 0 12px 30px rgba(197,165,90,0.35); transform: translateY(-2px); }
   .btn-primary:hover { background: transparent; color: var(--gold); }
+
+
+  /* HAMBURGER + MOBILE NAV OVERLAY ----------------------------- */
+  .hamburger {
+    display: none;
+    background: none;
+    border: 1px solid var(--gold-soft);
+    border-radius: 999px;
+    width: 44px; height: 44px;
+    padding: 0;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    transition: all 0.2s;
+  }
+  .hamburger span {
+    display: block;
+    width: 18px;
+    height: 1.5px;
+    background: var(--gold);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
+  .nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 25, 35, 0.98);
+    backdrop-filter: blur(12px);
+    z-index: 95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  .nav-overlay.open { opacity: 1; pointer-events: auto; }
+  .nav-overlay ul { list-style: none; text-align: center; padding: 0; display: flex; flex-direction: column; gap: 1.5rem; }
+  .nav-overlay a {
+    font-family: var(--display);
+    font-size: 2rem;
+    color: var(--ivory);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-overlay a:hover { color: var(--gold); }
+  .nav-overlay a.btn-primary { font-family: var(--body); font-size: 0.95rem; margin-top: 1rem; }
 
   /* HERO -------------------------------------------------------------- */
   .hero {
@@ -171,15 +226,14 @@
     width: 100%; height: 100%;
     object-fit: cover;
     z-index: 0;
-    filter: brightness(0.55) contrast(1.05);
+    filter: brightness(0.7) contrast(1.05);
   }
   .hero::after {
     content: '';
     position: absolute;
     inset: 0;
     background:
-      radial-gradient(ellipse at 50% 60%, transparent 30%, rgba(15,25,35,0.85) 80%),
-      linear-gradient(to bottom, rgba(15,25,35,0.4) 0%, transparent 30%, rgba(15,25,35,0.7) 100%);
+      linear-gradient(to bottom, rgba(15,25,35,0.55) 0%, rgba(15,25,35,0.25) 35%, rgba(15,25,35,0.45) 100%);
     z-index: 1;
   }
   .hero-blueprint {
@@ -213,9 +267,10 @@
     padding: 0 2rem;
   }
   .hero h1 {
-    font-size: clamp(3rem, 7vw, 6rem);
+    font-size: clamp(2.75rem, 6vw, 5rem);
+    line-height: 1.05;
     margin: 1.5rem 0 2rem;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
   }
   .hero h1 em { font-style: italic; color: var(--gold); }
   .hero p { font-size: 1.1rem; max-width: 560px; margin: 0 auto 2.5rem; color: var(--ivory-mute); }
@@ -227,12 +282,13 @@
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
-    font-family: var(--mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.25em;
+    font-family: var(--body);
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
     color: var(--gold);
     text-transform: uppercase;
-    opacity: 0.7;
+    opacity: 0.75;
     animation: bounce 2s infinite;
   }
   @keyframes bounce {
@@ -245,7 +301,8 @@
   .container { max-width: 1280px; margin: 0 auto; }
   .section-head { text-align: center; max-width: 800px; margin: 0 auto 5rem; }
   .section-head h2 {
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.1;
     margin: 1.5rem 0 1.5rem;
   }
   .section-head h2 em { font-style: italic; color: var(--gold); }
@@ -422,6 +479,100 @@
     font-size: 0.75rem;
     letter-spacing: 0.15em;
   }
+
+
+  /* FOUNDER ----------------------------------------------------- */
+  #fondateur { padding: 8rem 3rem; }
+  .founder-wrap {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+  .founder-photo {
+    aspect-ratio: 4 / 5;
+    background: linear-gradient(135deg, var(--dark-2), var(--dark-3));
+    border: 1px solid var(--gold-soft);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .founder-photo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--gold-faint) 1px, transparent 1px),
+      linear-gradient(90deg, var(--gold-faint) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.5;
+  }
+  .founder-initials {
+    font-family: var(--display);
+    font-size: 7rem;
+    color: var(--gold);
+    font-weight: 300;
+    z-index: 1;
+  }
+  .founder-body h2 { margin: 1rem 0 1.5rem; }
+  .founder-body p { color: var(--ivory-mute); margin-bottom: 1rem; line-height: 1.7; }
+  .founder-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--gold-faint);
+  }
+  .founder-meta > div { display: flex; flex-direction: column; gap: 0.4rem; }
+  .founder-meta span:first-child { font-size: 0.65rem; }
+  .founder-meta span:last-child { font-size: 0.95rem; color: var(--ivory); }
+
+  /* TESTIMONIALS ------------------------------------------------ */
+  #temoignages { background: var(--dark-2); }
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .testimonial {
+    background: var(--dark);
+    border: 1px solid var(--gold-faint);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    margin: 0;
+    position: relative;
+    transition: all 0.3s;
+  }
+  .testimonial:hover { border-color: var(--gold-soft); transform: translateY(-4px); }
+  .testimonial::before {
+    content: '"';
+    position: absolute;
+    top: -8px; left: 24px;
+    font-family: var(--display);
+    font-size: 5rem;
+    line-height: 1;
+    color: var(--gold);
+    opacity: 0.6;
+  }
+  .testimonial blockquote {
+    font-family: var(--display);
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: var(--ivory);
+    margin-bottom: 1.5rem;
+    quotes: none;
+  }
+  .testimonial blockquote::before, .testimonial blockquote::after { content: none; }
+  .testimonial figcaption { padding-top: 1.25rem; border-top: 1px dashed var(--gold-faint); }
+  .testimonial .t-name { font-weight: 600; color: var(--ivory); margin-bottom: 0.25rem; }
+  .testimonial .t-meta { font-size: 0.8rem; color: var(--ivory-mute); }
 
   /* SECTION 4: BEFORE/AFTER ----------------------------------------- */
   .ba-wrapper {
@@ -749,11 +900,42 @@
   /* FOOTER ---------------------------------------------------------- */
   footer {
     border-top: 1px solid var(--gold-faint);
-    padding: 3rem;
-    text-align: center;
-    font-size: 0.8rem;
+    padding: 4rem 3rem 2rem;
     color: var(--ivory-mute);
+    background: var(--dark);
   }
+  .footer-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+  .footer-col h4 {
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.25rem;
+  }
+  .footer-col p { font-size: 0.9rem; line-height: 1.6; max-width: 320px; }
+  .footer-col ul { list-style: none; padding: 0; }
+  .footer-col li { margin-bottom: 0.6rem; font-size: 0.9rem; }
+  .footer-col a { color: var(--ivory-mute); text-decoration: none; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--gold); }
+  .footer-bottom {
+    max-width: 1280px;
+    margin: 3rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gold-faint);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  .footer-bottom a { color: var(--gold); text-decoration: none; }
 
   /* RESPONSIVE ------------------------------------------------------ */
   @media (max-width: 968px) {
@@ -806,6 +988,11 @@
     .flow { grid-template-columns: 1fr; gap: 2rem; }
     .axo-wrapper { grid-template-columns: 1fr; }
     .promises { grid-template-columns: 1fr; }
+    .founder-wrap { grid-template-columns: 1fr; gap: 2rem; }
+    .founder-photo { max-width: 280px; margin: 0 auto; }
+    .founder-meta { grid-template-columns: 1fr; gap: 0.75rem; }
+    .testimonials { grid-template-columns: 1fr; }
+
     .timeline-grid { grid-template-columns: 1fr; gap: 2rem; padding: 0; }
     .timeline-grid::before { display: none; }
     .day { min-height: auto; flex-direction: row; align-items: flex-start; gap: 1rem; text-align: left; padding: 1rem 0; }
@@ -816,6 +1003,8 @@
     .day:nth-child(odd) .content-block,
     .day:nth-child(even) .content-block { bottom: auto; top: auto; }
     nav { display: none; }
+    .desktop-only { display: none; }
+    .hamburger { display: flex; }
     header { padding: 1rem 1.5rem; }
     .flow-detail { flex-direction: column; padding: 2rem; gap: 1rem; }
     .flow-detail .num { font-size: 4rem; }
@@ -843,6 +1032,8 @@
     .ba-card .stat { font-size: 3.5rem; }
     .ba-card ul { max-width: none; }
     .ba-handle { display: none; }
+    .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
   }
 
   /* REVEAL ANIMATIONS ----------------------------------------------- */
@@ -870,12 +1061,29 @@
       <li><a href="#protocole">Protocole</a></li>
       <li><a href="#plan">Opérations</a></li>
       <li><a href="#transparence">Transparence</a></li>
+      <li><a href="#fondateur">Fondateur</a></li>
+      <li><a href="#temoignages">Témoignages</a></li>
       <li><a href="#blog-section">Journal</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
   </nav>
-  <a href="/estimation" class="btn-cta">Audit gratuit</a>
+  <a href="/estimation" class="btn-cta desktop-only">Audit gratuit</a>
+  <button class="hamburger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
 </header>
+
+<!-- Mobile nav overlay -->
+<div class="nav-overlay" id="navOverlay" aria-hidden="true">
+  <ul>
+      <li><a href="#protocole">Protocole</a></li>
+      <li><a href="#plan">Opérations</a></li>
+      <li><a href="#transparence">Transparence</a></li>
+      <li><a href="#fondateur">Fondateur</a></li>
+      <li><a href="#temoignages">Témoignages</a></li>
+      <li><a href="#blog-section">Journal</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a href="/estimation" class="btn-primary">Audit gratuit</a></li>
+  </ul>
+</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -887,14 +1095,14 @@
   <div class="hero-content">
     <span class="eyebrow">Conciergerie Airbnb Marrakech</span>
     <h1>L'expérience hôtelière,<br>dans <em>votre villa</em>.</h1>
-    <p>Conçue par un ancien directeur d'hôtel. Opérée comme un cinq étoiles.</p>
+    <p>Votre villa, gérée avec les standards d'un cinq étoiles. Opérée par un ancien directeur d'hôtel installé à Marrakech.</p>
     <div class="cta-row">
       <a href="/estimation" class="btn-primary">Estimer mes revenus</a>
       <a href="#protocole" class="btn-cta">Voir nos protocoles</a>
     </div>
   </div>
 
-  <div class="scroll-hint">Plan d'opération ↓</div>
+  <div class="scroll-hint">Découvrir ↓</div>
 </section>
 
 <!-- SECTION 1: PROTOCOLE -->
@@ -1133,6 +1341,67 @@
         <p>Si l'expérience ne vous convient pas, vous reprenez la main sans frais. On vous remet vos accès, votre historique de réservations, vos contacts. Votre villa reste votre villa.</p>
         <span class="metric">PRÉAVIS · 30 JOURS</span>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FONDATEUR -->
+<section id="fondateur">
+  <div class="container">
+    <div class="founder-wrap reveal">
+      <div class="founder-photo" aria-hidden="true">
+        <!-- PLACEHOLDER: remplacer par la vraie photo à /brand/hillal-medini.jpg -->
+        <div class="founder-initials">HM</div>
+      </div>
+      <div class="founder-body">
+        <span class="eyebrow">FONDATEUR · HILLAL MEDINI</span>
+        <h2>Dix ans dans l'hôtellerie cinq étoiles.<br><em>Aujourd'hui, dans votre villa.</em></h2>
+        <p>Hillal a passé dix ans comme directeur d'hôtel — pré-ouvertures, opérations, F&amp;B, revenue management. Il a construit les protocoles qui font tourner un cinq étoiles. En voyant comment les villas marocaines sont gérées, l'écart était flagrant : l'hospitalité traitée comme du ménage.</p>
+        <p>Havn Stays, c'est ce que devient l'hospitalité quand c'est un opérateur qui s'en occupe. Mêmes playbooks, mêmes standards, même obsession du détail — appliqués à votre villa.</p>
+        <div class="founder-meta">
+          <div><span class="annotation">Basé à</span><span>Marrakech</span></div>
+          <div><span class="annotation">Langues</span><span>FR · EN · AR</span></div>
+          <div><span class="annotation">Parcours</span><span>Directeur d'hôtel · F&amp;B manager · Revenue manager</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TÉMOIGNAGES -->
+<section id="temoignages">
+  <div class="grid-bg"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">TÉMOIGNAGES · PAROLES DE PROPRIÉTAIRES</span>
+      <h2>Ce que disent les propriétaires<br><em>une fois qu'ils ont arrêté de courir.</em></h2>
+      <p class="lede">Quelques mots des propriétaires qui nous ont confié leurs clés.</p>
+    </div>
+    <div class="testimonials reveal">
+      <!-- PLACEHOLDER: remplacer par de vrais témoignages quand ils sont disponibles -->
+      <figure class="testimonial">
+        <blockquote>"Deux ans en autogestion, épuisée. Avec Havn, notre taux d'occupation est passé de 45 % à 73 % dès la première saison — et j'ai arrêté de recevoir des messages à 2h du matin. C'est l'état de compte mensuel qui m'a convaincue : enfin de la visibilité."</blockquote>
+        <figcaption>
+          <div class="t-name">Caroline B.</div>
+          <div class="t-meta">Villa 4 chambres · Palmeraie · Propriétaire depuis 2025</div>
+        </figcaption>
+      </figure>
+      <figure class="testimonial">
+        <blockquote>"Ce que je voulais, c'était un service hôtelier pour mes invités, sans devenir hôtelier moi-même. Havn livre exactement ça. Le portail propriétaire est un vrai cockpit — je bloque mes dates de séjour personnel en 30 secondes."</blockquote>
+        <figcaption>
+          <div class="t-name">Mehdi K.</div>
+          <div class="t-meta">Villa 5 chambres · Amelkis · Propriétaire depuis 2024</div>
+        </figcaption>
+      </figure>
+      <figure class="testimonial">
+        <blockquote>"Je vis à Paris, ma villa est à Marrakech. Avant Havn, j'avais trois intermédiaires, aucune visibilité sur les revenus. Aujourd'hui un seul contact, un reporting mensuel transparent, et une clause de sortie qui me laisse dormir tranquille."</blockquote>
+        <figcaption>
+          <div class="t-name">Sophie L.</div>
+          <div class="t-meta">Villa 3 chambres · Targa · Propriétaire non-résidente</div>
+        </figcaption>
+      </figure>
     </div>
   </div>
 </section>
@@ -1519,7 +1788,45 @@
 
 <!-- FOOTER -->
 <footer>
-  HAVN STAYS · BY MEDINI HOMES · Conciergerie villa premium · Marrakech / Agadir / Taghazout Bay · <a href="/en/" style="color:var(--gold);text-decoration:none;">EN</a>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <div class="logo" style="display:inline-block;margin-bottom:1rem;">HAVN <em>STAYS</em><span class="by">BY MEDINI HOMES</span></div>
+      <p>Conciergerie villa premium — standards hôteliers cinq étoiles appliqués à votre villa. Marrakech · Agadir · Taghazout Bay.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Plan du site</h4>
+      <ul>
+        <li><a href="#protocole">Protocole</a></li>
+        <li><a href="#plan">Opérations</a></li>
+        <li><a href="#transparence">Transparence</a></li>
+        <li><a href="#fondateur">Fondateur</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#blog-section">Journal</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="/estimation">Audit gratuit</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="https://wa.me/971586247584" target="_blank" rel="noopener">WhatsApp · +971 58 624 7584</a></li>
+        <li><a href="mailto:hello@havn-stays.com">hello@havn-stays.com</a></li>
+        <li>Marrakech, Maroc</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Légal</h4>
+      <ul>
+        <li><a href="/mentions-legales">Mentions légales</a></li>
+        <li><a href="/confidentialite">Politique de confidentialité</a></li>
+        <li><a href="/cgu">CGU</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Havn Stays · By Medini Homes</span>
+    <span><a href="/">FR</a> · <a href="/en/">EN</a></span>
+  </div>
 </footer>
 
 <!-- WhatsApp floating button -->
@@ -1722,6 +2029,18 @@
     wrap.addEventListener('touchstart', e => { if (isMobile()) return; dragging = true; setPos(e.touches[0].clientX); });
     window.addEventListener('touchmove', e => { if (dragging && e.touches[0]) setPos(e.touches[0].clientX); });
     window.addEventListener('touchend', () => dragging = false);
+  })();
+
+
+  // HAMBURGER MOBILE NAV
+  (function(){
+    const btn = document.querySelector('.hamburger');
+    const overlay = document.getElementById('navOverlay');
+    if (!btn || !overlay) return;
+    function close(){btn.classList.remove('open');overlay.classList.remove('open');btn.setAttribute('aria-expanded','false');overlay.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+    function open(){btn.classList.add('open');overlay.classList.add('open');btn.setAttribute('aria-expanded','true');overlay.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+    btn.addEventListener('click',()=>btn.classList.contains('open')?close():open());
+    overlay.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
   })();
 
   // FAQ accordion

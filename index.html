@@ -1235,6 +1235,38 @@
     .blog-grid .blog-card:first-child .excerpt { font-size: 0.85rem; }
   }
 
+
+  .logo-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: opacity 0.2s;
+  }
+  .logo-link:hover { opacity: 0.85; }
+
+  .footer-social {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+  .footer-social a {
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--gold-soft);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    transition: all 0.2s;
+  }
+  .footer-social a:hover {
+    background: var(--gold);
+    color: var(--dark);
+    transform: translateY(-2px);
+  }
+  .footer-social svg { width: 16px; height: 16px; }
+
   /* FOOTER ---------------------------------------------------------- */
   footer {
     border-top: 1px solid var(--gold-faint);
@@ -1390,10 +1422,12 @@
 
 <!-- HEADER -->
 <header>
-  <div class="logo">
-    HAVN <em>STAYS</em>
-    <span class="by">BY MEDINI HOMES</span>
-  </div>
+  <a href="/" class="logo-link" aria-label="Havn Stays — accueil">
+    <div class="logo">
+      HAVN <em>STAYS</em>
+      <span class="by">BY MEDINI HOMES</span>
+    </div>
+  </a>
 <a href="/estimation" class="btn-cta">Audit gratuit</a>
 </header>
 
@@ -2104,8 +2138,27 @@
 <footer>
   <div class="footer-grid">
     <div class="footer-col">
-      <div class="logo" style="display:inline-block;margin-bottom:1rem;">HAVN <em>STAYS</em><span class="by">BY MEDINI HOMES</span></div>
+      <a href="/" class="logo-link" aria-label="Havn Stays — accueil"><div class="logo" style="display:inline-block;margin-bottom:1rem;">HAVN <em>STAYS</em><span class="by">BY MEDINI HOMES</span></div></a>
       <p>Conciergerie villa premium — standards hôteliers cinq étoiles appliqués à votre villa. Marrakech · Agadir · Taghazout Bay.</p>
+      <div class="footer-social" aria-label="Réseaux sociaux">
+        <a href="https://www.instagram.com/havn.stays" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/havn-stays" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.5 18.5v-9h-3v9h3zM7 8a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5zm11.5 10.5v-5.1c0-2.7-1.46-3.95-3.4-3.95a2.94 2.94 0 0 0-2.6 1.43V9.5h-3v9h3v-5.1c0-1.18.7-1.95 1.7-1.95.97 0 1.3.66 1.3 1.95v5.1h3z"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/971586247584" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/>
+          </svg>
+        </a>
+      </div>
     </div>
     <div class="footer-col">
       <h4>Plan du site</h4>
@@ -2398,6 +2451,27 @@
         submit.textContent = originalLabel;
       }
     });
+  })();
+
+
+  // Subtle hero text parallax on scroll
+  (function(){
+    const heroContent = document.querySelector('.hero-content');
+    if (!heroContent) return;
+    let ticking = false;
+    function update(){
+      const sy = window.scrollY;
+      if (sy > window.innerHeight) { ticking = false; return; }
+      heroContent.style.transform = 'translateY(' + (sy * 0.18) + 'px)';
+      heroContent.style.opacity = String(Math.max(0, 1 - sy / (window.innerHeight * 0.6)));
+      ticking = false;
+    }
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    }, { passive: true });
   })();
 
   // FAQ accordion

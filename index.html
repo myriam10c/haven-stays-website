@@ -1021,6 +1021,157 @@
     .audit-row { grid-template-columns: 1fr; }
   }
 
+
+  /* WATERMARK NUMBERS — Étape / Engagement filigrane Fraunces -- */
+  .flow-step, .promise { isolation: isolate; }
+  .flow-step::before, .promise::before {
+    content: attr(data-step);
+    position: absolute;
+    bottom: -10px;
+    right: 8px;
+    font-family: var(--display);
+    font-size: 7rem;
+    font-weight: 300;
+    line-height: 0.85;
+    color: var(--gold);
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 0;
+    letter-spacing: -0.02em;
+  }
+  .flow-step > *, .promise > * { position: relative; z-index: 1; }
+  .flow-step .flow-num { display: none; }
+  .promise .num {
+    font-family: var(--body);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+
+  /* COMPARISON TABLE (replaces before/after slider) -------------- */
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: 3rem auto 0;
+    align-items: stretch;
+  }
+  .compare-col {
+    padding: 2.5rem 2rem;
+    border: 1px solid var(--gold-faint);
+    border-radius: 16px;
+    background: var(--dark-2);
+    display: flex;
+    flex-direction: column;
+  }
+  .compare-right {
+    background: linear-gradient(135deg, var(--dark-2) 0%, var(--dark-3) 100%);
+    border-color: var(--gold-soft);
+    box-shadow: 0 16px 60px rgba(197,165,90,0.06);
+  }
+  .compare-label {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    color: var(--ivory-mute);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .compare-right .compare-label { color: var(--gold); }
+  .compare-stat {
+    font-family: var(--display);
+    font-size: 4.5rem;
+    line-height: 1;
+    color: var(--ivory);
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+  }
+  .compare-stat .unit { font-size: 0.6em; opacity: 0.6; margin-left: 2px; }
+  .compare-right .compare-stat { color: var(--gold); }
+  .compare-stat-label { font-size: 0.9rem; color: var(--ivory-mute); margin-bottom: 1.75rem; }
+  .compare-list { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .compare-list li {
+    padding: 0.65rem 0 0.65rem 1.6rem;
+    position: relative;
+    font-size: 0.95rem;
+    color: var(--ivory);
+    border-bottom: 1px dashed var(--gold-faint);
+  }
+  .compare-list li:last-child { border-bottom: 0; }
+  .compare-cons li::before {
+    content: '×';
+    position: absolute;
+    left: 0;
+    color: #d97757;
+    font-size: 1.2rem;
+    font-weight: 600;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .compare-pros li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 600;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .compare-source {
+    margin-top: auto;
+    padding-top: 1rem;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    opacity: 0.7;
+    text-transform: uppercase;
+  }
+  .compare-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+  }
+  .compare-divider .vs {
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--gold);
+    opacity: 0.6;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--gold-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark);
+  }
+  @media (max-width: 768px) {
+    .compare { grid-template-columns: 1fr; gap: 1rem; }
+    .compare-divider { padding: 0; height: 24px; }
+    .compare-divider .vs { width: 44px; height: 44px; }
+    .compare-col { padding: 2rem 1.5rem; }
+    .compare-stat { font-size: 3.5rem; }
+  }
+
+
+  .blog-card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(.2,.8,.2,1);
+  }
+  .blog-card:hover .img img { transform: scale(1.04); }
+  .blog-card .img:has(img)::after { display: none; }
+
   /* FOOTER ---------------------------------------------------------- */
   footer {
     border-top: 1px solid var(--gold-faint);
@@ -1214,7 +1365,7 @@
     </div>
 
     <div class="flow reveal">
-      <div class="flow-step" data-step="1">
+      <div class="flow-step" data-step="01">
         <span class="flow-num">ÉTAPE 01</span>
         <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
           <circle cx="22" cy="32" r="10"/>
@@ -1225,7 +1376,7 @@
         <h3>Remise des clés</h3>
         <p>État des lieux contradictoire signé, photos timestampées</p>
       </div>
-      <div class="flow-step" data-step="2">
+      <div class="flow-step" data-step="02">
         <span class="flow-num">ÉTAPE 02</span>
         <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
           <rect x="14" y="20" width="36" height="32" rx="2"/>
@@ -1236,7 +1387,7 @@
         <h3>Coffre numérique</h3>
         <p>Codes Wi-Fi, contacts, plans, contrats centralisés en interne</p>
       </div>
-      <div class="flow-step" data-step="3">
+      <div class="flow-step" data-step="03">
         <span class="flow-num">ÉTAPE 03</span>
         <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
           <rect x="10" y="14" width="44" height="32" rx="2"/>
@@ -1251,7 +1402,7 @@
         <h3>Portail propriétaire</h3>
         <p>Vos accès envoyés. Calendrier, revenus, pilotage en direct.</p>
       </div>
-      <div class="flow-step" data-step="4">
+      <div class="flow-step" data-step="04">
         <span class="flow-num">ÉTAPE 04</span>
         <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
           <path d="M14 32 Q14 16 32 16 Q50 16 50 32"/>
@@ -1263,7 +1414,7 @@
         <h3>Check-in protocolé</h3>
         <p>Vérification ID, briefing maison, état des lieux contradictoire</p>
       </div>
-      <div class="flow-step" data-step="5">
+      <div class="flow-step" data-step="05">
         <span class="flow-num">ÉTAPE 05</span>
         <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
           <rect x="12" y="14" width="40" height="36"/>
@@ -1415,25 +1566,25 @@
     </div>
 
     <div class="promises reveal">
-      <div class="promise">
+      <div class="promise" data-step="01">
         <div class="num">ENGAGEMENT 01</div>
         <h3>Portail propriétaire en accès direct, 24/7</h3>
         <p>Calendrier en temps réel avec blocage manuel pour vos propres séjours, suivi des revenus en direct, état de compte mensuel téléchargeable. Vous pilotez votre bien sans dépendre de personne.</p>
         <span class="metric">ACCÈS · TEMPS RÉEL · MOBILE & DESKTOP</span>
       </div>
-      <div class="promise">
+      <div class="promise" data-step="02">
         <div class="num">ENGAGEMENT 02</div>
         <h3>Reporting financier mensuel détaillé</h3>
         <p>Chaque mois, votre état de compte complet : revenus bruts, nets, charges ventilées par poste, occupation, ADR, RevPAR. Exportable PDF, prêt à transmettre à votre comptable.</p>
         <span class="metric">FRÉQUENCE · MENSUELLE</span>
       </div>
-      <div class="promise">
+      <div class="promise" data-step="03">
         <div class="num">ENGAGEMENT 03</div>
         <h3>Tarification transparente, aucune commission opaque</h3>
         <p>Une commission claire et fixe sur les revenus encaissés, sans markup sur les prestations externes (pisciniste, jardinier, ménage). Tous les justificatifs disponibles dans votre portail.</p>
         <span class="metric">COMMISSION · UNIQUE & FIXE</span>
       </div>
-      <div class="promise">
+      <div class="promise" data-step="04">
         <div class="num">ENGAGEMENT 04</div>
         <h3>Sortie sans pénalité avec préavis 30 jours</h3>
         <p>Si l'expérience ne vous convient pas, vous reprenez la main sans frais. On vous remet vos accès, votre historique de réservations, vos contacts. Votre villa reste votre villa.</p>
@@ -1504,45 +1655,46 @@
   </div>
 </section>
 
-<!-- SECTION 4: BEFORE / AFTER -->
+<!-- SECTION 4: COMPARISON TABLE -->
 <section id="comparaison">
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow">RÉFÉRENCE · ÉTUDE COMPARATIVE</span>
       <h2>La différence se mesure,<br><em>ligne par ligne.</em></h2>
-      <p class="lede">Un même bien, deux modes de gestion. Données issues de notre échantillon Marrakech 2025. <span class="desk-only">Faites glisser le curseur pour comparer.</span></p>
+      <p class="lede">Un même bien, deux modes de gestion. Données issues du portefeuille HAVN Marrakech 2025-2026.</p>
     </div>
 
-    <div class="ba-wrapper reveal" id="baWrap">
-      <div class="ba-pane ba-after">
-        <div class="ba-card">
-          <div class="label">VILLA HAVN-MANAGÉE</div>
-          <div class="stat">+47%</div>
-          <div class="stat-label">Revenus annuels nets vs Airbnb amateur</div>
-          <ul>
-            <li>Revenue management dynamique</li>
-            <li>Conciergerie 24/7</li>
-            <li>Reporting mensuel détaillé</li>
-            <li>Portail propriétaire 24/7</li>
-            <li>Photos pro · vidéo drone</li>
-          </ul>
-        </div>
+    <div class="compare reveal">
+      <div class="compare-col compare-left">
+        <div class="compare-label">Airbnb auto-géré</div>
+        <div class="compare-stat">100<span class="unit">%</span></div>
+        <div class="compare-stat-label">Base de référence (revenus moyens)</div>
+        <ul class="compare-list compare-cons">
+          <li>Tarification statique</li>
+          <li>Réponse aux messages sous 4-12h</li>
+          <li>Aucun reporting structuré</li>
+          <li>Mots de passe partagés en clair</li>
+          <li>Photos smartphone amateur</li>
+          <li>Aucune équipe sur site</li>
+        </ul>
       </div>
-      <div class="ba-pane ba-before">
-        <div class="ba-card">
-          <div class="label">AIRBNB AUTO-GÉRÉ</div>
-          <div class="stat">100%</div>
-          <div class="stat-label">Base de référence (revenus moyens)</div>
-          <ul>
-            <li>Tarification statique</li>
-            <li>Réponse sous 4-12h</li>
-            <li>Pas de reporting structuré</li>
-            <li>Mots de passe en clair</li>
-            <li>Photos smartphone</li>
-          </ul>
-        </div>
+      <div class="compare-divider" aria-hidden="true">
+        <span class="vs">vs</span>
       </div>
-      <div class="ba-handle" id="baHandle"></div>
+      <div class="compare-col compare-right">
+        <div class="compare-label">Villa Havn-managée</div>
+        <div class="compare-stat">+47<span class="unit">%</span></div>
+        <div class="compare-stat-label">Revenus annuels nets vs Airbnb amateur</div>
+        <ul class="compare-list compare-pros">
+          <li>Revenue management dynamique</li>
+          <li>Concierge dédié, réponse &lt; 12 min</li>
+          <li>Reporting mensuel détaillé</li>
+          <li>Portail propriétaire 24/7</li>
+          <li>Photos pro · vidéo drone</li>
+          <li>Équipe permanente sur site</li>
+        </ul>
+        <div class="compare-source">Source : portefeuille HAVN 2025-2026</div>
+      </div>
     </div>
   </div>
 </section>
@@ -1639,16 +1791,7 @@
     <div class="blog-grid reveal">
       <a class="blog-card" href="https://havn-stays.com/blog/rentabilite-villa-marrakech-location-courte-duree-2026">
         <div class="img">
-          <svg class="img-svg" viewBox="0 0 400 250" fill="none" stroke="currentColor" stroke-width="1">
-            <line x1="40" y1="200" x2="360" y2="200"/>
-            <line x1="40" y1="200" x2="40" y2="40"/>
-            <polyline points="60,170 110,140 160,150 210,110 260,90 310,70 350,55"/>
-            <circle cx="60" cy="170" r="3" fill="currentColor"/>
-            <circle cx="160" cy="150" r="3" fill="currentColor"/>
-            <circle cx="260" cy="90" r="3" fill="currentColor"/>
-            <circle cx="350" cy="55" r="3" fill="currentColor"/>
-            <text x="40" y="225" font-family="JetBrains Mono" font-size="9" fill="currentColor">REVENUS €</text>
-          </svg>
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=900&h=560&fit=crop&q=80" alt="Villa de luxe à Marrakech avec piscine" loading="lazy" />
         </div>
         <div class="body">
           <div class="meta">CAS PRATIQUES · 9 MIN</div>
@@ -1660,16 +1803,7 @@
 
       <a class="blog-card" href="https://havn-stays.com/blog/reglementation-location-courte-duree-maroc">
         <div class="img">
-          <svg class="img-svg" viewBox="0 0 400 250" fill="none" stroke="currentColor" stroke-width="1">
-            <rect x="120" y="50" width="160" height="160"/>
-            <line x1="140" y1="80" x2="260" y2="80"/>
-            <line x1="140" y1="100" x2="260" y2="100"/>
-            <line x1="140" y1="120" x2="220" y2="120"/>
-            <line x1="140" y1="140" x2="240" y2="140"/>
-            <line x1="140" y1="160" x2="200" y2="160"/>
-            <circle cx="280" cy="180" r="20"/>
-            <line x1="293" y1="193" x2="310" y2="210" stroke-width="2"/>
-          </svg>
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&h=560&fit=crop&q=80" alt="Documents juridiques contrat" loading="lazy" />
         </div>
         <div class="body">
           <div class="meta">RÉGLEMENTATION · 11 MIN</div>
@@ -1681,15 +1815,7 @@
 
       <a class="blog-card" href="https://havn-stays.com/blog/revenue-management-villa-marrakech">
         <div class="img">
-          <svg class="img-svg" viewBox="0 0 400 250" fill="none" stroke="currentColor" stroke-width="1">
-            <line x1="40" y1="220" x2="360" y2="220"/>
-            <rect x="60" y="160" width="40" height="60"/>
-            <rect x="120" y="120" width="40" height="100"/>
-            <rect x="180" y="140" width="40" height="80"/>
-            <rect x="240" y="80" width="40" height="140"/>
-            <rect x="300" y="100" width="40" height="120"/>
-            <line x1="60" y1="100" x2="340" y2="60" stroke-dasharray="3 2"/>
-          </svg>
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=560&fit=crop&q=80" alt="Tableau de bord financier" loading="lazy" />
         </div>
         <div class="body">
           <div class="meta">REVENUE · 8 MIN</div>
@@ -1701,16 +1827,7 @@
 
       <a class="blog-card" href="https://havn-stays.com/blog/investir-villa-marrakech-quartiers">
         <div class="img">
-          <svg class="img-svg" viewBox="0 0 400 250" fill="none" stroke="currentColor" stroke-width="1">
-            <circle cx="200" cy="125" r="80"/>
-            <circle cx="200" cy="125" r="50" stroke-dasharray="3 3"/>
-            <circle cx="200" cy="125" r="3" fill="currentColor"/>
-            <line x1="200" y1="45" x2="200" y2="65"/>
-            <line x1="200" y1="185" x2="200" y2="205"/>
-            <line x1="120" y1="125" x2="140" y2="125"/>
-            <line x1="260" y1="125" x2="280" y2="125"/>
-            <text x="200" y="35" font-family="JetBrains Mono" font-size="9" fill="currentColor" text-anchor="middle">N</text>
-          </svg>
+          <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=900&h=560&fit=crop&q=80" alt="Quartier résidentiel à Marrakech" loading="lazy" />
         </div>
         <div class="body">
           <div class="meta">INVESTISSEMENT · 9 MIN</div>
@@ -1722,13 +1839,7 @@
 
       <a class="blog-card" href="https://havn-stays.com/blog/photos-professionnelles-annonce-villa-marrakech">
         <div class="img">
-          <svg class="img-svg" viewBox="0 0 400 250" fill="none" stroke="currentColor" stroke-width="1">
-            <rect x="100" y="70" width="200" height="130" rx="8"/>
-            <circle cx="200" cy="135" r="35"/>
-            <circle cx="200" cy="135" r="22"/>
-            <rect x="160" y="55" width="80" height="30" rx="4"/>
-            <circle cx="270" cy="95" r="3" fill="currentColor"/>
-          </svg>
+          <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=900&h=560&fit=crop&q=80" alt="Photographe professionnel équipement" loading="lazy" />
         </div>
         <div class="body">
           <div class="meta">CONVERSION · 12 MIN</div>
@@ -1740,19 +1851,7 @@
 
       <a class="blog-card" href="https://havn-stays.com/blog/tendances-tourisme-marrakech-2026">
         <div class="img">
-          <svg class="img-svg" viewBox="0 0 400 250" fill="none" stroke="currentColor" stroke-width="1">
-            <path d="M40 180 Q120 120 180 140 T340 80"/>
-            <line x1="40" y1="180" x2="40" y2="220"/>
-            <line x1="120" y1="220" x2="120" y2="225"/>
-            <line x1="200" y1="220" x2="200" y2="225"/>
-            <line x1="280" y1="220" x2="280" y2="225"/>
-            <line x1="340" y1="80" x2="340" y2="220"/>
-            <circle cx="40" cy="180" r="3" fill="currentColor"/>
-            <circle cx="180" cy="140" r="3" fill="currentColor"/>
-            <circle cx="340" cy="80" r="3" fill="currentColor"/>
-            <text x="48" y="195" font-family="JetBrains Mono" font-size="8" fill="currentColor">2024</text>
-            <text x="320" y="100" font-family="JetBrains Mono" font-size="8" fill="currentColor">2026</text>
-          </svg>
+          <img src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=900&h=560&fit=crop&q=80" alt="Médina de Marrakech tourisme" loading="lazy" />
         </div>
         <div class="body">
           <div class="meta">MARCHÉ · 13 MIN</div>
@@ -1948,8 +2047,8 @@
 </footer>
 
 <!-- WhatsApp floating button -->
-<a href="https://wa.me/971586247584" target="_blank" rel="noopener" aria-label="Contact WhatsApp" style="position:fixed;bottom:24px;right:24px;z-index:90;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,0.4);transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
-  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/></svg>
+<a href="https://wa.me/971586247584" target="_blank" rel="noopener" aria-label="Contact WhatsApp" style="position:fixed;bottom:24px;right:24px;z-index:90;width:56px;height:56px;background:var(--dark-2);border:1px solid var(--gold-soft);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,0.45);transition:transform 0.2s, background 0.2s;" onmouseover="this.style.transform='scale(1.1)';this.style.background='var(--gold)'" onmouseout="this.style.transform='scale(1)';this.style.background='var(--dark-2)'">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#C5A55A"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/></svg>
 </a>
 
 <!-- JSON-LD Schema -->
@@ -2031,7 +2130,7 @@
   const detailEl = document.getElementById('flowDetail');
   document.querySelectorAll('.flow-step').forEach(step => {
     step.addEventListener('click', () => {
-      const id = step.dataset.step;
+      const id = parseInt(step.dataset.step, 10);
       const d = stepData[id];
       detailEl.style.opacity = '0.3';
       setTimeout(() => {
@@ -2125,29 +2224,7 @@
     });
   });
 
-  // BEFORE / AFTER slider (desktop only)
-  (function(){
-    const wrap = document.getElementById('baWrap');
-    const handle = document.getElementById('baHandle');
-    const before = wrap.querySelector('.ba-before');
-    let dragging = false;
-    const isMobile = () => window.matchMedia('(max-width: 968px)').matches;
-
-    function setPos(x) {
-      if (isMobile()) return;
-      const rect = wrap.getBoundingClientRect();
-      const pct = Math.max(0, Math.min(100, ((x - rect.left) / rect.width) * 100));
-      handle.style.left = pct + '%';
-      before.style.clipPath = `polygon(0 0, ${pct}% 0, ${pct}% 100%, 0 100%)`;
-    }
-
-    wrap.addEventListener('mousedown', e => { if (isMobile()) return; dragging = true; setPos(e.clientX); });
-    window.addEventListener('mousemove', e => { if (dragging) setPos(e.clientX); });
-    window.addEventListener('mouseup', () => dragging = false);
-    wrap.addEventListener('touchstart', e => { if (isMobile()) return; dragging = true; setPos(e.touches[0].clientX); });
-    window.addEventListener('touchmove', e => { if (dragging && e.touches[0]) setPos(e.touches[0].clientX); });
-    window.addEventListener('touchend', () => dragging = false);
-  })();
+  // (BEFORE/AFTER slider removed — replaced by static comparison table)
 
 
   // HAMBURGER MOBILE NAV

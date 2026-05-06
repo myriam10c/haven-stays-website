@@ -503,9 +503,15 @@
   }
   .promise {
     background: var(--dark);
-    border-left: 3px solid var(--gold);
+    border: 1px solid var(--gold-faint);
+    border-radius: 16px;
     padding: 2.5rem;
     position: relative;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  .promise:hover {
+    border-color: var(--gold-soft);
+    transform: translateY(-3px);
   }
   .promise .num {
     font-family: var(--mono);
@@ -525,6 +531,7 @@
     font-family: var(--mono);
     font-size: 0.75rem;
     letter-spacing: 0.15em;
+    border-radius: 999px;
   }
 
 
@@ -714,77 +721,79 @@
   /* SECTION 5: ONBOARDING TIMELINE ---------------------------------- */
   .timeline {
     position: relative;
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding: 0;
+    max-width: 720px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .timeline-grid {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
     position: relative;
-    padding: 6rem 0;
+    padding: 0;
   }
   .timeline-grid::before {
     content: '';
     position: absolute;
-    top: 50%;
-    left: 4%;
-    right: 4%;
-    height: 1px;
+    top: 24px;
+    bottom: 24px;
+    left: 23px;
+    width: 1px;
     background: var(--gold-soft);
-    transform: translateY(-50%);
   }
   .day {
-    text-align: center;
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 1.5rem;
+    align-items: flex-start;
+    padding: 1.25rem 0;
+    text-align: left;
+    min-height: auto;
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 280px;
   }
   .day .marker {
-    width: 32px;
-    height: 32px;
+    width: 16px;
+    height: 16px;
     border-radius: 50%;
     background: var(--dark);
     border: 2px solid var(--gold);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 6px 0 0 16px;
+    position: relative;
     z-index: 2;
     transition: all 0.3s;
+    flex-shrink: 0;
   }
   .day:hover .marker {
     background: var(--gold);
-    transform: translate(-50%, -50%) scale(1.2);
+    transform: scale(1.25);
   }
   .day .content-block {
-    position: absolute;
-    left: 0; right: 0;
-    padding: 0 0.75rem;
+    position: relative;
+    inset: auto;
+    padding: 0;
   }
-  .day:nth-child(odd) .content-block { bottom: calc(50% + 32px); }
-  .day:nth-child(even) .content-block { top: calc(50% + 32px); }
   .day .label {
     font-family: var(--mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
     color: var(--gold);
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.4rem;
   }
-  .day .title { font-family: var(--display); font-size: 1.25rem; margin-bottom: 0.4rem; line-height: 1.2; }
-  .day .desc { font-size: 0.78rem; color: var(--ivory-mute); line-height: 1.4; }
-  .day .stem {
-    position: absolute;
-    left: 50%;
-    width: 1px;
-    background: var(--gold-soft);
-    z-index: 1;
+  .day .title {
+    font-family: var(--display);
+    font-size: 1.4rem;
+    margin-bottom: 0.4rem;
+    line-height: 1.2;
+    color: var(--ivory);
   }
-  .day:nth-child(odd) .stem { bottom: 50%; height: 28px; }
-  .day:nth-child(even) .stem { top: 50%; height: 28px; }
+  .day .desc {
+    font-size: 0.95rem;
+    color: var(--ivory-mute);
+    line-height: 1.55;
+  }
+  .day .stem { display: none; }
 
   /* BLOG ------------------------------------------------------------ */
   #blog-section { padding-top: 8rem; }
@@ -899,14 +908,7 @@
     transition: color 0.2s;
   }
   .faq-q:hover { color: var(--gold); }
-  .faq-q .faq-num {
-    font-family: var(--mono);
-    font-size: 0.7rem;
-    letter-spacing: 0.2em;
-    color: var(--gold);
-    flex-shrink: 0;
-    width: 60px;
-  }
+  .faq-q .faq-num { display: none; }
   .faq-q .faq-text { flex: 1; line-height: 1.3; }
   .faq-q .faq-toggle {
     width: 28px;

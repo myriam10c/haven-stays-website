@@ -944,6 +944,7 @@
   #cta { text-align: center; padding-bottom: 8rem; }
   #cta h2 { font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1.5rem; }
   #cta p { color: var(--ivory-mute); max-width: 560px; margin: 0 auto 2.5rem; }
+  .audit-widget-wrap { max-width: 720px; margin: 2.5rem auto 0; text-align: left; }
 
 
   /* AUDIT FORM (homepage CTA) ----------------------------------- */
@@ -2095,37 +2096,23 @@
   </div>
 </section>
 
-<!-- CTA FINAL -->
+<!-- CTA FINAL : calculator instantané (widget partagé) -->
+<link rel="stylesheet" href="/estimation-widget.css">
 <section id="cta">
   <div class="container">
     <div class="reveal">
-      <span class="eyebrow">DEMANDE D'AUDIT</span>
+      <span class="eyebrow">ESTIMATION INSTANTANÉE</span>
       <h2>Voyons ce que <em>votre villa</em> peut faire.</h2>
-      <p>Audit gratuit en 24h. Estimation de revenus, recommandations photos, projection 12 mois. Sans engagement.</p>
+      <p>Estimation immédiate basée sur 384 comparables Airbnb (mai 2026). Recevez le rapport détaillé par email — un expert vous appelle sous 24h.</p>
+    </div>
 
-      <form id="auditForm" class="audit-form" novalidate>
-        <div class="audit-row">
-          <input type="text" name="name" id="aName" required placeholder="Nom complet" autocomplete="name">
-          <input type="email" name="email" id="aEmail" required placeholder="Email" autocomplete="email">
-        </div>
-        <div class="audit-row">
-          <input type="tel" name="phone" id="aPhone" required placeholder="Téléphone (avec indicatif)" autocomplete="tel">
-          <select name="location" id="aLoc" required>
-            <option value="">Localisation de votre villa</option>
-            <option value="Marrakech">Marrakech</option>
-            <option value="Agadir">Agadir</option>
-            <option value="Taghazout Bay">Taghazout Bay</option>
-            <option value="Autre Maroc">Autre — Maroc</option>
-          </select>
-        </div>
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
-        <button type="submit" class="btn-primary audit-submit">Recevoir mon audit gratuit</button>
-        <div class="audit-status" id="aStatus" role="status" aria-live="polite"></div>
-        <p class="audit-foot">Réponse personnalisée par Hillal Medini sous 24h. Aucune donnée transmise à un tiers.</p>
-      </form>
+    <!-- Widget hors .reveal (toujours visible — l'utilisateur arrive ici via CTA) -->
+    <div class="audit-widget-wrap">
+      <div id="estimation-widget"></div>
     </div>
   </div>
 </section>
+<script src="/estimation-widget.js" defer></script>
 
 <!-- FOOTER -->
 <footer>
@@ -2382,69 +2369,7 @@
   })();
 
 
-  // AUDIT request form (homepage CTA -> email hillal@medini-homes.com)
-  (function(){
-    const form = document.getElementById('auditForm');
-    if (!form) return;
-    const status = document.getElementById('aStatus');
-    const submit = form.querySelector('.audit-submit');
-
-    form.addEventListener('submit', async (e) => {
-      e.preventDefault();
-      if (form.querySelector('[name=_honey]').value) return;
-      if (!form.checkValidity()) {
-        status.textContent = 'Merci de remplir tous les champs requis.';
-        status.className = 'audit-status err';
-        form.reportValidity();
-        return;
-      }
-      const data = {
-        name: form.aName.value.trim(),
-        email: form.aEmail.value.trim(),
-        phone: form.aPhone.value.trim(),
-        location: form.aLoc.value
-      };
-
-      submit.disabled = true;
-      const originalLabel = submit.textContent;
-      submit.textContent = 'Envoi…';
-      status.textContent = '';
-      status.className = 'audit-status';
-
-      try {
-        const fd = new FormData();
-        fd.append('Nom', data.name);
-        fd.append('Email', data.email);
-        fd.append('Téléphone', data.phone);
-        fd.append('Localisation villa', data.location);
-        fd.append('Source', 'havn-stays.com — homepage CTA');
-        fd.append('_subject', 'Nouvelle demande d\'audit — ' + data.name + ' — ' + data.location);
-        fd.append('_template', 'table');
-        fd.append('_captcha', 'false');
-
-        const res = await fetch('https://formsubmit.co/ajax/hillal@medini-homes.com', {
-          method: 'POST',
-          headers: { 'Accept': 'application/json' },
-          body: fd
-        });
-        const json = await res.json().catch(() => ({}));
-        if (json.success === 'true' || json.success === true) {
-          status.textContent = 'Merci ' + data.name.split(' ')[0] + ' ! Votre demande est bien reçue. Hillal vous répond personnellement sous 24h.';
-          status.className = 'audit-status ok';
-          form.reset();
-          submit.textContent = '✓ Envoyé';
-          if (window.gtag) gtag('event', 'audit_request', { method: 'home_form', location: data.location });
-        } else {
-          throw new Error('Service indisponible');
-        }
-      } catch (err) {
-        status.innerHTML = 'Une erreur est survenue. Écrivez-nous directement à <a href="mailto:hillal@medini-homes.com" style="color:var(--gold)">hillal@medini-homes.com</a> ou via <a href="https://wa.me/971586247584" target="_blank" rel="noopener" style="color:var(--gold)">WhatsApp</a>.';
-        status.className = 'audit-status err';
-        submit.disabled = false;
-        submit.textContent = originalLabel;
-      }
-    });
-  })();
+  // (Old auditForm replaced by the shared estimation widget — see /estimation-widget.js.)
 
 
   // Subtle hero text parallax on scroll

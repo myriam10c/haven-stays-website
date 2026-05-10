@@ -57,22 +57,28 @@ function sanitize(payload) {
 }
 
 async function insertSupabase(row, ua) {
+  // Generate id client-side so we don't need SELECT permission to return it.
+  const id = (typeof crypto !== "undefined" && crypto.randomUUID)
+    ? crypto.randomUUID()
+    : null;
+  const body = { ...row, user_agent: ua };
+  if (id) body.id = id;
+
   const r = await fetch(`${SUPABASE_URL}/rest/v1/hs_estimations`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       "apikey": SUPABASE_ANON_KEY,
       "Authorization": `Bearer ${SUPABASE_ANON_KEY}`,
-      "Prefer": "return=representation",
+      "Prefer": "return=minimal",
     },
-    body: JSON.stringify({ ...row, user_agent: ua }),
+    body: JSON.stringify(body),
   });
   if (!r.ok) {
     const t = await r.text();
     throw new Error(`Supabase insert failed: ${r.status} ${t.slice(0, 200)}`);
   }
-  const arr = await r.json();
-  return arr[0]?.id;
+  return id;
 }
 
 async function sendTelegram(row) {

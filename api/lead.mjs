@@ -81,28 +81,33 @@ async function insertSupabase(row, ua) {
   return id;
 }
 
+function htmlEsc(s) {
+  return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
 async function sendTelegram(row) {
-  if (!TG_BOT || !TG_CHAT) return { ok: false, reason: "missing env vars: " + (!TG_BOT ? "TELEGRAM_BOT_TOKEN " : "") + (!TG_CHAT ? "TELEGRAM_CHAT_ID" : "") };
+  if (!TG_BOT || !TG_CHAT) return { ok: false, reason: "missing env vars" };
   const amen = (row.amenities || []).join(", ") || "—";
+  // HTML mode — no underscore-as-italic issues with amenity keys like private_pool
   const txt = [
-    "🏡 *Nouveau lead Havn Stays*",
+    "🏡 <b>Nouveau lead Havn Stays</b>",
     "",
-    `*${row.full_name || "(sans nom)"}*`,
-    `📧 ${row.email || "—"}`,
-    `📱 ${row.phone || "—"}`,
+    `<b>${htmlEsc(row.full_name || "(sans nom)")}</b>`,
+    `📧 ${htmlEsc(row.email || "—")}`,
+    `📱 ${htmlEsc(row.phone || "—")}`,
     "",
-    `📍 *Zone:* ${row.zone || "—"}`,
-    `🛏 *Type:* ${row.property_type || "—"} · ${row.bedrooms ?? "?"} ch`,
-    `✨ *Amenities:* ${amen}`,
+    `📍 <b>Zone:</b> ${htmlEsc(row.zone || "—")}`,
+    `🛏 <b>Type:</b> ${htmlEsc(row.property_type || "—")} · ${row.bedrooms ?? "?"} ch`,
+    `✨ <b>Amenities:</b> ${htmlEsc(amen)}`,
     "",
-    `💰 *ADR effective:* ${fmtMad(row.adr_effective_mad)} / nuit`,
-    `📊 *Estimation annuelle (brut):*`,
+    `💰 <b>ADR effective:</b> ${fmtMad(row.adr_effective_mad)} / nuit`,
+    `📊 <b>Estimation annuelle brut:</b>`,
     `   • LOW    : ${fmtMad(row.low_annual_mad)}`,
     `   • MEDIUM : ${fmtMad(row.med_annual_mad)}`,
     `   • HIGH   : ${fmtMad(row.high_annual_mad)}`,
-    "",
-    row.message ? `💬 _${row.message}_` : "",
-  ].filter(Boolean).join("\n");
+    row.message ? "" : null,
+    row.message ? `💬 <i>${htmlEsc(row.message)}</i>` : null,
+  ].filter(s => s !== null).join("\n");
 
   try {
     const r = await fetch(`https://api.telegram.org/bot${TG_BOT}/sendMessage`, {
@@ -111,7 +116,7 @@ async function sendTelegram(row) {
       body: JSON.stringify({
         chat_id: TG_CHAT,
         text: txt,
-        parse_mode: "Markdown",
+        parse_mode: "HTML",
         disable_web_page_preview: true,
       }),
     });
@@ -239,18 +244,14 @@ export default async function handler(req, res) {
     return res.status(500).json({ error: "DB insert failed", detail: String(e).slice(0, 300) });
   }
 
-  // Notifications fan-out — failures are non-fatal
-  const subject = `Nouveau lead Havn Stays — ${row.full_name || row.email}`;
-  const [tgOk, e1Ok, e2Ok] = await Promise.all([
-    sendTelegram(row),
-    sendFormsubmit(row, EMAIL_PRIMARY, subject, /* autoresponse to lead */ true),
-    EMAIL_CC && EMAIL_CC !== EMAIL_PRIMARY ? sendFormsubmit(row, EMAIL_CC, subject + " (cc)", false) : Promise.resolve(true),
-  ]);
+  // Telegram only (Formsubmit AJAX is blocked by Cloudflare from server-side ;
+  // emails are sent from the frontend in browser context where it works).
+  const tgRes = await sendTelegram(row);
 
   return res.status(200).json({
     ok: true,
     id,
-    notif: { telegram: tgOk, email_primary: e1Ok, email_cc: e2Ok },
+    notif: { telegram: tgRes },
   });
 }
 

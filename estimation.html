@@ -946,12 +946,62 @@
                 bedrooms: parseInt(document.getElementById('bedrooms').value) || null,
             });
 
+            // Build email summary for Formsubmit autoresponse
+            const fmtMadStr = (n) => Math.round(Number(n) || 0).toLocaleString('fr-FR') + ' MAD';
+            const autoresponse = [
+                'Bonjour ' + (payload.full_name || '').split(' ')[0] + ',',
+                '',
+                "Merci pour votre demande d'estimation. Voici votre projection :",
+                '',
+                '  • Bien            : ' + (payload.property_type || '—') + ' · ' + (payload.bedrooms || '?') + ' chambres · ' + (payload.zone || '—'),
+                '  • ADR effective   : ' + fmtMadStr(payload.adr_effective_mad) + ' / nuit',
+                '  • LOW    (conservateur) : ' + fmtMadStr(payload.low_annual_mad) + ' / an',
+                '  • MEDIUM (réaliste)     : ' + fmtMadStr(payload.med_annual_mad) + ' / an',
+                '  • HIGH   (optimiste)    : ' + fmtMadStr(payload.high_annual_mad) + ' / an',
+                '',
+                "Basé sur 384 comparables Airbnb (mai 2026) + amenities indiquées.",
+                'Un expert Havn Stays vous contacte sous 24h pour affiner.',
+                '',
+                "Besoin d'un retour rapide ? hillal@medini-homes.com / WhatsApp",
+                '',
+                "L'équipe Havn Stays — https://havn-stays.com",
+            ].join('\n');
+
+            const fsFields = {
+                Nom: payload.full_name, Email: payload.email, Telephone: payload.phone,
+                Zone: payload.zone, Type: payload.property_type, Chambres: payload.bedrooms,
+                Amenities: (payload.amenities || []).join(', '),
+                'ADR effective': fmtMadStr(payload.adr_effective_mad),
+                'LOW': fmtMadStr(payload.low_annual_mad),
+                'MEDIUM': fmtMadStr(payload.med_annual_mad),
+                'HIGH': fmtMadStr(payload.high_annual_mad),
+                Message: payload.message || '',
+                _subject: 'Nouveau lead Havn Stays — ' + (payload.full_name || payload.email),
+                _template: 'table',
+                _replyto: payload.email,
+            };
+            const fsPrimary = Object.assign({}, fsFields, { _autoresponse: autoresponse });
+            const fsCc = Object.assign({}, fsFields, { _subject: fsFields._subject + ' (cc)' });
+
             try {
-                const r = await fetch('/api/lead', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(payload),
-                });
+                const calls = [
+                    fetch('/api/lead', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload),
+                    }),
+                    fetch('https://formsubmit.co/ajax/hillal@medini-homes.com', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                        body: JSON.stringify(fsPrimary),
+                    }).catch(() => null),
+                    fetch('https://formsubmit.co/ajax/admin@medini-homes.com', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+                        body: JSON.stringify(fsCc),
+                    }).catch(() => null),
+                ];
+                const [r] = await Promise.all(calls);
                 const data = await r.json().catch(() => ({}));
                 if (r.ok && data.ok) {
                     showNotification('Merci ! Votre rapport détaillé est en route. On vous appelle sous 24h.', 'success');

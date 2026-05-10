@@ -82,7 +82,7 @@ async function insertSupabase(row, ua) {
 }
 
 async function sendTelegram(row) {
-  if (!TG_BOT || !TG_CHAT) return false;
+  if (!TG_BOT || !TG_CHAT) return { ok: false, reason: "missing env vars: " + (!TG_BOT ? "TELEGRAM_BOT_TOKEN " : "") + (!TG_CHAT ? "TELEGRAM_CHAT_ID" : "") };
   const amen = (row.amenities || []).join(", ") || "—";
   const txt = [
     "🏡 *Nouveau lead Havn Stays*",
@@ -115,9 +115,11 @@ async function sendTelegram(row) {
         disable_web_page_preview: true,
       }),
     });
-    return r.ok;
-  } catch (_) {
-    return false;
+    if (r.ok) return { ok: true };
+    const errText = await r.text();
+    return { ok: false, reason: `tg ${r.status}: ${errText.slice(0,180)}` };
+  } catch (e) {
+    return { ok: false, reason: "tg exception: " + String(e).slice(0,120) };
   }
 }
 
@@ -176,12 +178,23 @@ async function sendFormsubmit(row, recipient, subject, withAutoresponse = false)
   try {
     const r = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(recipient)}`, {
       method: "POST",
-      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "Accept": "application/json",
+        "Origin": "https://havn-stays.com",
+        "Referer": "https://havn-stays.com/estimation",
+      },
       body: JSON.stringify(fields),
     });
-    return r.ok;
-  } catch (_) {
-    return false;
+    if (r.ok) {
+      const data = await r.json().catch(() => ({}));
+      if (data.success === "true" || data.success === true) return { ok: true };
+      return { ok: false, reason: `fs ${recipient}: ${JSON.stringify(data).slice(0,160)}` };
+    }
+    const errText = await r.text();
+    return { ok: false, reason: `fs ${r.status} ${recipient}: ${errText.slice(0,160)}` };
+  } catch (e) {
+    return { ok: false, reason: "fs exception: " + String(e).slice(0,120) };
   }
 }
 
@@ -240,3 +253,5 @@ export default async function handler(req, res) {
     notif: { telegram: tgOk, email_primary: e1Ok, email_cc: e2Ok },
   });
 }
+
+// (Helpers above return objects {ok, reason?} — kept verbose during deploy debug.)

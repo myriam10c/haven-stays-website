@@ -2,7 +2,9 @@
   "cleanUrls": true,
   "trailingSlash": false,
   "redirects": [
-    { "source": "/dubai", "destination": "/", "permanent": true }
+    { "source": "/dubai", "destination": "/", "permanent": true },
+    { "source": "/audit-villa-gratuit", "destination": "/estimation", "permanent": true },
+    { "source": "/en/free-villa-audit", "destination": "/en/estimate", "permanent": true }
   ],
   "headers": [
     {

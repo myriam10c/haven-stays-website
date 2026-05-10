@@ -223,6 +223,57 @@
             .stepper-label{font-size:10px}
             .form-card{padding:24px 20px}
         }
+        /* ──────────── Calculator additions ──────────── */
+        .amen-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; margin-top: 4px; }
+        @media (max-width: 540px) { .amen-grid { grid-template-columns: 1fr; } }
+        .amen-toggle { display: flex; align-items: center; gap: 12px; padding: 10px 12px; border: 1px solid rgba(0,0,0,.08); border-radius: 6px; cursor: pointer; transition: all .25s ease; user-select: none; background: var(--white); }
+        .amen-toggle:hover { border-color: var(--gold-light); }
+        .amen-toggle input { display: none; }
+        .amen-toggle .check { width: 18px; height: 18px; border-radius: 4px; border: 1.5px solid rgba(0,0,0,.2); display: flex; align-items: center; justify-content: center; font-size: 11px; color: transparent; transition: all .2s; flex-shrink: 0; }
+        .amen-toggle.active { background: var(--sand-light); border-color: var(--gold); }
+        .amen-toggle.active .check { background: var(--gold); border-color: var(--gold); color: var(--white); }
+        .amen-toggle .label { font-size: 13px; color: var(--text); }
+        .amen-toggle .coef { font-size: 11px; color: var(--gold); font-weight: 600; margin-left: auto; opacity: 0; transition: opacity .2s; }
+        .amen-toggle.active .coef { opacity: 1; }
+
+        /* Result cards */
+        .result-summary { display: grid; grid-template-columns: 1.4fr 1fr; gap: 12px; margin: 8px 0 24px; }
+        @media (max-width: 600px) { .result-summary { grid-template-columns: 1fr; } }
+        .result-meta { background: var(--sand-light); border-radius: 8px; padding: 16px 18px; border-left: 3px solid var(--gold); }
+        .result-meta-row { display: flex; justify-content: space-between; padding: 4px 0; font-size: 13px; }
+        .result-meta-row b { color: var(--text); }
+        .result-occupation { background: var(--navy); color: var(--white); border-radius: 8px; padding: 16px 18px; display: flex; flex-direction: column; justify-content: center; }
+        .result-occupation .num { font-family: var(--serif); font-size: 32px; line-height: 1; color: var(--gold); }
+        .result-occupation .lbl { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: rgba(255,255,255,.6); margin-top: 6px; }
+
+        .result-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; margin-bottom: 28px; }
+        @media (max-width: 540px) { .result-cards { grid-template-columns: 1fr; } }
+        .res-card { padding: 18px 16px; border-radius: 8px; }
+        .res-card .res-lbl { font-size: 10px; letter-spacing: .15em; text-transform: uppercase; font-weight: 700; opacity: .9; }
+        .res-card .res-num { font-family: var(--serif); font-size: 26px; font-weight: 600; line-height: 1.1; margin-top: 4px; }
+        .res-card .res-sub { font-size: 11px; opacity: .7; margin-top: 6px; }
+        .res-low { background: var(--sand); color: var(--navy); }
+        .res-mid { background: var(--gold-light); color: var(--navy); }
+        .res-high { background: var(--navy); color: var(--white); }
+        .res-high .res-num { color: var(--gold); }
+        .res-high .res-sub { color: rgba(255,255,255,.7); }
+
+        .result-cta-box { background: var(--sand-light); border: 1px dashed var(--gold); border-radius: 8px; padding: 20px; margin-bottom: 18px; }
+        .result-cta-box h3 { font-family: var(--serif); font-size: 20px; color: var(--text); margin-bottom: 8px; }
+        .result-cta-box p { font-size: 13px; color: var(--text-mid); }
+
+        .result-disclaimer { font-size: 11px; color: var(--text-light); line-height: 1.5; margin-top: 14px; }
+
+        /* Monthly stacked chart */
+        .month-chart-wrap { background: var(--white); border-radius: 8px; padding: 18px 16px 12px; margin-bottom: 22px; border: 1px solid rgba(0,0,0,.06); }
+        .month-chart-title { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--text-light); font-weight: 600; margin-bottom: 10px; }
+        #monthChart svg { width: 100%; height: auto; display: block; }
+        .month-chart-legend { display: flex; gap: 18px; justify-content: center; margin-top: 10px; font-size: 11px; color: var(--text-mid); }
+        .month-chart-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
+
+        /* Souss-Massa bypass message */
+        .zone-bypass { padding: 18px; background: var(--sand-light); border-radius: 6px; border-left: 3px solid var(--gold); font-size: 13px; color: var(--text-mid); margin-top: 14px; }
+        .zone-bypass b { color: var(--text); }
     </style>
 </head>
 <body>
@@ -320,12 +371,12 @@
                       <div class="stepper-line" id="line1"></div>
                       <div class="stepper-step" data-step="2">
                         <div class="stepper-dot">2</div>
-                        <div class="stepper-label">Détails</div>
+                        <div class="stepper-label">Amenities</div>
                       </div>
                       <div class="stepper-line" id="line2"></div>
                       <div class="stepper-step" data-step="3">
                         <div class="stepper-dot">3</div>
-                        <div class="stepper-label">Coordonnées</div>
+                        <div class="stepper-label">Résultat</div>
                       </div>
                     </div>
 
@@ -333,19 +384,23 @@
                       <!-- Step 1: Votre bien -->
                       <div class="form-step active" data-step="1">
                         <div class="step-title">Votre bien</div>
-                        <div class="step-sub">Décrivez les caractéristiques principales de votre propriété.</div>
+                        <div class="step-sub">Quelques infos pour calibrer l'estimation sur le marché Marrakech.</div>
 
                         <div class="form-group">
                           <label for="zone">Zone / Quartier</label>
                           <select id="zone" required>
                             <option value="">Sélectionnez une zone</option>
                             <option value="palmeraie">La Palmeraie</option>
+                            <option value="medina">Médina</option>
+                            <option value="hivernage">Hivernage</option>
+                            <option value="gueliz">Guéliz / Centre-ville</option>
+                            <option value="agdal">Agdal</option>
+                            <option value="targa">Targa</option>
+                            <option value="amelkis">Amelkis &amp; Golf</option>
                             <option value="ourika">Route de l'Ourika</option>
                             <option value="amizmiz">Route d'Amizmiz</option>
                             <option value="fes">Route de Fès</option>
-                            <option value="amelkis">Amelkis & Golf</option>
                             <option value="barrage">Route du Barrage</option>
-                            <option value="targa">Targa & Agdal</option>
                             <option value="autre">Autre (Marrakech)</option>
                             <option disabled>── Souss-Massa ──</option>
                             <option value="taghazout">Taghazout Bay</option>
@@ -370,72 +425,88 @@
                             <option value="3">3 chambres</option>
                             <option value="4">4 chambres</option>
                             <option value="5">5 chambres</option>
-                            <option value="6+">6+ chambres</option>
+                            <option value="6">6 chambres</option>
+                            <option value="7">7+ chambres</option>
                           </select>
                         </div>
 
-                        <div class="form-group">
-                          <label for="pool">Piscine privée</label>
-                          <select id="pool" required>
-                            <option value="">Sélectionnez</option>
-                            <option value="yes">Oui</option>
-                            <option value="no">Non</option>
-                          </select>
+                        <div id="zoneBypassBox" class="zone-bypass" style="display:none">
+                          <b>Estimation Souss-Massa sur demande.</b><br>
+                          Notre calculateur instantané couvre actuellement Marrakech. Pour Taghazout Bay et Agadir, laissez-nous vos coordonnées — un expert vous envoie une estimation personnalisée sous 24h.
                         </div>
 
                         <div class="form-nav">
-                          <button type="button" class="btn btn-gold" style="flex:1" onclick="goStep(2)">Suivant</button>
+                          <button type="button" class="btn btn-gold" style="flex:1" onclick="goStep(2)">Suivant — Amenities</button>
                         </div>
                       </div>
 
-                      <!-- Step 2: Détails -->
+                      <!-- Step 2: Amenities -->
                       <div class="form-step" data-step="2">
-                        <div class="step-title">Détails</div>
-                        <div class="step-sub">Quelques informations complémentaires pour affiner l'estimation.</div>
+                        <div class="step-title">Standing &amp; amenities</div>
+                        <div class="step-sub">Coche les éléments présents — chacun ajuste l'ADR projeté.</div>
 
-                        <div class="form-group">
-                          <label for="landSize">Surface terrain approximative</label>
-                          <select id="landSize" required>
-                            <option value="">Sélectionnez</option>
-                            <option value="500m2">&lt; 500 m²</option>
-                            <option value="500-1000">500 – 1 000 m²</option>
-                            <option value="1000-2000">1 000 – 2 000 m²</option>
-                            <option value="2000m2+">2 000 m² +</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="furnished">Meublé</label>
-                          <select id="furnished" required>
-                            <option value="">Sélectionnez</option>
-                            <option value="full">Oui, entièrement</option>
-                            <option value="partial">Partiellement</option>
-                            <option value="no">Non</option>
-                          </select>
-                        </div>
-
-                        <div class="form-group">
-                          <label for="usage">Usage actuel</label>
-                          <select id="usage" required>
-                            <option value="">Sélectionnez</option>
-                            <option value="vacant">Vide / Vacant</option>
-                            <option value="annual">Location annuelle</option>
-                            <option value="personal">Usage personnel</option>
-                            <option value="airbnb">Airbnb auto-géré</option>
-                            <option value="other">Autre</option>
-                          </select>
-                        </div>
+                        <div class="amen-grid" id="amenGrid"><!-- generated by JS --></div>
 
                         <div class="form-nav">
                           <button type="button" class="btn-back" onclick="goStep(1)">Retour</button>
-                          <button type="button" class="btn btn-gold" style="flex:1" onclick="goStep(3)">Suivant</button>
+                          <button type="button" class="btn btn-gold" style="flex:1" onclick="computeAndShow()">Voir mon estimation</button>
                         </div>
                       </div>
 
-                      <!-- Step 3: Coordonnées -->
+                      <!-- Step 3: Result + Coordonnées -->
                       <div class="form-step" data-step="3">
-                        <div class="step-title">Vos coordonnées</div>
-                        <div class="step-sub">Pour recevoir votre estimation personnalisée sous 24h.</div>
+                        <div class="step-title">Votre estimation</div>
+                        <div class="step-sub" id="resultSummaryLabel">Basé sur 384 comparables Airbnb (mai 2026).</div>
+
+                        <div id="resultBlock">
+                          <div class="result-summary">
+                            <div class="result-meta">
+                              <div class="result-meta-row"><span>Zone</span><b id="resZone">—</b></div>
+                              <div class="result-meta-row"><span>Type · Chambres</span><b id="resType">—</b></div>
+                              <div class="result-meta-row"><span>ADR base marché</span><b id="resAdrBase">—</b></div>
+                              <div class="result-meta-row"><span>Multiplicateur amenities</span><b id="resMult">×1.00</b></div>
+                              <div class="result-meta-row" style="border-top:1px solid rgba(0,0,0,.08);margin-top:6px;padding-top:8px"><span>ADR effective</span><b id="resAdrEff" style="color:var(--gold)">—</b></div>
+                            </div>
+                            <div class="result-occupation">
+                              <div class="num" id="resOcc">—</div>
+                              <div class="lbl">jours / an d'occupation projetée</div>
+                            </div>
+                          </div>
+
+                          <!-- Monthly stacked chart -->
+                          <div class="month-chart-wrap">
+                            <div class="month-chart-title">Saisonnalité — revenue brut par mois</div>
+                            <div id="monthChart"></div>
+                            <div class="month-chart-legend">
+                              <span><i style="background:var(--sand)"></i>LOW</span>
+                              <span><i style="background:var(--gold)"></i>MEDIUM</span>
+                              <span><i style="background:var(--navy)"></i>HIGH</span>
+                            </div>
+                          </div>
+
+                          <div class="result-cards">
+                            <div class="res-card res-low">
+                              <div class="res-lbl">LOW</div>
+                              <div class="res-num" id="resLow">—</div>
+                              <div class="res-sub">scénario conservateur</div>
+                            </div>
+                            <div class="res-card res-mid">
+                              <div class="res-lbl">MEDIUM</div>
+                              <div class="res-num" id="resMed">—</div>
+                              <div class="res-sub" id="resMedSub">scénario réaliste</div>
+                            </div>
+                            <div class="res-card res-high">
+                              <div class="res-lbl">HIGH</div>
+                              <div class="res-num" id="resHigh">—</div>
+                              <div class="res-sub">scénario optimiste</div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="result-cta-box">
+                          <h3>Recevez le rapport détaillé par email</h3>
+                          <p>Saisonnalité mois par mois, comparables précis sur votre zone, charges &amp; rentabilité nette estimée. Un expert Havn Stays vous appelle dans les 24h pour affiner.</p>
+                        </div>
 
                         <div class="form-group">
                           <label for="fullName">Nom complet</label>
@@ -454,13 +525,21 @@
 
                         <div class="form-group">
                           <label for="message">Message (optionnel)</label>
-                          <textarea id="message" placeholder="Parlez-nous de votre propriété..."></textarea>
+                          <textarea id="message" placeholder="Surface, année construction, particularités…"></textarea>
+                        </div>
+
+                        <!-- Honeypot — hidden from real users, bots fill it -->
+                        <div aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden">
+                          <label for="website_url">Website (laisser vide)</label>
+                          <input type="text" id="website_url" name="website_url" tabindex="-1" autocomplete="off">
                         </div>
 
                         <div class="form-nav">
                           <button type="button" class="btn-back" onclick="goStep(2)">Retour</button>
-                          <button type="submit" class="btn btn-gold" style="flex:2">Recevoir mon estimation</button>
+                          <button type="submit" class="btn btn-gold" style="flex:2">Recevoir le rapport détaillé</button>
                         </div>
+
+                        <p class="result-disclaimer">L'estimation est indicative, basée sur les médianes Airbnb de votre zone et les multiplicateurs amenities. Une analyse précise (loyer optimal, calendrier, photos, listing) est offerte après contact.</p>
                       </div>
                     </form>
                 </div>
@@ -581,22 +660,95 @@
         function closeMob(){mobBtn.classList.remove('active');mobMenu.classList.remove('active');document.body.style.overflow='';}
         mobBtn.addEventListener('click',toggleMob);
 
-        // ======== MULTI-STEP FORM LOGIC ========
-        let currentStep = 1;
-        const totalSteps = 3;
+        // ════════════ ESTIMATION CALCULATOR — Marrakech ═══════════════
+        // Données : médianes scrapées Airbnb (mai 2026) sur 384 villas
+        // Voir aussi : /scripts/marrakech_projector/build_template.py (interne)
 
-        // Fields required per step (for validation)
+        // Ratecard MAD/nuit, zones × bedrooms (2..7+)
+        const RATECARD = {
+            //               2BR   3BR   4BR   5BR   6BR   7BR
+            palmeraie:    [2050, 2750, 4400, 5600, 6950, 8300],
+            medina:       [2750, 3650, 4750, 6000, 7500, 8950],
+            hivernage:    [1800, 2400, 3280, 4150, 4900, 5900],
+            gueliz:       [1100, 1500, 1950, 2500, 3050, 3700],
+            agdal:        [1700, 2270, 2950, 3750, 4650, 5550],
+            targa:        [1300, 1700, 2800, 3550, 4400, 5300],
+            ourika:       [2300, 3100, 4020, 6270, 7800, 9300],
+            amelkis:      [1700, 2300, 4990, 6350, 7850, 9400],
+            // Zones non scrapées → fallback vers profil similaire
+            amizmiz:      [1300, 1700, 2800, 3550, 4400, 5300],   // = targa
+            fes:          [1300, 1700, 2800, 3550, 4400, 5300],   // = targa
+            barrage:      [1700, 2270, 2950, 3750, 4650, 5550],   // = agdal
+            autre:        [1700, 2270, 2950, 3750, 4650, 5550],   // = agdal (mid-tier)
+        };
+        const ZONE_LABELS = {
+            palmeraie: "La Palmeraie", medina: "Médina", hivernage: "Hivernage",
+            gueliz: "Guéliz / Centre-ville", agdal: "Agdal", targa: "Targa",
+            amelkis: "Amelkis & Golf", ourika: "Route de l'Ourika",
+            amizmiz: "Route d'Amizmiz", fes: "Route de Fès",
+            barrage: "Route du Barrage", autre: "Marrakech (autre)"
+        };
+        const ZONES_BYPASS = ["taghazout", "agadir"];
+
+        const AMENITIES = [
+            { key: "private_pool",  label: "Piscine privée",                  coef: 0.15, def: true  },
+            { key: "heated_pool",   label: "Piscine chauffée",                coef: 0.10, def: false },
+            { key: "aircon",        label: "Climatisation",                   coef: 0.05, def: true  },
+            { key: "hammam",        label: "Hammam privatif",                 coef: 0.08, def: false },
+            { key: "jacuzzi",       label: "Jacuzzi / spa",                   coef: 0.05, def: false },
+            { key: "cinema",        label: "Salle de cinéma",                 coef: 0.07, def: false },
+            { key: "gym",           label: "Salle de gym",                    coef: 0.04, def: false },
+            { key: "tennis",        label: "Tennis ou padel",                 coef: 0.10, def: false },
+            { key: "staff",         label: "Staff 24/7 (cuisinier+gardien)",  coef: 0.15, def: false },
+            { key: "view",          label: "Vue Atlas / Palmeraie",           coef: 0.07, def: false },
+            { key: "riad_charm",    label: "Architecture riad / kasbah",      coef: 0.08, def: false },
+            { key: "garden",        label: "Jardin paysagé > 1000 m²",        coef: 0.05, def: true  },
+        ];
+
+        // Days occupied par BHK × mois (estimations marché Marrakech)
+        const DAYS_OCC = {
+            //      Jan Fev Mar Avr Mai Jun Jul Aou Sep Oct Nov Dec
+            "2":  [22, 22, 26, 26, 21, 14, 12, 13, 18, 25, 25, 27],
+            "3":  [20, 21, 25, 25, 20, 13, 11, 12, 17, 24, 24, 26],
+            "4":  [18, 19, 23, 24, 18, 12, 10, 11, 16, 23, 23, 25],
+            "5":  [16, 17, 22, 22, 17, 11, 9,  10, 14, 21, 21, 24],
+            "6":  [14, 15, 20, 21, 15, 10, 8,  9,  13, 19, 19, 22],
+            "7":  [12, 13, 18, 19, 14, 9,  7,  8,  12, 17, 17, 20],
+        };
+        const SEASONALITY = [0.95, 1.05, 1.20, 1.25, 1.05, 0.70, 0.60, 0.65, 0.95, 1.20, 1.20, 1.40];
+
+        const MED_PREMIUM = 0.35;   // MEDIUM = LOW × 1.35
+        const HIGH_PREMIUM = 0.35;  // HIGH = MEDIUM × 1.35
+
+        // ──── Build amenities grid ────
+        const amenGrid = document.getElementById("amenGrid");
+        AMENITIES.forEach((a) => {
+            const wrap = document.createElement("label");
+            wrap.className = "amen-toggle" + (a.def ? " active" : "");
+            wrap.dataset.key = a.key;
+            wrap.innerHTML =
+                '<input type="checkbox" ' + (a.def ? "checked" : "") + '>' +
+                '<span class="check">✓</span>' +
+                '<span class="label">' + a.label + '</span>' +
+                '<span class="coef">+' + Math.round(a.coef * 100) + '%</span>';
+            const input = wrap.querySelector("input");
+            input.addEventListener("change", () => {
+                wrap.classList.toggle("active", input.checked);
+            });
+            amenGrid.appendChild(wrap);
+        });
+
+        // ──── Multi-step navigation ────
+        let currentStep = 1;
         const stepFields = {
-            1: ['zone','propertyType','bedrooms','pool'],
-            2: ['landSize','furnished','usage'],
-            3: ['fullName','email','phone']
+            1: ['zone','propertyType','bedrooms'],
+            2: [],
+            3: ['fullName','email','phone'],
         };
 
         function goStep(n) {
-            // Validate current step before going forward
             if (n > currentStep) {
-                const fields = stepFields[currentStep];
-                for (const fid of fields) {
+                for (const fid of (stepFields[currentStep] || [])) {
                     const el = document.getElementById(fid);
                     if (el && el.required && !el.value) {
                         el.style.borderColor = '#e74c3c';
@@ -606,51 +758,167 @@
                     }
                 }
             }
-
             currentStep = n;
-
-            // Update step panels
             document.querySelectorAll('.form-step').forEach(s => s.classList.remove('active'));
             document.querySelector('.form-step[data-step="'+n+'"]').classList.add('active');
-
-            // Update stepper dots
             document.querySelectorAll('.stepper-step').forEach(s => {
                 const sn = parseInt(s.dataset.step);
                 s.classList.remove('active','done');
                 if (sn === n) s.classList.add('active');
                 else if (sn < n) s.classList.add('done');
             });
-
-            // Update stepper lines
-            const line1 = document.getElementById('line1');
-            const line2 = document.getElementById('line2');
-            line1.classList.toggle('done', n >= 2);
-            line2.classList.toggle('done', n >= 3);
-
-            // Hide step number in dot when done (show checkmark via CSS)
+            document.getElementById('line1').classList.toggle('done', n >= 2);
+            document.getElementById('line2').classList.toggle('done', n >= 3);
             document.querySelectorAll('.stepper-step.done .stepper-dot').forEach(d => d.textContent = '');
             document.querySelectorAll('.stepper-step:not(.done) .stepper-dot').forEach(d => {
                 d.textContent = d.closest('.stepper-step').dataset.step;
             });
-
-            // Scroll form card into view on mobile
             if (window.innerWidth < 768) {
                 document.querySelector('.form-card').scrollIntoView({behavior:'smooth', block:'start'});
             }
         }
 
-        // Supabase config
-        const SUPABASE_URL = 'https://mtfhbxeaiqhveuernkfn.supabase.co';
-        const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im10ZmhieGVhaXFodmV1ZXJua2ZuIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzM0ODc0ODEsImV4cCI6MjA4OTA2MzQ4MX0.3DGSNVwbsrvJ_ARLu9nowuCgov1RyWn9LCFOb5T6s6g';
+        // ──── Souss-Massa bypass : if zone is taghazout/agadir, skip step 2 ────
+        document.getElementById('zone').addEventListener('change', (e) => {
+            const isBypass = ZONES_BYPASS.includes(e.target.value);
+            document.getElementById('zoneBypassBox').style.display = isBypass ? 'block' : 'none';
+            // Override "Suivant" button behavior
+            const nextBtn = document.querySelector('.form-step[data-step="1"] .btn-gold');
+            if (isBypass) {
+                nextBtn.textContent = 'Demander une estimation sur mesure';
+                nextBtn.onclick = () => goStep(3);  // skip amenities + result calculation
+                document.getElementById('resultBlock').style.display = 'none';
+                document.getElementById('resultSummaryLabel').textContent =
+                    'Notre équipe va analyser votre bien Souss-Massa et vous envoyer une estimation personnalisée sous 24h.';
+            } else {
+                nextBtn.textContent = 'Suivant — Amenities';
+                nextBtn.onclick = () => goStep(2);
+                document.getElementById('resultBlock').style.display = '';
+                document.getElementById('resultSummaryLabel').textContent =
+                    'Basé sur 384 comparables Airbnb (mai 2026).';
+            }
+        });
 
-        // Form submission
+        // ──── Calculator core ────
+        const fmtMad = (n) => Math.round(n).toLocaleString('fr-FR') + ' MAD';
+        const fmtEur = (n) => Math.round(n / 10.8).toLocaleString('fr-FR') + ' €';
+
+        // Stacked monthly chart : LOW base + (MED-LOW) + (HIGH-MED)
+        function drawMonthlyChart(low, med, high) {
+            const W = 520, H = 180;
+            const padL = 4, padR = 4, padT = 6, padB = 24;
+            const chartW = W - padL - padR;
+            const chartH = H - padT - padB;
+            const groupW = chartW / 12;
+            const barW = groupW * 0.62;
+            const labels = ['J','F','M','A','M','J','J','A','S','O','N','D'];
+            const max = Math.max.apply(null, high);
+
+            const baseY = padT + chartH;
+            let svg = `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">`;
+
+            for (let i = 0; i < 12; i++) {
+                const x = padL + i * groupW + (groupW - barW) / 2;
+                const hLow = (low[i] / max) * chartH;
+                const hMed = (med[i] / max) * chartH;
+                const hHigh = (high[i] / max) * chartH;
+                // HIGH segment (top)
+                svg += `<rect x="${x.toFixed(1)}" y="${(baseY - hHigh).toFixed(1)}" width="${barW.toFixed(1)}" height="${(hHigh - hMed).toFixed(1)}" fill="#162230" rx="2"/>`;
+                // MED segment (middle)
+                svg += `<rect x="${x.toFixed(1)}" y="${(baseY - hMed).toFixed(1)}" width="${barW.toFixed(1)}" height="${(hMed - hLow).toFixed(1)}" fill="#C5A55A"/>`;
+                // LOW segment (bottom)
+                svg += `<rect x="${x.toFixed(1)}" y="${(baseY - hLow).toFixed(1)}" width="${barW.toFixed(1)}" height="${hLow.toFixed(1)}" fill="#F5F0EB"/>`;
+                // Month label
+                svg += `<text x="${(padL + i*groupW + groupW/2).toFixed(1)}" y="${H - 6}" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#999">${labels[i]}</text>`;
+            }
+            svg += '</svg>';
+            return svg;
+        }
+
+        let lastEstimation = null;
+
+        function computeAndShow() {
+            const zone = document.getElementById('zone').value;
+            const propertyType = document.getElementById('propertyType').value;
+            const bedroomsStr = document.getElementById('bedrooms').value;
+            const bedrooms = bedroomsStr === '7' ? 7 : parseInt(bedroomsStr);
+
+            // Read amenities
+            const checked = [];
+            let multiplier = 1.0;
+            AMENITIES.forEach(a => {
+                const wrap = amenGrid.querySelector('.amen-toggle[data-key="'+a.key+'"]');
+                const input = wrap.querySelector('input');
+                if (input.checked) {
+                    checked.push(a.key);
+                    multiplier *= (1 + a.coef);
+                }
+            });
+
+            const rates = RATECARD[zone] || RATECARD.autre;
+            // Index : 2BR→0, 3BR→1, …, 7BR→5
+            const idx = Math.max(0, Math.min(5, bedrooms - 2));
+            const adrBase = rates[idx];
+            const adrEff = Math.round(adrBase * multiplier);
+
+            // Riad bonus implicite (hardcoded +5% pour vrais riads)
+            const adrEffWithType = propertyType === 'riad' ? Math.round(adrEff * 1.05) : adrEff;
+
+            const days = DAYS_OCC[String(Math.min(7, Math.max(2, bedrooms)))];
+            const totalDays = days.reduce((a,b)=>a+b, 0);
+            // Weighted nights × seasonality
+            const weighted = days.reduce((acc, d, i) => acc + d * SEASONALITY[i], 0);
+
+            // LOW = weighted × ADR_eff × (1 - low_disc=0)
+            const low = weighted * adrEffWithType;
+            const med = low * (1 + MED_PREMIUM);
+            const high = med * (1 + HIGH_PREMIUM);
+
+            // Monthly LOW/MED/HIGH for chart
+            const monthlyLow = days.map((d, i) => d * adrEffWithType * SEASONALITY[i]);
+            const monthlyMed = monthlyLow.map(v => v * (1 + MED_PREMIUM));
+            const monthlyHigh = monthlyMed.map(v => v * (1 + HIGH_PREMIUM));
+
+            lastEstimation = {
+                zone, propertyType, bedrooms,
+                amenities: checked,
+                adr_base_mad: adrBase,
+                adr_effective_mad: adrEffWithType,
+                amenity_multiplier: Math.round(multiplier * 1000) / 1000,
+                nights_per_year: totalDays,
+                low_annual_mad: Math.round(low),
+                med_annual_mad: Math.round(med),
+                high_annual_mad: Math.round(high),
+            };
+
+            // Render result UI
+            const bedroomsLabel = bedrooms === 7 ? '7+' : String(bedrooms);
+            document.getElementById('resZone').textContent = ZONE_LABELS[zone] || zone;
+            document.getElementById('resType').textContent =
+                (propertyType === 'riad' ? 'Riad' : 'Villa') + ' · ' + bedroomsLabel + ' chambres';
+            document.getElementById('resAdrBase').textContent = fmtMad(adrBase) + ' / nuit';
+            document.getElementById('resMult').textContent = '×' + multiplier.toFixed(2);
+            document.getElementById('resAdrEff').textContent = fmtMad(adrEffWithType) + ' / nuit';
+            document.getElementById('resOcc').textContent = totalDays + ' j';
+            document.getElementById('resLow').textContent = fmtMad(low);
+            document.getElementById('resMed').textContent = fmtMad(med);
+            document.getElementById('resHigh').textContent = fmtMad(high);
+            document.getElementById('resMedSub').textContent =
+                'soit ~' + fmtEur(med) + ' / an';
+
+            // Draw monthly chart
+            document.getElementById('monthChart').innerHTML =
+                drawMonthlyChart(monthlyLow, monthlyMed, monthlyHigh);
+
+            goStep(3);
+        }
+
+        // ──── Submit ────
         const estimationForm = document.getElementById('estimationForm');
         estimationForm.addEventListener('submit', async function(e) {
             e.preventDefault();
 
-            // Validate step 3 fields
-            const fields = stepFields[3];
-            for (const fid of fields) {
+            for (const fid of stepFields[3]) {
                 const el = document.getElementById(fid);
                 if (el && el.required && !el.value) {
                     el.style.borderColor = '#e74c3c';
@@ -662,80 +930,48 @@
 
             const btn = estimationForm.querySelector('button[type="submit"]');
             const originalText = btn.textContent;
-            btn.textContent = 'Envoi en cours...';
+            btn.textContent = 'Envoi en cours…';
             btn.disabled = true;
 
-            const leadData = {
+            const payload = Object.assign({
                 full_name: document.getElementById('fullName').value,
-                email: document.getElementById('email').value,
-                phone: document.getElementById('phone').value,
-                property_type: document.getElementById('propertyType').value || null,
-                property_location: document.getElementById('zone').value || null,
+                email:     document.getElementById('email').value,
+                phone:     document.getElementById('phone').value,
+                message:   document.getElementById('message').value || null,
+                website_url: document.getElementById('website_url').value || "",  // honeypot
+            }, lastEstimation || {
+                // Souss-Massa bypass : pas de calcul mais on capture quand même
+                zone: document.getElementById('zone').value,
+                property_type: document.getElementById('propertyType').value,
                 bedrooms: parseInt(document.getElementById('bedrooms').value) || null,
-                message: document.getElementById('message').value || null
-            };
-
-            // 1. Save to Supabase CRM
-            const crmPayload = {
-                full_name: leadData.full_name,
-                email: leadData.email,
-                phone: leadData.phone,
-                property_type: leadData.property_type,
-                property_location: leadData.property_location,
-                bedrooms: leadData.bedrooms,
-                message: leadData.message,
-                status: 'pending'
-            };
-
-            const supabasePromise = fetch(SUPABASE_URL + '/rest/v1/hs_estimations', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'apikey': SUPABASE_ANON_KEY,
-                    'Authorization': 'Bearer ' + SUPABASE_ANON_KEY,
-                    'Prefer': 'return=minimal'
-                },
-                body: JSON.stringify(crmPayload)
-            }).catch(() => null);
-
-            // 2. Send email via Formsubmit
-            const formData = new FormData();
-            formData.append('Zone', document.getElementById('zone').value);
-            formData.append('Type de bien', document.getElementById('propertyType').value);
-            formData.append('Chambres', document.getElementById('bedrooms').value);
-            formData.append('Piscine', document.getElementById('pool').value);
-            formData.append('Surface terrain', document.getElementById('landSize').value);
-            formData.append('Meublé', document.getElementById('furnished').value);
-            formData.append('Usage actuel', document.getElementById('usage').value);
-            formData.append('name', leadData.full_name);
-            formData.append('email', leadData.email);
-            formData.append('phone', leadData.phone);
-            formData.append('message', leadData.message || '');
-            formData.append('_subject', 'Nouvelle demande estimation — Havn Stays');
-            formData.append('_template', 'table');
-
-            const emailPromise = fetch('https://formsubmit.co/ajax/hillal@medini-homes.com', {
-                method: 'POST',
-                body: formData
-            }).catch(() => null);
+            });
 
             try {
-                const [supaRes, emailRes] = await Promise.all([supabasePromise, emailPromise]);
-                const emailOk = emailRes && (await emailRes.json().catch(() => ({}))).success;
-                const crmOk = supaRes && supaRes.ok;
-
-                if (emailOk || crmOk) {
+                const r = await fetch('/api/lead', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload),
+                });
+                const data = await r.json().catch(() => ({}));
+                if (r.ok && data.ok) {
+                    showNotification('Merci ! Votre rapport détaillé est en route. On vous appelle sous 24h.', 'success');
                     estimationForm.reset();
-                    goStep(1);
-                    showNotification('Merci ! Nous vous contacterons sous 24h avec votre estimation.', 'success');
+                    AMENITIES.forEach((a) => {
+                        const wrap = amenGrid.querySelector('.amen-toggle[data-key="'+a.key+'"]');
+                        const input = wrap.querySelector('input');
+                        input.checked = a.def;
+                        wrap.classList.toggle('active', a.def);
+                    });
+                    setTimeout(() => goStep(1), 1500);
                 } else {
-                    showNotification('Une erreur est survenue. Veuillez réessayer ou nous contacter par WhatsApp.', 'error');
+                    throw new Error(data.error || 'Erreur serveur');
                 }
-            } catch (error) {
-                showNotification('Une erreur est survenue. Veuillez réessayer ou nous contacter par WhatsApp.', 'error');
+            } catch (err) {
+                showNotification('Erreur d\'envoi. Réessayez ou contactez-nous via WhatsApp.', 'error');
+            } finally {
+                btn.textContent = originalText;
+                btn.disabled = false;
             }
-            btn.textContent = originalText;
-            btn.disabled = false;
         });
 
         function showNotification(message, type) {
@@ -743,7 +979,7 @@
             notif.style.cssText = 'position:fixed;top:100px;left:50%;transform:translateX(-50%);padding:16px 32px;border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,0.2);z-index:2000;font-weight:600;color:#fff;max-width:90%;text-align:center;background:' + (type === 'success' ? '#4CAF50' : '#e74c3c') + ';';
             notif.textContent = message;
             document.body.appendChild(notif);
-            setTimeout(() => notif.remove(), 5000);
+            setTimeout(() => notif.remove(), 6000);
         }
     </script>
 </body>

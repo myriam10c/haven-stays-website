@@ -1581,20 +1581,6 @@
       </div>
     </div>
 
-    <div class="flow-detail reveal" id="flowDetail">
-      <div class="num">01</div>
-      <div class="body">
-        <span class="annotation">REMISE DES CLÉS · J0</span>
-        <h3>État des lieux contradictoire signé</h3>
-        <ul>
-          <li>Inspection commune en présence du propriétaire (ou délégué)</li>
-          <li>Photos haute résolution de chaque pièce, archivées et horodatées</li>
-          <li>Inventaire détaillé du mobilier, de la décoration, des équipements</li>
-          <li>Test de tous les appareils (climatisation, électroménager, jacuzzi)</li>
-          <li>Attestation contresignée — copie numérique vous est envoyée sous 24h</li>
-        </ul>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -2293,66 +2279,6 @@
 </script>
 
 <script>
-  // PROTOCOLE — flow step click
-  const stepData = {
-    1: { num: '01', label: 'REMISE DES CLÉS · J0', title: 'État des lieux contradictoire signé', items: [
-      'Inspection commune en présence du propriétaire (ou délégué)',
-      'Photos haute résolution de chaque pièce, archivées et horodatées',
-      'Inventaire détaillé du mobilier, de la décoration, des équipements',
-      'Test de tous les appareils (climatisation, électroménager, jacuzzi)',
-      'Attestation contresignée — copie numérique vous est envoyée sous 24h'
-    ]},
-    2: { num: '02', label: 'COFFRE NUMÉRIQUE · USAGE INTERNE', title: 'Tous les accès de votre villa, centralisés', items: [
-      'Codes Wi-Fi, alarme, coffre, portail, climatisation référencés',
-      'Plans architecturaux, manuels appareils, contrats services',
-      'Contacts piscinier, jardinier, électricien, plombier de confiance',
-      'Réservé à l\'équipe Havn opérationnelle, accès tracé',
-      'Audit log permanent : qui a consulté quoi, quand'
-    ]},
-    3: { num: '03', label: 'PORTAIL PROPRIÉTAIRE · J0+2', title: 'Votre cockpit personnel, 24/7', items: [
-      'Calendrier de réservations en temps réel, blocage manuel possible',
-      'Suivi des revenus (quotidien, mensuel, cumul annuel)',
-      'État de compte téléchargeable, prêt comptable',
-      'Galerie photo de votre villa après chaque check-out',
-      'Messagerie directe avec votre concierge dédié',
-      'Accès mobile + desktop, sans installation'
-    ]},
-    4: { num: '04', label: 'CHECK-IN · ARRIVÉE VOYAGEUR', title: 'Procédure d\'accueil cinq étoiles', items: [
-      'Vérification identité + scan passeport (conformité légale Maroc)',
-      'Briefing maison personnalisé (15-30 min selon profil)',
-      'État des lieux contradictoire en présence du voyageur',
-      'Test équipements (clim, jacuzzi, électroménager, audio)',
-      'Carnet de bord remis (Welcome Book personnalisé)'
-    ]},
-    5: { num: '05', label: 'REPORTING · MENSUEL', title: 'État de compte détaillé chaque mois', items: [
-      'Revenus bruts, nets, charges ventilées poste par poste',
-      'Taux d\'occupation, ADR, RevPAR du mois et cumul YTD',
-      'Réservations à venir, ratings reçus, incidents éventuels',
-      'Comparatif vs marché Marrakech (benchmark anonymisé)',
-      'Export PDF prêt comptable, accès permanent au dashboard'
-    ]}
-  };
-
-  const detailEl = document.getElementById('flowDetail');
-  document.querySelectorAll('.flow-step').forEach(step => {
-    step.addEventListener('click', () => {
-      const id = parseInt(step.dataset.step, 10);
-      const d = stepData[id];
-      detailEl.style.opacity = '0.3';
-      setTimeout(() => {
-        detailEl.innerHTML = `
-          <div class="num">${d.num}</div>
-          <div class="body">
-            <span class="annotation">${d.label}</span>
-            <h3>${d.title}</h3>
-            <ul>${d.items.map(i => `<li>${i}</li>`).join('')}</ul>
-          </div>
-        `;
-        detailEl.style.opacity = '1';
-      }, 200);
-    });
-  });
-
   // PLAN D'OPERATION — pin click
   const pinData = {
     entry: {

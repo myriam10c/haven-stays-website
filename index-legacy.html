@@ -1,0 +1,2420 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- Google tag (gtag.js) — chargé sur interaction (perf) -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-R1DJVRQEQB', {'anonymize_ip': true});
+  (function(){
+    var loaded = false;
+    function load(){
+      if(loaded) return; loaded = true;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-R1DJVRQEQB';
+      document.head.appendChild(s);
+    }
+    var evts = ['scroll','mousemove','touchstart','keydown','click'];
+    evts.forEach(function(e){window.addEventListener(e, load, {once:true, passive:true});});
+    setTimeout(load, 5000);
+  })();
+</script>
+<meta charset="UTF-8">
+<meta name="google-site-verification" content="mc0ZMqP7yD9HPQukeBi785o766mib7Fe9QUTEmtprUU" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Havn Stays — L'Expérience Hôtelière pour Votre Villa</title>
+<meta name="description" content="Conciergerie premium fondée par un ancien directeur d'hôtel. Standards hôteliers appliqués à votre villa : portail propriétaire 24/7, reporting mensuel, transparence totale. Marrakech, Agadir, Taghazout Bay.">
+<meta property="og:site_name" content="Havn Stays by Medini Homes">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Havn Stays | L'Expérience Hôtelière pour Votre Villa">
+<meta property="og:description" content="Conciergerie premium pour propriétaires de villas à Marrakech, Agadir, Taghazout Bay. Standards hôteliers, portail propriétaire 24/7, transparence totale.">
+<meta property="og:url" content="https://havn-stays.com/">
+<meta property="og:image" content="https://havn-stays.com/hero-poster.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://havn-stays.com/hero-poster.jpg">
+<link rel="canonical" href="https://havn-stays.com/">
+<link rel="alternate" hreflang="fr" href="https://havn-stays.com/" />
+<link rel="alternate" hreflang="en" href="https://havn-stays.com/en/" />
+<link rel="alternate" hreflang="x-default" href="https://havn-stays.com/" />
+<link rel="icon" type="image/svg+xml" href="/brand/favicons/favicon.svg">
+<link rel="apple-touch-icon" href="/brand/favicons/apple-touch-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="image" href="/hero-poster.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter+Tight:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --dark: #0F1923;
+    --dark-2: #142230;
+    --dark-3: #1B2D3E;
+    --gold: #C5A55A;
+    --gold-soft: rgba(197, 165, 90, 0.35);
+    --gold-faint: rgba(197, 165, 90, 0.12);
+    --ivory: #F5F1E8;
+    --ivory-mute: #C9C2B0;
+    --display: 'Fraunces', 'Cormorant Garamond', Georgia, serif;
+    --logo-display: 'Cormorant Garamond', Georgia, serif;
+    --body: 'Inter Tight', 'Inter', system-ui, sans-serif;
+    --mono: 'JetBrains Mono', monospace;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    background: var(--dark);
+    color: var(--ivory);
+    font-family: var(--body);
+    font-weight: 300;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  /* GRID BACKGROUND ------------------------------------------------- */
+  .grid-bg {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--gold-faint) 1px, transparent 1px),
+      linear-gradient(90deg, var(--gold-faint) 1px, transparent 1px);
+    background-size: 80px 80px;
+    pointer-events: none;
+    opacity: 0.5;
+    mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+  }
+
+  /* TYPE ------------------------------------------------------------- */
+  h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.1; }
+  .eyebrow {
+    font-family: var(--body);
+    font-weight: 500;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+  .eyebrow::before {
+    content: '';
+    display: block;
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+  }
+  .annotation {
+    font-family: var(--body);
+    font-weight: 500;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+  .gold { color: var(--gold); }
+  em.gold { font-family: var(--display); font-style: italic; font-weight: 400; }
+
+  /* HEADER ------------------------------------------------------------ */
+  header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(15,25,35,0.85), transparent);
+    backdrop-filter: blur(8px);
+  }
+  .logo {
+    font-family: var(--logo-display);
+    font-size: 1.7rem;
+    letter-spacing: 0.2em;
+    color: var(--ivory);
+    font-weight: 400;
+  }
+  .logo em { font-family: var(--logo-display); font-style: italic; color: var(--gold); font-weight: 500; letter-spacing: 0.05em; }
+  .logo .by { display: block; font-family: var(--mono); font-size: 0.55rem; letter-spacing: 0.3em; color: var(--ivory-mute); margin-top: 4px; }
+  nav ul { list-style: none; display: flex; gap: 2.5rem; }
+  nav a {
+    color: var(--ivory);
+    text-decoration: none;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    transition: color 0.2s;
+  }
+  nav a:hover { color: var(--gold); }
+  .btn-cta {
+    border: 1px solid var(--gold-soft);
+    color: var(--gold);
+    padding: 0.7rem 1.4rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    letter-spacing: normal;
+    text-transform: none;
+    font-family: var(--body);
+    border-radius: 999px;
+    transition: all 0.2s;
+  }
+  .btn-cta:hover { background: var(--gold); color: var(--dark); }
+  .btn-primary {
+    background: var(--gold);
+    color: var(--dark);
+    border: 1px solid var(--gold);
+    padding: 0.95rem 2.1rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: normal;
+    text-transform: none;
+    font-family: var(--body);
+    border-radius: 999px;
+    display: inline-block;
+    box-shadow: 0 8px 24px rgba(197,165,90,0.25);
+    transition: all 0.2s;
+  }
+  .btn-primary:hover { box-shadow: 0 12px 30px rgba(197,165,90,0.35); transform: translateY(-2px); }
+  .btn-primary:hover { background: transparent; color: var(--gold); }
+
+
+  /* HAMBURGER + MOBILE NAV OVERLAY ----------------------------- */
+  .hamburger {
+    display: none;
+    background: none;
+    border: 1px solid var(--gold-soft);
+    border-radius: 999px;
+    width: 44px; height: 44px;
+    padding: 0;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    transition: all 0.2s;
+  }
+  .hamburger span {
+    display: block;
+    width: 18px;
+    height: 1.5px;
+    background: var(--gold);
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
+  .nav-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 25, 35, 0.98);
+    backdrop-filter: blur(12px);
+    z-index: 95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  .nav-overlay.open { opacity: 1; pointer-events: auto; }
+  .nav-overlay ul { list-style: none; text-align: center; padding: 0; display: flex; flex-direction: column; gap: 1.5rem; }
+  .nav-overlay a {
+    font-family: var(--display);
+    font-size: 2rem;
+    color: var(--ivory);
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  .nav-overlay a:hover { color: var(--gold); }
+  .nav-overlay a.btn-primary { font-family: var(--body); font-size: 0.95rem; margin-top: 1rem; }
+
+
+  /* HERO + HEADER — single typographic voice (Cormorant) ------ */
+  .hero h1,
+  .hero h1 em,
+  .hero .eyebrow,
+  .hero p,
+  .hero .btn-primary,
+  .hero .btn-cta,
+  .hero .scroll-hint,
+  header nav a,
+  header > .btn-cta {
+    font-family: var(--logo-display);
+  }
+  header nav a { font-weight: 500; font-size: 0.95rem; letter-spacing: 0.02em; }
+  header > .btn-cta { font-weight: 500; font-size: 1rem; letter-spacing: 0.01em; }
+  .hero h1 { font-weight: 400; }
+  .hero h1 em { font-weight: 500; }
+  .hero .eyebrow {
+    font-weight: 500;
+    letter-spacing: 0.18em;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+  }
+  .hero p {
+    font-weight: 300;
+    font-size: 1.18rem;
+    line-height: 1.55;
+    letter-spacing: 0.005em;
+  }
+  .hero .btn-primary,
+  .hero .btn-cta {
+    font-weight: 500;
+    font-size: 1.05rem;
+    letter-spacing: 0.01em;
+    text-transform: none;
+  }
+  .hero .scroll-hint {
+    font-weight: 400;
+    font-style: italic;
+    text-transform: none;
+    letter-spacing: 0.05em;
+    font-size: 0.85rem;
+    opacity: 0.8;
+  }
+
+  /* HERO -------------------------------------------------------------- */
+  .hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  .hero video {
+    position: absolute;
+    inset: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.7) contrast(1.05);
+  }
+  .hero::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(to bottom, rgba(15,25,35,0.55) 0%, rgba(15,25,35,0.25) 35%, rgba(15,25,35,0.45) 100%);
+    z-index: 1;
+  }
+  .hero-blueprint {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .hero-blueprint svg { width: 100%; height: 100%; }
+  .hero-blueprint path,
+  .hero-blueprint line,
+  .hero-blueprint polyline,
+  .hero-blueprint rect:not(.no-anim),
+  .hero-blueprint circle:not(.no-anim) {
+    stroke: var(--gold);
+    stroke-width: 1;
+    fill: none;
+    stroke-dasharray: 1500;
+    stroke-dashoffset: 1500;
+    animation: draw 3s ease-out 0.5s forwards;
+    opacity: 0.55;
+  }
+  @keyframes draw {
+    to { stroke-dashoffset: 0; }
+  }
+  .hero-content {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    max-width: 900px;
+    padding: 0 2rem;
+  }
+  .hero h1 {
+    font-size: clamp(2.75rem, 6vw, 5rem);
+    line-height: 1.05;
+    margin: 1.5rem 0 2rem;
+    letter-spacing: -0.02em;
+  }
+  .hero h1 em { font-style: italic; color: var(--gold); }
+  .hero p { font-size: 1.1rem; max-width: 560px; margin: 0 auto 2.5rem; color: var(--ivory-mute); }
+  .hero .cta-row { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    font-family: var(--body);
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    text-transform: uppercase;
+    opacity: 0.75;
+    animation: bounce 2s infinite;
+  }
+  @keyframes bounce {
+    0%, 100% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-50%) translateY(8px); }
+  }
+
+  /* SECTION -------------------------------------------------------- */
+  section { padding: 8rem 3rem; position: relative; }
+  .container { max-width: 1280px; margin: 0 auto; }
+  .section-head { text-align: center; max-width: 800px; margin: 0 auto 5rem; }
+  .section-head h2 {
+    font-size: clamp(2rem, 4vw, 3.25rem);
+    line-height: 1.1;
+    margin: 1.5rem 0 1.5rem;
+  }
+  .section-head h2 em { font-style: italic; color: var(--gold); }
+  .section-head .lede { color: var(--ivory-mute); font-size: 1.1rem; }
+
+  /* SECTION 1: SECURITY FLOW ---------------------------------------- */
+  #protocole { background: var(--dark-2); }
+  .flow {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    margin-top: 3rem;
+  }
+  .flow-step {
+    background: var(--dark);
+    border: 1px solid var(--gold-soft);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  .flow-step:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(197,165,90,0.15);
+  }
+  .flow-num {
+    position: absolute;
+    top: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--dark-2);
+    color: var(--gold);
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    padding: 4px 10px;
+    letter-spacing: 0.2em;
+  }
+  .flow-icon { width: 56px; height: 56px; margin: 0 auto 1rem; color: var(--gold); }
+  .flow-step h3 { font-size: 1.4rem; margin-bottom: 0.5rem; color: var(--ivory); }
+  .flow-step p { font-size: 0.85rem; color: var(--ivory-mute); }
+  .flow-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--gold);
+    width: 40px;
+    pointer-events: none;
+  }
+  .flow-detail {
+    margin-top: 4rem;
+    background: var(--dark);
+    border: 1px dashed var(--gold-soft);
+    padding: 3rem;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    transition: opacity 0.3s;
+  }
+  .flow-detail .num {
+    font-family: var(--display);
+    font-size: 6rem;
+    color: var(--gold);
+    line-height: 1;
+    font-weight: 300;
+  }
+  .flow-detail .body h3 { font-size: 2rem; margin-bottom: 1rem; }
+  .flow-detail .body ul { list-style: none; padding: 0; }
+  .flow-detail .body li {
+    padding-left: 1.8rem;
+    position: relative;
+    margin-bottom: 0.5rem;
+    color: var(--ivory-mute);
+  }
+  .flow-detail .body li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  /* SECTION 2: VILLA AXO -------------------------------------------- */
+  #plan { padding-bottom: 0; }
+  .axo-wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 3rem;
+  }
+  .axo-svg {
+    width: 100%;
+    height: auto;
+    max-height: 580px;
+  }
+  .axo-svg .struct {
+    fill: none;
+    stroke: var(--gold);
+    stroke-width: 1.2;
+    stroke-linejoin: round;
+  }
+  .axo-svg .fill-soft { fill: var(--dark-2); stroke: var(--gold); stroke-width: 1; }
+  .axo-svg .pool { fill: rgba(197,165,90,0.08); stroke: var(--gold); }
+  .axo-svg .ground { stroke: var(--gold-soft); stroke-width: 0.5; fill: none; stroke-dasharray: 4 3; }
+  .axo-svg .pin {
+    cursor: pointer;
+    transition: transform 0.2s;
+    transform-origin: center;
+    transform-box: fill-box;
+  }
+  .axo-svg .pin:hover { transform: scale(1.15); }
+  .axo-svg .pin circle { fill: var(--gold); }
+  .axo-svg .pin circle.outer { fill: var(--gold-faint); animation: pulse 2s infinite; }
+  @keyframes pulse {
+    0%, 100% { r: 16; opacity: 0.8; }
+    50% { r: 22; opacity: 0.3; }
+  }
+  .axo-svg .pin text { fill: var(--dark); font-family: var(--mono); font-size: 11px; font-weight: 600; text-anchor: middle; dominant-baseline: central; }
+  .axo-info {
+    background: var(--dark-2);
+    border: 1px solid var(--gold-soft);
+    padding: 2.5rem;
+    transition: all 0.3s;
+  }
+  .axo-info .annotation { margin-bottom: 0.75rem; }
+  .axo-info h3 { font-size: 2rem; margin-bottom: 1rem; }
+  .axo-info p { color: var(--ivory-mute); margin-bottom: 1.5rem; }
+  .axo-info ul { list-style: none; }
+  .axo-info li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem 0;
+    border-bottom: 1px dashed var(--gold-faint);
+    font-size: 0.9rem;
+  }
+  .axo-info li:last-child { border: 0; }
+  .axo-info li .val { color: var(--gold); font-family: var(--mono); font-size: 0.8rem; }
+
+  /* SECTION 3: TRANSPARENCY ----------------------------------------- */
+  #transparence { background: var(--dark-2); }
+  .promises {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .promise {
+    background: var(--dark);
+    border: 1px solid var(--gold-faint);
+    border-radius: 16px;
+    padding: 2.5rem;
+    position: relative;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  .promise:hover {
+    border-color: var(--gold-soft);
+    transform: translateY(-3px);
+  }
+  .promise .num {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    color: var(--gold);
+    margin-bottom: 1rem;
+  }
+  .promise h3 { font-size: 1.6rem; margin-bottom: 1rem; line-height: 1.2; }
+  .promise p { color: var(--ivory-mute); font-size: 0.95rem; }
+  .promise .metric {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 8px 14px;
+    background: var(--gold-faint);
+    color: var(--gold);
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    border-radius: 999px;
+  }
+
+
+  /* FOUNDER ----------------------------------------------------- */
+  #fondateur { padding: 8rem 3rem; }
+  .founder-wrap {
+    display: grid;
+    grid-template-columns: 360px 1fr;
+    gap: 4rem;
+    align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+  .founder-photo {
+    aspect-ratio: 4 / 5;
+    background: linear-gradient(135deg, var(--dark-2), var(--dark-3));
+    border: 1px solid var(--gold-soft);
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+  }
+  .founder-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    filter: saturate(0.95) contrast(1.02);
+  }
+  .founder-photo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--gold-faint) 1px, transparent 1px),
+      linear-gradient(90deg, var(--gold-faint) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.5;
+  }
+  .founder-initials {
+    font-family: var(--display);
+    font-size: 7rem;
+    color: var(--gold);
+    font-weight: 300;
+    z-index: 1;
+  }
+  .founder-body h2 { margin: 1rem 0 1.5rem; }
+  .founder-body p { color: var(--ivory-mute); margin-bottom: 1rem; line-height: 1.7; }
+  .founder-meta {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--gold-faint);
+  }
+  .founder-meta > div { display: flex; flex-direction: column; gap: 0.4rem; }
+  .founder-meta span:first-child { font-size: 0.65rem; }
+  .founder-meta span:last-child { font-size: 0.95rem; color: var(--ivory); }
+
+  /* TESTIMONIALS ------------------------------------------------ */
+  #temoignages { background: var(--dark-2); }
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .testimonial {
+    background: var(--dark);
+    border: 1px solid var(--gold-faint);
+    border-radius: 16px;
+    padding: 2.5rem 2rem;
+    margin: 0;
+    position: relative;
+    transition: all 0.3s;
+  }
+  .testimonial:hover { border-color: var(--gold-soft); transform: translateY(-4px); }
+  .testimonial::before {
+    content: '"';
+    position: absolute;
+    top: -8px; left: 24px;
+    font-family: var(--display);
+    font-size: 5rem;
+    line-height: 1;
+    color: var(--gold);
+    opacity: 0.6;
+  }
+  .testimonial blockquote {
+    font-family: var(--display);
+    font-size: 1.15rem;
+    line-height: 1.5;
+    color: var(--ivory);
+    margin-bottom: 1.5rem;
+    quotes: none;
+  }
+  .testimonial blockquote::before, .testimonial blockquote::after { content: none; }
+  .testimonial figcaption { padding-top: 1.25rem; border-top: 1px dashed var(--gold-faint); }
+  .testimonial .t-name { font-weight: 600; color: var(--ivory); margin-bottom: 0.25rem; }
+  .testimonial .t-meta { font-size: 0.8rem; color: var(--ivory-mute); }
+
+  /* SECTION 4: BEFORE/AFTER ----------------------------------------- */
+  .ba-wrapper {
+    max-width: 1100px;
+    margin: 3rem auto 0;
+    position: relative;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    border: 1px solid var(--gold-soft);
+    cursor: ew-resize;
+    user-select: none;
+  }
+  .ba-pane {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+  }
+  .ba-after {
+    background: linear-gradient(135deg, #0F1923 0%, #1B2D3E 100%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 6%;
+  }
+  .ba-before {
+    background: linear-gradient(135deg, #2a2522 0%, #3d3530 100%);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 6%;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+  }
+  .ba-card {
+    text-align: center;
+    color: var(--ivory);
+    padding: 2rem;
+    width: 44%;
+    max-width: 380px;
+  }
+  .ba-card .label {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    letter-spacing: 0.25em;
+    margin-bottom: 1rem;
+    color: var(--gold);
+  }
+  .ba-after .label { color: var(--gold); }
+  .ba-before .label { color: #c4a98c; }
+  .ba-card .stat {
+    font-family: var(--display);
+    font-size: 4.5rem;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+  }
+  .ba-card .stat-label { font-size: 0.85rem; opacity: 0.7; }
+  .ba-card ul { list-style: none; margin-top: 1.5rem; text-align: left; max-width: 280px; margin-left: auto; margin-right: auto; }
+  .ba-card li { padding: 0.4rem 0; font-size: 0.85rem; padding-left: 1.5rem; position: relative; }
+  .ba-after li::before { content: '✓'; position: absolute; left: 0; color: var(--gold); }
+  .ba-before li::before { content: '×'; position: absolute; left: 0; color: #d97757; }
+  .ba-handle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: var(--gold);
+    pointer-events: none;
+    z-index: 2;
+  }
+  .ba-handle::after {
+    content: '⇆';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 44px;
+    height: 44px;
+    background: var(--gold);
+    color: var(--dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+  }
+
+  /* SECTION 5: ONBOARDING TIMELINE ---------------------------------- */
+  .timeline {
+    position: relative;
+    margin-top: 3rem;
+    padding: 0 1rem;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .timeline-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 1.25rem;
+    position: relative;
+    padding: 2rem 0 0;
+  }
+  /* Ligne horizontale dorée qui traverse tous les markers */
+  .timeline-grid::before {
+    content: '';
+    position: absolute;
+    top: calc(2rem + 7px); /* aligné avec le centre des markers (16px/2 - 1px) */
+    left: 8%;
+    right: 8%;
+    height: 1px;
+    background: var(--gold-soft);
+  }
+  .day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    min-height: auto;
+    position: relative;
+  }
+  .day .marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--dark);
+    border: 2px solid var(--gold);
+    margin: 0 0 1.25rem 0;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s;
+    flex-shrink: 0;
+  }
+  .day:hover .marker {
+    background: var(--gold);
+    transform: scale(1.25);
+  }
+  .day .content-block {
+    position: relative;
+    inset: auto;
+    padding: 0;
+    width: 100%;
+  }
+  /* Tablet : 4 colonnes en haut, 3 en bas pour pas trop serrer */
+  @media (max-width: 1100px) and (min-width: 769px) {
+    .timeline-grid { grid-template-columns: repeat(4, 1fr); gap: 1.5rem 1rem; }
+    .timeline-grid::before { display: none; }
+    .day:nth-child(n+5) { } /* tous restent visibles, naturellement wrap */
+  }
+  .day .label {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.22em;
+    color: var(--gold);
+    margin-bottom: 0.4rem;
+  }
+  .day .title {
+    font-family: var(--display);
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.25;
+    color: var(--ivory);
+  }
+  .day .desc {
+    font-size: 0.85rem;
+    color: var(--ivory-mute);
+    line-height: 1.5;
+  }
+  .day .stem { display: none; }
+
+  /* BLOG ------------------------------------------------------------ */
+  #blog-section { padding-top: 8rem; }
+
+  .blog-card {
+    background: var(--dark-2);
+    border: 1px solid var(--gold-faint);
+    overflow: hidden;
+    transition: all 0.3s;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+  }
+  .blog-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  }
+  .blog-card .img {
+    aspect-ratio: 16 / 10;
+    background: linear-gradient(135deg, var(--dark-3), var(--dark-2));
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid var(--gold-faint);
+  }
+  .blog-card .img::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(var(--gold-faint) 1px, transparent 1px),
+      linear-gradient(90deg, var(--gold-faint) 1px, transparent 1px);
+    background-size: 30px 30px;
+    opacity: 0.4;
+  }
+  .blog-card .img-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    color: var(--gold);
+  }
+  .blog-card .body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+  .blog-card .meta {
+    font-family: var(--mono);
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    margin-bottom: 0.75rem;
+  }
+  .blog-card h3 {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+    flex: 1;
+  }
+  .blog-card .excerpt { font-size: 0.85rem; color: var(--ivory-mute); line-height: 1.5; }
+  .blog-card .read-more {
+    margin-top: 1rem;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    color: var(--gold);
+    text-transform: uppercase;
+  }
+  .blog-card .read-more::after { content: ' →'; transition: transform 0.2s; display: inline-block; }
+  .blog-card:hover .read-more::after { transform: translateX(4px); }
+  .blog-all {
+    text-align: center;
+    margin-top: 3rem;
+  }
+
+  @media (max-width: 968px) {
+    .blog-grid { grid-template-columns: 1fr; }
+    .faq-q { font-size: 1.1rem; padding: 1.25rem 0.5rem; gap: 0.75rem; }
+    .faq-q .faq-num { width: 50px; font-size: 0.6rem; }
+    .faq-a { padding: 0 1rem 0 4.25rem; }
+    .faq-item.open .faq-a { padding: 0 1rem 1.25rem 4.25rem; }
+  }
+
+  /* FAQ ------------------------------------------------------------- */
+  #faq { background: var(--dark-2); }
+  .faq-list {
+    max-width: 920px;
+    margin: 3rem auto 0;
+    border-top: 1px solid var(--gold-faint);
+  }
+  .faq-item {
+    border-bottom: 1px solid var(--gold-faint);
+    transition: background 0.3s;
+  }
+  .faq-item:hover { background: rgba(197,165,90,0.03); }
+  .faq-q {
+    width: 100%;
+    background: none;
+    border: 0;
+    color: var(--ivory);
+    text-align: left;
+    padding: 1.75rem 0.5rem;
+    font-family: var(--display);
+    font-size: 1.4rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    transition: color 0.2s;
+  }
+  .faq-q:hover { color: var(--gold); }
+  .faq-q .faq-num { display: none; }
+  .faq-q .faq-text { flex: 1; line-height: 1.3; }
+  .faq-q .faq-toggle {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--gold);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    font-size: 1rem;
+    flex-shrink: 0;
+    transition: all 0.3s;
+  }
+  .faq-item.open .faq-toggle {
+    background: var(--gold);
+    color: var(--dark);
+    transform: rotate(45deg);
+  }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.3s ease;
+    padding: 0 5rem 0 4.7rem;
+    color: var(--ivory-mute);
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+  .faq-item.open .faq-a {
+    max-height: 600px;
+    padding: 0 5rem 1.75rem 4.7rem;
+  }
+  .faq-a p { margin-bottom: 0.75rem; }
+  .faq-a p:last-child { margin-bottom: 0; }
+  .faq-a strong { color: var(--gold); font-weight: 500; }
+
+  /* CTA FINAL ------------------------------------------------------- */
+  #cta { text-align: center; padding-bottom: 8rem; }
+  #cta h2 { font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 1.5rem; }
+  #cta p { color: var(--ivory-mute); max-width: 560px; margin: 0 auto 2.5rem; }
+  .audit-widget-wrap { max-width: 720px; margin: 2.5rem auto 0; text-align: left; }
+
+
+  /* AUDIT FORM (homepage CTA) ----------------------------------- */
+  .audit-form {
+    max-width: 640px;
+    margin: 2.5rem auto 0;
+    text-align: left;
+  }
+  .audit-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.85rem;
+    margin-bottom: 0.85rem;
+  }
+  .audit-form input,
+  .audit-form select {
+    width: 100%;
+    background: var(--dark-2);
+    border: 1px solid var(--gold-soft);
+    color: var(--ivory);
+    padding: 0.95rem 1.1rem;
+    font-family: var(--body);
+    font-size: 1rem;
+    border-radius: 999px;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+  }
+  .audit-form input::placeholder { color: var(--ivory-mute); opacity: 0.7; }
+  .audit-form input:focus,
+  .audit-form select:focus {
+    border-color: var(--gold);
+    background: var(--dark-3);
+  }
+  .audit-form select {
+    background-image: linear-gradient(45deg, transparent 50%, var(--gold) 50%), linear-gradient(135deg, var(--gold) 50%, transparent 50%);
+    background-position: calc(100% - 22px) 50%, calc(100% - 16px) 50%;
+    background-size: 6px 6px, 6px 6px;
+    background-repeat: no-repeat;
+    padding-right: 2.5rem;
+    color: var(--ivory-mute);
+  }
+  .audit-form select:valid { color: var(--ivory); }
+  .audit-submit {
+    width: 100%;
+    margin-top: 0.5rem;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.05rem;
+    padding: 1rem 2rem;
+  }
+  .audit-submit:disabled { opacity: 0.6; cursor: wait; }
+  .audit-status {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+    min-height: 1.4rem;
+  }
+  .audit-status.ok { color: #7BC97B; }
+  .audit-status.err { color: #E07B7B; }
+  .audit-foot {
+    margin-top: 1.25rem;
+    text-align: center;
+    font-size: 0.8rem !important;
+    color: var(--ivory-mute);
+    opacity: 0.7;
+  }
+  @media (max-width: 640px) {
+    .audit-row { grid-template-columns: 1fr; }
+  }
+
+
+  /* WATERMARK NUMBERS — Étape / Engagement filigrane Fraunces -- */
+  .flow-step, .promise { isolation: isolate; }
+  .flow-step::before, .promise::before {
+    content: attr(data-step);
+    position: absolute;
+    bottom: -10px;
+    right: 8px;
+    font-family: var(--display);
+    font-size: 7rem;
+    font-weight: 300;
+    line-height: 0.85;
+    color: var(--gold);
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 0;
+    letter-spacing: -0.02em;
+  }
+  .flow-step > *, .promise > * { position: relative; z-index: 1; }
+  .flow-step .flow-num { display: none; }
+  .promise .num {
+    font-family: var(--body);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    color: var(--gold);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+
+
+  /* COMPARISON TABLE (replaces before/after slider) -------------- */
+  .compare {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
+    max-width: 1100px;
+    margin: 3rem auto 0;
+    align-items: stretch;
+  }
+  .compare-col {
+    padding: 2.5rem 2rem;
+    border: 1px solid var(--gold-faint);
+    border-radius: 16px;
+    background: var(--dark-2);
+    display: flex;
+    flex-direction: column;
+  }
+  .compare-right {
+    background: linear-gradient(135deg, var(--dark-2) 0%, var(--dark-3) 100%);
+    border-color: var(--gold-soft);
+    box-shadow: 0 16px 60px rgba(197,165,90,0.06);
+  }
+  .compare-label {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.22em;
+    color: var(--ivory-mute);
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+  }
+  .compare-right .compare-label { color: var(--gold); }
+  .compare-stat {
+    font-family: var(--display);
+    font-size: 4.5rem;
+    line-height: 1;
+    color: var(--ivory);
+    margin-bottom: 0.5rem;
+    font-weight: 300;
+  }
+  .compare-stat .unit { font-size: 0.6em; opacity: 0.6; margin-left: 2px; }
+  .compare-right .compare-stat { color: var(--gold); }
+  .compare-stat-label { font-size: 0.9rem; color: var(--ivory-mute); margin-bottom: 1.75rem; }
+  .compare-list { list-style: none; padding: 0; margin: 0 0 1rem; }
+  .compare-list li {
+    padding: 0.65rem 0 0.65rem 1.6rem;
+    position: relative;
+    font-size: 0.95rem;
+    color: var(--ivory);
+    border-bottom: 1px dashed var(--gold-faint);
+  }
+  .compare-list li:last-child { border-bottom: 0; }
+  .compare-cons li::before {
+    content: '×';
+    position: absolute;
+    left: 0;
+    color: #d97757;
+    font-size: 1.2rem;
+    font-weight: 600;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .compare-pros li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--gold);
+    font-weight: 600;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .compare-source {
+    margin-top: auto;
+    padding-top: 1rem;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    opacity: 0.7;
+    text-transform: uppercase;
+  }
+  .compare-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.5rem;
+  }
+  .compare-divider .vs {
+    font-family: var(--display);
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--gold);
+    opacity: 0.6;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid var(--gold-soft);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--dark);
+  }
+  @media (max-width: 768px) {
+    .compare { grid-template-columns: 1fr; gap: 1rem; }
+    .compare-divider { padding: 0; height: 24px; }
+    .compare-divider .vs { width: 44px; height: 44px; }
+    .compare-col { padding: 2rem 1.5rem; }
+    .compare-stat { font-size: 3.5rem; }
+  }
+
+
+  .blog-card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(.2,.8,.2,1);
+  }
+  .blog-card:hover .img img { transform: scale(1.04); }
+  .blog-card .img:has(img)::after { display: none; }
+
+
+  .promise-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--gold);
+    margin-bottom: 1.25rem;
+    display: block;
+  }
+
+  /* Softer italics on em.gold and italic display ---------------- */
+  em.gold,
+  .hero h1 em,
+  .section-head h2 em,
+  #cta h2 em,
+  .promise h3 em,
+  .day .title em {
+    font-style: italic;
+    font-variation-settings: "slnt" -8, "opsz" 24, "SOFT" 50;
+  }
+  .compare-divider .vs {
+    font-variation-settings: "slnt" -8, "opsz" 14, "SOFT" 100;
+  }
+
+  /* Featured blog layout (1 large + 5 standard) ----------------- */
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+  .blog-grid .blog-card:first-child {
+    grid-column: span 3;
+    flex-direction: row;
+  }
+  .blog-grid .blog-card:first-child .img {
+    aspect-ratio: 3 / 2;
+    flex: 1.3;
+    border-bottom: 0;
+    border-right: 1px solid var(--gold-faint);
+  }
+  .blog-grid .blog-card:first-child .body {
+    flex: 1;
+    padding: 2.5rem;
+    justify-content: center;
+  }
+  .blog-grid .blog-card:first-child h3 {
+    font-size: 2rem;
+    line-height: 1.2;
+    flex: 0 0 auto;
+    margin-bottom: 1rem;
+  }
+  .blog-grid .blog-card:first-child .excerpt {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .blog-grid .blog-card:first-child .meta::before {
+    content: 'À LA UNE · ';
+    color: var(--gold);
+    font-weight: 600;
+  }
+  @media (max-width: 968px) {
+    .blog-grid .blog-card:first-child { grid-column: span 1; flex-direction: column; }
+    .blog-grid .blog-card:first-child .img { aspect-ratio: 16 / 10; flex: 0; border-right: 0; border-bottom: 1px solid var(--gold-faint); }
+    .blog-grid .blog-card:first-child .body { padding: 1.5rem; }
+    .blog-grid .blog-card:first-child h3 { font-size: 1.3rem; }
+    .blog-grid .blog-card:first-child .excerpt { font-size: 0.85rem; }
+  }
+
+
+  .logo-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: opacity 0.2s;
+  }
+  .logo-link:hover { opacity: 0.85; }
+
+  .footer-social {
+    display: flex;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+  }
+  .footer-social a {
+    width: 38px;
+    height: 38px;
+    border: 1px solid var(--gold-soft);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold);
+    transition: all 0.2s;
+  }
+  .footer-social a:hover {
+    background: var(--gold);
+    color: var(--dark);
+    transform: translateY(-2px);
+  }
+  .footer-social svg { width: 16px; height: 16px; }
+
+  /* FOOTER ---------------------------------------------------------- */
+  footer {
+    border-top: 1px solid var(--gold-faint);
+    padding: 4rem 3rem 2rem;
+    color: var(--ivory-mute);
+    background: var(--dark);
+  }
+  .footer-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+  .footer-col h4 {
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 1.25rem;
+  }
+  .footer-col p { font-size: 0.9rem; line-height: 1.6; max-width: 320px; }
+  .footer-col ul { list-style: none; padding: 0; }
+  .footer-col li { margin-bottom: 0.6rem; font-size: 0.9rem; }
+  .footer-col a { color: var(--ivory-mute); text-decoration: none; transition: color 0.2s; }
+  .footer-col a:hover { color: var(--gold); }
+  .footer-bottom {
+    max-width: 1280px;
+    margin: 3rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--gold-faint);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+  .footer-bottom a { color: var(--gold); text-decoration: none; }
+
+  /* RESPONSIVE ------------------------------------------------------ */
+  @media (max-width: 968px) {
+    section, body.force-mobile section { padding: 5rem 1.5rem; }
+  }
+  body.force-mobile { width: 414px; margin: 0 auto; border-left: 2px dashed #444; border-right: 2px dashed #444; box-sizing: content-box; }
+  body.force-mobile section { padding: 5rem 1.5rem; }
+  body.force-mobile .flow { grid-template-columns: 1fr !important; gap: 2rem; }
+  body.force-mobile .axo-wrapper { grid-template-columns: 1fr !important; }
+  body.force-mobile .promises { grid-template-columns: 1fr !important; }
+  body.force-mobile .blog-grid { grid-template-columns: 1fr !important; }
+  body.force-mobile .timeline-grid { grid-template-columns: 1fr !important; gap: 2rem; padding: 0; }
+  body.force-mobile .timeline-grid::before { display: none; }
+  body.force-mobile .day { min-height: auto; flex-direction: row; align-items: flex-start; gap: 1rem; text-align: left; padding: 1rem 0; }
+  body.force-mobile .day .marker { position: relative; top: 6px; left: 0; transform: none; flex-shrink: 0; }
+  body.force-mobile .day .stem { display: none; }
+  body.force-mobile .day .content-block { position: relative; bottom: auto; top: auto; padding: 0; flex: 1; }
+  body.force-mobile nav { display: none; }
+  body.force-mobile header { padding: 1rem 1.5rem; }
+  body.force-mobile .flow-detail { flex-direction: column; padding: 2rem; gap: 1rem; }
+  body.force-mobile .flow-detail .num { font-size: 4rem; }
+  body.force-mobile .ba-wrapper {
+    aspect-ratio: auto !important;
+    cursor: default;
+    border: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  body.force-mobile .ba-pane {
+    position: relative !important;
+    inset: auto !important;
+    clip-path: none !important;
+    padding: 2rem 1.5rem !important;
+    border: 1px solid var(--gold-soft);
+    display: block;
+    justify-content: center !important;
+  }
+  body.force-mobile .ba-card { width: 100% !important; max-width: none !important; padding: 0 !important; }
+  body.force-mobile .ba-card .stat { font-size: 3.5rem; }
+  body.force-mobile .ba-handle { display: none; }
+  body.force-mobile .desk-only { display: none; }
+  @media (max-width: 968px) { .desk-only { display: none; } }
+  body.force-mobile .faq-q { font-size: 1.1rem; padding: 1.25rem 0.5rem; gap: 0.75rem; }
+  body.force-mobile .faq-q .faq-num { width: 50px; font-size: 0.6rem; }
+  body.force-mobile .faq-a { padding: 0 1rem 0 4.25rem; }
+  body.force-mobile .faq-item.open .faq-a { padding: 0 1rem 1.25rem 4.25rem; }
+  @media (max-width: 968px) {
+    .hero { padding-top: 110px; padding-bottom: 80px; }
+    .flow { grid-template-columns: 1fr; gap: 2rem; }
+    .axo-wrapper { grid-template-columns: 1fr; }
+    .promises { grid-template-columns: 1fr; }
+    .founder-wrap { grid-template-columns: 1fr; gap: 2rem; }
+    .founder-photo { max-width: 280px; margin: 0 auto; }
+    .founder-meta { grid-template-columns: 1fr; gap: 0.75rem; }
+    .testimonials { grid-template-columns: 1fr; }
+
+    .timeline-grid { grid-template-columns: 1fr; gap: 2rem; padding: 0; }
+    .timeline-grid::before { display: none; }
+    .day { min-height: auto; flex-direction: row; align-items: flex-start; gap: 1rem; text-align: left; padding: 1rem 0; }
+    .day .marker { position: relative; top: 6px; left: 0; transform: none; flex-shrink: 0; }
+    .day:hover .marker { transform: scale(1.2); }
+    .day .stem { display: none; }
+    .day .content-block { position: relative; bottom: auto; top: auto; padding: 0; flex: 1; }
+    .day:nth-child(odd) .content-block,
+    .day:nth-child(even) .content-block { bottom: auto; top: auto; }
+    nav { display: none; }
+    .desktop-only { display: none; }
+    .hamburger { display: flex; }
+    header { padding: 1rem 1.5rem; }
+    .flow-detail { flex-direction: column; padding: 2rem; gap: 1rem; }
+    .flow-detail .num { font-size: 4rem; }
+
+    /* BEFORE/AFTER stacked on mobile */
+    .ba-wrapper {
+      aspect-ratio: auto;
+      cursor: default;
+      border: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+    .ba-pane {
+      position: relative;
+      inset: auto;
+      clip-path: none !important;
+      padding: 2rem 1.5rem;
+      border: 1px solid var(--gold-soft);
+      display: block;
+    }
+    .ba-after { padding-right: 1.5rem; }
+    .ba-before { padding-left: 1.5rem; }
+    .ba-card { width: 100%; max-width: none; padding: 0; }
+    .ba-card .stat { font-size: 3.5rem; }
+    .ba-card ul { max-width: none; }
+    .ba-handle { display: none; }
+    .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .footer-bottom { flex-direction: column; gap: 1rem; text-align: center; }
+  }
+
+  /* REVEAL ANIMATIONS ----------------------------------------------- */
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  }
+  .reveal.in-view {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ===== Interview Sakho (social proof premium) ===== */
+  #interview-sakho {
+    position: relative;
+    padding: 7rem 1.5rem 6rem;
+    background: linear-gradient(180deg, var(--charcoal, #0d0f10) 0%, var(--charcoal-deep, #0a0c0d) 100%);
+    border-top: 1px solid var(--gold-faint, rgba(196,164,108,0.18));
+    border-bottom: 1px solid var(--gold-faint, rgba(196,164,108,0.18));
+  }
+  #interview-sakho .section-head { max-width: 760px; margin: 0 auto 3rem; text-align: center; }
+  #interview-sakho .section-head .eyebrow { color: var(--gold-soft, #c4a46c); letter-spacing: 0.18em; }
+  #interview-sakho .section-head h2 { color: var(--ivory, #f6f1e6); margin: 0.5rem 0 0.75rem; }
+  #interview-sakho .section-head h2 em { color: var(--gold-soft, #c4a46c); font-style: italic; }
+  #interview-sakho .section-head .lede { color: var(--ivory-mute, rgba(246,241,230,0.7)); max-width: 640px; margin: 0 auto; }
+  #interview-sakho .video-frame {
+    position: relative;
+    max-width: 1080px;
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0,0,0,0.55), 0 0 0 1px var(--gold-faint, rgba(196,164,108,0.22));
+    background: #000;
+  }
+  #interview-sakho .video-frame iframe {
+    position: absolute; inset: 0; width: 100%; height: 100%; border: 0;
+  }
+  @media (max-width: 768px) {
+    #interview-sakho { padding: 5rem 1rem 4rem; }
+    #interview-sakho .video-frame { border-radius: 10px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <a href="/" class="logo-link" aria-label="Havn Stays — accueil">
+    <div class="logo">
+      HAVN <em>STAYS</em>
+      <span class="by">BY MEDINI HOMES</span>
+    </div>
+  </a>
+<a href="/estimation" class="btn-cta">Audit gratuit</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <video autoplay muted loop playsinline preload="metadata" fetchpriority="low" poster="/hero-poster.jpg">
+    <source src="/hero-desktop.mp4" type="video/mp4" media="(min-width:769px)">
+    <source src="/hero-mobile.mp4" type="video/mp4">
+  </video>
+
+
+  <div class="hero-content">
+    <span class="eyebrow">Conciergerie Airbnb Marrakech</span>
+    <h1>L'expérience hôtelière,<br>dans <em>votre villa</em>.</h1>
+    <p>Votre villa, gérée avec les standards d'un cinq étoiles. Opérée par un ancien directeur d'hôtel installé à Marrakech.</p>
+    <div class="cta-row">
+      <a href="/estimation" class="btn-primary">Estimer mes revenus</a>
+      <a href="#protocole" class="btn-cta">Voir nos protocoles</a>
+    </div>
+  </div>
+
+  <div class="scroll-hint">Découvrir ↓</div>
+</section>
+
+<!-- SECTION 1: PROTOCOLE -->
+<section id="protocole">
+  <div class="grid-bg"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">PROTOCOLE 01 · SÉCURITÉ DU BIEN</span>
+      <h2>Cinq étapes,<br><em>zéro angle mort.</em></h2>
+      <p class="lede">Chaque clé, chaque entrée, chaque mouvement dans votre villa est tracé. Vous savez qui, quand, pourquoi — en temps réel.</p>
+    </div>
+
+    <div class="flow reveal">
+      <div class="flow-step" data-step="01">
+        <span class="flow-num">ÉTAPE 01</span>
+        <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="22" cy="32" r="10"/>
+          <line x1="32" y1="32" x2="52" y2="32"/>
+          <line x1="44" y1="32" x2="44" y2="40"/>
+          <line x1="50" y1="32" x2="50" y2="44"/>
+        </svg>
+        <h3>Remise des clés</h3>
+        <p>État des lieux contradictoire signé, photos timestampées</p>
+      </div>
+      <div class="flow-step" data-step="02">
+        <span class="flow-num">ÉTAPE 02</span>
+        <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="14" y="20" width="36" height="32" rx="2"/>
+          <path d="M22 20 L22 12 Q22 8 26 8 L38 8 Q42 8 42 12 L42 20"/>
+          <circle cx="32" cy="36" r="3"/>
+          <line x1="32" y1="39" x2="32" y2="46"/>
+        </svg>
+        <h3>Coffre numérique</h3>
+        <p>Codes Wi-Fi, contacts, plans, contrats centralisés en interne</p>
+      </div>
+      <div class="flow-step" data-step="03">
+        <span class="flow-num">ÉTAPE 03</span>
+        <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="10" y="14" width="44" height="32" rx="2"/>
+          <line x1="10" y1="22" x2="54" y2="22"/>
+          <circle cx="14" cy="18" r="1" fill="currentColor"/>
+          <circle cx="18" cy="18" r="1" fill="currentColor"/>
+          <line x1="18" y1="32" x2="34" y2="32"/>
+          <line x1="18" y1="38" x2="46" y2="38"/>
+          <path d="M44 50 L52 58 M52 50 L44 58" stroke-width="1.2"/>
+          <circle cx="48" cy="54" r="6"/>
+        </svg>
+        <h3>Portail propriétaire</h3>
+        <p>Vos accès envoyés. Calendrier, revenus, pilotage en direct.</p>
+      </div>
+      <div class="flow-step" data-step="04">
+        <span class="flow-num">ÉTAPE 04</span>
+        <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M14 32 Q14 16 32 16 Q50 16 50 32"/>
+          <line x1="14" y1="32" x2="14" y2="44"/>
+          <line x1="50" y1="32" x2="50" y2="44"/>
+          <rect x="20" y="36" width="24" height="14" rx="1"/>
+          <path d="M26 42 L30 46 L40 36"/>
+        </svg>
+        <h3>Check-in protocolé</h3>
+        <p>Vérification ID, briefing maison, état des lieux contradictoire</p>
+      </div>
+      <div class="flow-step" data-step="05">
+        <span class="flow-num">ÉTAPE 05</span>
+        <svg class="flow-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5">
+          <rect x="12" y="14" width="40" height="36"/>
+          <line x1="20" y1="24" x2="44" y2="24"/>
+          <line x1="20" y1="32" x2="44" y2="32"/>
+          <line x1="20" y1="40" x2="36" y2="40"/>
+          <path d="M50 50 L58 58"/>
+          <circle cx="48" cy="48" r="6"/>
+        </svg>
+        <h3>Reporting mensuel</h3>
+        <p>État de compte détaillé, revenus, charges, occupation.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SECTION 2: PLAN D'OPERATION -->
+<section id="plan">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">PROTOCOLE 02 · OPÉRATIONS 24/7</span>
+      <h2>Une équipe par <em>zone</em>,<br>une responsabilité par <em>pièce</em>.</h2>
+      <p class="lede">Cliquez sur un point d'opération pour voir qui intervient, quand, et selon quel standard.</p>
+    </div>
+
+    <div class="axo-wrapper reveal">
+      <svg class="axo-svg" viewBox="0 0 800 580" xmlns="http://www.w3.org/2000/svg">
+        <!-- Ground plane -->
+        <polygon class="ground" points="80,420 720,420 640,520 160,520"/>
+
+        <!-- Garden wall -->
+        <path class="struct" d="M80 420 L160 520"/>
+        <path class="struct" d="M720 420 L640 520"/>
+
+        <!-- Pool -->
+        <polygon class="pool" points="200,440 540,440 510,500 230,500" />
+        <polygon class="pool" points="200,440 540,440 510,500 230,500" stroke-dasharray="3 3"/>
+
+        <!-- Villa main body -->
+        <polygon class="fill-soft" points="180,260 580,260 580,420 180,420"/>
+        <polygon class="fill-soft" points="180,260 580,260 620,220 220,220"/>
+        <polygon class="fill-soft" points="580,260 580,420 620,380 620,220"/>
+
+        <!-- Roof -->
+        <polygon class="struct" points="220,220 620,220 620,200 220,200"/>
+        <polygon class="struct" fill="rgba(197,165,90,0.06)" points="220,200 620,200 600,180 240,180"/>
+
+        <!-- Windows -->
+        <rect class="struct" x="220" y="290" width="40" height="50"/>
+        <rect class="struct" x="280" y="290" width="40" height="50"/>
+        <rect class="struct" x="430" y="290" width="40" height="50"/>
+        <rect class="struct" x="490" y="290" width="40" height="50"/>
+
+        <!-- Door -->
+        <rect class="struct" x="360" y="340" width="40" height="80"/>
+        <line x1="380" y1="340" x2="380" y2="420" stroke="var(--gold)" stroke-width="0.8"/>
+
+        <!-- Side patio -->
+        <polygon class="struct" points="580,260 700,260 660,300 580,300" fill="rgba(197,165,90,0.06)"/>
+
+        <!-- Garden / palms (line art) -->
+        <g stroke="var(--gold)" fill="none" stroke-width="1">
+          <circle cx="120" cy="380" r="14" opacity="0.5"/>
+          <line x1="120" y1="394" x2="120" y2="420"/>
+          <circle cx="680" cy="380" r="14" opacity="0.5"/>
+          <line x1="680" y1="394" x2="680" y2="420"/>
+        </g>
+
+        <!-- Annotations -->
+        <g stroke="var(--gold)" stroke-width="0.8" opacity="0.5">
+          <line x1="180" y1="220" x2="80" y2="180" stroke-dasharray="2 2"/>
+          <line x1="80" y1="180" x2="50" y2="180"/>
+          <text x="50" y="170" fill="var(--gold)" font-family="var(--mono)" font-size="9" text-anchor="end">TOITURE TERRASSE</text>
+
+          <line x1="540" y1="500" x2="640" y2="540" stroke-dasharray="2 2"/>
+          <line x1="640" y1="540" x2="700" y2="540"/>
+          <text x="710" y="544" fill="var(--gold)" font-family="var(--mono)" font-size="9">PISCINE 24M³</text>
+
+          <line x1="700" y1="280" x2="780" y2="240" stroke-dasharray="2 2"/>
+          <text x="780" y="234" fill="var(--gold)" font-family="var(--mono)" font-size="9" text-anchor="end">PATIO SUD</text>
+        </g>
+
+        <!-- Interactive PINS -->
+        <g class="pin" data-pin="entry">
+          <circle class="outer" cx="380" cy="450" r="16"/>
+          <circle cx="380" cy="450" r="10"/>
+          <text x="380" y="450">A</text>
+        </g>
+        <g class="pin" data-pin="pool">
+          <circle class="outer" cx="370" cy="475" r="16"/>
+          <circle cx="370" cy="475" r="10"/>
+          <text x="370" y="475">B</text>
+        </g>
+        <g class="pin" data-pin="rooms">
+          <circle class="outer" cx="380" cy="325" r="16"/>
+          <circle cx="380" cy="325" r="10"/>
+          <text x="380" y="325">C</text>
+        </g>
+        <g class="pin" data-pin="patio">
+          <circle class="outer" cx="640" cy="280" r="16"/>
+          <circle cx="640" cy="280" r="10"/>
+          <text x="640" y="280">D</text>
+        </g>
+        <g class="pin" data-pin="garden">
+          <circle class="outer" cx="120" cy="490" r="16"/>
+          <circle cx="120" cy="490" r="10"/>
+          <text x="120" y="490">E</text>
+        </g>
+      </svg>
+
+      <div class="axo-info" id="axoInfo">
+        <span class="annotation">ZONE A · ENTRÉE & ACCUEIL</span>
+        <h3>Concierge dédié, briefing 30 min.</h3>
+        <p>Votre voyageur est attendu, accueilli, briefé. Pas un check-in à la sauvette. Présentation maison, briefing sécurité, recommandations gastronomiques personnalisées.</p>
+        <ul>
+          <li><span>Délai de réponse aux messages</span><span class="val">&lt; 12 MIN</span></li>
+          <li><span>Langues parlées sur site</span><span class="val">FR · EN · AR</span></li>
+          <li><span>Disponibilité conciergerie</span><span class="val">24/7/365</span></li>
+          <li><span>Standard de service de référence</span><span class="val">FORTE LEADING HOTELS</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: TRANSPARENCE -->
+<section id="transparence">
+  <div class="grid-bg"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">PROTOCOLE 03 · CONTRAT DE TRANSPARENCE</span>
+      <h2>Quatre engagements,<br><em>vérifiables.</em></h2>
+      <p class="lede">Pas des promesses marketing. Des engagements chiffrés que vous pouvez auditer à tout moment.</p>
+    </div>
+
+    <div class="promises reveal">
+      <div class="promise" data-step="01">
+        <svg class="promise-icon" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round">
+  <rect x="8" y="12" width="40" height="28" rx="2"/>
+  <line x1="8" y1="20" x2="48" y2="20"/>
+  <circle cx="12" cy="16" r="0.8" fill="currentColor"/>
+  <circle cx="15" cy="16" r="0.8" fill="currentColor"/>
+  <line x1="14" y1="28" x2="22" y2="28"/>
+  <line x1="14" y1="33" x2="32" y2="33"/>
+  <path d="M28 36 L32 32 L40 32"/>
+  <circle cx="44" cy="32" r="2"/>
+  <line x1="20" y1="44" x2="36" y2="44"/>
+  <line x1="28" y1="40" x2="28" y2="44"/>
+</svg>
+        <div class="num">ENGAGEMENT 01</div>
+        <h3>Portail propriétaire en accès direct, 24/7</h3>
+        <p>Calendrier en temps réel avec blocage manuel pour vos propres séjours, suivi des revenus en direct, état de compte mensuel téléchargeable. Vous pilotez votre bien sans dépendre de personne.</p>
+        <span class="metric">ACCÈS · TEMPS RÉEL · MOBILE & DESKTOP</span>
+      </div>
+      <div class="promise" data-step="02">
+        <svg class="promise-icon" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round">
+  <line x1="10" y1="44" x2="46" y2="44"/>
+  <line x1="10" y1="44" x2="10" y2="14"/>
+  <rect x="14" y="32" width="6" height="12"/>
+  <rect x="24" y="24" width="6" height="20"/>
+  <rect x="34" y="18" width="6" height="26"/>
+  <polyline points="14,28 24,20 34,14 44,10" stroke-dasharray="2 2"/>
+  <circle cx="44" cy="10" r="2" fill="currentColor"/>
+</svg>
+        <div class="num">ENGAGEMENT 02</div>
+        <h3>Reporting financier mensuel détaillé</h3>
+        <p>Chaque mois, votre état de compte complet : revenus bruts, nets, charges ventilées par poste, occupation, ADR, RevPAR. Exportable PDF, prêt à transmettre à votre comptable.</p>
+        <span class="metric">FRÉQUENCE · MENSUELLE</span>
+      </div>
+      <div class="promise" data-step="03">
+        <svg class="promise-icon" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round">
+  <circle cx="28" cy="28" r="14"/>
+  <line x1="28" y1="20" x2="28" y2="36"/>
+  <path d="M32 23 Q24 23 24 27 Q24 30 28 30 Q32 30 32 33 Q32 36 24 36"/>
+  <circle cx="28" cy="28" r="20" stroke-dasharray="2 3" opacity="0.5"/>
+</svg>
+        <div class="num">ENGAGEMENT 03</div>
+        <h3>Tarification transparente, aucune commission opaque</h3>
+        <p>Une commission claire et fixe sur les revenus encaissés, sans markup sur les prestations externes (pisciniste, jardinier, ménage). Tous les justificatifs disponibles dans votre portail.</p>
+        <span class="metric">COMMISSION · UNIQUE & FIXE</span>
+      </div>
+      <div class="promise" data-step="04">
+        <svg class="promise-icon" viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round">
+  <path d="M14 12 L30 12 L30 44 L14 44"/>
+  <line x1="14" y1="12" x2="14" y2="44"/>
+  <circle cx="22" cy="28" r="1" fill="currentColor"/>
+  <line x1="34" y1="28" x2="46" y2="28"/>
+  <polyline points="40,22 46,28 40,34"/>
+</svg>
+        <div class="num">ENGAGEMENT 04</div>
+        <h3>Sortie sans pénalité avec préavis 30 jours</h3>
+        <p>Si l'expérience ne vous convient pas, vous reprenez la main sans frais. On vous remet vos accès, votre historique de réservations, vos contacts. Votre villa reste votre villa.</p>
+        <span class="metric">PRÉAVIS · 30 JOURS</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- FONDATEUR -->
+<section id="fondateur">
+  <div class="container">
+    <div class="founder-wrap reveal">
+      <div class="founder-photo">
+        <img src="/brand/hillal-medini.jpg" alt="Hillal Medini, fondateur de Havn Stays" loading="lazy" />
+      </div>
+      <div class="founder-body">
+        <span class="eyebrow">FONDATEUR · HILLAL MEDINI</span>
+        <h2>Dix ans dans l'hôtellerie cinq étoiles.<br><em>Aujourd'hui, dans votre villa.</em></h2>
+        <p>Hillal a passé dix ans comme directeur d'hôtel — pré-ouvertures, opérations, F&amp;B, revenue management. Il a construit les protocoles qui font tourner un cinq étoiles.</p>
+        <p>Depuis 2021, il opère dans la gestion locative courte durée à Dubaï : jusqu'à <strong>150 biens</strong> gérés simultanément, des protocoles affinés à grande échelle, un reporting propriétaire transparent et une discipline opérationnelle qui n'autorise aucun angle mort.</p>
+        <p>Aujourd'hui, Havn Stays applique la même rigueur aux villas du Maroc. Mêmes playbooks, mêmes standards, même obsession du détail — pour transformer la façon dont votre villa est gérée.</p>
+        <div class="founder-meta">
+          <div><span class="annotation">Basé à</span><span>Marrakech &amp; Dubaï</span></div>
+          <div><span class="annotation">Portefeuille</span><span>Jusqu'à 150 biens à Dubaï depuis 2021</span></div>
+          <div><span class="annotation">Parcours</span><span>Directeur d'hôtel · Revenue manager · Gestion à grande échelle</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- INTERVIEW MAMADOU SAKHO (Social proof premium) -->
+<section id="interview-sakho" aria-labelledby="interview-sakho-h2">
+  <div class="grid-bg"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">INTERVIEW · MAMADOU SAKHO</span>
+      <h2 id="interview-sakho-h2">L'ex-international français<br><em>témoigne sur Medini.</em></h2>
+      <p class="lede">Mamadou Sakho revient sur son expérience avec nos équipes — Medini Homes, la maison-mère de Havn Stays. Mêmes équipes, mêmes standards, mêmes playbooks à Marrakech.</p>
+    </div>
+    <div class="video-frame reveal">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/t1TITKVlQUI?start=2660&rel=0&modestbranding=1"
+        title="Interview Mamadou Sakho — Medini Homes"
+        loading="lazy"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- TÉMOIGNAGES -->
+<section id="temoignages">
+  <div class="grid-bg"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">TÉMOIGNAGES · PAROLES DE PROPRIÉTAIRES</span>
+      <h2>Ce que disent les propriétaires<br><em>une fois qu'ils ont arrêté de courir.</em></h2>
+      <p class="lede">Quelques mots des propriétaires qui nous ont confié leurs clés.</p>
+    </div>
+    <div class="testimonials reveal">
+      <!-- PLACEHOLDER: remplacer par de vrais témoignages quand ils sont disponibles -->
+      <figure class="testimonial">
+        <blockquote>"Deux ans en autogestion, épuisée. Avec Havn, notre taux d'occupation est passé de 45 % à 73 % dès la première saison — et j'ai arrêté de recevoir des messages à 2h du matin. C'est l'état de compte mensuel qui m'a convaincue : enfin de la visibilité."</blockquote>
+        <figcaption>
+          <div class="t-name">Caroline B.</div>
+          <div class="t-meta">Villa 4 chambres · Palmeraie · Propriétaire depuis 2025</div>
+        </figcaption>
+      </figure>
+      <figure class="testimonial">
+        <blockquote>"Ce que je voulais, c'était un service hôtelier pour mes invités, sans devenir hôtelier moi-même. Havn livre exactement ça. Le portail propriétaire est un vrai cockpit — je bloque mes dates de séjour personnel en 30 secondes."</blockquote>
+        <figcaption>
+          <div class="t-name">Mehdi K.</div>
+          <div class="t-meta">Villa 5 chambres · Amelkis · Propriétaire depuis 2024</div>
+        </figcaption>
+      </figure>
+      <figure class="testimonial">
+        <blockquote>"Je vis à Paris, ma villa est à Marrakech. Avant Havn, j'avais trois intermédiaires, aucune visibilité sur les revenus. Aujourd'hui un seul contact, un reporting mensuel transparent, et une clause de sortie qui me laisse dormir tranquille."</blockquote>
+        <figcaption>
+          <div class="t-name">Sophie L.</div>
+          <div class="t-meta">Villa 3 chambres · Targa · Propriétaire non-résidente</div>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: COMPARISON TABLE -->
+<section id="comparaison">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">RÉFÉRENCE · ÉTUDE COMPARATIVE</span>
+      <h2>La différence se mesure,<br><em>ligne par ligne.</em></h2>
+      <p class="lede">Un même bien, deux modes de gestion. Données issues du portefeuille HAVN Marrakech 2025-2026.</p>
+    </div>
+
+    <div class="compare reveal">
+      <div class="compare-col compare-left">
+        <div class="compare-label">Airbnb auto-géré</div>
+        <div class="compare-stat">100<span class="unit">%</span></div>
+        <div class="compare-stat-label">Base de référence (revenus moyens)</div>
+        <ul class="compare-list compare-cons">
+          <li>Tarification statique</li>
+          <li>Réponse aux messages sous 4-12h</li>
+          <li>Aucun reporting structuré</li>
+          <li>Mots de passe partagés en clair</li>
+          <li>Photos smartphone amateur</li>
+          <li>Aucune équipe sur site</li>
+        </ul>
+      </div>
+      <div class="compare-divider" aria-hidden="true">
+        <span class="vs">vs</span>
+      </div>
+      <div class="compare-col compare-right">
+        <div class="compare-label">Villa Havn-managée</div>
+        <div class="compare-stat">+47<span class="unit">%</span></div>
+        <div class="compare-stat-label">Revenus annuels nets vs Airbnb amateur</div>
+        <ul class="compare-list compare-pros">
+          <li>Revenue management dynamique</li>
+          <li>Concierge dédié, réponse &lt; 12 min</li>
+          <li>Reporting mensuel détaillé</li>
+          <li>Portail propriétaire 24/7</li>
+          <li>Photos pro · vidéo drone</li>
+          <li>Équipe permanente sur site</li>
+        </ul>
+        <div class="compare-source">Source : portefeuille HAVN 2025-2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: ONBOARDING -->
+<section id="onboarding">
+  <div class="grid-bg"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">PROTOCOLE 04 · MISE EN OPÉRATION</span>
+      <h2>Sept jours,<br><em>de la signature au premier guest.</em></h2>
+      <p class="lede">Un déroulé documenté. Vous savez ce qu'on fait, quand, et qu'attendre de vous.</p>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="timeline-grid">
+        <div class="day">
+          <div class="marker"></div>
+          <div class="content-block">
+            <div class="label">JOUR 01</div>
+            <div class="title">Audit & visite</div>
+            <div class="desc">Inspection complète de la villa, recommandations sur les axes d'amélioration et points de vigilance.</div>
+          </div>
+        </div>
+        <div class="day">
+          <div class="marker"></div>
+          <div class="content-block">
+            <div class="label">JOUR 02</div>
+            <div class="title">Contrat signé</div>
+            <div class="desc">Cadre juridique posé, dépôt des clés et accès, ouverture du portail propriétaire.</div>
+          </div>
+        </div>
+        <div class="day">
+          <div class="marker"></div>
+          <div class="content-block">
+            <div class="label">JOUR 03</div>
+            <div class="title">Shooting photo</div>
+            <div class="desc">Photographe pro et drone — ambiances jour, golden hour, ambiances nuit.</div>
+          </div>
+        </div>
+        <div class="day">
+          <div class="marker"></div>
+          <div class="content-block">
+            <div class="label">JOUR 04</div>
+            <div class="title">Setup digital</div>
+            <div class="desc">Annonces multi-plateformes optimisées (Airbnb, Booking, Vrbo) avec votre proposition de valeur.</div>
+          </div>
+        </div>
+        <div class="day">
+          <div class="marker"></div>
+          <div class="content-block">
+            <div class="label">JOUR 05</div>
+            <div class="title">Tarification</div>
+            <div class="desc">Modèle revenue management calibré sur votre quartier et la saisonnalité Marrakech.</div>
+          </div>
+        </div>
+        <div class="day">
+          <div class="marker"></div>
+          <div class="content-block">
+            <div class="label">JOUR 06</div>
+            <div class="title">Welcome book</div>
+            <div class="desc">Carnet voyageur personnalisé : codes, recommandations restaurants et activités locales.</div>
+          </div>
+        </div>
+        <div class="day">
+          <div class="marker"></div>
+          <div class="content-block">
+            <div class="label">JOUR 07</div>
+            <div class="title">Mise en ligne</div>
+            <div class="desc">Annonces actives, premières demandes de réservation, votre villa génère.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG / JOURNAL -->
+<section id="blog-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">JOURNAL · NOTES DE TERRAIN</span>
+      <h2>Le marché, la méthode,<br><em>les chiffres réels.</em></h2>
+      <p class="lede">Pas du content marketing. Des analyses concrètes — données 2025/2026 — pour les propriétaires qui veulent comprendre avant de décider.</p>
+    </div>
+
+    <div class="blog-grid reveal">
+      <a class="blog-card" href="https://havn-stays.com/blog/rentabilite-villa-marrakech-location-courte-duree-2026">
+        <div class="img">
+          <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=900&h=560&fit=crop&q=80" alt="Villa de luxe à Marrakech avec piscine" loading="lazy" />
+        </div>
+        <div class="body">
+          <div class="meta">CAS PRATIQUES · 9 MIN</div>
+          <h3>Combien rapporte une villa à Marrakech en location courte durée en 2026 ?</h3>
+          <div class="excerpt">3 cas chiffrés réels (Targa, Palmeraie, Ourika) — méthode de calcul, ADR, occupation, charges, net opérateur.</div>
+          <div class="read-more">Lire l'analyse</div>
+        </div>
+      </a>
+
+      <a class="blog-card" href="https://havn-stays.com/blog/reglementation-location-courte-duree-maroc">
+        <div class="img">
+          <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=900&h=560&fit=crop&q=80" alt="Documents juridiques contrat" loading="lazy" />
+        </div>
+        <div class="body">
+          <div class="meta">RÉGLEMENTATION · 11 MIN</div>
+          <h3>Réglementation location courte durée au Maroc : ce que dit la loi en 2026</h3>
+          <div class="excerpt">Déclaration préfecture, fiche de police, taxe de séjour, IR locatif, TVA, assurances : le cadre juridique complet.</div>
+          <div class="read-more">Lire l'analyse</div>
+        </div>
+      </a>
+
+      <a class="blog-card" href="https://havn-stays.com/blog/revenue-management-villa-marrakech">
+        <div class="img">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=900&h=560&fit=crop&q=80" alt="Tableau de bord financier" loading="lazy" />
+        </div>
+        <div class="body">
+          <div class="meta">REVENUE · 8 MIN</div>
+          <h3>Revenue management & tarification dynamique pour votre villa</h3>
+          <div class="excerpt">Comment la tarification dynamique peut augmenter vos revenus locatifs de 30 à 50 % — méthodologie détaillée.</div>
+          <div class="read-more">Lire l'analyse</div>
+        </div>
+      </a>
+
+      <a class="blog-card" href="https://havn-stays.com/blog/investir-villa-marrakech-quartiers">
+        <div class="img">
+          <img src="https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=900&h=560&fit=crop&q=80" alt="Quartier résidentiel à Marrakech" loading="lazy" />
+        </div>
+        <div class="body">
+          <div class="meta">INVESTISSEMENT · 9 MIN</div>
+          <h3>Investir dans une villa à Marrakech : les meilleurs quartiers en 2026</h3>
+          <div class="excerpt">Palmeraie, Hivernage, Médina, Amelkis… Analyse des quartiers les plus rentables, prix au m², rendements.</div>
+          <div class="read-more">Lire l'analyse</div>
+        </div>
+      </a>
+
+      <a class="blog-card" href="https://havn-stays.com/blog/photos-professionnelles-annonce-villa-marrakech">
+        <div class="img">
+          <img src="https://images.unsplash.com/photo-1452587925148-ce544e77e70d?w=900&h=560&fit=crop&q=80" alt="Photographe professionnel équipement" loading="lazy" />
+        </div>
+        <div class="body">
+          <div class="meta">CONVERSION · 12 MIN</div>
+          <h3>Photos professionnelles : l'arme secrète pour multiplier vos réservations</h3>
+          <div class="excerpt">Pourquoi les photos pro sont le levier #1 pour booster vos réservations — comparatif chiffré, brief shoot.</div>
+          <div class="read-more">Lire l'analyse</div>
+        </div>
+      </a>
+
+      <a class="blog-card" href="https://havn-stays.com/blog/tendances-tourisme-marrakech-2026">
+        <div class="img">
+          <img src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?w=900&h=560&fit=crop&q=80" alt="Médina de Marrakech tourisme" loading="lazy" />
+        </div>
+        <div class="body">
+          <div class="meta">MARCHÉ · 13 MIN</div>
+          <h3>Tendances du tourisme à Marrakech en 2026 : ce que les propriétaires doivent savoir</h3>
+          <div class="excerpt">Luxe, wellness, digital, événements : 10 tendances majeures qui redessinent le marché de la location.</div>
+          <div class="read-more">Lire l'analyse</div>
+        </div>
+      </a>
+    </div>
+
+    <div class="blog-all reveal">
+      <a href="https://havn-stays.com/blog" class="btn-cta">Voir tous les articles</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="grid-bg"></div>
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">PROTOCOLE 05 · QUESTIONS FRÉQUENTES</span>
+      <h2>Tout ce que vous voulez savoir<br><em>avant de nous confier vos clés.</em></h2>
+      <p class="lede">Pas de petits caractères. Pas de zone grise. Voici les vraies réponses aux vraies questions de propriétaires.</p>
+    </div>
+
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-num">Q.01</span>
+          <span class="faq-text">Combien coûte votre service exactement ?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Une <strong>commission unique et fixe</strong> sur les revenus encaissés, sans markup sur les prestations externes (pisciniste, jardinier, ménage). Vous ne payez la commission que sur les revenus réellement générés.</p>
+          <p>Des <strong>frais d'onboarding</strong> peuvent s'appliquer selon le bien (mise en place, shooting photo, équipement complémentaire, welcome book). Ils sont chiffrés précisément lors de l'audit gratuit, en fonction de votre villa.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-num">Q.02</span>
+          <span class="faq-text">Que se passe-t-il en cas d'incident ou de dégradation ?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Deux protections superposées : <strong>(1)</strong> assurance plateforme (AirCover Airbnb, Booking Partners) qui couvre les dégâts causés par le voyageur ; <strong>(2)</strong> votre propre assurance multirisque habitation pour les événements exceptionnels.</p>
+          <p>En pratique, dès le check-out, notre équipe inspecte la villa sur place et photographie chaque pièce. Si un dégât est constaté, vous êtes notifié dans la foulée via le portail propriétaire — photos à l'appui — et nous gérons la procédure de remboursement de bout en bout.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-num">Q.03</span>
+          <span class="faq-text">Comment garantissez-vous la sécurité de la villa entre deux séjours ?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Inspection sur place après chaque check-out, avec photo-rapport horodaté de chaque pièce archivé dans votre portail propriétaire. Tous les accès (codes Wi-Fi, alarme, coffre, portail) sont centralisés en interne et jamais partagés en clair.</p>
+          <p>Chaque clé physique est suivie par un système de remise contre signature. Audit log permanent : vous voyez dans votre portail qui est entré, quand, pourquoi.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-num">Q.04</span>
+          <span class="faq-text">Puis-je reprendre la main sur ma villa quand je veux ?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p><strong>Oui, sans pénalité, avec un préavis de 30 jours.</strong> Vous reprenez vos clés, vos accès, votre historique de réservations, vos contacts. Votre villa reste votre villa.</p>
+          <p>Si une réservation est déjà confirmée pendant la période de préavis, nous l'honorons jusqu'au check-out, puis nous vous rendons un dossier complet.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-num">Q.05</span>
+          <span class="faq-text">Et la fiscalité ? Comment se passe la déclaration des revenus ?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Vous percevez vos revenus locatifs sur votre compte propre, nets de notre commission. Nous vous fournissons un <strong>récapitulatif fiscal annuel</strong> détaillé, prêt pour votre comptable, conforme aux exigences IR locatif Maroc et, le cas échéant, à votre fiscalité de pays de résidence.</p>
+          <p>Pour les non-résidents, nous travaillons avec un cabinet partenaire à Marrakech qui peut prendre en charge l'intégralité de la déclaration si vous le souhaitez.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-num">Q.06</span>
+          <span class="faq-text">Quel est le délai de mise en opération ?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p><strong>Sept jours</strong> de la signature au premier guest, déroulé dans la section "Onboarding" ci-dessus. Audit, contrat, shooting, setup digital, tarification, welcome book, mise en ligne — chaque étape documentée.</p>
+          <p>Si votre villa est déjà en location et que vous changez d'opérateur, nous gérons la transition sans interruption : votre planning est repris tel quel, vos voyageurs déjà bookés sont accueillis dans nos standards.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-num">Q.07</span>
+          <span class="faq-text">Sur quelles villes opérez-vous ?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p><strong>Marrakech, Agadir, Taghazout Bay.</strong> Trois zones où nous avons une équipe permanente, des partenaires locaux qualifiés (piscinistes, jardiniers, électriciens) et une connaissance fine du marché touristique.</p>
+          <p>Nous étudions ponctuellement d'autres zones du Maroc pour des biens d'exception. Contactez-nous pour en discuter.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q">
+          <span class="faq-num">Q.08</span>
+          <span class="faq-text">Qui sont les voyageurs que vous accueillez ?</span>
+          <span class="faq-toggle">+</span>
+        </button>
+        <div class="faq-a">
+          <p>Voyageurs <strong>premium et leisure</strong> : familles haut de gamme, couples en escapade, groupes d'amis pour des occasions spéciales (anniversaires, EVJF, retrouvailles), corporate retreats, photoshoots éditoriaux.</p>
+          <p>Filtrage systématique : vérification d'identité, scoring de profil, motif de séjour, taille du groupe. Nous refusons environ 8% des demandes pour préserver votre bien et votre voisinage.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL : calculator instantané (widget partagé) -->
+<link rel="stylesheet" href="/estimation-widget.css">
+<section id="cta">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">ESTIMATION INSTANTANÉE</span>
+      <h2>Voyons ce que <em>votre villa</em> peut faire.</h2>
+      <p>Estimation immédiate basée sur 384 comparables Airbnb (mai 2026). Recevez le rapport détaillé par email — un expert vous appelle sous 24h.</p>
+    </div>
+
+    <!-- Widget hors .reveal (toujours visible — l'utilisateur arrive ici via CTA) -->
+    <div class="audit-widget-wrap">
+      <div id="estimation-widget"></div>
+    </div>
+  </div>
+</section>
+<script src="/estimation-widget.js" defer></script>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-col">
+      <a href="/" class="logo-link" aria-label="Havn Stays — accueil"><div class="logo" style="display:inline-block;margin-bottom:1rem;">HAVN <em>STAYS</em><span class="by">BY MEDINI HOMES</span></div></a>
+      <p>Conciergerie villa premium — standards hôteliers cinq étoiles appliqués à votre villa. Marrakech · Agadir · Taghazout Bay.</p>
+      <div class="footer-social" aria-label="Réseaux sociaux">
+        <a href="https://www.instagram.com/havn.stays" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="3" y="3" width="18" height="18" rx="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/company/havn-stays" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.5 18.5v-9h-3v9h3zM7 8a1.75 1.75 0 1 0 0-3.5 1.75 1.75 0 0 0 0 3.5zm11.5 10.5v-5.1c0-2.7-1.46-3.95-3.4-3.95a2.94 2.94 0 0 0-2.6 1.43V9.5h-3v9h3v-5.1c0-1.18.7-1.95 1.7-1.95.97 0 1.3.66 1.3 1.95v5.1h3z"/>
+          </svg>
+        </a>
+        <a href="https://wa.me/971586247584" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Plan du site</h4>
+      <ul>
+        <li><a href="#protocole">Protocole</a></li>
+        <li><a href="#plan">Opérations</a></li>
+        <li><a href="#transparence">Transparence</a></li>
+        <li><a href="#fondateur">Fondateur</a></li>
+        <li><a href="#temoignages">Témoignages</a></li>
+        <li><a href="#blog-section">Journal</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="/estimation">Audit gratuit</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="https://wa.me/971586247584" target="_blank" rel="noopener">WhatsApp · +971 58 624 7584</a></li>
+        <li><a href="mailto:hello@havn-stays.com">hello@havn-stays.com</a></li>
+        <li>Marrakech, Maroc</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Légal</h4>
+      <ul>
+        <li><a href="/mentions-legales">Mentions légales</a></li>
+        <li><a href="/confidentialite">Politique de confidentialité</a></li>
+        <li><a href="/cgu">CGU</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 Havn Stays · By Medini Homes</span>
+    <span><a href="/">FR</a> · <a href="/en/">EN</a></span>
+  </div>
+</footer>
+
+<!-- WhatsApp floating button -->
+<a href="https://wa.me/971586247584" target="_blank" rel="noopener" aria-label="Contact WhatsApp · réponse rapide" title="WhatsApp · réponse rapide" style="position:fixed;bottom:24px;right:24px;z-index:90;width:56px;height:56px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,0.40);transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#FFFFFF"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/></svg>
+</a>
+
+<!-- JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Havn Stays",
+  "alternateName": "Havn Stays by Medini Homes",
+  "description": "Conciergerie premium pour propriétaires de villas. Standards hôteliers cinq étoiles appliqués à votre villa.",
+  "url": "https://havn-stays.com/",
+  "logo": "https://havn-stays.com/brand/logo-gold.svg",
+  "image": "https://havn-stays.com/hero-poster.jpg",
+  "areaServed": [
+    {"@type":"City","name":"Marrakech"},
+    {"@type":"City","name":"Agadir"},
+    {"@type":"City","name":"Taghazout Bay"}
+  ],
+  "founder": {"@type":"Person","name":"Hillal Medini"},
+  "telephone": "+971586247584",
+  "priceRange": "€€€"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Combien coûte votre service exactement ?","acceptedAnswer":{"@type":"Answer","text":"Une commission unique et fixe sur les revenus encaissés, sans markup sur les prestations externes. Des frais d'onboarding peuvent s'appliquer selon le bien, chiffrés précisément lors de l'audit gratuit."}},
+    {"@type":"Question","name":"Que se passe-t-il en cas d'incident ou de dégradation ?","acceptedAnswer":{"@type":"Answer","text":"Deux protections superposées : assurance plateforme (AirCover, Booking Partners) et votre assurance multirisque habitation. Inspection sur place après chaque check-out, notification photos via le portail propriétaire."}},
+    {"@type":"Question","name":"Comment garantissez-vous la sécurité de la villa entre deux séjours ?","acceptedAnswer":{"@type":"Answer","text":"Inspection sur place après chaque check-out avec photo-rapport horodaté archivé dans votre portail propriétaire. Tous les accès centralisés en interne, jamais partagés en clair. Audit log permanent."}},
+    {"@type":"Question","name":"Puis-je reprendre la main sur ma villa quand je veux ?","acceptedAnswer":{"@type":"Answer","text":"Oui, sans pénalité, avec un préavis de 30 jours. Vous reprenez vos clés, vos accès, votre historique de réservations, vos contacts."}},
+    {"@type":"Question","name":"Sur quelles villes opérez-vous ?","acceptedAnswer":{"@type":"Answer","text":"Marrakech, Agadir, Taghazout Bay. Trois zones où nous avons une équipe permanente et des partenaires locaux qualifiés."}}
+  ]
+}
+</script>
+
+<script>
+  // PLAN D'OPERATION — pin click
+  const pinData = {
+    entry: {
+      label: 'ZONE A · ENTRÉE & ACCUEIL',
+      title: 'Concierge dédié, briefing 30 min.',
+      desc: 'Votre voyageur est attendu, accueilli, briefé. Pas un check-in à la sauvette. Présentation maison, briefing sécurité, recommandations gastronomiques personnalisées.',
+      items: [
+        ['Délai de réponse aux messages', '< 12 MIN'],
+        ['Langues parlées sur site', 'FR · EN · AR'],
+        ['Disponibilité conciergerie', '24/7/365'],
+        ['Standard de service de référence', 'LEADING HOTELS']
+      ]
+    },
+    pool: {
+      label: 'ZONE B · PISCINE & EXTÉRIEURS',
+      title: 'Maintenance préventive, eau testée 2×/sem.',
+      desc: 'Pisciniste partenaire, contrôle pH, chlore, filtration. Photos avant chaque arrivée. Margelles, transats, pool house : audit hebdomadaire.',
+      items: [
+        ['Tests qualité eau', '2× / SEMAINE'],
+        ['Visite pisciniste', '1× / SEMAINE'],
+        ['Photos avant arrivée', 'SYSTÉMATIQUE'],
+        ['Réactivité incident piscine', '< 4H']
+      ]
+    },
+    rooms: {
+      label: 'ZONE C · CHAMBRES & SUITES',
+      title: 'Housekeeping standard hôtelier 5*.',
+      desc: 'Linge premium 300 fils, kits accueil, mise en place lit hôtelière, tournée du soir. Désinfection ATP-testée entre chaque séjour.',
+      items: [
+        ['Linge', '300 FILS / 100% COTON'],
+        ['Test propreté', 'ATP HYGIENA'],
+        ['Mise en place', 'STANDARD 5★'],
+        ['Tournée du soir', 'SUR DEMANDE']
+      ]
+    },
+    patio: {
+      label: 'ZONE D · PATIO & ESPACES OUTDOOR',
+      title: 'Mobilier protégé, ambiance soignée.',
+      desc: 'Coussins, parasols, éclairage LED, audio Sonos. Vérification quotidienne, ré-agencement avant chaque arrivée. Welcome drink possible.',
+      items: [
+        ['Mobilier outdoor', 'COLLECTION TEAK PREMIUM'],
+        ['Audio extérieur', 'SONOS · MULTI-ZONES'],
+        ['Éclairage soir', 'PROGRAMMÉ AUTO'],
+        ['Welcome drink', 'OPTION INCLUSE']
+      ]
+    },
+    garden: {
+      label: 'ZONE E · JARDIN & VÉGÉTATION',
+      title: 'Jardinier 1×/sem, arrosage automatisé.',
+      desc: 'Système d\'arrosage goutte-à-goutte programmé, taille mensuelle, traitement biologique. Photos avant chaque arrivée pour validation.',
+      items: [
+        ['Visite jardinier', '1× / SEMAINE'],
+        ['Arrosage', 'AUTOMATIQUE GOUTTE-À-GOUTTE'],
+        ['Traitements', '100% BIOLOGIQUE'],
+        ['Audit végétation', 'MENSUEL']
+      ]
+    }
+  };
+
+  const axoInfo = document.getElementById('axoInfo');
+  document.querySelectorAll('.axo-svg .pin').forEach(pin => {
+    pin.addEventListener('click', () => {
+      const id = pin.dataset.pin;
+      const d = pinData[id];
+      axoInfo.style.opacity = '0.3';
+      setTimeout(() => {
+        axoInfo.innerHTML = `
+          <span class="annotation">${d.label}</span>
+          <h3>${d.title}</h3>
+          <p>${d.desc}</p>
+          <ul>${d.items.map(([k,v]) => `<li><span>${k}</span><span class="val">${v}</span></li>`).join('')}</ul>
+        `;
+        axoInfo.style.opacity = '1';
+      }, 200);
+    });
+  });
+
+  // (BEFORE/AFTER slider removed — replaced by static comparison table)
+
+
+  // HAMBURGER MOBILE NAV
+  (function(){
+    const btn = document.querySelector('.hamburger');
+    const overlay = document.getElementById('navOverlay');
+    if (!btn || !overlay) return;
+    function close(){btn.classList.remove('open');overlay.classList.remove('open');btn.setAttribute('aria-expanded','false');overlay.setAttribute('aria-hidden','true');document.body.style.overflow='';}
+    function open(){btn.classList.add('open');overlay.classList.add('open');btn.setAttribute('aria-expanded','true');overlay.setAttribute('aria-hidden','false');document.body.style.overflow='hidden';}
+    btn.addEventListener('click',()=>btn.classList.contains('open')?close():open());
+    overlay.querySelectorAll('a').forEach(a=>a.addEventListener('click',close));
+  })();
+
+
+  // (Old auditForm replaced by the shared estimation widget — see /estimation-widget.js.)
+
+
+  // Subtle hero text parallax on scroll
+  (function(){
+    const heroContent = document.querySelector('.hero-content');
+    if (!heroContent) return;
+    let ticking = false;
+    function update(){
+      const sy = window.scrollY;
+      if (sy > window.innerHeight) { ticking = false; return; }
+      heroContent.style.transform = 'translateY(' + (sy * 0.18) + 'px)';
+      heroContent.style.opacity = String(Math.max(0, 1 - sy / (window.innerHeight * 0.6)));
+      ticking = false;
+    }
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    }, { passive: true });
+  })();
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-q').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const item = btn.parentElement;
+      const open = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(o => o.classList.remove('open'));
+      if (!open) item.classList.add('open');
+    });
+  });
+
+  // REVEAL on scroll
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in-view');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.15 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+
+</body>
+</html>

@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="google-site-verification" content="mc0ZMqP7yD9HPQukeBi785o766mib7Fe9QUTEmtprUU" />
-<title>Havn Stays — Gestion locative premium pour villas et riads à Marrakech</title>
-<meta name="description" content="Havn Stays gère des villas, riads et biens premium à Marrakech en location courte durée, avec une approche hôtelière, transparente et haut de gamme. Équipe locale, reporting propriétaire, opérée par d'anciens hôteliers.">
-<meta property="og:site_name" content="Havn Stays">
+<title>havn stays — Nous gérons votre bien comme un hôtel · Marrakech</title>
+<meta name="description" content="havn stays — property management premium pour propriétaires de villas à Marrakech, Agadir, Taghazout Bay. Anciens hôteliers, équipe en propre, reporting mensuel, accès propriétaire 24/7. Dubai sister company medini-homes.com.">
+<meta property="og:site_name" content="havn stays">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Havn Stays — Gestion locative premium pour villas et riads à Marrakech">
-<meta property="og:description" content="Gestion locative premium pour villas et riads à Marrakech. Nous opérons votre bien comme un actif hôtelier : pricing, plateformes, voyageurs, ménage, maintenance, conformité, reporting propriétaire.">
+<meta property="og:title" content="havn stays — Nous gérons votre bien comme un hôtel">
+<meta property="og:description" content="Property management premium pour propriétaires de villas à Marrakech, Agadir, Taghazout Bay. Anciens hôteliers, équipe en propre, reporting mensuel.">
 <meta property="og:url" content="https://havn-stays.com/">
 <meta property="og:image" content="https://havn-stays.com/hero-poster.jpg">
 <meta name="twitter:card" content="summary_large_image">
@@ -24,15 +24,17 @@
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
-  "name": "Havn Stays",
-  "description": "Gestion locative premium pour villas, riads et biens premium à Marrakech. Approche hôtelière, transparente et haut de gamme.",
+  "name": "havn stays",
+  "description": "Property management premium pour villas, riads et appartements au Maroc.",
   "url": "https://havn-stays.com/",
   "logo": "https://havn-stays.com/brand/logo-gold.svg",
   "image": "https://havn-stays.com/hero-poster.jpg",
   "email": "hillal@medini-homes.com",
   "telephone": "+971586247584",
   "areaServed": [
-    {"@type":"City","name":"Marrakech"}
+    {"@type":"City","name":"Marrakech"},
+    {"@type":"City","name":"Agadir"},
+    {"@type":"Place","name":"Taghazout Bay"}
   ],
   "founder": {"@type":"Person","name":"Hillal Medini"},
   "parentOrganization": {"@type":"Organization","name":"Medini Homes","url":"https://medini-homes.com"},
@@ -77,7 +79,7 @@ body {
   background: var(--sand);
   color: var(--ink);
   font-family: var(--serif);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.6;
   overflow-x: hidden;
   font-feature-settings: "kern", "liga", "onum";
@@ -1701,6 +1703,8 @@ a.cover-cta--whatsapp:hover .cta-num { color: rgba(10,26,14,0.75); }
 .sticky-cta a.scta-wa svg { color: #25D366; flex: 0 0 auto; }
 @media (max-width: 900px) {
   .sticky-cta { display: block; }
+  body { padding-bottom: 84px; }
+  .wa-float { display: none; }
 }
 
 /* --- WhatsApp float (desktop) --- */
@@ -2041,7 +2045,7 @@ a.cover-cta--whatsapp:hover .cta-num { color: rgba(10,26,14,0.75); }
 
 /* ============================================================
    PATCH RESPONSIVE HAVN — corrections audit v2
-   À coller juste avant <\/style> dans
+   À coller juste avant </style> dans
    /Users/hillal/Documents/havn-stays/haven-stays-website/index.html
    Ou via le script /tmp/finish_havn_responsive.sh
    ============================================================ */
@@ -2136,423 +2140,6 @@ a.cover-cta--whatsapp:hover .cta-num { color: rgba(10,26,14,0.75); }
   .faq-list summary .q-icon { font-size: 1.1rem; }
 }
 
-
-/* ============================================================
-   STICKY CTA FIX HAVN — anti-débord mobile
-   ============================================================ */
-.sticky-cta a {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  min-width: 0;
-}
-.sticky-cta .scta-short { display: none; }
-
-@media (max-width: 520px) {
-  .sticky-cta .scta-full { display: none; }
-  .sticky-cta .scta-short { display: inline; }
-  .sticky-cta .scta-wa-label { display: none; }
-  .sticky-cta a.scta-wa {
-    padding: 0.75rem 0.85rem;
-    width: 48px;
-    flex: 0 0 48px;
-    justify-content: center;
-  }
-  .sticky-cta .scta-grid { grid-template-columns: 1fr 48px; gap: 0.5rem; }
-  .sticky-cta a.scta-primary { font-size: 0.66rem; letter-spacing: 0.12em; padding: 0.85rem 0.7rem; }
-}
-
-@media (max-width: 360px) {
-  .sticky-cta a.scta-primary { font-size: 0.6rem; letter-spacing: 0.1em; padding: 0.85rem 0.6rem; }
-  .sticky-cta a.scta-wa { width: 44px; flex-basis: 44px; padding: 0.7rem; }
-  .sticky-cta .scta-grid { grid-template-columns: 1fr 44px; gap: 0.4rem; }
-}
-
-
-.sticky-cta { display: none !important; }
-
-/* ============================================================
-   TYPO BOOST — graisse renforcée pour lisibilité écran
-   ============================================================ */
-body { font-weight: 500; }
-.cover-pitch { font-weight: 500; }
-.cover-bullets .b-text { font-weight: 500; color: rgba(244,239,227,0.96); }
-.cover-subpitch { color: rgba(244,239,227,0.75); font-weight: 500; }
-.deck { font-weight: 500; }
-p, li { font-weight: 500; }
-.foreword-text { font-weight: 500; }
-.operator-text p, .charter-clause p, .compliance-item p,
-.services-item p, .portal-text .deck, .portal-text ul li,
-.faq-list .faq-answer, .compare-table > div { font-weight: 500; }
-.portfolio-deck, .portfolio-havn .portfolio-deck { font-weight: 500; }
-
-/* ============================================================
-   HEADER REFONTE v3 — cover + page-head + colophon
-   ============================================================ */
-
-/* === COVER === */
-.cover-title { font-weight: 400; letter-spacing: -0.01em; }
-.cover-pitch {
-  font-weight: 500;
-  font-size: clamp(1.25rem, 2.2vw, 1.9rem);
-  line-height: 1.38;
-  color: var(--cream);
-}
-.cover-pitch em { font-style: normal; color: var(--terra); }
-.cover-subpitch {
-  font-family: var(--serif);
-  font-weight: 500;
-  font-size: 0.92rem;
-  letter-spacing: 0;
-  text-transform: none;
-  color: rgba(244,239,227,0.85);
-  line-height: 1.55;
-  max-width: 60ch;
-}
-.cover-bullets .b-text {
-  font-size: 1.08rem;
-  font-weight: 500;
-  color: rgba(244,239,227,0.95);
-  line-height: 1.5;
-}
-.cover-bullets .b-num {
-  font-size: 0.78rem;
-  letter-spacing: 0.18em;
-  font-weight: 600;
-  color: var(--terra);
-}
-.cover-top { font-size: 0.72rem; letter-spacing: 0.14em; }
-.cover-top .loc { font-weight: 600; }
-a.cover-top-cta {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  font-weight: 600;
-  padding: 0.8rem 1.3rem;
-}
-a.cover-cta, a.cover-cta--primary {
-  font-size: 0.84rem;
-  letter-spacing: 0.14em;
-  font-weight: 600;
-  padding: 1.15rem 1.8rem;
-}
-a.cover-cta--whatsapp {
-  font-size: 0.82rem;
-  letter-spacing: 0.12em;
-  font-weight: 600;
-  padding: 1.15rem 1.6rem;
-}
-.cover-bottom {
-  font-size: 0.7rem;
-  letter-spacing: 0.16em;
-  font-weight: 500;
-  color: rgba(244,239,227,0.7);
-}
-@media (max-width: 640px) {
-  .cover-pitch { font-size: 1.2rem; line-height: 1.32; }
-  .cover-subpitch { font-size: 0.86rem; line-height: 1.5; }
-  .cover-bullets .b-text { font-size: 1rem; line-height: 1.45; }
-  a.cover-cta, a.cover-cta--primary, a.cover-cta--whatsapp { font-size: 0.78rem; padding: 1rem 1.4rem; }
-}
-
-/* === PAGE-HEAD (bandeaus section) === */
-.section-label {
-  font-size: 0.82rem !important;
-  letter-spacing: 0.14em !important;
-  font-weight: 600 !important;
-  color: var(--ink) !important;
-  text-transform: uppercase;
-}
-.folio {
-  font-size: 0.72rem !important;
-  letter-spacing: 0.14em !important;
-  font-weight: 500 !important;
-  color: var(--mute) !important;
-}
-.page-head {
-  padding-bottom: 1.1rem !important;
-  margin-bottom: 3rem !important;
-  border-bottom: 1px solid var(--ink) !important;
-}
-.witness .section-label,
-.witness .folio,
-.compliance .section-label,
-.compliance .folio,
-.cover .cover-folio {
-  color: rgba(244,239,227,0.85) !important;
-}
-.witness .folio,
-.compliance .folio {
-  color: rgba(244,239,227,0.55) !important;
-}
-.page-foot {
-  font-size: 0.7rem !important;
-  letter-spacing: 0.14em !important;
-  font-weight: 500 !important;
-  padding-top: 1.5rem !important;
-  margin-top: 3rem !important;
-}
-
-/* Onboarding head — section "Sept jours" plus présente */
-.onboarding-head h2 { letter-spacing: -0.005em; }
-.onboarding-head p { font-weight: 500; font-size: 1.1rem; }
-
-/* === COLOPHON === */
-.colophon {
-  padding: 4rem 0 1.8rem !important;
-  font-family: var(--serif) !important;
-  letter-spacing: 0 !important;
-  text-transform: none !important;
-  font-size: 0.95rem !important;
-  font-weight: 500;
-  color: rgba(244,239,227,0.78) !important;
-}
-.colophon .page-inner {
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  align-items: flex-start !important;
-  gap: 3rem !important;
-}
-.colophon .mark {
-  font-family: var(--display) !important;
-  font-size: 1.7rem !important;
-  letter-spacing: 0 !important;
-  color: var(--cream) !important;
-}
-.colophon .left {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 0.5rem !important;
-  align-items: flex-start !important;
-}
-.colophon .left a,
-.colophon .right a,
-.colophon a {
-  font-family: var(--serif);
-  font-size: 0.92rem;
-  text-transform: none;
-  letter-spacing: 0;
-  font-weight: 500;
-  border-bottom: 1px solid rgba(244,239,227,0.18);
-  padding-bottom: 1px;
-  color: rgba(244,239,227,0.85);
-}
-.colophon a:hover { color: var(--cream); border-bottom-color: var(--terra); }
-.colophon .right {
-  font-family: var(--serif);
-  font-size: 0.82rem;
-  letter-spacing: 0;
-  text-transform: none;
-  color: rgba(244,239,227,0.55);
-  max-width: 320px;
-  line-height: 1.5;
-  font-weight: 400;
-  font-style: italic;
-}
-.colophon .ours-brand .mark,
-.colophon .ours-brand .ours-tagline,
-.colophon .ours-brand .ours-locations,
-.colophon .ours-col h4,
-.colophon .ours-col li,
-.colophon .ours-bottom-bar { font-weight: 500; }
-.colophon .ours-col h4 {
-  font-family: var(--mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  color: var(--cream);
-  margin-bottom: 1.1rem;
-}
-.colophon .ours-col li {
-  font-size: 1rem;
-  letter-spacing: 0;
-  text-transform: none;
-  line-height: 1.5;
-}
-.colophon .ours-brand .ours-tagline {
-  font-size: 0.95rem;
-  letter-spacing: 0;
-  text-transform: none;
-  font-style: normal;
-  color: rgba(244,239,227,0.85);
-}
-.colophon .ours-brand .ours-locations {
-  font-size: 0.78rem;
-  letter-spacing: 0.14em;
-  color: var(--terra);
-  margin-top: 0.4rem;
-}
-.colophon .ours-bottom-bar {
-  font-family: var(--serif);
-  font-size: 0.88rem;
-  letter-spacing: 0;
-  text-transform: none;
-  color: rgba(244,239,227,0.6);
-  padding-top: 1.8rem;
-  margin-top: 1.8rem;
-}
-@media (max-width: 700px) {
-  .colophon .page-inner { flex-direction: column !important; gap: 1.5rem !important; }
-  .colophon .right { max-width: 100% !important; }
-}
-
-/* ============================================================
-   COVER V1 — Rareté (mai 2026)
-   ============================================================ */
-.cover.cover--v1 {
-  background: #f0e4d2;
-  color: var(--ink);
-}
-.cover--v1 .cover-video,
-.cover--v1 .cover-overlay { display: none !important; }
-.cover--v1::after {
-  content: '';
-  position: absolute;
-  top: 0; right: 0; bottom: 0;
-  width: 38%;
-  background:
-    linear-gradient(135deg, rgba(15,14,11,0.08), rgba(15,14,11,0.28)),
-    url('/brand/havn-cover-v1.jpg') center/cover,
-    url('https://images.unsplash.com/photo-1674160797233-4807abd77a32?auto=format&fit=crop&w=1600&q=80') center/cover;
-  border-left: 1px solid var(--ink);
-  z-index: 0;
-}
-.cover--v1 .cover-content { position: relative; z-index: 2; padding-right: calc(38% + 2.5rem); }
-.cover--v1 .cover-top {
-  color: rgba(28,26,23,0.6);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-}
-.cover--v1 .cover-top .left .loc { color: var(--terra); letter-spacing: 0.32em; }
-.cover--v1 .cover-top .scope {
-  color: rgba(28,26,23,0.55);
-  letter-spacing: 0.24em;
-  font-family: var(--mono);
-  font-size: 0.62rem;
-  text-transform: uppercase;
-}
-.cover--v1 a.cover-top-cta {
-  border-color: rgba(28,26,23,0.35);
-  color: var(--ink);
-}
-.cover--v1 a.cover-top-cta:hover {
-  background: var(--ink);
-  color: var(--cream);
-  border-color: var(--ink);
-}
-.cover--v1 .v1-stack {
-  align-self: center;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 1.4rem;
-}
-.cover--v1 .v1-small {
-  font-family: var(--mono);
-  font-size: 0.62rem;
-  letter-spacing: 0.32em;
-  text-transform: uppercase;
-  color: rgba(28,26,23,0.55);
-  padding-bottom: 0.4rem;
-  border-bottom: 1px solid rgba(28,26,23,0.25);
-  width: max-content;
-}
-.cover--v1 .v1-title {
-  font-family: var(--display);
-  font-weight: 300;
-  font-size: clamp(2.2rem, 4.4vw, 4.2rem);
-  line-height: 1;
-  letter-spacing: -0.02em;
-  color: var(--ink);
-  margin: 0;
-  hyphens: none;
-  word-break: keep-all;
-}
-.cover--v1 .v1-title em {
-  font-style: italic;
-  color: var(--terra);
-  font-weight: 400;
-}
-.cover--v1 .v1-sub {
-  font-family: var(--serif);
-  font-size: 1.05rem;
-  line-height: 1.55;
-  color: rgba(28,26,23,0.78);
-  margin: 0;
-  max-width: 36ch;
-}
-.cover--v1 .v1-cta-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.2rem 1.6rem;
-  align-items: center;
-  margin-top: 0.4rem;
-}
-.cover--v1 a.v1-cta {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.85rem;
-  padding: 1rem 1.7rem;
-  background: var(--ink);
-  color: var(--cream);
-  text-decoration: none;
-  font-family: var(--mono);
-  font-size: 0.72rem;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  border: 1px solid var(--ink);
-  border-radius: 999px;
-  transition: background .25s, border-color .25s;
-}
-.cover--v1 a.v1-cta:hover {
-  background: var(--terra);
-  border-color: var(--terra);
-}
-.cover--v1 a.v1-cta-wa {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  padding: 0.6rem 0;
-  color: var(--ink);
-  text-decoration: none;
-  font-family: var(--mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  border-bottom: 1px solid var(--ink);
-}
-.cover--v1 a.v1-cta-wa .cta-wa-icon { color: #25D366; flex: 0 0 auto; }
-.cover--v1 a.v1-cta-wa:hover { color: var(--terra); border-bottom-color: var(--terra); }
-.cover--v1 a.v1-cta-wa:hover .cta-wa-icon { color: var(--terra); }
-.cover--v1 .cover-bottom { color: rgba(28,26,23,0.55); }
-.cover--v1 .cover-bottom .left em { color: var(--terra); font-style: italic; text-transform: none; letter-spacing: 0.04em; }
-.cover--v1 .cover-bottom .scroll-hint .arrow { background: rgba(28,26,23,0.45); }
-@media (max-width: 900px) {
-  .cover--v1::after { width: 32%; }
-  .cover--v1 .v1-stack { max-width: 65%; }
-  .cover--v1 .v1-title { font-size: clamp(2.2rem, 7.5vw, 3.4rem); }
-}
-@media (max-width: 640px) {
-  .cover--v1::after {
-    width: 100%;
-    height: 38%;
-    bottom: auto;
-    border-left: none;
-    border-bottom: 1px solid var(--ink);
-  }
-  .cover--v1 .v1-stack {
-    max-width: 100%;
-    margin-top: 38vh;
-    gap: 1rem;
-  }
-  .cover--v1 .v1-title { font-size: clamp(1.9rem, 9vw, 2.6rem); }
-  .cover--v1 .v1-sub { font-size: 0.98rem; }
-  .cover--v1 .v1-cta-row { flex-direction: column; align-items: stretch; gap: 0.8rem; width: 100%; }
-  .cover--v1 a.v1-cta { width: 100%; justify-content: center; padding: 0.95rem 1rem; }
-  .cover--v1 .cover-top .scope { display: none; }
-}
-
 </style>
 </head>
 <body>
@@ -2562,44 +2149,50 @@ a.cover-cta--whatsapp {
 <!-- ========================================================
      PAGE 01 — COUVERTURE
      ======================================================== -->
-<section class="cover cover--v1" id="couverture">
+<section class="cover" id="couverture">
+  <video class="cover-video" autoplay muted loop playsinline poster="/hero-poster.jpg">
+    <source src="/hero-desktop.mp4" type="video/mp4">
+  </video>
+  <div class="cover-overlay"></div>
+
   <div class="cover-content">
     <div class="cover-top">
       <div class="left">
-        <span class="loc">◦ havn stays · marrakech</span>
+        <span class="loc">Marrakech</span>
       </div>
-      <span class="scope">villas · riads · biens premium</span>
       <div class="right">
         <a href="#projection" class="cover-top-cta">Estimer mon bien →</a>
       </div>
     </div>
 
-    <div class="v1-stack">
-      <span class="v1-small">Marrakech · 2026</span>
+    <div class="cover-center">
+      <h1 class="cover-title">havn<br>stays.</h1>
+      <p class="cover-pitch">Votre villa, votre riad, votre appartement —<br>opéré comme un <em>boutique-hôtel</em> de Marrakech.</p>
+      <p class="cover-subpitch">Anciens hôteliers · équipe en propre · sister company medini-homes Dubaï · sélection 2026 restreinte</p>
 
-      <h1 class="v1-title">Gestion locative <em>premium</em><br>pour villas et riads<br>à <em>Marrakech</em>.</h1>
+      <ul class="cover-bullets">
+        <li><span class="b-num">01</span><span class="b-text">Vous touchez le revenu net. Nous portons toute l'opération — accueil, ménage, maintenance, plateformes, autorisation locale.</span></li>
+        <li><span class="b-num">02</span><span class="b-text">Reporting mensuel signé le 5. Accès portail 24/7 — la même vue que la mienne.</span></li>
+        <li><span class="b-num">03</span><span class="b-text">Commission fixe au mandat. Aucune marge cachée. Sortie 3 mois, aucune indemnité.</span></li>
+      </ul>
 
-      <p class="v1-sub">Nous opérons votre bien comme un actif hôtelier : pricing, plateformes, voyageurs, ménage, maintenance, conformité et reporting propriétaire.</p>
-
-      <div class="v1-cta-row">
-        <a href="#projection" class="v1-cta">
-          <span>Recevoir une estimation gratuite</span>
-          <span aria-hidden="true">→</span>
-        </a>
-        <a href="https://wa.me/971586247584?text=Bonjour%20Hillal%2C%20je%20suis%20propri%C3%A9taire%20%C3%A0%20Marrakech%20et%20j%27aimerais%20discuter%20de%20la%20gestion%20de%20mon%20bien." class="v1-cta-wa" target="_blank" rel="noopener">
-          <svg class="cta-wa-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/></svg>
-          <span>Parler à Hillal sur WhatsApp</span>
+      <div class="cover-cta-row">
+        <a href="#projection" class="cover-cta">Voir ce que votre bien peut rapporter →</a>
+        <a href="https://wa.me/971586247584?text=Bonjour%20havn%20stays%2C%20je%20suis%20propri%C3%A9taire%20%C3%A0%20Marrakech%20et%20j%27aimerais%20discuter%20de%20la%20gestion%20de%20mon%20bien." class="cover-cta--whatsapp" target="_blank" rel="noopener">
+          <svg class="cta-wa-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/></svg>
+          <span class="cta-label">WhatsApp Hillal</span>
+          <span class="cta-num">+971 58 624 7584</span>
         </a>
       </div>
     </div>
 
     <div class="cover-bottom">
-      <div class="left">Hillal Medini, <em>fondateur</em></div>
+      <div class="left">Hillal Medini, fondateur</div>
       <div class="scroll-hint">
         <span>Tourner la page</span>
         <span class="arrow"></span>
       </div>
-      <div class="right">p. 01 / 11</div>
+      <div class="right">p. 01 / 12</div>
     </div>
   </div>
 </section>
@@ -2614,7 +2207,7 @@ a.cover-cta--whatsapp {
   <div class="page-inner">
     <div class="page-head">
       <span class="section-label">I — La projection</span>
-      <span class="folio">p. 02 / 11</span>
+      <span class="folio">p. 02 / 12</span>
     </div>
 
     <div class="projection-grid">
@@ -2624,7 +2217,7 @@ a.cover-cta--whatsapp {
           Renseignez quelques informations sur votre bien. Nous calculons une projection mensuelle de revenus, basée sur les performances réelles observées sur des biens comparables aux nôtres.
         </p>
         <p class="projection-note">
-          Estimation indicative, sans engagement. Une visite sur place sera nécessaire pour affiner. Réponse personnelle de Hillal sous 24h ouvrées.
+          Estimation indicative, sans engagement. Une visite sur place sera nécessaire pour affiner. Réponse personnelle de Hillal sous 48h.
         </p>
       </aside>
 
@@ -2648,7 +2241,7 @@ a.cover-cta--whatsapp {
   <div class="page-inner">
     <div class="page-head">
       <span class="section-label">II — L'onboarding</span>
-      <span class="folio">p. 03 / 11</span>
+      <span class="folio">p. 03 / 12</span>
     </div>
 
     <div class="onboarding-head">
@@ -2743,7 +2336,7 @@ a.cover-cta--whatsapp {
   <div class="page-inner">
     <div class="page-head">
       <span class="section-label">III — Le témoin</span>
-      <span class="folio">p. 04 / 11</span>
+      <span class="folio">p. 04 / 12</span>
     </div>
 
     <div class="witness-grid">
@@ -2784,7 +2377,7 @@ a.cover-cta--whatsapp {
   <div class="page-inner">
     <div class="page-head">
       <span class="section-label">IV — Qui nous sommes</span>
-      <span class="folio">p. 05 / 11</span>
+      <span class="folio">p. 05 / 12</span>
     </div>
 
     <div class="operator-grid">
@@ -2796,21 +2389,21 @@ a.cover-cta--whatsapp {
 
       <div class="operator-text">
         <h2 class="operator-name">Hillal Medini.</h2>
-        <p class="operator-role">Fondateur — quinze ans en direction d'hôtel</p>
+        <p class="operator-role">Fondateur — dix ans en direction d'hôtel cinq étoiles à Dubaï</p>
 
-        <p class="operator-pitch">Quinze ans en direction d'hôtel avant de fonder Medini Homes à Dubaï — 108 biens en gestion aujourd'hui. havn stays, c'est la même méthode, posée à Marrakech : check-in à l'heure, ménage briefé pièce par pièce, maintenance traitée sous 24&nbsp;h. L'équipe est salariée à Marrakech, jamais sous-traitée à une agence locale.</p>
+        <p class="operator-pitch">Dix ans en direction d'hôtel cinq étoiles à Dubaï avant de fonder Medini Homes — 108 biens en gestion aujourd'hui. havn stays, c'est la même méthode, posée à Marrakech : check-in à l'heure, ménage briefé pièce par pièce, maintenance traitée sous 24&nbsp;h. L'équipe est salariée à Marrakech, jamais sous-traitée à une agence locale.</p>
 
         <ul class="method-list">
-          <li><span class="m-num">01</span><span class="m-text">Équipe salariée à Marrakech, briefée aux standards hôteliers.</span></li>
+          <li><span class="m-num">01</span><span class="m-text">Équipe salariée à Marrakech, formée à l'hôtellerie cinq étoiles.</span></li>
           <li><span class="m-num">02</span><span class="m-text">Rapport mensuel détaillé livré le 5 de chaque mois.</span></li>
-          <li><span class="m-num">03</span><span class="m-text">Commission fixe 20%, tout inclus, inscrite au mandat.</span></li>
-          <li><span class="m-num">04</span><span class="m-text">Sortie sans pénalité, préavis 60 jours.</span></li>
+          <li><span class="m-num">03</span><span class="m-text">Commission fixe, inscrite au mandat, jamais cachée.</span></li>
+          <li><span class="m-num">04</span><span class="m-text">Sortie sans pénalité, préavis 3 mois.</span></li>
         </ul>
 
         <div class="operator-cv">
           <div>
             <div class="label">Parcours</div>
-            <div class="value">Direction d'hôtel, 15 ans</div>
+            <div class="value">Direction d'hôtel 5★ Dubaï, 10 ans</div>
           </div>
           <div>
             <div class="label">Marque sœur</div>
@@ -2833,13 +2426,61 @@ a.cover-cta--whatsapp {
 </section>
 
 <!-- ========================================================
-     PAGE 06 — COURT TERME vs LONG TERME
+     PAGE 06 — LE PORTEFEUILLE (rareté)
+     ======================================================== -->
+<section class="portfolio-havn" id="portefeuille">
+  <div class="portfolio-image"></div>
+
+  <div class="portfolio-content">
+    <div class="portfolio-head">
+      <span>V — Le portefeuille</span>
+      <span>p. 06 / 12</span>
+    </div>
+
+    <h2 class="portfolio-title">Une sélection,<br><em>jamais un catalogue.</em></h2>
+
+    <p class="portfolio-deck">
+      havn stays démarre Marrakech avec moins de dix mandats en saison 2026. Quatre typologies de biens — chacune avec son équipe sur place. Hillal visite votre bien lui-même avant signature. Sans exception. Si la qualité n'est pas hôtelière, nous refusons.
+    </p>
+
+    <ul class="portfolio-index">
+      <li>
+        <span class="letter">M</span>
+        <span class="name">Médina · riads — table d'hôte, salle haute, plunge pool</span>
+        <span class="count">sélection</span>
+      </li>
+      <li>
+        <span class="letter">G</span>
+        <span class="name">Gueliz · Hivernage — appartements design, balcons sud</span>
+        <span class="count">cœur d'activité</span>
+      </li>
+      <li>
+        <span class="letter">P</span>
+        <span class="name">Palmeraie · Amelkis — villas avec piscine privée</span>
+        <span class="count">sélection</span>
+      </li>
+      <li>
+        <span class="letter">T</span>
+        <span class="name">Taghazout Bay · Agadir — maisons et villas surf</span>
+        <span class="count">extension</span>
+      </li>
+    </ul>
+
+    <div class="portfolio-foot">
+      <span>havn stays</span>
+      <span>Le portefeuille — v</span>
+    </div>
+  </div>
+</section>
+
+<!-- ========================================================
+     PAGE 07 — COURT TERME vs LONG TERME
      ======================================================== -->
 <section class="page compare" id="comparatif">
   <div class="page-inner">
     <div class="page-head">
       <span class="section-label">VI — Court terme vs long terme</span>
-      <span class="folio">p. 06 / 11</span>
+      <span class="folio">p. 07 / 12</span>
     </div>
 
     <div class="compare-head">
@@ -2878,7 +2519,7 @@ a.cover-cta--whatsapp {
 
       <div class="label">Sortie</div>
       <div class="val-alt">Préavis 3 mois côté locataire, contestable</div>
-      <div class="val-pro">Sortie mandat 60 jours, sans pénalité, vous reprenez la main</div>
+      <div class="val-pro">Sortie mandat 3 mois, sans pénalité, vous reprenez la main</div>
     </div>
 
     <p class="compare-footnote">Toutes les lignes ci-dessus sont opposables — inscrites au mandat havn stays.</p>
@@ -2898,7 +2539,7 @@ a.cover-cta--whatsapp {
   <div class="page-inner">
     <div class="page-head">
       <span class="section-label">VII — Ce qui est inclus</span>
-      <span class="folio">p. 07 / 11</span>
+      <span class="folio">p. 08 / 12</span>
     </div>
 
     <div class="services-head">
@@ -2969,7 +2610,7 @@ a.cover-cta--whatsapp {
   <div class="page-inner">
     <div class="page-head">
       <span class="section-label">IV — Les engagements</span>
-      <span class="folio">p. 08 / 11</span>
+      <span class="folio">p. 09 / 12</span>
     </div>
 
     <div class="charter-grid">
@@ -3007,7 +2648,7 @@ a.cover-cta--whatsapp {
           <span class="ref">Cl. 7.2</span>
           <div>
             <h3>Sortie sans pénalité.</h3>
-            <p>Préavis 60 jours, aucune indemnité. Historique, codes, contacts — vous repartez avec tout.</p>
+            <p>Préavis 3 mois, aucune indemnité. Historique, codes, contacts — vous repartez avec tout.</p>
           </div>
         </div>
       </div>
@@ -3028,7 +2669,7 @@ a.cover-cta--whatsapp {
   <div class="page-inner">
     <div class="page-head">
       <span class="section-label">IX — Les questions</span>
-      <span class="folio">p. 09 / 11</span>
+      <span class="folio">p. 10 / 12</span>
     </div>
 
     <div class="faq-head">
@@ -3041,7 +2682,7 @@ a.cover-cta--whatsapp {
         <summary><span>Combien rapporte vraiment un riad ou une villa à Marrakech ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
           <p>Aucune réponse honnête sans visite sur place. Un riad médina avec terrasse vue Atlas ne rapporte pas la même chose qu'un riad enclavé en ruelle. Donnez-moi l'adresse, la typologie, le nombre de chambres, l'état actuel — je vous renvoie une projection 12 mois calibrée sur les biens comparables de la zone.</p>
-          <p>Hillal vous répond personnellement sous 24 h ouvrées, souvent le jour même. Audit gratuit, aucun engagement.</p>
+          <p>Hillal vous répond personnellement sous 48 h, souvent le jour même. Audit gratuit, aucun engagement.</p>
         </div>
       </details>
 
@@ -3071,7 +2712,7 @@ a.cover-cta--whatsapp {
       <details>
         <summary><span>Si je veux récupérer mon bien, comment ça se passe ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
-          <p>Préavis 60 jours. Aucune indemnité, aucune pénalité de sortie. Vous repartez avec l'historique guest, les codes, les contacts plateformes, les photos pro. Tout ce qui a été produit pendant le mandat est <em>à vous</em>.</p>
+          <p>Préavis 3 mois. Aucune indemnité, aucune pénalité de sortie. Vous repartez avec l'historique guest, les codes, les contacts plateformes, les photos pro. Tout ce qui a été produit pendant le mandat est <em>à vous</em>.</p>
           <p>Inscrit noir sur blanc au mandat — clause 7.2.</p>
         </div>
       </details>
@@ -3103,36 +2744,15 @@ a.cover-cta--whatsapp {
       <details>
         <summary><span>Pourquoi vous plutôt qu'une agence locale standard ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
-          <p>Deux choses concrètes. Un : équipe salariée à Marrakech, jamais sous-traitée à une boîte de ménage qui change de propriétaire chaque trimestre. Vous savez qui entre dans votre bien. Deux : ex-hôteliers — quinze ans en direction d'hôtel, et la marque sœur Medini Homes opère 108 biens à Dubaï depuis 2021. Les standards de check-in, de turn-over, de maintenance préventive ne sont pas une promesse marketing, c'est un mode opératoire éprouvé.</p>
+          <p>Deux choses concrètes. Un : équipe salariée à Marrakech, jamais sous-traitée à une boîte de ménage qui change de propriétaire chaque trimestre. Vous savez qui entre dans votre bien. Deux : ex-hôteliers — dix ans en direction d'hôtel 5★ Dubaï, et la marque sœur Medini Homes opère 108 biens à Dubaï depuis 2021. Les standards de check-in, de turn-over, de maintenance préventive ne sont pas une promesse marketing, c'est un mode opératoire éprouvé.</p>
           <p>Le test : demandez-nous une visite des biens en gestion. On vous montre.</p>
         </div>
       </details>
 
       <details>
-        <summary><span>Travaillez-vous avec des biens hors Marrakech ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
+        <summary><span>Vous opérez aussi à Essaouira, Agadir, Taghazout ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
-          <p>Non. Havn Stays est <em>Marrakech uniquement</em>. Notre conviction : on opère mieux ce qu'on connaît parfaitement. Équipe locale, voyageurs, prestataires, autorisations — tout est calibré pour la ville et ses quartiers (Palmeraie, Route de l'Ourika, Targa, Médina, Amelkis, Route de Fès, Amizmiz, Route du Barrage). Pour d'autres villes, on préfère vous le dire honnêtement plutôt que d'opérer à moitié.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary><span>Est-ce que je peux bloquer des dates pour mon usage personnel ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
-        <div class="faq-answer">
-          <p>Oui, sans frais. Vous bloquez vos dates dans le portail propriétaire (ou par WhatsApp) — le bien est sorti du planning de réservation, on prépare l'arrivée comme pour un guest. Vous restez chez vous, c'est votre bien.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary><span>Comment se passe la sortie du contrat ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
-        <div class="faq-answer">
-          <p>Préavis de 60 jours, pas de pénalité de sortie. Nous honorons les réservations déjà encaissées et vous transférons le bien propre, l'inventaire à jour, les comptes clos. Notre logique : si vous voulez partir, c'est qu'on n'a pas tenu nos engagements — on préfère perdre un client correctement que retenir mal.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary><span>Est-ce que tous les biens sont adaptés ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
-        <div class="faq-answer">
-          <p>Non. Tous les biens ne sont pas adaptés à la courte durée premium. Notre rôle est aussi de vous dire la vérité : un bien mal placé, sans piscine sur un segment qui l'exige, ou en copropriété hostile, ne rentabilisera pas. Nous préférons gérer moins de biens, mais les gérer correctement.</p>
+          <p>Taghazout Bay et Agadir oui — c'est notre <em>extension</em>, équipe sur place. Essaouira au cas par cas, pour des projets à fort potentiel. Marrakech reste le cœur d'activité havn stays. Écrivez-moi avec votre adresse, je vous dis honnêtement si on peut bien opérer ou non.</p>
         </div>
       </details>
     </div>
@@ -3152,7 +2772,7 @@ a.cover-cta--whatsapp {
   <div class="page-inner">
     <div class="page-head">
       <span class="section-label">V — Le carnet</span>
-      <span class="folio">p. 10 / 11</span>
+      <span class="folio">p. 11 / 12</span>
     </div>
 
     <div class="carnet-head">
@@ -3177,10 +2797,10 @@ a.cover-cta--whatsapp {
         <span class="arrow">→</span>
       </a>
 
-      <a href="/blog/rentabilite-villa-palmeraie-marrakech" class="carnet-item">
+      <a href="/blog/investir-villa-taghazout-bay" class="carnet-item">
         <div>
-          <div class="meta">Investir · Palmeraie</div>
-          <h3>Rentabilité d'une villa Palmeraie en courte durée.</h3>
+          <div class="meta">Investir · Taghazout</div>
+          <h3>Investir dans une villa à Taghazout Bay.</h3>
         </div>
         <span class="arrow">→</span>
       </a>
@@ -3243,11 +2863,11 @@ a.cover-cta--whatsapp {
      ======================================================== -->
 <section class="invitation" id="invitation">
   <div class="page-inner">
-    <div class="invitation-label">X — L'invitation · p. 11 / 11</div>
+    <div class="invitation-label">X — L'invitation · p. 12 / 12</div>
     <h2>Parlons.</h2>
     <p class="deck">
       Vous êtes propriétaire au Maroc. Écrivez-moi.
-      Je réponds personnellement, sous 24 h ouvréeseures.
+      Je réponds personnellement, sous 48 heures.
     </p>
     <a href="mailto:hillal@medini-homes.com" class="invitation-email">hillal@medini-homes.com</a>
 
@@ -3264,7 +2884,9 @@ a.cover-cta--whatsapp {
     <div class="invitation-meta">
       <span>Marrakech</span>
       <span>·</span>
-      <span>Villas · Riads · Biens premium</span>
+      <span>Agadir</span>
+      <span>·</span>
+      <span>Taghazout Bay</span>
     </div>
 
     <div class="invitation-sister">
@@ -3281,8 +2903,8 @@ a.cover-cta--whatsapp {
   <div class="page-inner colophon-grid">
     <div class="ours-brand">
       <span class="mark">havn stays</span>
-      <span class="ours-tagline">Gestion locative premium pour villas, riads et biens premium à Marrakech.</span>
-      <span class="ours-locations">Marrakech · approche hôtelière</span>
+      <span class="ours-tagline">Property management hôtelier pour villas, riads et appartements au Maroc.</span>
+      <span class="ours-locations">Marrakech · Agadir · Taghazout Bay</span>
     </div>
     <div class="ours-col">
       <h4>Services</h4>
@@ -3323,6 +2945,17 @@ a.cover-cta--whatsapp {
   </div>
 </footer>
 
+
+<!-- Sticky CTA mobile — bottom bar (≤900px) -->
+<div class="sticky-cta" role="region" aria-label="Actions principales">
+  <div class="scta-grid">
+    <a href="#projection">Estimer mon bien</a>
+    <a href="https://wa.me/971586247584?text=Bonjour%20havn%20stays%2C%20je%20suis%20propri%C3%A9taire%20%C3%A0%20Marrakech%20et%20j%27aimerais%20discuter%20de%20la%20gestion%20de%20mon%20bien." class="scta-wa" target="_blank" rel="noopener" aria-label="WhatsApp Hillal">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</div>
 
 <!-- WhatsApp float (desktop ≥901px) -->
 <a href="https://wa.me/971586247584?text=Bonjour%20havn%20stays%2C%20je%20suis%20propri%C3%A9taire%20%C3%A0%20Marrakech%20et%20j%27aimerais%20discuter%20de%20la%20gestion%20de%20mon%20bien." class="wa-float" target="_blank" rel="noopener" aria-label="Contacter havn stays sur WhatsApp" title="WhatsApp Hillal">

@@ -37,7 +37,7 @@
     amizmiz: "Route d'Amizmiz", fes: "Route de Fès",
     barrage: "Route du Barrage", autre: "Marrakech (autre)"
   };
-  const ZONES_BYPASS = ["taghazout", "agadir"];
+  const ZONES_BYPASS = [];
 
   const AMENITIES = [
     { key: "private_pool", label: "Piscine privée",                  coef: 0.15, def: true  },
@@ -98,9 +98,6 @@
           <option value="fes">Route de Fès</option>
           <option value="barrage">Route du Barrage</option>
           <option value="autre">Autre (Marrakech)</option>
-          <option disabled>── Souss-Massa ──</option>
-          <option value="taghazout">Taghazout Bay</option>
-          <option value="agadir">Agadir</option>
         </select>
       </label>
 
@@ -125,8 +122,8 @@
       </label>
 
       <div class="ew-bypass-box" data-bypass-box hidden>
-        <b>Estimation Souss-Massa sur demande.</b><br>
-        Notre calculateur instantané couvre actuellement Marrakech. Pour Taghazout Bay et Agadir, laissez-nous vos coordonnées — un expert vous envoie une estimation personnalisée sous 24h.
+        <b>Hors Marrakech&nbsp;: estimation sur demande.</b><br>
+        Havn Stays opère exclusivement à Marrakech. Si votre bien se trouve dans une autre ville, contactez-nous : nous vous orientons honnêtement.
       </div>
 
       <div class="ew-nav">

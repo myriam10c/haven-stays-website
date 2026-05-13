@@ -2396,29 +2396,198 @@ a.cover-cta--whatsapp {
 }
 
 /* ============================================================
-   COVER V1 — Rareté (mai 2026)
+   COVER V1 — Hero Architectural Digest (mai 2026)
    ============================================================ */
 .cover.cover--v1 {
-  background: #f0e4d2;
-  color: var(--ink);
+  background: #F3EBDD;
+  color: #171513;
+  min-height: 90vh;
+  position: relative;
+  overflow: hidden;
 }
 .cover--v1 .cover-video,
 .cover--v1 .cover-overlay { display: none !important; }
 .cover--v1::after { display: none; }
+
+/* Background image — pleine largeur, ancrée à droite */
+.cover--v1 .hero-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    url('/brand/hero-marrakech.jpg'),
+    url('https://images.unsplash.com/photo-1674160797233-4807abd77a32?auto=format&fit=crop&w=2200&q=85');
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+/* Overlay dégradé : beige opaque à gauche, transparent à droite */
+.cover--v1 .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(243, 235, 221, 0.96) 0%,
+    rgba(243, 235, 221, 0.88) 28%,
+    rgba(243, 235, 221, 0.55) 48%,
+    rgba(243, 235, 221, 0.15) 70%,
+    rgba(243, 235, 221, 0.00) 100%
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
 .cover--v1 .cover-content {
   position: relative;
   z-index: 2;
-  padding: 2.5rem 5rem 2.5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 90vh;
+  padding: 8rem 5rem 4rem 5rem;
   max-width: none;
   margin: 0;
-  align-items: flex-start;
 }
-.cover--v1 .v1-stack { max-width: 880px; }
+.cover--v1 .v1-stack {
+  align-self: flex-start;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+/* Title — éditorial */
+.cover--v1 .v1-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(2.6rem, 5vw, 4.6rem);
+  line-height: 1.04;
+  letter-spacing: -0.015em;
+  color: #171513;
+  margin: 0;
+}
+.cover--v1 .v1-title em {
+  font-style: italic;
+  color: #B66A45;
+  font-weight: 500;
+}
+
+/* Sous-titre */
+.cover--v1 .v1-sub {
+  font-family: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: 1.02rem;
+  line-height: 1.6;
+  color: rgba(23, 21, 19, 0.78);
+  margin: 0;
+  max-width: 48ch;
+}
+
+/* CTAs */
+.cover--v1 .v1-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 1.6rem;
+  align-items: center;
+  margin-top: 0.6rem;
+}
+.cover--v1 a.v1-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 1rem 1.7rem;
+  background: #171513;
+  color: #F3EBDD;
+  text-decoration: none;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  border: 1px solid #171513;
+  border-radius: 999px;
+  transition: background .25s, border-color .25s;
+}
+.cover--v1 a.v1-cta:hover {
+  background: #B66A45;
+  border-color: #B66A45;
+}
+.cover--v1 a.v1-cta-wa {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.6rem 0;
+  color: #171513;
+  text-decoration: none;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.12em;
+  border-bottom: 1px solid #171513;
+}
+.cover--v1 a.v1-cta-wa .cta-wa-icon { color: #25D366; flex: 0 0 auto; }
+.cover--v1 a.v1-cta-wa:hover { color: #B66A45; border-bottom-color: #B66A45; }
+.cover--v1 a.v1-cta-wa:hover .cta-wa-icon { color: #B66A45; }
+
+/* Trust points */
+.cover--v1 .v1-trust {
+  list-style: none;
+  padding: 0;
+  margin: 1.2rem 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 2rem;
+  font-family: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  font-size: 0.82rem;
+  color: rgba(23, 21, 19, 0.7);
+}
+.cover--v1 .v1-trust li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.cover--v1 .v1-trust li::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  background: #B66A45;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .cover--v1 .hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(243, 235, 221, 0.98) 0%,
+      rgba(243, 235, 221, 0.92) 35%,
+      rgba(243, 235, 221, 0.7) 60%,
+      rgba(243, 235, 221, 0.25) 90%,
+      rgba(243, 235, 221, 0.0) 100%
+    );
+  }
+}
 @media (max-width: 900px) {
-  .cover--v1 .cover-content { padding: 2.5rem 3rem; }
+  .cover--v1 .cover-content { padding: 7rem 3rem 3rem 3rem; }
+  .cover--v1 .v1-title { font-size: clamp(2.2rem, 7vw, 3.4rem); }
 }
 @media (max-width: 640px) {
-  .cover--v1 .cover-content { padding: 2rem 1.5rem; }
+  .cover.cover--v1 { min-height: 85vh; }
+  .cover--v1 .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      rgba(243, 235, 221, 0.96) 0%,
+      rgba(243, 235, 221, 0.92) 60%,
+      rgba(243, 235, 221, 0.85) 100%
+    );
+  }
+  .cover--v1 .cover-content { padding: 6rem 1.5rem 2.5rem 1.5rem; min-height: 85vh; }
+  .cover--v1 .v1-title { font-size: clamp(2rem, 8.5vw, 2.8rem); }
+  .cover--v1 .v1-cta-row { flex-direction: column; align-items: stretch; gap: 0.8rem; width: 100%; }
+  .cover--v1 a.v1-cta { width: 100%; justify-content: center; padding: 0.95rem 1rem; }
+  .cover--v1 a.v1-cta-wa { width: 100%; justify-content: center; padding: 0.8rem 0; }
+  .cover--v1 .v1-trust { flex-direction: column; gap: 0.5rem; margin-top: 1rem; }
 }
 .cover--v1 .cover-top {
   color: rgba(28,26,23,0.6);
@@ -2688,30 +2857,22 @@ a.cover-cta--whatsapp {
      PAGE 01 — COUVERTURE
      ======================================================== -->
 <section class="cover cover--v1" id="couverture">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
   <div class="cover-content">
-    <div class="cover-top">
-      <div class="left">
-        <span class="loc">◦ havn stays · marrakech</span>
-      </div>
-      <span class="scope">villas · riads · biens premium</span>
-      <div class="right">
-        <a href="#projection" class="cover-top-cta">Estimer mon bien →</a>
-      </div>
-    </div>
-
     <div class="v1-stack">
       <span class="v1-loc">◦&nbsp;&nbsp;MARRAKECH</span>
       <span class="v1-breadcrumb">Gestion locative à Marrakech&nbsp;·&nbsp;100% tout inclus</span>
 
-      <h1 class="v1-title">Villas &amp; riads<br>à <em>Marrakech</em>.<br>Opérés comme un <em>hôtel</em>.</h1>
+      <h1 class="v1-title">Villas &amp; riads<br>à <em>Marrakech</em>.<br>Opérés comme un <em>hôtel privé</em>.</h1>
 
-      <p class="v1-sub">Pricing, plateformes, voyageurs, ménage, maintenance, conformité, reporting. Une commission, zéro frais cachés.</p>
+      <p class="v1-sub">Pricing, plateformes, voyageurs, ménage, maintenance, conformité, reporting. Une gestion premium, transparente et 100% clé-en-main.</p>
 
       <p class="v1-attr">— <strong>Hillal Medini</strong>, fondateur · 15 ans en direction d'hôtel</p>
 
       <div class="v1-cta-row">
         <a href="#projection" class="v1-cta">
-          <span>Recevoir une estimation gratuite</span>
+          <span>Estimer les revenus de ma villa</span>
           <span aria-hidden="true">→</span>
         </a>
         <a href="https://wa.me/971586247584?text=Bonjour%20Hillal%2C%20je%20suis%20propri%C3%A9taire%20%C3%A0%20Marrakech%20et%20j%27aimerais%20discuter%20de%20la%20gestion%20de%20mon%20bien." class="v1-cta-wa" target="_blank" rel="noopener">
@@ -2719,6 +2880,12 @@ a.cover-cta--whatsapp {
           <span>Parler à Hillal sur WhatsApp</span>
         </a>
       </div>
+
+      <ul class="v1-trust">
+        <li>Gestion 100% clé-en-main</li>
+        <li>Optimisation des revenus</li>
+        <li>Support voyageurs premium</li>
+      </ul>
     </div>
 
     <div class="cover-bottom">

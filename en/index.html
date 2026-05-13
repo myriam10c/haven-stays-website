@@ -250,10 +250,18 @@ em, i { font-style: normal; color: var(--terra); }
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  align-items: flex-start;
   min-height: 100vh;
-  padding: 16vh 3rem 2.5rem;
+  padding: 16vh 5rem 2.5rem 5rem;
 }
 .cover-top { display: none; }
+.cover-center { max-width: 880px; align-items: flex-start; }
+@media (max-width: 900px) {
+  .cover-content { padding: 16vh 3rem 2.5rem 3rem; }
+}
+@media (max-width: 640px) {
+  .cover-content { padding: 14vh 1.5rem 2rem 1.5rem; }
+}
 
 .cover-top {
   display: flex;

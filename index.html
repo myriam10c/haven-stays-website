@@ -1960,31 +1960,99 @@ a.cover-cta--whatsapp:hover .cta-num { color: rgba(10,26,14,0.75); }
 }
 
 /* --- Services inclus --- */
-.services { background: var(--paper); }
-.services-head { max-width: 800px; margin: 0 auto 3rem; text-align: center; }
-.services-head h2 { font-size: clamp(2.4rem, 4.6vw, 3.8rem); line-height: 1.02; margin-bottom: 1rem; }
-.services-head .deck { font-family: var(--serif); font-size: 1.05rem; color: var(--mute); max-width: 56ch; margin: 0 auto; }
+.services { background: #F3EBDD; padding: 7rem 0 6rem; }
+.services-head {
+  max-width: 760px;
+  margin: 0 auto 4rem;
+  text-align: center;
+  padding: 0 2rem;
+}
+.services-head h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(2.2rem, 4.4vw, 3.4rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.2rem;
+  color: #171513;
+}
+.services-head .deck {
+  font-family: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: rgba(23, 21, 19, 0.65);
+  font-weight: 400;
+  max-width: 56ch;
+  margin: 0 auto;
+}
 .services-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  border-top: 1px solid var(--ink);
-  border-left: 1px solid var(--ink);
+  gap: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  border-top: 1px solid rgba(23, 21, 19, 0.12);
+  border-left: 1px solid rgba(23, 21, 19, 0.12);
 }
 .services-item {
-  padding: 1.8rem 1.6rem;
-  border-right: 1px solid var(--rule);
-  border-bottom: 1px solid var(--rule);
-  background: var(--cream);
+  padding: 2.6rem 2rem;
+  background: transparent;
+  border-right: 1px solid rgba(23, 21, 19, 0.12);
+  border-bottom: 1px solid rgba(23, 21, 19, 0.12);
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  min-height: 200px;
+  gap: 1rem;
+  transition: background .35s ease, transform .35s ease;
 }
-.services-item .s-num { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.22em; color: var(--terra); }
-.services-item h3 { font-family: var(--display); font-size: 1.5rem; line-height: 1.1; margin: 0.1rem 0 0.3rem; }
-.services-item p { font-family: var(--serif); font-size: 0.95rem; color: var(--mute); line-height: 1.5; }
-@media (max-width: 900px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 600px) { .services-grid { grid-template-columns: 1fr; } .services-item { min-height: 0; padding: 1.4rem 1.3rem; } }
+.services-item:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+.services-item .s-icon {
+  width: 32px;
+  height: 32px;
+  color: #B66A45;
+  flex: 0 0 auto;
+}
+.services-item .s-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.services-item h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin: 0;
+  color: #171513;
+  letter-spacing: -0.005em;
+}
+.services-item p {
+  font-family: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: rgba(23, 21, 19, 0.65);
+  margin: 0;
+  font-weight: 400;
+}
+@media (max-width: 900px) {
+  .services { padding: 5rem 0 4rem; }
+  .services-head { margin-bottom: 3rem; }
+  .services-grid { grid-template-columns: repeat(2, 1fr); }
+  .services-item { padding: 2.2rem 1.6rem; }
+}
+@media (max-width: 600px) {
+  .services-grid { grid-template-columns: 1fr; }
+  .services-item { padding: 1.8rem 1.4rem; gap: 0.8rem; }
+  .services-item .s-icon { width: 28px; height: 28px; }
+  .services-item h3 { font-size: 1.3rem; }
+}
 
 /* --- FAQ --- */
 .faq { background: var(--cream); }
@@ -3020,72 +3088,61 @@ a.cover-cta--whatsapp {
 </section>
 
 <!-- ========================================================
-     PAGE — SERVICES INCLUS (Tout inclus dans 20%)
+     SERVICES — Une gestion complète, sans charge mentale
      ======================================================== -->
-<section class="page services" id="services">
-  <div class="page-inner">
-    <div class="page-head">
-      <span class="section-label">VII — Ce qui est inclus</span>
-      <span class="folio">p. 07 / 11</span>
+<section class="services" id="services">
+  <div class="services-head">
+    <h2>Une gestion complète,<br>sans <em>charge mentale.</em></h2>
+    <p class="deck">De la mise en ligne au suivi propriétaire, Havn Stays s'occupe de chaque détail.</p>
+  </div>
+
+  <div class="services-grid">
+    <div class="services-item">
+      <span class="s-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+      </span>
+      <h3>Diffusion multi-plateformes</h3>
+      <p>Airbnb, Booking, VRBO et réservations directes.</p>
     </div>
 
-    <div class="services-head">
-      <h2>Tout inclus<br><em>dans 20&nbsp;%.</em></h2>
-      <p class="deck">Aucune option, aucune surfacturation. Une ligne au mandat.</p>
+    <div class="services-item">
+      <span class="s-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+      </span>
+      <h3>Tarifs optimisés</h3>
+      <p>Prix ajustés selon la saison, la demande et les événements.</p>
     </div>
 
-    <div class="services-grid">
-      <div class="services-item">
-        <span class="s-num">01</span>
-        <h3>Setup multi-channel</h3>
-        <p>Airbnb · Booking · Hotels.com · VRBO · directs. Annonces écrites, shootées, optimisées pour conversion.</p>
-      </div>
-      <div class="services-item">
-        <span class="s-num">02</span>
-        <h3>Revenue management</h3>
-        <p>Pricing recalibré chaque semaine. Modèle calibré sur Marrakech — événements, marathon, Eid, hiver européen.</p>
-      </div>
-      <div class="services-item">
-        <span class="s-num">03</span>
-        <h3>Photographie pro</h3>
-        <p>Photographe professionnel · drone si éligible · ambiances lumière du jour, table d'hôte, terrasse au coucher.</p>
-      </div>
-      <div class="services-item">
-        <span class="s-num">04</span>
-        <h3>Conciergerie 24/7</h3>
-        <p>Accueil voyageur, multilingue FR · AR · EN. WhatsApp dédié guest, réponse moyenne sous 10 minutes.</p>
-      </div>
-      <div class="services-item">
-        <span class="s-num">05</span>
-        <h3>Ménage hôtelier</h3>
-        <p>Équipe salariée à Marrakech, briefée pièce par pièce. Linge changé à chaque rotation. Standards 5★ contrôlés en photos.</p>
-      </div>
-      <div class="services-item">
-        <span class="s-num">06</span>
-        <h3>Maintenance préventive</h3>
-        <p>Inspection après chaque check-out. Plombier, électricien, jardinier, piscinier — partenaires Marrakech, sous 24 h.</p>
-      </div>
-      <div class="services-item">
-        <span class="s-num">07</span>
-        <h3>Autorisation locale</h3>
-        <p>Dossier d'autorisation de location touristique porté à notre nom d'opérateur, déclaration mensuelle des recettes.</p>
-      </div>
-      <div class="services-item">
-        <span class="s-num">08</span>
-        <h3>Reporting mensuel</h3>
-        <p>PDF détaillé livré le 5 — revenus, charges, occupation, ADR, avis voyageurs, photos état du bien.</p>
-      </div>
-      <div class="services-item">
-        <span class="s-num">09</span>
-        <h3>Portail propriétaire 24/7</h3>
-        <p>Web + app. Calendrier, réservations live, factures à la pièce, blocage de vos dates personnelles d'un clic.</p>
-      </div>
+    <div class="services-item">
+      <span class="s-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z"/><circle cx="12" cy="13" r="4"/></svg>
+      </span>
+      <h3>Photos professionnelles</h3>
+      <p>Un shooting premium pour mieux valoriser votre bien.</p>
     </div>
 
-    <div class="page-foot">
-      <span>havn stays</span>
-      <span><span class="ornament"></span> vii <span class="ornament"></span></span>
-      <span>Ce qui est inclus</span>
+    <div class="services-item">
+      <span class="s-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M14 9a2 2 0 0 1-2 2H6l-4 4V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"/><path d="M18 9h2a2 2 0 0 1 2 2v11l-4-4h-6a2 2 0 0 1-2-2v-1"/></svg>
+      </span>
+      <h3>Conciergerie voyageurs</h3>
+      <p>Assistance réactive avant, pendant et après le séjour.</p>
+    </div>
+
+    <div class="services-item">
+      <span class="s-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
+      </span>
+      <h3>Ménage &amp; maintenance</h3>
+      <p>Un bien propre, suivi et opérationnel à chaque rotation.</p>
+    </div>
+
+    <div class="services-item">
+      <span class="s-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+      </span>
+      <h3>Reporting propriétaire</h3>
+      <p>Revenus, réservations et performances en toute transparence.</p>
     </div>
   </div>
 </section>

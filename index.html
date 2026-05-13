@@ -2572,9 +2572,78 @@ a.cover-cta--whatsapp {
 .invitation-sister,
 .section-label { display: none !important; }
 .page-head { border-bottom: none; padding-bottom: 0; margin-bottom: 1.5rem; min-height: 0; }
+
+/* === HEADER STICKY HOMEPAGE === */
+.site-header {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.95rem 2rem;
+  background: rgba(244, 239, 227, 0);
+  border-bottom: 1px solid transparent;
+  transition: background .35s ease, border-color .35s ease, padding .25s ease;
+}
+.site-header.is-scrolled {
+  background: rgba(244, 239, 227, 0.94);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom-color: rgba(28, 26, 23, 0.08);
+  padding: 0.7rem 2rem;
+}
+.site-header .brand {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.45rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  text-decoration: none;
+  line-height: 1;
+}
+.site-header .brand em {
+  font-style: italic;
+  color: var(--terra);
+}
+.site-header .nav {
+  display: flex; align-items: center; gap: 1.6rem;
+}
+.site-header .nav a {
+  font-family: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
+  color: rgba(28, 26, 23, 0.7);
+  text-decoration: none;
+  transition: color .2s;
+}
+.site-header .nav a:hover { color: var(--ink); }
+.site-header .nav .cta {
+  padding: 0.55rem 1.05rem;
+  background: var(--ink);
+  color: var(--cream);
+  border-radius: 999px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  transition: background .25s;
+}
+.site-header .nav .cta:hover { background: var(--terra); color: var(--cream); }
+@media (max-width: 720px) {
+  .site-header { padding: 0.7rem 1.1rem; }
+  .site-header.is-scrolled { padding: 0.6rem 1.1rem; }
+  .site-header .brand { font-size: 1.2rem; }
+  .site-header .nav { gap: 0.7rem; }
+  .site-header .nav .link-secondary { display: none; }
+  .site-header .nav .cta { padding: 0.45rem 0.85rem; font-size: 0.72rem; }
+}
 </style>
 </head>
 <body>
+
+<header class="site-header" id="siteHeader">
+  <a href="/" class="brand">havn <em>stays</em></a>
+  <nav class="nav">
+    <a href="#projection" class="link-secondary">Estimation</a>
+    <a href="#faq" class="link-secondary">FAQ</a>
+    <a href="https://wa.me/971586247584?text=Bonjour%20Hillal%2C%20je%20suis%20propri%C3%A9taire%20%C3%A0%20Marrakech%20et%20j%27aimerais%20discuter%20de%20la%20gestion%20de%20mon%20bien." class="cta" target="_blank" rel="noopener">WhatsApp</a>
+  </nav>
+</header>
 
 <main>
 
@@ -3309,6 +3378,15 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 document.querySelector('.scroll-hint')?.addEventListener('click', () => {
   document.querySelector('#avant-propos').scrollIntoView({ behavior: 'smooth' });
 });
+
+// Header sticky : ajoute .is-scrolled après 40px de scroll
+(function() {
+  const hdr = document.getElementById('siteHeader');
+  if (!hdr) return;
+  const onScroll = () => hdr.classList.toggle('is-scrolled', window.scrollY > 40);
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
 </script>
 
 </body>

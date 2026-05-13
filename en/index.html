@@ -1547,6 +1547,45 @@ a.cover-cta:hover {
 .section-label { display: none !important; }
 .page-head { border-bottom: none; padding-bottom: 0; margin-bottom: 1.5rem; min-height: 0; }
 
+/* === HERO LABELS (Medini Homes style) === */
+.cover-loc {
+  display: block;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold, #C5A55A);
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+}
+.cover-breadcrumb {
+  display: inline-block;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(244, 239, 227, 0.55);
+  border-bottom: 1px solid rgba(244, 239, 227, 0.22);
+  padding-bottom: 0.7rem;
+  margin-bottom: 1.6rem;
+}
+.cover-attr {
+  font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: rgba(244, 239, 227, 0.62);
+  margin: 1rem 0 0;
+}
+.cover-attr strong {
+  color: var(--cream);
+  font-weight: 600;
+  font-style: italic;
+}
+@media (max-width: 640px) {
+  .cover-breadcrumb { font-size: 0.62rem; letter-spacing: 0.14em; }
+  .cover-attr { font-size: 0.88rem; }
+}
+
 /* === HEADER STICKY HOMEPAGE === */
 .site-header {
   position: fixed; top: 0; left: 0; right: 0; z-index: 200;
@@ -1640,14 +1679,11 @@ a.cover-cta:hover {
     </div>
 
     <div class="cover-center">
+      <span class="cover-loc">◦&nbsp;&nbsp;MARRAKECH</span>
+      <span class="cover-breadcrumb">Premium rental management&nbsp;·&nbsp;100% all-inclusive</span>
       <h1 class="cover-title">Villas &amp; riads<br>in <em>Marrakech</em>.<br>Operated like a <em>hotel</em>.</h1>
-      <p class="cover-pitch">Premium rental management for demanding owners. Pricing, platforms, guests, housekeeping, maintenance, compliance and reporting — all included in 20%.</p>
-
-      <ul class="cover-bullets">
-        <li><span class="b-num">01</span><span class="b-text">Former hoteliers, in-house Marrakech team — no subcontracting.</span></li>
-        <li><span class="b-num">02</span><span class="b-text">Monthly reporting, 24/7 owner portal, no exit penalty.</span></li>
-        <li><span class="b-num">03</span><span class="b-text">Marrakech only — we operate what we know perfectly.</span></li>
-      </ul>
+      <p class="cover-pitch">Pricing, platforms, guests, housekeeping, maintenance, compliance, reporting. One commission, zero hidden fees.</p>
+      <p class="cover-attr">— <strong>Hillal Medini</strong>, founder · 15 years in hotel direction</p>
 
       <div class="cover-cta-row" style="display:flex;gap:14px;flex-wrap:wrap;margin-top:14px">
         <a href="#projection" class="cover-cta">Get a free estimate →</a>

@@ -41,7 +41,7 @@
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,300..700&family=Inter+Tight:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/estimation-widget.css">
 <script src="/estimation-widget.js" defer></script>
 <style>
@@ -65,11 +65,23 @@
   --mute:        rgba(28, 26, 23, 0.62);
   --mute-deep:   rgba(28, 26, 23, 0.45);
 
-  --display:    'Italiana', 'Cormorant Garamond', Georgia, serif;
-  --serif:      'Source Serif 4', 'Source Serif Pro', Georgia, serif;
-  --sans:       'Inter Tight', 'Inter', system-ui, sans-serif;
+  --display:    'Cormorant Garamond', Georgia, serif;
+  --serif:      'DM Sans', system-ui, -apple-system, sans-serif;
+  --sans:       'DM Sans', system-ui, -apple-system, sans-serif;
   --mono:       'JetBrains Mono', ui-monospace, monospace;
 }
+
+/* === GLOBAL : zéro italique, emphase par couleur terracotta === */
+em, i, .v1-title em, h2 em, h3 em, .v1-attr, .compare-head .deck em,
+.services-head h2 em, .mock-services-head h2 em,
+.invitation h2 em, .carnet-head h2 em, .charter-aside h2 em,
+.projection-aside h2 em, .onboarding-head h2 em,
+.faq-head h2 em, .operator-name em, .compare-head h2 em,
+.cover-bottom .left em {
+  font-style: normal;
+  color: var(--terra);
+}
+body { font-feature-settings: "ss01", "kern"; -webkit-font-smoothing: antialiased; }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
@@ -1977,7 +1989,7 @@ a.cover-cta--whatsapp:hover .cta-num { color: rgba(10,26,14,0.75); }
   color: #171513;
 }
 .services-head .deck {
-  font-family: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   color: rgba(23, 21, 19, 0.65);
@@ -2034,7 +2046,7 @@ a.cover-cta--whatsapp:hover .cta-num { color: rgba(10,26,14,0.75); }
   letter-spacing: -0.005em;
 }
 .services-item p {
-  font-family: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
   font-size: 0.92rem;
   line-height: 1.55;
   color: rgba(23, 21, 19, 0.65);
@@ -2414,7 +2426,7 @@ a.cover-cta--whatsapp {
   max-width: 320px;
   line-height: 1.5;
   font-weight: 400;
-  font-style: italic;
+  font-style: normal;
 }
 .colophon .ours-brand .mark,
 .colophon .ours-brand .ours-tagline,
@@ -2534,14 +2546,14 @@ a.cover-cta--whatsapp {
   margin: 0;
 }
 .cover--v1 .v1-title em {
-  font-style: italic;
+  font-style: normal;
   color: #B66A45;
   font-weight: 500;
 }
 
 /* Sous-titre */
 .cover--v1 .v1-sub {
-  font-family: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
   font-weight: 400;
   font-size: 1.02rem;
   line-height: 1.6;
@@ -2602,7 +2614,7 @@ a.cover-cta--whatsapp {
   display: flex;
   flex-wrap: wrap;
   gap: 0.6rem 2rem;
-  font-family: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
   font-size: 0.82rem;
   color: rgba(23, 21, 19, 0.7);
 }
@@ -2714,12 +2726,12 @@ a.cover-cta--whatsapp {
   word-break: keep-all;
 }
 .cover--v1 .v1-title em {
-  font-style: italic;
+  font-style: normal;
   color: var(--terra);
   font-weight: 500;
 }
 .cover--v1 .v1-sub {
-  font-family: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
   font-weight: 400;
   font-size: 1.02rem;
   line-height: 1.6;
@@ -2770,7 +2782,7 @@ a.cover-cta--whatsapp {
 .cover--v1 a.v1-cta-wa:hover { color: var(--terra); border-bottom-color: var(--terra); }
 .cover--v1 a.v1-cta-wa:hover .cta-wa-icon { color: var(--terra); }
 .cover--v1 .cover-bottom { color: rgba(28,26,23,0.55); }
-.cover--v1 .cover-bottom .left em { color: var(--terra); font-style: italic; text-transform: none; letter-spacing: 0.04em; }
+.cover--v1 .cover-bottom .left em { color: var(--terra); font-style: normal; text-transform: none; letter-spacing: 0.04em; }
 .cover--v1 .cover-bottom .scroll-hint .arrow { background: rgba(28,26,23,0.45); }
 @media (max-width: 900px) {
   .cover--v1 .v1-stack { max-width: 100%; }
@@ -2829,8 +2841,8 @@ a.cover-cta--whatsapp {
   max-width: 100%;
 }
 .cover--v1 .v1-attr {
-  font-family: 'Source Serif 4', 'Source Serif Pro', Georgia, serif;
-  font-style: italic;
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
+  font-style: normal;
   font-size: 0.95rem;
   color: rgba(28, 26, 23, 0.62);
   margin: 0.4rem 0 0;
@@ -2838,7 +2850,7 @@ a.cover-cta--whatsapp {
 .cover--v1 .v1-attr strong {
   color: var(--ink);
   font-weight: 600;
-  font-style: italic;
+  font-style: normal;
 }
 @media (max-width: 640px) {
   .cover--v1 .v1-breadcrumb { font-size: 0.62rem; letter-spacing: 0.14em; }
@@ -2871,14 +2883,14 @@ a.cover-cta--whatsapp {
   line-height: 1;
 }
 .site-header .brand em {
-  font-style: italic;
+  font-style: normal;
   color: var(--terra);
 }
 .site-header .nav {
   display: flex; align-items: center; gap: 1.6rem;
 }
 .site-header .nav a {
-  font-family: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
   font-size: 0.78rem;
   letter-spacing: 0.04em;
   color: rgba(28, 26, 23, 0.7);

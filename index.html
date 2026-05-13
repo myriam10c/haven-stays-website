@@ -2554,6 +2554,24 @@ a.cover-cta--whatsapp {
   .cover--v1 .cover-top .scope { display: none; }
 }
 
+/* === DECLUTTER : retire le gimmick "dossier" partout ===
+   Folios, paginations, page-foots décoratifs, mentions superflues.
+   Garde uniquement le contenu utile au propriétaire. */
+.folio,
+.page-foot,
+.cover .cover-top .left .loc,
+.cover .cover-top .scope,
+.cover-bottom,
+.cover-top-cta,
+.scroll-hint,
+.v1-small,
+.invitation-label,
+.compare-footnote,
+.projection-note,
+.carnet-foot,
+.invitation-sister,
+.section-label { display: none !important; }
+.page-head { border-bottom: none; padding-bottom: 0; margin-bottom: 1.5rem; min-height: 0; }
 </style>
 </head>
 <body>
@@ -2622,10 +2640,7 @@ a.cover-cta--whatsapp {
       <aside class="projection-aside">
         <h2>Votre projection <em>de revenus.</em></h2>
         <p class="deck">
-          Renseignez quelques informations sur votre bien. Nous calculons une projection mensuelle de revenus, basée sur les performances réelles observées sur des biens comparables aux nôtres.
-        </p>
-        <p class="projection-note">
-          Estimation indicative, sans engagement. Une visite sur place sera nécessaire pour affiner. Réponse personnelle de Hillal sous 24h ouvrées.
+          Quelques infos sur votre bien, une projection chiffrée. Réponse personnelle sous 24 h.
         </p>
       </aside>
 
@@ -2654,7 +2669,6 @@ a.cover-cta--whatsapp {
 
     <div class="onboarding-head">
       <h2>Sept jours,<br>de la signature <em>au premier guest</em>.</h2>
-      <p>Un déroulé documenté. Vous savez ce qu'on fait, quand, et qu'attendre de vous.</p>
     </div>
 
     <div class="timeline">
@@ -2797,31 +2811,9 @@ a.cover-cta--whatsapp {
 
       <div class="operator-text">
         <h2 class="operator-name">Hillal Medini.</h2>
-        <p class="operator-role">Fondateur — quinze ans en direction d'hôtel</p>
+        <p class="operator-role">Fondateur</p>
 
-        <p class="operator-pitch">Quinze ans en direction d'hôtel avant de fonder Medini Homes à Dubaï — 108 biens en gestion aujourd'hui. havn stays, c'est la même méthode, posée à Marrakech : check-in à l'heure, ménage briefé pièce par pièce, maintenance traitée sous 24&nbsp;h. L'équipe est salariée à Marrakech, jamais sous-traitée à une agence locale.</p>
-
-        <ul class="method-list">
-          <li><span class="m-num">01</span><span class="m-text">Équipe salariée à Marrakech, briefée aux standards hôteliers.</span></li>
-          <li><span class="m-num">02</span><span class="m-text">Rapport mensuel détaillé livré le 5 de chaque mois.</span></li>
-          <li><span class="m-num">03</span><span class="m-text">Commission fixe 20%, tout inclus, inscrite au mandat.</span></li>
-          <li><span class="m-num">04</span><span class="m-text">Sortie sans pénalité, préavis 60 jours.</span></li>
-        </ul>
-
-        <div class="operator-cv">
-          <div>
-            <div class="label">Parcours</div>
-            <div class="value">Direction d'hôtel, 15 ans</div>
-          </div>
-          <div>
-            <div class="label">Marque sœur</div>
-            <div class="value">Medini Homes — 108 biens à Dubaï</div>
-          </div>
-          <div>
-            <div class="label">Marrakech depuis</div>
-            <div class="value">Saison 2026 — sélection restreinte</div>
-          </div>
-        </div>
+        <p class="operator-pitch">Quinze ans en direction d'hôtel. Medini Homes à Dubaï, 108 biens. Même méthode, posée à Marrakech — équipe salariée, jamais sous-traitée.</p>
       </div>
     </div>
 
@@ -2844,8 +2836,8 @@ a.cover-cta--whatsapp {
     </div>
 
     <div class="compare-head">
-      <h2>Pourquoi <em>la courte durée</em><br>sur ce bien, à Marrakech.</h2>
-      <p class="deck">La même villa, deux mondes économiques. Voici, ligne par ligne, ce qui change quand on opère votre bien en location de séjour plutôt qu'en bail meublé annuel.</p>
+      <h2>Pourquoi <em>la courte durée</em><br>sur ce bien.</h2>
+      <p class="deck">Même bien, deux économies.</p>
     </div>
 
     <div class="compare-table">
@@ -2903,8 +2895,8 @@ a.cover-cta--whatsapp {
     </div>
 
     <div class="services-head">
-      <h2>Tout. Compris<br><em>dans une commission.</em></h2>
-      <p class="deck">Pas d'option, pas de surfacturation surprise au mois suivant. Une ligne au mandat — tout ce qui suit, sans supplément.</p>
+      <h2>Tout inclus<br><em>dans 20&nbsp;%.</em></h2>
+      <p class="deck">Aucune option, aucune surfacturation. Une ligne au mandat.</p>
     </div>
 
     <div class="services-grid">
@@ -2976,7 +2968,7 @@ a.cover-cta--whatsapp {
     <div class="charter-grid">
       <aside class="charter-aside">
         <h2>Les <em>engagements</em>.</h2>
-        <p class="deck">Quatre clauses opposables. Inscrites au mandat. Vérifiables ligne par ligne dans votre reporting mensuel.</p>
+        <p class="deck">Quatre clauses inscrites au mandat.</p>
       </aside>
 
       <div class="charter-body">
@@ -3034,106 +3026,83 @@ a.cover-cta--whatsapp {
 
     <div class="faq-head">
       <h2>Ce que les propriétaires<br><em>nous demandent.</em></h2>
-      <p class="deck">Les questions concrètes — celles qui reviennent à chaque audit Marrakech. Réponses sans flou. Si la vôtre n'y est pas, écrivez-moi.</p>
     </div>
 
     <div class="faq-list">
       <details>
-        <summary><span>Combien rapporte vraiment un riad ou une villa à Marrakech ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
+        <summary><span>Combien rapporte un riad ou une villa à Marrakech&nbsp;?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
-          <p>Aucune réponse honnête sans visite sur place. Un riad médina avec terrasse vue Atlas ne rapporte pas la même chose qu'un riad enclavé en ruelle. Donnez-moi l'adresse, la typologie, le nombre de chambres, l'état actuel — je vous renvoie une projection 12 mois calibrée sur les biens comparables de la zone.</p>
-          <p>Hillal vous répond personnellement sous 24 h ouvrées, souvent le jour même. Audit gratuit, aucun engagement.</p>
+          <p>Pas de réponse honnête sans visite. Envoyez-moi l'adresse, la typologie et le nombre de chambres — projection 12 mois sous 24&nbsp;h.</p>
         </div>
       </details>
 
       <details>
-        <summary><span>Quelle commission prenez-vous, exactement ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
+        <summary><span>Quelle commission&nbsp;?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
-          <p>Une commission fixe, exprimée en pourcentage du revenu net guest — inscrite au mandat, en première page. Pas d'option, pas de frais d'entrée, aucune marge cachée sur ménage, maintenance, blanchisserie. Les factures sous-traitants vous sont reversées à l'identique.</p>
-          <p>Le pourcentage dépend de la typologie (riad vs villa vs appart) et de la zone. Vous le connaîtrez à l'audit, avant signature.</p>
+          <p>20&nbsp;% tout inclus. Pas d'option, pas de frais cachés. Factures sous-traitants reversées à l'identique.</p>
         </div>
       </details>
 
       <details>
-        <summary><span>Faut-il une autorisation pour louer en courte durée à Marrakech ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
+        <summary><span>Faut-il une autorisation pour louer&nbsp;?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
-          <p>Oui — autorisation de location touristique, dossier déposé en préfecture. Nous portons le dossier à <em>notre nom d'opérateur</em>, votre titre de propriété en garantie. Déclaration mensuelle des recettes prise en charge. Vous restez parfaitement en règle vis-à-vis des autorités marocaines.</p>
-          <p>Le détail réglementaire est dans notre article dédié — section <em>Le carnet</em>.</p>
+          <p>Oui. Nous portons le dossier en préfecture à notre nom d'opérateur et déclarons les recettes pour vous.</p>
         </div>
       </details>
 
       <details>
-        <summary><span>Combien de temps entre la signature et le premier guest ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
+        <summary><span>Délai signature → premier guest&nbsp;?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
-          <p>Sept jours en standard. Lundi signature, vendredi suivant premier check-in. Le déroulé jour par jour est publié — page <em>L'onboarding</em>. Si l'autorisation préfectorale prend une semaine de plus côté autorité, on vous le dit dès le J+2.</p>
+          <p>Sept jours. Lundi signature, vendredi suivant premier check-in.</p>
         </div>
       </details>
 
       <details>
-        <summary><span>Si je veux récupérer mon bien, comment ça se passe ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
+        <summary><span>Sortie du contrat&nbsp;?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
-          <p>Préavis 60 jours. Aucune indemnité, aucune pénalité de sortie. Vous repartez avec l'historique guest, les codes, les contacts plateformes, les photos pro. Tout ce qui a été produit pendant le mandat est <em>à vous</em>.</p>
-          <p>Inscrit noir sur blanc au mandat — clause 7.2.</p>
+          <p>Préavis 60 jours, aucune pénalité. Vous repartez avec l'historique guest, les codes, les photos.</p>
         </div>
       </details>
 
       <details>
-        <summary><span>Puis-je bloquer le bien pour mes vacances en famille ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
+        <summary><span>Puis-je bloquer le bien pour mon usage personnel&nbsp;?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
-          <p>Oui, gratuit, illimité. Deux clics dans le portail propriétaire. Calendrier multi-plateformes mis à jour en temps réel — Airbnb, Booking, directs bloqués automatiquement sur vos dates.</p>
-          <p>Recommandation : bloquer Noël, vacances de février et Eid 4 à 6 mois à l'avance — ce sont les pics ADR à Marrakech, donc opportunité de revenu vs usage personnel à arbitrer.</p>
+          <p>Oui, gratuit, illimité. Deux clics dans le portail propriétaire.</p>
         </div>
       </details>
 
       <details>
-        <summary><span>Qui paie en cas de dégât voyageur ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
+        <summary><span>Qui paie en cas de dégât&nbsp;?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
-          <p>Le guest, via le dépôt de garantie plateforme (Airbnb AirCover, Booking Damage Cover, etc.). Procédure standard : inspection post-check-out, photos avant/après, devis chiffré, soumission plateforme. Casse mineure (verre, ampoule) absorbée par l'opérateur — pas refacturée au propriétaire.</p>
-          <p>Police d'assurance opérateur en complément pour le bien hors période guest.</p>
+          <p>Le guest, via le dépôt de garantie plateforme. Casse mineure absorbée par l'opérateur.</p>
         </div>
       </details>
 
       <details>
-        <summary><span>Fiscalité pour un propriétaire non-résident au Maroc ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
+        <summary><span>Fiscalité non-résident&nbsp;?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
-          <p>Les revenus locatifs touristiques sont imposables au Maroc. Régime spécifique à la location meublée, déclaration IR annuelle, prélèvement à la source possible. Nous fournissons à votre cabinet comptable : exports Hostaway, factures plateformes, justificatifs de charges, attestation opérateur.</p>
-          <p>Note privée dédiée disponible sur demande, calibrée selon votre pays de résidence (France, Belgique, Suisse, etc.).</p>
+          <p>Imposable au Maroc. Nous fournissons à votre cabinet les exports, factures et attestations nécessaires.</p>
         </div>
       </details>
 
       <details>
-        <summary><span>Pourquoi vous plutôt qu'une agence locale standard ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
+        <summary><span>Pourquoi vous plutôt qu'une agence locale&nbsp;?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
-          <p>Deux choses concrètes. Un : équipe salariée à Marrakech, jamais sous-traitée à une boîte de ménage qui change de propriétaire chaque trimestre. Vous savez qui entre dans votre bien. Deux : ex-hôteliers — quinze ans en direction d'hôtel, et la marque sœur Medini Homes opère 108 biens à Dubaï depuis 2021. Les standards de check-in, de turn-over, de maintenance préventive ne sont pas une promesse marketing, c'est un mode opératoire éprouvé.</p>
-          <p>Le test : demandez-nous une visite des biens en gestion. On vous montre.</p>
+          <p>Équipe salariée à Marrakech, jamais sous-traitée. Quinze ans d'hôtellerie. Medini Homes opère 108 biens à Dubaï depuis 2021.</p>
         </div>
       </details>
 
       <details>
-        <summary><span>Travaillez-vous avec des biens hors Marrakech ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
+        <summary><span>Travaillez-vous hors Marrakech&nbsp;?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
-          <p>Non. Havn Stays est <em>Marrakech uniquement</em>. Notre conviction : on opère mieux ce qu'on connaît parfaitement. Équipe locale, voyageurs, prestataires, autorisations — tout est calibré pour la ville et ses quartiers (Palmeraie, Route de l'Ourika, Targa, Médina, Amelkis, Route de Fès, Amizmiz, Route du Barrage). Pour d'autres villes, on préfère vous le dire honnêtement plutôt que d'opérer à moitié.</p>
+          <p>Non. Marrakech uniquement — on opère mieux ce qu'on connaît parfaitement.</p>
         </div>
       </details>
 
       <details>
-        <summary><span>Est-ce que je peux bloquer des dates pour mon usage personnel ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
+        <summary><span>Tous les biens sont-ils adaptés&nbsp;?</span><span class="q-icon" aria-hidden="true">+</span></summary>
         <div class="faq-answer">
-          <p>Oui, sans frais. Vous bloquez vos dates dans le portail propriétaire (ou par WhatsApp) — le bien est sorti du planning de réservation, on prépare l'arrivée comme pour un guest. Vous restez chez vous, c'est votre bien.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary><span>Comment se passe la sortie du contrat ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
-        <div class="faq-answer">
-          <p>Préavis de 60 jours, pas de pénalité de sortie. Nous honorons les réservations déjà encaissées et vous transférons le bien propre, l'inventaire à jour, les comptes clos. Notre logique : si vous voulez partir, c'est qu'on n'a pas tenu nos engagements — on préfère perdre un client correctement que retenir mal.</p>
-        </div>
-      </details>
-
-      <details>
-        <summary><span>Est-ce que tous les biens sont adaptés ?</span><span class="q-icon" aria-hidden="true">+</span></summary>
-        <div class="faq-answer">
-          <p>Non. Tous les biens ne sont pas adaptés à la courte durée premium. Notre rôle est aussi de vous dire la vérité : un bien mal placé, sans piscine sur un segment qui l'exige, ou en copropriété hostile, ne rentabilisera pas. Nous préférons gérer moins de biens, mais les gérer correctement.</p>
+          <p>Non. Notre rôle est aussi de vous le dire honnêtement. On préfère gérer moins, mais bien.</p>
         </div>
       </details>
     </div>
@@ -3157,8 +3126,7 @@ a.cover-cta--whatsapp {
     </div>
 
     <div class="carnet-head">
-      <h2>Ce que nous observons<br>du <em>marché</em>.</h2>
-      <p>Investir, opérer, déclarer — ce que nous publions sur les sujets qui occupent un propriétaire de villa au Maroc en 2026.</p>
+      <h2>Le <em>carnet</em>.</h2>
     </div>
 
     <div class="carnet-grid">
@@ -3244,11 +3212,9 @@ a.cover-cta--whatsapp {
      ======================================================== -->
 <section class="invitation" id="invitation">
   <div class="page-inner">
-    <div class="invitation-label">X — L'invitation · p. 11 / 11</div>
     <h2>Parlons.</h2>
     <p class="deck">
-      Vous êtes propriétaire au Maroc. Écrivez-moi.
-      Je réponds personnellement, sous 24 h ouvréeseures.
+      Propriétaire à Marrakech&nbsp;? Écrivez-moi. Réponse sous 24&nbsp;h.
     </p>
     <a href="mailto:hillal@medini-homes.com" class="invitation-email">hillal@medini-homes.com</a>
 

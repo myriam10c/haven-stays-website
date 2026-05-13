@@ -1531,6 +1531,20 @@ a.cover-cta:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* === DECLUTTER : remove "dossier" gimmick === */
+.folio,
+.page-foot,
+.cover-bottom,
+.cover-top-cta,
+.scroll-hint,
+.invitation-label,
+.compare-footnote,
+.projection-note,
+.carnet-foot,
+.invitation-sister,
+.section-label { display: none !important; }
+.page-head { border-bottom: none; padding-bottom: 0; margin-bottom: 1.5rem; min-height: 0; }
 </style>
 </head>
 <body>
@@ -1600,10 +1614,7 @@ a.cover-cta:hover {
       <aside class="projection-aside">
         <h2>Your revenue <em>forecast.</em></h2>
         <p class="deck">
-          Fill in a few details about your property. We compute a monthly revenue forecast, based on actual performance observed on properties comparable to ours.
-        </p>
-        <p class="projection-note">
-          Indicative estimate, no commitment. An on-site visit will be required to refine. Personal response from Hillal within 24 business hours.
+          A few details, a numbers-based projection. Personal reply within 24 h.
         </p>
       </aside>
 
@@ -1632,7 +1643,6 @@ a.cover-cta:hover {
 
     <div class="onboarding-head">
       <h2>Seven days,<br>from signing <em>to first guest</em>.</h2>
-      <p>A documented timeline. You know what we do, when, and what to expect from you.</p>
     </div>
 
     <div class="timeline">
@@ -1769,7 +1779,7 @@ a.cover-cta:hover {
     <div class="charter-grid">
       <aside class="charter-aside">
         <h2>Our <em>commitments</em>.</h2>
-        <p class="deck">Four enforceable clauses. Written into the contract. Verifiable line by line in your monthly report.</p>
+        <p class="deck">Four clauses written into the mandate.</p>
       </aside>
 
       <div class="charter-body">
@@ -1826,8 +1836,7 @@ a.cover-cta:hover {
     </div>
 
     <div class="carnet-head">
-      <h2>What we observe<br>of the <em>market</em>.</h2>
-      <p>Invest, operate, declare — what we publish on the topics that occupy a villa owner in Morocco in 2026.</p>
+      <h2>The <em>journal</em>.</h2>
     </div>
 
     <div class="carnet-grid">
@@ -1913,11 +1922,9 @@ a.cover-cta:hover {
      ======================================================== -->
 <section class="invitation" id="invitation">
   <div class="page-inner">
-    <div class="invitation-label">VI — Get in touch · p. 07 / 07</div>
     <h2>Let's talk.</h2>
     <p class="deck">
-      You own a property in Morocco. Write to me.
-      I reply personally, within 24 business hours.
+      Owner in Marrakech? Write to me. Reply within 24 h.
     </p>
     <a href="mailto:hillal@medini-homes.com" class="invitation-email">hillal@medini-homes.com</a>
 

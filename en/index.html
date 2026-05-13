@@ -305,22 +305,27 @@ em, i { font-style: normal; color: var(--terra); }
   color: rgba(244, 239, 227, 0.6);
 }
 .cover-title {
-  font-family: var(--display);
-  font-size: clamp(4rem, 13vw, 14rem);
-  line-height: 0.84;
-  font-weight: 400;
-  letter-spacing: -0.005em;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2.6rem, 6vw, 5rem);
+  line-height: 1.05;
+  font-weight: 500;
+  letter-spacing: -0.015em;
   color: var(--cream);
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+.cover-title em {
+  font-style: italic;
+  color: var(--gold, #C5A55A);
+  font-weight: 500;
 }
 .cover-pitch {
-  font-family: var(--serif);
-  font-size: clamp(1.25rem, 2.1vw, 1.8rem);
+  font-family: 'Inter Tight', 'Inter', system-ui, sans-serif;
+  font-size: clamp(1rem, 1.4vw, 1.15rem);
   font-weight: 400;
-  color: var(--cream);
-  max-width: 44ch;
-  line-height: 1.35;
-  margin-top: -0.5rem;
+  color: rgba(244, 239, 227, 0.85);
+  max-width: 48ch;
+  line-height: 1.6;
+  margin-top: 0.6rem;
 }
 
 .cover-bullets {
@@ -1552,8 +1557,8 @@ a.cover-cta:hover {
     </div>
 
     <div class="cover-center">
-      <h1 class="cover-title">Premium rental<br>management<br>for villas & riads<br>in <em>Marrakech</em>.</h1>
-      <p class="cover-pitch">We operate your home like a hotel asset: pricing, platforms, guests, housekeeping, maintenance, compliance and owner reporting.</p>
+      <h1 class="cover-title">Villas &amp; riads<br>in <em>Marrakech</em>.<br>Operated like a <em>hotel</em>.</h1>
+      <p class="cover-pitch">Premium rental management for demanding owners. Pricing, platforms, guests, housekeeping, maintenance, compliance and reporting — all included in 20%.</p>
 
       <ul class="cover-bullets">
         <li><span class="b-num">01</span><span class="b-text">Former hoteliers, in-house Marrakech team — no subcontracting.</span></li>

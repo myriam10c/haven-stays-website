@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/svg+xml" href="/brand/favicons/favicon.svg">
+<link rel="apple-touch-icon" href="/brand/favicons/apple-touch-icon.svg">
 <meta name="google-site-verification" content="mc0ZMqP7yD9HPQukeBi785o766mib7Fe9QUTEmtprUU" />
 <title>Havn Stays — Gestion locative premium pour villas et riads à Marrakech</title>
 <meta name="description" content="Havn Stays gère des villas, riads et biens premium à Marrakech en location courte durée, avec une approche hôtelière, transparente et haut de gamme. Équipe locale, reporting propriétaire, opérée par d'anciens hôteliers.">
@@ -11,9 +13,12 @@
 <meta property="og:title" content="Havn Stays — Gestion locative premium pour villas et riads à Marrakech">
 <meta property="og:description" content="Gestion locative premium pour villas et riads à Marrakech. Nous opérons votre bien comme un actif hôtelier : pricing, plateformes, voyageurs, ménage, maintenance, conformité, reporting propriétaire.">
 <meta property="og:url" content="https://havn-stays.com/">
-<meta property="og:image" content="https://havn-stays.com/brand/hero-marrakech.png">
+<meta property="og:image" content="https://havn-stays.com/brand/hero-marrakech-1920.jpg">
+<meta property="og:image:width" content="1920">
+<meta property="og:image:height" content="1080">
+<meta property="og:image:alt" content="Villa premium gérée par Havn Stays à Marrakech">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://havn-stays.com/brand/hero-marrakech.png">
+<meta name="twitter:image" content="https://havn-stays.com/brand/hero-marrakech-1920.jpg">
 <link rel="canonical" href="https://havn-stays.com/">
 <link rel="alternate" hreflang="fr" href="https://havn-stays.com/" />
 <link rel="alternate" hreflang="en" href="https://havn-stays.com/en/" />
@@ -28,12 +33,19 @@
   "description": "Gestion locative premium pour villas, riads et biens premium à Marrakech. Approche hôtelière, transparente et haut de gamme.",
   "url": "https://havn-stays.com/",
   "logo": "https://havn-stays.com/brand/logo-gold.svg",
-  "image": "https://havn-stays.com/brand/hero-marrakech.png",
+  "image": "https://havn-stays.com/brand/hero-marrakech-1920.jpg",
   "email": "hillal@medini-homes.com",
   "telephone": "+971586247584",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Marrakech",
+    "addressRegion": "Marrakech-Safi",
+    "addressCountry": "MA"
+  },
   "areaServed": [
     {"@type":"City","name":"Marrakech"}
   ],
+  "priceRange": "$$$",
   "founder": {"@type":"Person","name":"Hillal Medini"},
   "parentOrganization": {"@type":"Organization","name":"Medini Homes","url":"https://medini-homes.com"},
   "sameAs": ["https://medini-homes.com"]
@@ -42,6 +54,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/brand/hero-marrakech-800.jpg" media="(max-width: 800px)">
+<link rel="preload" as="image" href="/brand/hero-marrakech-1280.jpg" media="(min-width: 801px) and (max-width: 1280px)">
+<link rel="preload" as="image" href="/brand/hero-marrakech-1920.jpg" media="(min-width: 1281px)">
 <link rel="stylesheet" href="/estimation-widget.css">
 <script src="/estimation-widget.js" defer></script>
 <style>
@@ -84,7 +99,7 @@ em, i, .v1-title em, h2 em, h3 em, .v1-attr, .compare-head .deck em,
 body { font-feature-settings: "ss01", "kern"; -webkit-font-smoothing: antialiased; }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 body {
   background: var(--sand);
   color: var(--ink);
@@ -2132,10 +2147,11 @@ a.cover-cta--whatsapp:hover .cta-num { color: rgba(10,26,14,0.75); }
 .cover-cta-row > a.cover-cta,
 .cover-cta-row > a.cover-cta--whatsapp { margin-top: 0; }
 
-/* 2) Compare table mobile — labels colonnes inline, ambigüité levée */
+/* 2) Compare table mobile — labels colonnes inline via data-label (traduisibles) */
 @media (max-width: 800px) {
   .compare-table .val-alt::before,
   .compare-table .val-pro::before {
+    content: attr(data-label);
     display: block;
     font-size: 0.55rem;
     letter-spacing: 0.2em;
@@ -2144,17 +2160,17 @@ a.cover-cta--whatsapp:hover .cta-num { color: rgba(10,26,14,0.75); }
     margin-right: 0;
   }
   .compare-table .val-alt::before {
-    content: 'Bail meublé annuel';
     font-family: var(--mono);
     color: var(--mute);
   }
   .compare-table .val-pro::before {
-    content: '✓ Location de séjour';
     font-family: var(--display);
     font-size: 0.9rem;
     letter-spacing: 0.04em;
     color: var(--terra);
+    text-transform: none;
   }
+  .compare-table .val-pro::before { content: "✓ " attr(data-label); }
   .compare-table .row-head:not(:first-child) { display: none; }
   .compare-table > div { display: block; padding: 0.9rem 1.1rem; }
 }
@@ -2248,8 +2264,11 @@ a.cover-cta--whatsapp:hover .cta-num { color: rgba(10,26,14,0.75); }
   .sticky-cta .scta-grid { grid-template-columns: 1fr 44px; gap: 0.4rem; }
 }
 
-
-.sticky-cta { display: none !important; }
+/* Masquer la float WhatsApp desktop sous 900px — relayée par sticky-cta */
+@media (max-width: 900px) {
+  .wa-float { display: none; }
+  body { padding-bottom: 72px; }
+}
 
 /* ============================================================
    TYPO BOOST — graisse renforcée pour lisibilité écran
@@ -2489,15 +2508,21 @@ a.cover-cta--whatsapp {
 .cover--v1 .cover-overlay { display: none !important; }
 .cover--v1::after { display: none; }
 
-/* Background image — pleine largeur, ancrée à droite */
+/* Background image — pleine largeur, ancrée à droite. Mobile-first responsive. */
 .cover--v1 .hero-bg {
   position: absolute;
   inset: 0;
-  background-image: url('/brand/hero-marrakech.png');
+  background-image: url('/brand/hero-marrakech-800.jpg');
   background-size: cover;
   background-position: right center;
   background-repeat: no-repeat;
   z-index: 0;
+}
+@media (min-width: 801px) {
+  .cover--v1 .hero-bg { background-image: url('/brand/hero-marrakech-1280.jpg'); }
+}
+@media (min-width: 1281px) {
+  .cover--v1 .hero-bg { background-image: url('/brand/hero-marrakech-1920.jpg'); }
 }
 /* Overlay dégradé : beige opaque à gauche, transparent à droite */
 .cover--v1 .hero-overlay {
@@ -2649,6 +2674,16 @@ a.cover-cta--whatsapp {
 @media (max-width: 900px) {
   .cover--v1 .cover-content { padding: 7rem 3rem 3rem 3rem; }
   .cover--v1 .v1-title { font-size: clamp(2.2rem, 7vw, 3.4rem); }
+  .cover--v1 .hero-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(243, 235, 221, 0.98) 0%,
+      rgba(243, 235, 221, 0.95) 45%,
+      rgba(243, 235, 221, 0.82) 70%,
+      rgba(243, 235, 221, 0.45) 92%,
+      rgba(243, 235, 221, 0.10) 100%
+    );
+  }
 }
 @media (max-width: 640px) {
   .cover.cover--v1 { min-height: 85vh; }
@@ -2912,9 +2947,388 @@ a.cover-cta--whatsapp {
   .site-header { padding: 0.7rem 1.1rem; }
   .site-header.is-scrolled { padding: 0.6rem 1.1rem; }
   .site-header .brand { font-size: 1.2rem; }
-  .site-header .nav { gap: 0.7rem; }
+  .site-header .nav { gap: 0.6rem; }
   .site-header .nav .link-secondary { display: none; }
-  .site-header .nav .cta { padding: 0.45rem 0.85rem; font-size: 0.72rem; }
+  .site-header .nav .cta { display: none; }
+  .nav-toggle { display: inline-flex; }
+}
+
+/* === Hamburger button === */
+.nav-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  background: transparent;
+  border: 1px solid rgba(28, 26, 23, 0.18);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background .2s, border-color .2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.nav-toggle:hover { background: rgba(28, 26, 23, 0.05); }
+.nav-toggle span {
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 1.5px;
+  background: var(--ink);
+  border-radius: 2px;
+  transition: transform .25s ease, opacity .2s ease, top .25s ease;
+}
+.nav-toggle { position: relative; }
+.nav-toggle span:nth-child(1) { top: 14px; }
+.nav-toggle span:nth-child(2) { top: 18.5px; }
+.nav-toggle span:nth-child(3) { top: 23px; }
+.nav-toggle.is-open span:nth-child(1) { top: 18.5px; transform: rotate(45deg); }
+.nav-toggle.is-open span:nth-child(2) { opacity: 0; }
+.nav-toggle.is-open span:nth-child(3) { top: 18.5px; transform: rotate(-45deg); }
+
+/* === Drawer mobile === */
+.nav-drawer {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 199;
+  background: rgba(244, 239, 227, 0.98);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(28, 26, 23, 0.1);
+  padding: 5rem 1.5rem 2rem;
+  transform: translateY(-100%);
+  transition: transform .35s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+.nav-drawer.is-open {
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.nav-drawer a {
+  display: block;
+  padding: 1.1rem 0.4rem;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(28, 26, 23, 0.08);
+  transition: color .2s;
+}
+.nav-drawer a:last-child { border-bottom: 0; }
+.nav-drawer a:hover { color: var(--terra); }
+.nav-drawer a em { font-style: normal; color: var(--terra); }
+body.nav-open { overflow: hidden; }
+
+/* Réassertion order-safe : hamburger visible ≤720px (override le display:none du bloc ci-dessus) */
+@media (max-width: 720px) {
+  .nav-toggle { display: inline-flex; }
+}
+
+/* Palier tablette 721-1020px : aérer la nav inline et adoucir le pill CTA */
+@media (min-width: 721px) and (max-width: 1020px) {
+  .site-header { padding: 0.85rem 1.6rem; }
+  .site-header.is-scrolled { padding: 0.6rem 1.6rem; }
+  .site-header .brand { font-size: 1.3rem; }
+  .site-header .nav { gap: 1.3rem; }
+  .site-header .nav .link-secondary { font-size: 0.82rem; }
+  .site-header .nav .cta { padding: 0.5rem 0.95rem; font-size: 0.74rem; }
+}
+
+/* ============================================================
+   HERO V4 — premium éditorial Marrakech (mai 2026)
+   Layout 45/55, dégradé asymétrique, CTAs duo, pills réassurance
+   ============================================================ */
+
+/* Override navbar — plus d'air, plus premium */
+.site-header { padding: 1.1rem 2.5rem; }
+.site-header.is-scrolled { padding: 0.75rem 2.5rem; }
+.site-header .brand { font-size: 1.4rem; letter-spacing: 0.01em; }
+.site-header .nav { gap: 2rem; }
+.site-header .nav .link-secondary {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  color: rgba(23, 20, 16, 0.72);
+}
+.site-header .nav .link-secondary:hover { color: #171410; }
+.site-header .nav .cta {
+  background: #11100E;
+  color: #F4EFE6;
+  padding: 0.65rem 1.3rem;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border-radius: 999px;
+}
+.site-header .nav .cta:hover { background: #A75C42; }
+
+/* === Cover v4 — layer & background === */
+.cover.cover--v4 {
+  background: #F4EFE6;
+  color: #171410;
+  min-height: 92vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Background image hérite des règles .cover--v1 .hero-bg (responsive variants) */
+
+/* Overlay asymétrique : opaque à gauche, transparent à droite */
+.cover--v4 .hero-overlay {
+  background: linear-gradient(
+    to right,
+    rgba(246, 241, 232, 0.95) 0%,
+    rgba(246, 241, 232, 0.85) 30%,
+    rgba(246, 241, 232, 0.55) 48%,
+    rgba(246, 241, 232, 0.15) 70%,
+    rgba(246, 241, 232, 0.0) 90%
+  );
+}
+/* Scrim subtle top — garantit lisibilité navbar sur image bright à droite */
+.cover--v4 .hero-overlay::after {
+  content: '';
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 130px;
+  background: linear-gradient(
+    to bottom,
+    rgba(246, 241, 232, 0.55) 0%,
+    rgba(246, 241, 232, 0.18) 70%,
+    rgba(246, 241, 232, 0.0) 100%
+  );
+  pointer-events: none;
+}
+
+/* Contenu */
+.cover--v4 .cover-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 92vh;
+  padding: 8rem 4rem 5rem 5rem;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+}
+
+.cover--v4 .v4-stack {
+  width: 100%;
+  max-width: 780px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-self: flex-start;
+}
+
+/* Petit label "Marrakech" */
+.cover--v4 .v4-loc {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.42em;
+  text-transform: uppercase;
+  color: #A75C42;
+  font-weight: 600;
+  padding-bottom: 0.7rem;
+  border-bottom: 1px solid rgba(23, 20, 16, 0.18);
+  width: max-content;
+  max-width: 100%;
+  margin-bottom: 0.4rem;
+}
+
+/* Titre principal */
+.cover--v4 .v4-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-weight: 500;
+  font-size: clamp(2.6rem, 4.6vw, 4.6rem);
+  line-height: 1.02;
+  letter-spacing: -0.018em;
+  color: #171410;
+  margin: 0;
+  max-width: 780px;
+}
+.cover--v4 .v4-title em {
+  font-style: normal;
+  color: #A75C42;
+  font-weight: 500;
+}
+.cover--v4 .v4-br { display: inline; }
+
+/* Sous-titre */
+.cover--v4 .v4-sub {
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-weight: 400;
+  font-size: clamp(1.05rem, 1.35vw, 1.25rem);
+  line-height: 1.55;
+  color: #5F5750;
+  max-width: 620px;
+  margin: 0;
+}
+
+/* CTAs */
+.cover--v4 .v4-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem 1.8rem;
+  margin-top: 0.6rem;
+}
+.cover--v4 a.v4-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1.05rem 1.9rem;
+  background: #11100E;
+  color: #F4EFE6;
+  text-decoration: none;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.74rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  border: 1px solid #11100E;
+  border-radius: 999px;
+  transition: background .25s, border-color .25s, transform .25s, opacity .25s;
+}
+.cover--v4 a.v4-cta-primary:hover {
+  background: #A75C42;
+  border-color: #A75C42;
+  transform: translateY(-1px);
+  opacity: 0.97;
+}
+.cover--v4 a.v4-cta-primary svg { transition: transform .25s; flex: 0 0 auto; }
+.cover--v4 a.v4-cta-primary:hover svg { transform: translateX(3px); }
+
+.cover--v4 a.v4-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0;
+  color: #171410;
+  text-decoration: none;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(23, 20, 16, 0.4);
+  transition: color .2s, border-bottom-color .2s;
+}
+.cover--v4 a.v4-cta-secondary:hover {
+  color: #A75C42;
+  border-bottom-color: #A75C42;
+}
+.cover--v4 a.v4-cta-secondary svg { transition: transform .2s; flex: 0 0 auto; }
+.cover--v4 a.v4-cta-secondary:hover svg { transform: translateX(2px); }
+
+/* Pills réassurance */
+.cover--v4 .v4-pills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1.4rem 0 0;
+  padding: 0;
+}
+.cover--v4 .v4-pills li {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  padding: 0.5rem 0.95rem;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(23, 20, 16, 0.1);
+  border-radius: 999px;
+  font-family: 'DM Sans', system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: #171410;
+  line-height: 1.2;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.cover--v4 .v4-pill-dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #A75C42;
+  border-radius: 50%;
+  flex: 0 0 5px;
+}
+
+/* Masquer le vieux stack v1 si jamais ré-injecté */
+.cover--v4 .v1-stack,
+.cover--v4 .v1-breadcrumb,
+.cover--v4 .v1-attr,
+.cover--v4 .v1-trust,
+.cover--v4 .v1-cta-row,
+.cover--v4 .v1-title,
+.cover--v4 .v1-sub,
+.cover--v4 .v1-small,
+.cover--v4 .v1-loc { display: none !important; }
+.cover--v4 .cover-bottom { display: none !important; }
+
+/* === Responsive === */
+
+/* Tablette wide 1100px : gradient un poil renforcé */
+@media (max-width: 1100px) {
+  .cover--v4 .hero-overlay {
+    background: linear-gradient(
+      to right,
+      rgba(246, 241, 232, 0.97) 0%,
+      rgba(246, 241, 232, 0.9) 38%,
+      rgba(246, 241, 232, 0.62) 58%,
+      rgba(246, 241, 232, 0.22) 80%,
+      rgba(246, 241, 232, 0.0) 96%
+    );
+  }
+  .cover--v4 .cover-content { padding: 7rem 3rem 4rem; }
+}
+
+/* Tablette portrait 900px : on retire le layout 45/55 et on bascule overlay vertical */
+@media (max-width: 900px) {
+  .cover--v4 .cover-content { padding: 6.5rem 2.2rem 3rem; }
+  .cover--v4 .v4-stack { max-width: 100%; }
+  .cover--v4 .v4-title { font-size: clamp(2.2rem, 6vw, 3rem); }
+  .cover--v4 .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(246, 241, 232, 0.95) 0%,
+      rgba(246, 241, 232, 0.85) 55%,
+      rgba(246, 241, 232, 0.7) 100%
+    );
+  }
+}
+
+/* Mobile ≤640 */
+@media (max-width: 640px) {
+  .cover.cover--v4 { min-height: 90vh; }
+  .cover--v4 .cover-content { padding: 5.5rem 1.5rem 2.5rem; min-height: 90vh; }
+  .cover--v4 .v4-stack { gap: 1.15rem; }
+  .cover--v4 .v4-loc { font-size: 0.62rem; letter-spacing: 0.32em; }
+  .cover--v4 .v4-title { font-size: clamp(2.1rem, 8.5vw, 2.8rem); line-height: 1.05; }
+  .cover--v4 .v4-br { display: none; }
+  .cover--v4 .v4-sub { font-size: 1rem; line-height: 1.5; }
+  .cover--v4 .v4-cta-row { flex-direction: column; align-items: stretch; gap: 0.9rem; width: 100%; }
+  .cover--v4 a.v4-cta-primary { width: 100%; justify-content: center; padding: 1rem 1.2rem; }
+  .cover--v4 a.v4-cta-secondary { align-self: flex-start; }
+  .cover--v4 .v4-pills { gap: 0.45rem; margin-top: 0.5rem; }
+  .cover--v4 .v4-pills li { font-size: 0.76rem; padding: 0.45rem 0.85rem; }
+  .cover--v4 .hero-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(246, 241, 232, 0.96) 0%,
+      rgba(246, 241, 232, 0.92) 55%,
+      rgba(246, 241, 232, 0.82) 100%
+    );
+  }
 }
 </style>
 </head>
@@ -2923,50 +3337,46 @@ a.cover-cta--whatsapp {
 <header class="site-header" id="siteHeader">
   <a href="/" class="brand">havn <em>stays</em></a>
   <nav class="nav">
-    <a href="#faq" class="link-secondary">FAQ</a>
     <a href="/a-propos" class="link-secondary">À propos</a>
+    <a href="/services" class="link-secondary">Services</a>
     <a href="#projection" class="cta">Estimation</a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navDrawer">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </button>
   </nav>
 </header>
+<div class="nav-drawer" id="navDrawer" aria-hidden="true">
+  <a href="#projection">Estimation des revenus</a>
+  <a href="/a-propos">À propos</a>
+  <a href="/services">Services</a>
+  <a href="#faq">FAQ</a>
+  <a href="/blog">Le carnet</a>
+  <a href="mailto:hillal@medini-homes.com">Écrire à <em>Hillal</em></a>
+</div>
 
 <main>
 
 <!-- ========================================================
      PAGE 01 — COUVERTURE
      ======================================================== -->
-<section class="cover cover--v1" id="couverture">
+<section class="cover cover--v1 cover--v4" id="couverture">
   <div class="hero-bg" aria-hidden="true"></div>
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="cover-content">
-    <div class="v1-stack">
-      <span class="v1-loc">MARRAKECH</span>
-      <span class="v1-breadcrumb">Gestion locative à Marrakech&nbsp;·&nbsp;100% tout inclus</span>
+    <div class="v4-stack">
+      <span class="v4-loc">Marrakech</span>
 
-      <h1 class="v1-title">Villas &amp; riads<br>à <em>Marrakech</em>.<br>Opérés comme un <em>hôtel privé</em>.</h1>
+      <h1 class="v4-title">Votre villa à Marrakech, <br class="v4-br">gérée comme un <em>hôtel privé</em>.</h1>
 
-      <p class="v1-attr">— <strong>Hillal Medini</strong>, fondateur · 15 ans en direction d'hôtel</p>
+      <p class="v4-sub">Nous gérons votre villa ou riad en courte durée&nbsp;: revenus, voyageurs, opérations et expérience premium.</p>
 
-      <div class="v1-cta-row">
-        <a href="#projection" class="v1-cta">
-          <span>Estimer les revenus de ma villa</span>
-          <span aria-hidden="true">→</span>
-        </a>
-      </div>
-
-      <ul class="v1-trust">
-        <li>Gestion 100% clé-en-main</li>
-        <li>Optimisation des revenus</li>
-        <li>Support voyageurs premium</li>
+      <ul class="v4-pills">
+        <li><span class="v4-pill-dot" aria-hidden="true"></span>Gestion 100% clé-en-main</li>
+        <li><span class="v4-pill-dot" aria-hidden="true"></span>Optimisation des revenus</li>
+        <li><span class="v4-pill-dot" aria-hidden="true"></span>Support voyageurs premium</li>
       </ul>
-    </div>
-
-    <div class="cover-bottom">
-      <div class="left">Hillal Medini, <em>fondateur</em></div>
-      <div class="scroll-hint">
-        <span>Tourner la page</span>
-        <span class="arrow"></span>
-      </div>
-      <div class="right">p. 01 / 11</div>
     </div>
   </div>
 </section>
@@ -3254,32 +3664,32 @@ a.cover-cta--whatsapp {
       <div class="row-head">Location de séjour opérée</div>
 
       <div class="label">Revenu brut potentiel</div>
-      <div class="val-alt">Loyer mensuel plafonné par le marché Marrakech résidentiel</div>
-      <div class="val-pro">ADR dynamique — Marrakech du Rire, Marathon, F1 Grand Prix, hiver européen</div>
+      <div class="val-alt" data-label="Bail meublé annuel">Loyer mensuel plafonné par le marché Marrakech résidentiel</div>
+      <div class="val-pro" data-label="Location de séjour opérée">ADR dynamique — Marrakech du Rire, Marathon, F1 Grand Prix, hiver européen</div>
 
       <div class="label">Vacance locative</div>
-      <div class="val-alt">2 à 4 mois entre deux contrats, parfois plus</div>
-      <div class="val-pro">Pricing recalibré chaque semaine — pas de "trou" prolongé</div>
+      <div class="val-alt" data-label="Bail meublé annuel">2 à 4 mois entre deux contrats, parfois plus</div>
+      <div class="val-pro" data-label="Location de séjour opérée">Pricing recalibré chaque semaine — pas de "trou" prolongé</div>
 
       <div class="label">Usure du bien</div>
-      <div class="val-alt">Un locataire, dégradations cumulatives invisibles</div>
-      <div class="val-pro">Inspection après chaque check-out — micro-réparations traitées sous 24 h</div>
+      <div class="val-alt" data-label="Bail meublé annuel">Un locataire, dégradations cumulatives invisibles</div>
+      <div class="val-pro" data-label="Location de séjour opérée">Inspection après chaque check-out — micro-réparations traitées sous 24 h</div>
 
       <div class="label">Disponibilité personnelle</div>
-      <div class="val-alt">Aucune — bail bloque l'usage 12 mois</div>
-      <div class="val-pro">Vos dates bloquées d'un clic dans le portail — gratuit, illimité</div>
+      <div class="val-alt" data-label="Bail meublé annuel">Aucune — bail bloque l'usage 12 mois</div>
+      <div class="val-pro" data-label="Location de séjour opérée">Vos dates bloquées d'un clic dans le portail — gratuit, illimité</div>
 
       <div class="label">Standing du guest</div>
-      <div class="val-alt">Profils locataires variables, peu de filtrage</div>
-      <div class="val-pro">Voyageurs de séjour, filtrés plateformes, dépôts de garantie</div>
+      <div class="val-alt" data-label="Bail meublé annuel">Profils locataires variables, peu de filtrage</div>
+      <div class="val-pro" data-label="Location de séjour opérée">Voyageurs de séjour, filtrés plateformes, dépôts de garantie</div>
 
       <div class="label">Conformité</div>
-      <div class="val-alt">Bail meublé enregistré ANCFCC</div>
-      <div class="val-pro">Autorisation locale de location touristique — portée par nous</div>
+      <div class="val-alt" data-label="Bail meublé annuel">Bail meublé enregistré ANCFCC</div>
+      <div class="val-pro" data-label="Location de séjour opérée">Autorisation locale de location touristique — portée par nous</div>
 
       <div class="label">Sortie</div>
-      <div class="val-alt">Préavis 3 mois côté locataire, contestable</div>
-      <div class="val-pro">Sortie mandat 60 jours, sans pénalité, vous reprenez la main</div>
+      <div class="val-alt" data-label="Bail meublé annuel">Préavis 3 mois côté locataire, contestable</div>
+      <div class="val-pro" data-label="Location de séjour opérée">Sortie mandat 60 jours, sans pénalité, vous reprenez la main</div>
     </div>
 
     <p class="compare-footnote">Toutes les lignes ci-dessus sont opposables — inscrites au mandat havn stays.</p>
@@ -3628,6 +4038,20 @@ a.cover-cta--whatsapp {
 </footer>
 
 
+<!-- Sticky CTA bar (mobile ≤900px) — relais de la float WhatsApp sur petits écrans -->
+<div class="sticky-cta" aria-label="Actions rapides">
+  <div class="scta-grid">
+    <a href="#projection" class="scta-primary">
+      <span class="scta-full">Estimer mes revenus</span>
+      <span class="scta-short">Estimation</span>
+    </a>
+    <a href="https://wa.me/971586247584?text=Bonjour%20havn%20stays%2C%20je%20suis%20propri%C3%A9taire%20%C3%A0%20Marrakech%20et%20j%27aimerais%20discuter%20de%20la%20gestion%20de%20mon%20bien." class="scta-wa" target="_blank" rel="noopener" aria-label="Contacter sur WhatsApp">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/></svg>
+      <span class="scta-wa-label">WhatsApp</span>
+    </a>
+  </div>
+</div>
+
 <!-- WhatsApp float (desktop ≥901px) -->
 <a href="https://wa.me/971586247584?text=Bonjour%20havn%20stays%2C%20je%20suis%20propri%C3%A9taire%20%C3%A0%20Marrakech%20et%20j%27aimerais%20discuter%20de%20la%20gestion%20de%20mon%20bien." class="wa-float" target="_blank" rel="noopener" aria-label="Contacter havn stays sur WhatsApp" title="WhatsApp Hillal">
   <svg width="26" height="26" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.464 3.488"/></svg>
@@ -3642,9 +4066,9 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// Tourner la page : scroll au clic sur l'indicateur
+// Tourner la page : scroll au clic sur l'indicateur (si section cible existe)
 document.querySelector('.scroll-hint')?.addEventListener('click', () => {
-  document.querySelector('#avant-propos').scrollIntoView({ behavior: 'smooth' });
+  document.querySelector('#projection')?.scrollIntoView({ behavior: 'smooth' });
 });
 
 // Header sticky : ajoute .is-scrolled après 40px de scroll
@@ -3654,6 +4078,32 @@ document.querySelector('.scroll-hint')?.addEventListener('click', () => {
   const onScroll = () => hdr.classList.toggle('is-scrolled', window.scrollY > 40);
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
+})();
+
+// Hamburger menu mobile
+(function() {
+  const toggle = document.getElementById('navToggle');
+  const drawer = document.getElementById('navDrawer');
+  if (!toggle || !drawer) return;
+  const close = () => {
+    toggle.classList.remove('is-open');
+    drawer.classList.remove('is-open');
+    toggle.setAttribute('aria-expanded', 'false');
+    drawer.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('nav-open');
+  };
+  const open = () => {
+    toggle.classList.add('is-open');
+    drawer.classList.add('is-open');
+    toggle.setAttribute('aria-expanded', 'true');
+    drawer.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('nav-open');
+  };
+  toggle.addEventListener('click', () => {
+    if (drawer.classList.contains('is-open')) close(); else open();
+  });
+  drawer.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
 })();
 </script>
 

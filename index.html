@@ -29,26 +29,61 @@
 {
   "@context": "https://schema.org",
   "@type": "ProfessionalService",
+  "@id": "https://havn-stays.com/#organization",
   "name": "Havn Stays",
+  "alternateName": "Havn Stays by Medini Homes",
+  "slogan": "L'hôtellerie cinq étoiles, dans votre villa.",
   "description": "Gestion locative premium pour villas, riads et biens premium à Marrakech. Approche hôtelière, transparente et haut de gamme.",
   "url": "https://havn-stays.com/",
   "logo": "https://havn-stays.com/brand/logo-gold.svg",
   "image": "https://havn-stays.com/brand/hero-marrakech-1920.jpg",
   "email": "hillal@medini-homes.com",
   "telephone": "+971586247584",
+  "priceRange": "$$$",
+  "currenciesAccepted": "MAD, EUR, USD",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Marrakech",
     "addressRegion": "Marrakech-Safi",
     "addressCountry": "MA"
   },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 31.6295,
+    "longitude": -7.9811
+  },
   "areaServed": [
-    {"@type":"City","name":"Marrakech"}
+    {"@type": "City", "name": "Marrakech"},
+    {"@type": "City", "name": "Agadir"},
+    {"@type": "City", "name": "Taghazout"}
   ],
-  "priceRange": "$$$",
-  "founder": {"@type":"Person","name":"Hillal Medini"},
-  "parentOrganization": {"@type":"Organization","name":"Medini Homes","url":"https://medini-homes.com"},
-  "sameAs": ["https://medini-homes.com"]
+  "serviceType": [
+    "Gestion locative courte durée",
+    "Conciergerie premium",
+    "Revenue management",
+    "Property management"
+  ],
+  "knowsLanguage": ["fr", "en", "ar"],
+  "founder": {
+    "@type": "Person",
+    "name": "Hillal Medini",
+    "jobTitle": "Fondateur, Havn Stays",
+    "description": "Ancien directeur d'hôtel, 15 ans en direction hôtelière.",
+    "url": "https://havn-stays.com/a-propos",
+    "knowsAbout": ["Hôtellerie cinq étoiles", "Gestion locative", "Revenue management", "Conciergerie"],
+    "worksFor": {"@type": "Organization", "name": "Havn Stays"}
+  },
+  "parentOrganization": {"@type": "Organization", "name": "Medini Homes", "url": "https://medini-homes.com"},
+  "sameAs": [
+    "https://medini-homes.com",
+    "https://www.instagram.com/havn.stays"
+  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+971586247584",
+    "contactType": "customer service",
+    "availableLanguage": ["French", "English"]
+  }
 }
 </script>
 <link rel="preconnect" href="https://fonts.googleapis.com">

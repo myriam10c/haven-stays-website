@@ -2,13 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-  <!-- Homepage -->
+  <!-- Static pages -->
   <url>
     <loc>https://havn-stays.com/</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -17,18 +17,16 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- Services -->
   <url>
     <loc>https://havn-stays.com/services</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/services" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/services" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/services" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -37,18 +35,16 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/services" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/services" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/services" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Tarifs / Pricing -->
   <url>
     <loc>https://havn-stays.com/tarifs</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/tarifs" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/pricing" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/tarifs" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -57,18 +53,16 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/tarifs" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/pricing" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/tarifs" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- Zones / Areas -->
   <url>
     <loc>https://havn-stays.com/zones</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/zones" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/areas" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/zones" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -77,18 +71,16 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/zones" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/areas" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/zones" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- Estimation -->
   <url>
     <loc>https://havn-stays.com/estimation</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/estimation" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/estimate" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/estimation" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -97,18 +89,16 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/estimation" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/estimate" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/estimation" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <!-- À propos / About -->
   <url>
     <loc>https://havn-stays.com/a-propos</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/a-propos" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/a-propos" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -117,18 +107,16 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/a-propos" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/a-propos" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- Blog -->
   <url>
     <loc>https://havn-stays.com/blog</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -137,18 +125,16 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-
-  <!-- Contact -->
   <url>
     <loc>https://havn-stays.com/contact</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/contact" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/contact" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -157,37 +143,108 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/contact" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/contact" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
-  <!-- Blog Articles -->
+  <!-- Blog articles (FR + EN) -->
   <url>
-    <loc>https://havn-stays.com/blog/reglementation-location-courte-duree-maroc</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/reglementation-location-courte-duree-maroc" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/reglementation-location-courte-duree-maroc" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/reglementation-location-courte-duree-maroc" />
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://havn-stays.com/blog/conciergerie-airbnb-marrakech-guide-proprietaires</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/conciergerie-airbnb-marrakech-guide-proprietaires" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/marrakech-airbnb-concierge-owner-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/conciergerie-airbnb-marrakech-guide-proprietaires" />
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://havn-stays.com/en/blog/reglementation-location-courte-duree-maroc</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/reglementation-location-courte-duree-maroc" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/reglementation-location-courte-duree-maroc" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/reglementation-location-courte-duree-maroc" />
-    <lastmod>2026-04-15</lastmod>
+    <loc>https://havn-stays.com/en/blog/marrakech-airbnb-concierge-owner-guide</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/conciergerie-airbnb-marrakech-guide-proprietaires" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/marrakech-airbnb-concierge-owner-guide" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/conciergerie-airbnb-marrakech-guide-proprietaires" />
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://havn-stays.com/blog/erreurs-proprietaires-villas-location-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/erreurs-proprietaires-villas-location-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/common-mistakes-villa-rental-owners-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/erreurs-proprietaires-villas-location-marrakech" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/common-mistakes-villa-rental-owners-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/erreurs-proprietaires-villas-location-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/common-mistakes-villa-rental-owners-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/erreurs-proprietaires-villas-location-marrakech" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/blog/fiscalite-location-meublee-maroc-non-residents</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/fiscalite-location-meublee-maroc-non-residents" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/fiscalite-location-meublee-maroc-non-residents" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/fiscalite-location-meublee-maroc-non-residents" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/fiscalite-location-meublee-maroc-non-residents</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/fiscalite-location-meublee-maroc-non-residents" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/fiscalite-location-meublee-maroc-non-residents" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/fiscalite-location-meublee-maroc-non-residents" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/blog/gestion-avis-voyageurs-villa-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/gestion-avis-voyageurs-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/gestion-avis-voyageurs-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/gestion-avis-voyageurs-villa-marrakech" />
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/gestion-avis-voyageurs-villa-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/gestion-avis-voyageurs-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/gestion-avis-voyageurs-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/gestion-avis-voyageurs-villa-marrakech" />
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/blog/gestion-locative-courte-duree-agadir</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/gestion-locative-courte-duree-agadir" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/short-term-rental-management-agadir" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/gestion-locative-courte-duree-agadir" />
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/short-term-rental-management-agadir</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/gestion-locative-courte-duree-agadir" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/short-term-rental-management-agadir" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/gestion-locative-courte-duree-agadir" />
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://havn-stays.com/blog/gestion-locative-villa-marrakech</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/gestion-locative-villa-marrakech" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/gestion-locative-villa-marrakech" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/gestion-locative-villa-marrakech" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -196,36 +253,16 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/gestion-locative-villa-marrakech" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/gestion-locative-villa-marrakech" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/gestion-locative-villa-marrakech" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
-  <url>
-    <loc>https://havn-stays.com/blog/revenue-management-villa-marrakech</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/revenue-management-villa-marrakech" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/revenue-management-villa-marrakech" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/revenue-management-villa-marrakech" />
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://havn-stays.com/en/blog/revenue-management-villa-marrakech</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/revenue-management-villa-marrakech" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/revenue-management-villa-marrakech" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/revenue-management-villa-marrakech" />
-    <lastmod>2026-05-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://havn-stays.com/blog/investir-villa-marrakech-quartiers</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/investir-villa-marrakech-quartiers" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/investir-villa-marrakech-quartiers" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/investir-villa-marrakech-quartiers" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -234,17 +271,70 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/investir-villa-marrakech-quartiers" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/investir-villa-marrakech-quartiers" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/investir-villa-marrakech-quartiers" />
-    <lastmod>2026-05-12</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://havn-stays.com/blog/investir-villa-taghazout-bay</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/investir-villa-taghazout-bay" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/investing-villa-taghazout-bay" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/investir-villa-taghazout-bay" />
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/investing-villa-taghazout-bay</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/investir-villa-taghazout-bay" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/investing-villa-taghazout-bay" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/investir-villa-taghazout-bay" />
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/blog/louer-villa-taghazout-bay</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/louer-villa-taghazout-bay" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/rent-villa-taghazout-bay" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/louer-villa-taghazout-bay" />
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/rent-villa-taghazout-bay</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/louer-villa-taghazout-bay" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/rent-villa-taghazout-bay" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/louer-villa-taghazout-bay" />
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/blog/meilleur-quartier-villa-marrakech-airbnb</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/meilleur-quartier-villa-marrakech-airbnb" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/best-marrakech-neighborhood-villa-airbnb" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/meilleur-quartier-villa-marrakech-airbnb" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/best-marrakech-neighborhood-villa-airbnb</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/meilleur-quartier-villa-marrakech-airbnb" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/best-marrakech-neighborhood-villa-airbnb" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/meilleur-quartier-villa-marrakech-airbnb" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://havn-stays.com/blog/photos-professionnelles-annonce-villa-marrakech</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/photos-professionnelles-annonce-villa-marrakech" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/photos-professionnelles-annonce-villa-marrakech" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/photos-professionnelles-annonce-villa-marrakech" />
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -253,17 +343,124 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/photos-professionnelles-annonce-villa-marrakech" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/photos-professionnelles-annonce-villa-marrakech" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/photos-professionnelles-annonce-villa-marrakech" />
-    <lastmod>2026-04-16</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
+  <url>
+    <loc>https://havn-stays.com/blog/preparer-villa-airbnb-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/preparer-villa-airbnb-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/preparer-villa-airbnb-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/preparer-villa-airbnb-marrakech" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/preparer-villa-airbnb-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/preparer-villa-airbnb-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/preparer-villa-airbnb-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/preparer-villa-airbnb-marrakech" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/blog/reglementation-location-courte-duree-maroc</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/reglementation-location-courte-duree-maroc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/reglementation-location-courte-duree-maroc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/reglementation-location-courte-duree-maroc" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/reglementation-location-courte-duree-maroc</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/reglementation-location-courte-duree-maroc" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/reglementation-location-courte-duree-maroc" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/reglementation-location-courte-duree-maroc" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/blog/rentabilite-villa-marrakech-location-courte-duree-2026</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/rentabilite-villa-marrakech-location-courte-duree-2026" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/villa-marrakech-short-term-rental-roi-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/rentabilite-villa-marrakech-location-courte-duree-2026" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/villa-marrakech-short-term-rental-roi-2026</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/rentabilite-villa-marrakech-location-courte-duree-2026" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/villa-marrakech-short-term-rental-roi-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/rentabilite-villa-marrakech-location-courte-duree-2026" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/blog/revenue-management-villa-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/revenue-management-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/revenue-management-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/revenue-management-villa-marrakech" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/revenue-management-villa-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/revenue-management-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/revenue-management-villa-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/revenue-management-villa-marrakech" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/blog/saisonnalite-villa-marrakech-2026</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/saisonnalite-villa-marrakech-2026" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/marrakech-villa-seasonality-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/saisonnalite-villa-marrakech-2026" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/marrakech-villa-seasonality-2026</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/saisonnalite-villa-marrakech-2026" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/marrakech-villa-seasonality-2026" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/saisonnalite-villa-marrakech-2026" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/blog/standards-hoteliers-airbnb-villa-rentabilite</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/standards-hoteliers-airbnb-villa-rentabilite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/hotel-standards-airbnb-villa-profitability" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/standards-hoteliers-airbnb-villa-rentabilite" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/hotel-standards-airbnb-villa-profitability</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/standards-hoteliers-airbnb-villa-rentabilite" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/hotel-standards-airbnb-villa-profitability" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/standards-hoteliers-airbnb-villa-rentabilite" />
+    <lastmod>2026-05-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
   <url>
     <loc>https://havn-stays.com/blog/tendances-tourisme-marrakech-2026</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/tendances-tourisme-marrakech-2026" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/tendances-tourisme-marrakech-2026" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/tendances-tourisme-marrakech-2026" />
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -272,7 +469,7 @@
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/tendances-tourisme-marrakech-2026" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/tendances-tourisme-marrakech-2026" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/tendances-tourisme-marrakech-2026" />
-    <lastmod>2026-04-20</lastmod>
+    <lastmod>2026-05-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

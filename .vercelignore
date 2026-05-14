@@ -1,0 +1,9 @@
+# Local-only — never deploy
+_backups/
+*.bak
+*.bak-*
+.DS_Store
+.git/
+.gitignore
+README.md
+node_modules/

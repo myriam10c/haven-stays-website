@@ -249,6 +249,24 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://havn-stays.com/blog/gestion-locative-riad-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/gestion-locative-riad-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/riad-property-management-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/gestion-locative-riad-marrakech" />
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havn-stays.com/en/blog/riad-property-management-marrakech</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/gestion-locative-riad-marrakech" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/riad-property-management-marrakech" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/blog/gestion-locative-riad-marrakech" />
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://havn-stays.com/en/blog/gestion-locative-villa-marrakech</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/blog/gestion-locative-villa-marrakech" />
     <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/blog/gestion-locative-villa-marrakech" />

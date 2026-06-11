@@ -18,12 +18,12 @@
   width: 30px; height: 30px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   font-size: 13px; font-weight: 600;
-  background: #F5F0EB; color: #888;
+  background: #F5F0EB; color: #5F5C55;
   transition: all .25s;
 }
 .ew-step-dot em {
   font-style: normal;
-  font-size: 11px; color: #888;
+  font-size: 11px; color: #5F5C55;
   white-space: nowrap;
 }
 .ew-step-dot.ew-active span { background: #C5A55A; color: #FFF; }
@@ -145,7 +145,7 @@
 
 /* Chart */
 .ew-chart-wrap { background: #FFFFFF; border-radius: 8px; padding: 16px 14px 10px; margin-bottom: 20px; border: 1px solid rgba(0,0,0,.06); }
-.ew-chart-title { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #888; font-weight: 600; margin-bottom: 8px; }
+.ew-chart-title { font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: #5F5C55; font-weight: 600; margin-bottom: 8px; }
 .ew-chart-wrap svg { width: 100%; height: auto; display: block; }
 .ew-chart-legend { display: flex; gap: 16px; justify-content: center; margin-top: 8px; font-size: 11px; color: #555; }
 .ew-chart-legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: middle; }
@@ -177,7 +177,7 @@
 .ew-cta-box h4 { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 18px; font-weight: 600; color: #1A1A1A; margin-bottom: 6px; }
 .ew-cta-box p { font-size: 13px; color: #555; line-height: 1.5; margin: 0; }
 
-.ew-disclaimer { font-size: 11px; color: #888; line-height: 1.5; margin-top: 14px; }
+.ew-disclaimer { font-size: 11px; color: #5F5C55; line-height: 1.5; margin-top: 14px; }
 
 /* Honeypot */
 .ew-honeypot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }

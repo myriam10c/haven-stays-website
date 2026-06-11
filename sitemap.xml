@@ -6,16 +6,16 @@
   <url>
     <loc>https://havn-stays.com/</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/" />
     <lastmod>2026-05-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://havn-stays.com/en/</loc>
+    <loc>https://havn-stays.com/en</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://havn-stays.com/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://havn-stays.com/en" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havn-stays.com/" />
     <lastmod>2026-05-14</lastmod>
     <changefreq>weekly</changefreq>
